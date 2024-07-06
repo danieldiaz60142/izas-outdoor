@@ -1,0 +1,22 @@
+{% if product.metafields.custom.colores_relacionados.value %}
+    {% for color_relacionado in product.metafields.custom.colores_relacionados.value %}
+      <div class="variation-color" style="display: flex">
+        <a href="{{ color_relacionado.url }}">
+            {% if color_relacionado.variants.size > 0 %}
+                {% assign first_variant = color_relacionado.variants.first %}
+              
+                <label style="font-weight: 100;" class="variation-color-label opt-label opt-label--swatch swatch-shape--circle btn relative text-center" data-swatch="{{ first_variant.option1 | downcase }}">
+                  {{ first_variant.option1 }}
+                  
+                </label>
+              
+            {% endif %}
+        </a>
+      </div>
+    {% endfor %}
+  
+    <style>
+      
+    </style>
+{% endif %}
+

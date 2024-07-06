@@ -1,0 +1,752 @@
+<style>
+
+[dir="ltr"] #shopify-section-{{ section.id }} [rotation-slideshow] .text--left {
+  text-align: left;
+}
+
+[dir="rtl"] #shopify-section-{{ section.id }} [rotation-slideshow] .text--left {
+  text-align: right;
+}
+
+#shopify-section-{{ section.id }} [rotation-slideshow] .text--center {
+  text-align: center;
+}
+
+[dir="ltr"] #shopify-section-{{ section.id }} [rotation-slideshow] .text--right {
+  text-align: right;
+}
+
+[dir="rtl"] #shopify-section-{{ section.id }} [rotation-slideshow] .text--right {
+  text-align: left;
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] .container{
+  width: 100%;
+  max-width: calc(var(--page-width, 1320px) + var(--gutter)* 2);
+  margin: 0 auto;
+  padding: 0 0;
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] .container-left{
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0;
+  padding: 0 0;
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] .container-box-cs{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] .button-wrapper{
+    display: flex;
+    height: fit-content;
+    margin-top: 32px;
+    box-sizing: border-box !important;
+    -webkit-font-smoothing: antialiased;
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] .button--primary, 
+#shopify-section-{{ section.id }} [rotation-slideshow] .shopify-challenge__button {
+    --button-background: var(--primary-button-background);
+    --button-text-color: var(--primary-button-text-color);
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] .button, 
+#shopify-section-{{ section.id }} [rotation-slideshow] .shopify-challenge__button, 
+#shopify-section-{{ section.id }} [rotation-slideshow] .shopify-payment-button__button{
+    background-image: linear-gradient(178deg, rgb(var(--button-background)), rgb(var(--button-background)) 10%, #00000012 10% 100%), linear-gradient(rgb(var(--button-background)), rgb(var(--button-background)));
+    background-size: 100% 200%, 100% 100%;
+    background-position: 100% -100%, 100% 100%;
+    background-repeat: no-repeat;
+    transition: background-position .3s cubic-bezier(.215,.61,.355,1);
+    transform: translateZ(0);
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] a.button.button--primary {
+    border: 1px solid;
+    font-size: 20px;
+    letter-spacing: 0;
+    padding: 20px;
+    font-weight: 400;
+    line-height: 1em;
+}
+
+#shopify-section-{{ section.id }} [rotation-slideshow] image-with-text{
+    /* Thanks to the ratio of the image and the height of the div we can calculate the height taken by the image */
+    --image-height: calc((100vw - var(--container-gutter) * 4) * (1.0 / var(--image-aspect-ratio)));
+    --vertical-breather: 48px;
+    --container-max-width: 1600px;
+    
+    --container-gutter: 24px;
+    --container-max-width-minus-gutters: calc(var(--container-max-width) - (var(--container-gutter)) * 2);
+    --container-outer-width: max(calc((100vw - var(--container-max-width-minus-gutters)) / 2), var(--container-gutter));
+    --container-outer-margin: var(--container-outer-width);
+    --container-inner-width: calc(100vw - var(--container-outer-width) * 2);
+
+    --grid-column-count: 10;
+    --grid-gap: 24px;
+    --grid-column-width: calc((100vw - var(--container-outer-width) * 2 - var(--grid-gap) * (var(--grid-column-count) - 1)) / var(--grid-column-count));
+    --transform-origin-start: left;
+    font-family: 'Helvetica', sans-serif;
+
+}
+@media screen and (min-width: 741px) {
+  #shopify-section-{{ section.id }} [rotation-slideshow] image-with-text{
+      /* Thanks to the ratio of the image and the height of the div we can calculate the height taken by the image */
+      --image-height: calc((100vw - var(--container-gutter) * 4) * (1.0 / var(--image-aspect-ratio)));
+      --vertical-breather: 64px;
+  }
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+
+[dir="ltr"] #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text::before {
+  left: 0;
+}
+
+[dir="rtl"] #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text::before {
+  right: 0;
+}
+
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(var(--section-accent-background));
+  z-index: -1;
+}
+
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text--overlap-image::before {
+  height: 235px;
+}
+
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text--overlap-text::before {
+  top: auto;
+  bottom: 0;
+  height: calc(100% - var(--image-height)); /* When we overlap the text we actually take the full height minus image height */
+}
+
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__image-wrapper {
+  position: relative;
+  margin-bottom: 53px;
+  overflow: hidden;
+  border-radius: var(--block-border-radius-reduced);
+  z-index: 0;
+  height: 0;
+  padding-bottom: 101.87%; /* Creating new stacking context is needed on Safari to apply the border radius */
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] .container-box-cs .image-with-text__image-wrapper {
+  position: relative;
+  margin-bottom: 53px;
+  overflow: hidden;
+  border-radius: var(--block-border-radius-reduced);
+  z-index: 0;
+  height: 0;
+  padding-bottom: 87.54%;
+}
+
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__image {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] .container-box-cs .image-with-text__image {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__image:not([hidden]) {
+  z-index: 1;
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__image video,
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] .container-box-cs .image-with-text__image img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__image:not([hidden]) {
+  z-index: 1;
+}
+/* Next images are resized to keep the format of the first image */
+/* [dir="ltr"] .image-with-text__image:not(:first-child) {
+  left: 0;
+}
+[dir="rtl"] .image-with-text__image:not(:first-child) {
+  right: 0;
+} */
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__image:not(:first-child) {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] [hidden]{
+  display: block !important;
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__image[hidden] {
+    visibility: hidden;
+  z-index: -1;
+  transition: visibility 0.6s linear;
+}
+
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__wrapper {
+  overflow: hidden;
+}
+
+/* We want to have the div to have the height of the tallest element, so we align them horizontally */
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__content-list {
+  display: flex;
+  flex-wrap: nowrap;
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] .container-box-cs .image-with-text__content-list {
+  display: flex;
+  flex-wrap: nowrap;
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__content {
+  display: block;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  order: 0; /* Force the active to be the visible one */
+}
+.image-with-text-item-inner{
+  max-width: 409px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__content[hidden] {
+  visibility: hidden;
+  order: 1;
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__content-list .image-with-text__content h3,
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__content-list .image-with-text__content h2{
+  margin-bottom: 0;
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__content-list .image-with-text__content h2 split-lines,
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__content-list .image-with-text__content h2{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 14.95px;
+  margin-bottom: 16.5px;
+  color: #000;
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__content-list .image-with-text__content h3 split-lines,
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__content-list .image-with-text__content h3{
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32.2px;
+  margin-bottom: 15.8px;
+  color: #000;
+  letter-spacing: -0.3px;
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__content-list .image-with-text__content .image-with-text__text-wrapper,
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__content-list .image-with-text__content .image-with-text__text-wrapper p{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.1px;
+  margin-bottom: 0;
+  color: #000;
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__navigation {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 42px;
+  align-items: flex-start;
+  margin-top: 19px;
+}
+
+@keyframes navigationItemAnimation {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__navigation-item {
+  position: relative;
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__navigation-item span.heading{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 14.95px;
+  margin-bottom: 0;
+  color: #000;  
+} 
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__navigation-item::before {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__navigation-item .navigation-item-cs {
+  position: relative;
+  width: 100%;
+  max-width: 50px;
+  margin: 0 auto;
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__navigation-item .navigation-item-cs::before,
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__navigation-item .navigation-item-cs::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-bottom: 9px;
+  background: rgba(var(--text-color), 0.15);
+}
+
+[dir="ltr"] #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__navigation-item .navigation-item-cs::after {
+  left: 0;
+}
+
+[dir="rtl"] #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__navigation-item .navigation-item-cs::after {
+  right: 0;
+}
+
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__navigation-item .navigation-item-cs::after {
+  position: absolute;
+  top: 0;
+  background: rgb(var(--text-color));
+  transform-origin: var(--transform-origin-start);
+  transform: scaleX(0);
+}
+
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__navigation-item[aria-current="true"] .navigation-item-cs::after {
+  animation: navigationItemAnimation var(--section-autoplay-duration) linear;
+  animation-play-state: var(--section-animation-play-state, running);
+}
+
+@media screen and (max-width: 999px) {
+  /* Extra spacing just for the pocket devices */
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text {
+    padding: var(--vertical-breather) 0;
+  }
+  #shopify-section-{{ section.id }} [rotation-slideshow] .container-box-cs .image-with-text {
+    padding: var(--vertical-breather) var(--container-gutter);
+  }
+  #shopify-section-{{ section.id }} [rotation-slideshow] .container-box-cs .image-with-text.image-with-text--boxed {
+    padding: 35px 21px ;
+  }
+  #shopify-section-{{ section.id }} [rotation-slideshow] .container-left .image-with-text .image-with-text__content-wrapper{
+    padding: 0 31px;
+  }
+  .image-with-text-item-inner{
+    max-width: 309px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__content-list .image-with-text__content h3{
+    margin-bottom: 0;
+    margin: 0 24px 15.8px;
+  }
+}
+
+/* @media screen and (min-width: 741px) and (max-width: 999px) {
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text {
+    --image-height: calc((100vw - var(--container-gutter) * 2 - (var(--grid-column-width) + var(--grid-gap)) * 4) * (1.0 / var(--image-aspect-ratio)));
+
+    padding: var(--vertical-breather) calc((var(--grid-column-width) + var(--grid-gap)) * 2);
+  }
+
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text--boxed {
+    padding: var(--vertical-breather) calc((var(--grid-column-width) + var(--grid-gap)) * 2 + var(--container-gutter));
+  }
+
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__image-wrapper {
+    margin-bottom: 48px;
+  }
+} */
+@media screen and (min-width: 460px) {
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text--overlap-image::before {
+    height: 50%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #shopify-section-{{ section.id }} [rotation-slideshow] .container{
+    padding: 0 64px 0 0;
+  }
+  #shopify-section-{{ section.id }} [rotation-slideshow] .container-left{
+    padding: 0 0;
+  }
+  #shopify-section-{{ section.id }} [rotation-slideshow] .container-box-cs{
+    width: 81.389%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  [dir="ltr"] #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text::before {
+    left: auto;
+    right: 0;
+  }
+  [dir="rtl"] #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text::before {
+    right: auto;
+    left: 0;
+  }
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text::before {
+    height: 100%;
+    top: 0;
+    width: calc(var(--grid-column-width) * 13 + (var(--grid-gap) * 12) + var(--container-outer-margin));
+  }
+
+  [dir="ltr"] #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text--reverse:not(.image-with-text--overlap-image)::before,
+  [dir="ltr"] #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text--overlap-image:not(.image-with-text--reverse)::before {
+    left: 0;
+    right: auto;
+  }
+
+  [dir="rtl"] #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text--reverse:not(.image-with-text--overlap-image)::before,
+  [dir="rtl"] #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text--overlap-image:not(.image-with-text--reverse)::before {
+    right: 0;
+    left: auto;
+  }
+
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text--overlap-image::before {
+    width: 36.074%;
+    height: 100%;
+  }
+
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text--overlap-both::before {
+    width: 100% !important; /* When it overlap both we force it to be 100% */
+  }
+
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__wrapper {
+    display: flex;
+    padding: 27px 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text--reverse .image-with-text__wrapper {
+    flex-direction: row-reverse;
+  }
+
+
+
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__image-wrapper {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  [dir="ltr"] #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text--reverse .image-with-text__image-wrapper {
+    margin-left: 0;
+  }
+
+  [dir="rtl"] #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text--reverse .image-with-text__image-wrapper {
+    margin-right: 0;
+  }
+
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__content-wrapper {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 64px 0 0;
+  }
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__content .image-with-text-item split-lines{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 14.95px;
+  }
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__navigation {
+    margin-top: 33.5px;
+    column-gap: 40px;
+  }
+
+  #shopify-section-{{ section.id }} [rotation-slideshow] .container-box-cs .image-with-text__image{
+    max-width: 431px;
+    height: 378px;
+    object-fit: cover;
+    position: relative;
+    display: block;
+  }
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__image:not(:first-child) {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+      object-fit: cover;
+    -o-object-position: center;
+      object-position: center;
+  }
+  #shopify-section-{{ section.id }} [rotation-slideshow] .container-box-cs .image-with-text__image-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__image-wrapper {
+    position: relative;
+    margin-bottom: 0;
+    overflow: hidden;
+    border-radius: var(--block-border-radius-reduced);
+    z-index: 0;
+    height: auto;
+    padding-bottom: 0%; /* Creating new stacking context is needed on Safari to apply the border radius */
+  }
+  #shopify-section-{{ section.id }} [rotation-slideshow] .container-box-cs .image-with-text__image-wrapper {
+    position: relative;
+    margin-bottom: 0;
+    overflow: hidden;
+    border-radius: var(--block-border-radius-reduced);
+    z-index: 0;
+    height: auto;
+    padding-bottom: 0;
+  }
+
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__image {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #shopify-section-{{ section.id }} [rotation-slideshow] .container{
+    padding: 0 87px 0 0;
+  }
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__content-wrapper {
+    width: 50%;
+    padding: 0 68px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+  #shopify-section-{{ section.id }} [rotation-slideshow] .container-box-cs .image-with-text__content-wrapper {
+    width: 50%;
+    padding: 0 68px 0 0;
+    margin-left: -4px;
+    margin-right: 0;
+    margin-top: -10px;
+  }
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__navigation {
+    margin-top: 32.5px;
+    column-gap: 50px;
+    margin-right: -11px;
+    letter-spacing: -0.1px;
+  }
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__content-list {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 16px;
+  }
+  #shopify-section-{{ section.id }} [rotation-slideshow] .container-box-cs .image-with-text__content-list {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1520px) {
+  #shopify-section-{{ section.id }} [rotation-slideshow] .container-box-cs .image-with-text{
+    max-width: 1142px;
+    margin: 0 auto;
+  }
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block {
+  display: block;
+}
+
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block__image-wrapper {
+  overflow: hidden;
+  background: rgb(var(--secondary-background)); /* Act as a filler */
+}
+
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block__content {
+  padding: 48px 24px;
+  background-color: rgb(var(--section-block-background));
+  border-radius: var(--block-border-radius);
+}
+
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block__text-container {
+  margin-top: 24px;
+}
+
+@media screen and (max-width: 999px) {
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block__content {
+    width: auto;
+  }
+
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block--overlap-left .image-with-text-block__content,
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block--overlap-right .image-with-text-block__content {
+    margin: calc(-1 * var(--container-gutter)) var(--container-gutter) 0;
+    padding: 40px;
+  }
+
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block:not(.image-with-text-block--overlap-left):not(.image-with-text-block--overlap-right) .image-with-text-block__content {
+    border-radius: 0;
+  }
+
+  /* Cover variation: on this mode, the image will still cover the image. There is a bit of duplication of
+     code but I could not find cleaner way */
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block--cover {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  [dir="ltr"] #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block--cover .image-with-text-block__image-wrapper {
+    left: 0;
+  }
+
+  [dir="rtl"] #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block--cover .image-with-text-block__image-wrapper {
+    right: 0;
+  }
+
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block--cover .image-with-text-block__image-wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block--cover .image-with-text-block__image {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block--cover .image-with-text-block__content {
+    padding: var(--container-gutter);
+    margin: var(--vertical-breather) var(--container-gutter);
+  }
+}
+
+/* @media screen and (min-width: 741px) and (max-width: 999px) {
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block--cover .image-with-text-block__content {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+} */
+
+@media screen and (min-width: 741px) {
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block__content {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__image img.hidden-desktop{
+  display: none;
+}
+#shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__image img.hidden-mobile{
+  display: block;
+}
+@media screen and (min-width: 1000px) {
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 500px;
+  }
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__image img.hidden-desktop{
+    display: block;
+  }
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text__image img.hidden-mobile{
+    display: none;
+  }
+  [dir="ltr"] #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block__image-wrapper {
+    left: 0;
+  }
+
+  [dir="rtl"] #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block__image-wrapper {
+    right: 0;
+  }
+
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block__image-wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  [dir="ltr"] #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block__image {
+    left: 0;
+  }
+
+  [dir="rtl"] #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block__image {
+    right: 0;
+  }
+
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block__image {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block__content {
+    margin-top: var(--vertical-breather);
+    margin-bottom: var(--vertical-breather);
+  }
+
+  /* Overlap variation */
+
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block--overlap-right .image-with-text-block__image-wrapper,
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block--overlap-left .image-with-text-block__image-wrapper {
+    width: calc(var(--grid-column-width) * 14 + (var(--grid-gap) * 13) + var(--container-outer-margin));
+  }
+
+  [dir="ltr"] #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block--overlap-left .image-with-text-block__image-wrapper {
+    right: 0;
+  }
+
+  [dir="rtl"] #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block--overlap-left .image-with-text-block__image-wrapper {
+    left: 0;
+  }
+
+  [dir="ltr"] #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block--overlap-left .image-with-text-block__image-wrapper {
+    left: auto;
+  }
+
+  [dir="rtl"] #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block--overlap-left .image-with-text-block__image-wrapper {
+    right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block {
+    min-height: 700px;
+  }
+
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block--small {
+    min-height: 400px;
+  }
+
+  #shopify-section-{{ section.id }} [rotation-slideshow] .image-with-text-block__content:not(.image-with-text-block__content--tight) {
+    padding: 64px;
+  }
+}
+</style>

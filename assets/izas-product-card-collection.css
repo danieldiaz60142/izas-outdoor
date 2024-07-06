@@ -1,0 +1,169 @@
+
+/* style product cart sold-out */
+product-card[izas-product-card].card--product.variant-out-stock .card__media .product-label-wrapper {
+    display: flex !important;
+}
+product-card[izas-product-card__sold-out][izas-product-card] img,
+product-card[izas-product-card].card--product.variant-out-stock .card__media img,
+product-card[izas-product-card__sold-out][izas-product-card] .card__media.has-hover-image:hover img {
+    background: #000;
+    opacity: 0.5;
+}
+product-card[izas-product-card__sold-out][izas-product-card] .card__quick-add button {
+    display: none;
+}
+product-card[izas-product-card__sold-out][izas-product-card] .product-label--sold-out,
+product-card[izas-product-card].variant-out-stock .product-label--sold-out {
+    background-color: rgb(var(--sold-out-label-bg-color)) !important;
+    color: rgb(var(--sold-out-label-text-color)) !important;
+}
+/* style product cart sold-out */
+#main-collection-product [izas-product-card] .card__swatches{
+    padding: 0;
+    margin: 10px 1px 0;
+    padding-inline-end: 0;
+}
+#main-collection-product [izas-product-card] .card__swatches{
+    padding: 0;
+    margin: 6px 0px 0;
+    padding-inline-end: 0;
+}
+#main-collection-product [izas-product-card] .card__title {
+    margin-top: 13px;
+    padding-right: 10px;
+}
+#main-collection-product [izas-product-card] .card__title a{
+    font-size: 13px;
+    font-weight: 300;
+}
+#main-collection-product [izas-product-card].card:not(.card--related).card--no-lines .price{
+    padding-top: 5px;
+}
+#main-collection-product [izas-product-card].card--product .price__current{
+    font-size: 16px;
+    color: #000;
+    letter-spacing: 0.7px;
+    padding-right: 6px;
+}
+#main-collection-product [izas-product-card].card--product .price__was{
+    font-size: 16px;
+    color: #D9D9D9;
+}
+#main-collection-product [izas-product-card].card--product .card__info-inner{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+#main-collection-product [izas-product-card].card--product.color_reverse .card__info-inner{
+    display: flex;
+    flex-direction: column-reverse;
+}
+#main-collection-product [izas-product-card].card--product .card__info{
+    padding-top: 10px;
+}
+#main-collection-product [izas-product-card].card--product .card__quick-add button{
+    width: 26.23px;
+    height: 26.23px;
+    padding: 2px;
+}
+#main-collection-product [izas-product-card].card--product .card__quick-add{
+    padding: 4px;
+}
+#main-collection-product [izas-product-card].card--product .card__quick-add button svg{
+    width: 100%;
+    height: 100%;
+}
+#main-collection-product [izas-product-card].card--product .product-label-container {
+    top: unset;
+    bottom: 0;
+    position: absolute;
+}
+#main-collection-product [izas-product-card].card--product input:checked + label[data-swatch], 
+#main-collection-product [izas-product-card].card--product input:checked + .filter__label[data-swatch]:before{
+    border: 2px solid rgba(var(--bg-color));
+    box-shadow: 0 0 0 1px #000;
+}
+
+#main-collection-product [izas-product-card].card--product .container-color + .blank-color{
+    display: none;
+}
+#main-collection-product [izas-product-card].card--product .blank-color{
+    min-height: 28px;
+}
+#main-collection-product [izas-product-card].card--product .card__media{
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+#main-collection-product [izas-product-card].card--product .product-label-container{
+    top: unset;
+    bottom: 0;
+}
+#main-collection-product [izas-product-card].card--product .product-label-container .product-label{
+    border-radius: 10px;
+    margin-bottom: 8px;
+    margin-top: 0;
+    margin-left: 8px;
+    font-size: 12px;
+    padding: 4px 14px;
+}
+@media (min-width: 600px) {
+    #main-collection-product [izas-product-card].card--product .product-label-container .product-label{
+        border-radius: 10px;
+        margin-bottom: 12px;
+        margin-top: 0;
+        margin-left: 13px;
+    }
+    #main-collection-product [izas-product-card].card--product .blank-color{
+        min-height: 19px;
+    }
+    #main-collection-product [izas-product-card].card--product .card__info-inner{
+        display: flex;
+        flex-direction: column;
+    }
+    #main-collection-product [izas-product-card].card--product.color_reverse .card__info-inner{
+        display: flex;
+        flex-direction: column;
+    }
+    #main-collection-product  [izas-product-card].card--product  .card__info{
+        padding-top: 20px;
+    }
+    #main-collection-product [izas-product-card] .card__swatches{
+        padding: 0;
+        margin: -3px 1px 0;
+        padding-inline-end: 0;
+    }
+    #main-collection-product [izas-product-card] .card__swatches{
+        padding: 0;
+        margin: -3px 0 0;
+        padding-inline-end: 0;
+    }
+    #main-collection-product [izas-product-card] .card__title {
+        margin-top: 10px;
+        padding-right: 0;
+    }
+    #main-collection-product [izas-product-card] .card__title a{
+        font-size: 14px;
+    }
+    #main-collection-product [izas-product-card].card:not(.card--related).card--no-lines .price{
+        padding-top: 4px;
+    }
+    #main-collection-product [izas-product-card].card--product .price__current{
+        font-size: 18px;
+        color: #000;
+        letter-spacing: 0.7px;
+        padding-right: 8px;
+    }
+    #main-collection-product [izas-product-card].card--product .price__was{
+        font-size: 18px;
+        color: #D9D9D9;
+    }
+    #main-collection-product [izas-product-card].card--product .card__quick-add button{
+        width: 35px;
+        height: 35px;
+        padding: 2px 4px;
+    }
+    #main-collection-product [izas-product-card].card--product  .card__quick-add{
+        padding: calc(2* var(--space-unit));
+    
+    }
+}

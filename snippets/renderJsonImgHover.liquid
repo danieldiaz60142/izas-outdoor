@@ -1,0 +1,19 @@
+{% assign stringJsonImageHover = '[' %}
+{% for variant in product.variants %}
+    {% if variant.metafields.custom.image_hover != blank %}
+        {% assign titleOption = variant.option1 %}
+        {% assign imgVartion = variant.metafields.custom.image_hover | img_url: "master" %}
+        {% assign stringJson = '{"name": "' | append: titleOption | append: '", "img": "' | append: imgVartion | append: '"}' %}
+            {% assign stringJson = stringJson | append: ',' %}
+        {% assign stringJsonImageHover = stringJsonImageHover | append: stringJson %}
+    {% endif %}
+
+{% endfor %}
+{% assign stringJsonImageHover = stringJsonImageHover | append: "]" %}
+{% assign stringJsonImageHover = stringJsonImageHover | replace: '},]' , '}]' %}
+
+{% if stringJsonImageHover != '[]' %}
+    <script type="application/json" class="vartion-img-hover">
+      {{ stringJsonImageHover }}
+    </script>
+{% endif %}

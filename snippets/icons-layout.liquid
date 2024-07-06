@@ -1,0 +1,87 @@
+<style>
+    {% if template.name != "index" %} 
+
+        {%- if bg_color_css  -%}
+        [icons-layout].section{
+            margin-top: -1px;
+            background-color: {{ bg_color_cs }};
+            background: {{ bg_color_cs }};
+        }
+        {%- endif -%}
+        {%- if section.settings.text_color_cs  -%}
+        [icons-layout].color-scheme a:not(.btn),  [icons-layout].color-scheme button.link,[icons-layout].icons-with-text.color-scheme .slider-nav{
+            color: {{ section.settings.text_color_cs }} !important;
+        }
+        {%- endif -%}
+    {% else %}
+
+        {%- if bg_color_css  -%}
+            [icons-layout].section{
+                margin-top: -1px;
+                background-color: {{ bg_color_cs_index }};
+                background: {{ bg_color_cs_index }};
+            }
+            {%- endif -%}
+            {%- if section.settings.text_color_cs_index  -%}
+            [icons-layout].color-scheme a:not(.btn),  [icons-layout].color-scheme button.link,[icons-layout].icons-with-text.color-scheme .slider-nav{
+                color: {{ section.settings.text_color_cs_index }} !important;
+            }
+        {%- endif -%}
+    {%- endif -%}
+
+    [icons-layout].icons-with-text .slider-nav{
+        right: 18px;
+        left: 18px;
+        top: -4px;
+    }
+    [icons-layout].icons-with-text .slider-nav{
+        right: 18px;
+        left: 18px;
+        top: -4px;
+    }
+    [icons-layout].icons-with-text .slider-nav .icon{
+        width: 18px;
+    }
+    [icons-layout].section--padded-default{
+        padding: 0 0 42px;
+    }
+    [icons-layout].section .container {
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 0 var(--gutter);
+    }
+    [icons-layout].section .icons-with-text__text .rte.text-body-medium p{
+        font-size: 13px;
+        font-weight: 300px;
+    }
+    [icons-layout].section .slider{
+        width: 65%;
+        margin: 0 auto;
+    }
+    [icons-layout].section .slider .slider__grid{
+        gap: 0;
+    }
+    @media (min-width: 769px) {
+        [icons-layout].section .container {
+            width: 100%;
+            max-width: 88.5%;
+            margin: 0 auto;
+            padding: 0 var(--gutter);
+        }
+        [icons-layout].section .slider .slider__grid{
+            gap: 31px;
+        }
+        [icons-layout].section .slider{
+            width: 100%;
+            margin: 0 auto;
+        }   
+        [icons-layout].section--padded-default{
+            padding: 0 0 56px;
+        }
+        [icons-layout].section .icons-with-text__text .rte.text-body-medium p{
+            font-size: 14px;
+            font-weight: 300px;
+        }
+    }
+</style>

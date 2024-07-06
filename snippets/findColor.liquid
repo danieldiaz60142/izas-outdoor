@@ -1,0 +1,34 @@
+{% assign valueFilter = '' %}
+{% case value %}
+    {% when 'Amarillo' or 'HONEY' or 'ILLUMINATING' or 'LIGHT YELLOW' or 'LIGHT YELLOW/ILLUMINATING' or 'SPRING' or 'SPRING/ROYAL' or 'YELLOW' or 'YELLOW FLUOR' or 'YELLOW FLUOR/BLACK' %}
+        {% assign valueFilter = 'Amarillo' %}
+    {% when 'TURQUOISE/TURQUOISE' or 'TURQUOISE/SMOKE' or 'TURQUOISE/CHARCOAL' or 'TURQUOISE' or 'LIGHT BLUE/NAVY BLUE' or 'LIGHT BLUE/CORAL FLUOR' or 'LIGHT BLUE/BLUE' or 'LIGHT BLUE' or 'FAIR AQUA,FAIR AQUA/LIGHT YELLOWF' or 'CORONET BLUE/LIGHT BLUE' or 'Azul' or 'BLUE' or 'BLUE/NAVY BLUE' or 'CELESTIAL' or 'CELESTIAL/ILUMINATING' or 'CERAMIC,CERAMIC/ATLANTIC' or 'CERAMIC/BLUEMOON' or 'CERAMIC/DARK PURPLE' or 'CORONET BLUE' %}
+        {% assign valueFilter = 'Azul' %}
+    {% when 'ROYAL/WHITE/SRPING' or 'ROYAL/SPRING' or 'ROYAL' or 'NAVY/SPRING' or 'NAVY BLUE/LIGHT BLUE' or 'NAVY BLUE/ILLUMINATING' or 'NAVY BLUE/ILLUMATING' or 'NAVY BLUE/GOLD HONEY' or 'NAVY BLUE/FAIR AQUA' or 'NAVY BLUE/CORAL FLUOR' or 'NAVY BLUE/CERAMIC' or 'NAVY BLUE/CELESTIAL/ILLUMINATI' or 'NAVY BLUE/BLUE' or 'NAVY BLUE' or 'DARK BLUE' or 'DARK AQUA/RED' or 'DARK AQUA' or 'BLUEMOON/SILVER' or 'Azul Oscuro' or 'ATLANTIC' or 'ATLANTIC/CERAMIC' or 'ATLANTIC/OPAL/LIMA' or 'BLUEMOON' or 'BLUEMOON/CORAL FLUOR' or 'BLUEMOON/DARK BLUE' %}
+        {% assign valueFilter = 'Azul Oscuro' %}
+    {% when 'Beige' or 'BEIGE' or 'STONE' or 'STONE/MINERAL RED' %}
+        {% assign valueFilter = 'Beige' %}
+    {% when 'Blanco' or 'HIELO/ALFALFA' or 'WHITE' or 'WHITE/BLACK' or 'WHITE/MENTA' or 'WHITE/PURPLE' or 'WHITE/SILVER' or 'WHITE/YELLOW FLUOR' %}
+        {% assign valueFilter = 'Blanco' %}
+    {% when 'SMOKE/SILVER/LOTUS' or 'SMOKE/ORANGE' or 'SMOKE/LOTUS' or 'SMOKE/DIVA PINK' or 'SMOKE/CERAMIC' or 'SMOKE/BLACK/RED' or 'SMOKE/BLACK' or 'SMOKE' or 'SILVER/DIVA PINK' or 'SILVER/BLACK' or 'SILVER' or 'MELANGE/GREY' or 'GREY' or 'DARK GREY/PURPLE' or 'DARK GREY/ORANGE' or 'DARK GREY/L GREEN' or 'DARK GREY/GREY' or 'Gris' or 'ALUMINIO METAL' or 'CHARCOAL' or 'CHARCOAL/BLACK' or 'CHARCOAL/DIVA PINK' or 'CHARCOAL/LOTUS' or 'CHARCOAL/ORANGE' or 'DARK GREY' or 'DARK GREY/BLACK' %}
+        {% assign valueFilter = 'Gris' %}
+    {% when 'Marrón' or 'ALMENDRA' or 'BROWN' or 'BROWN/DARK BROWN' or 'BROWN/FUCSIA' or 'NATURAL' or 'NATURAL/DARK NATURAL' %}
+        {% assign valueFilter = 'Marrón' %}
+    {% when 'Morado' or 'LAVANDA' or 'ORQUIDEA' or 'PURPLE' or 'VIOLET' or 'VIOLET/LILAC' %}
+        {% assign valueFilter = 'Morado' %}
+    {% when 'Multicolor' or 'MULTICOLOR' %}
+        {% assign valueFilter = 'Multicolor' %}
+    {% when 'ORANGE/SMOKE' or 'ORANGE/MINERAL RED' or 'ORANGE FLUOR' or 'ORANGE' or 'Naranja' or 'APRICOT' or 'CORAL' or 'DEGRADED' or 'CORAL FLUOR' or 'CORAL FLUOR/NAVY BLUE' or 'CORAL/JADE' or 'LIGHT ORANGE' or 'MELOCOTON' %}
+        {% assign valueFilter = 'Naranja' %}
+    {% when 'BLACK/WHITE' or 'BLACK/TURQUOISE' or 'BLACK/SMOKE' or 'BLACK/SILVER' or 'BLACK/RED' or 'BLACK/ORANGE' or 'BLACK/LILAC' or 'BLACK/LIGHT GREEN' or 'BLACK/GREY' or 'Negro' or 'BLACK' or 'BLACK/BLACK' or 'BLACK/BLUE' or 'BLACK/CERAMIC' or 'BLACK/DARK GREY' or 'BLACK/DARK GREY/ORANGE' or 'BLACK/DARK GREY/ROYAL' or 'BLACK/FUCSIA' %}
+        {% assign valueFilter = 'Negro' %}
+    {% when 'Rojo' or 'BARBERRY' or 'BARBERRY/DIVA PINK' or 'CHERRY' or 'MINERAL RED' or 'MINERAL RED/DIVA PINK' or 'RED' or 'RED/BLACK' or 'RED/SMOKE' or 'WINE' %}
+        {% assign valueFilter = 'Rojo' %}
+    {% when 'ROSE/DARK ROSE' or 'ROSE/BEIGE' or 'ROSE' or 'PINK' or 'Rosa' or 'CORAL DEGRADED' or 'DIVA PINK' or 'DIVA PINK/MINERAL RED' or 'DIVA PINK/SMOKE' or 'FUCSIA' or 'FUCSIA FLUOR/YELLOW FLUO' or 'FUCSIA/BLACK' or 'LOTUS' %}
+        {% assign valueFilter = 'Rosa' %}
+    {% when 'WASABI' or 'MENTA/YELLOW' or 'MENTA/WASABI' or 'MENTA/LIGHT YELLOW' or 'MENTA' or 'MATCHA' or 'LIGHT MATCHA/MATCHA' or 'Verde' or 'ALFALFA' or 'ALFALFA/LIME' or 'CAKI' or 'CAKI/DARK CAKI' or 'CAKI/GREY' or 'GREEN' or 'JADE' or 'LIGHT GREEN' or 'LIGHT LIME' %}
+        {% assign valueFilter = 'Verde' %}
+    {% else %}
+        {% assign valueFilter = value %}
+{% endcase %}
+{{ valueFilter | strip }}

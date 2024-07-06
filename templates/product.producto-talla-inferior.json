@@ -1,0 +1,383 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "breadcrumb_8t79E7": {
+          "type": "breadcrumb",
+          "settings": {}
+        },
+        "vendor-sku": {
+          "type": "vendor-sku",
+          "disabled": true,
+          "settings": {
+            "show_vendor": false,
+            "show_sku": false
+          }
+        },
+        "custom_liquid_tNYTye": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom_liquid": "<style>\n  .trustpilot-widget {\n    text-align: left;\nmargin-bottom:-2rem !Important;\n  }\n<\/style>\n\n<div class=\"trustpilot-widget\" \n     data-locale=\"es-ES\" \n     data-template-id=\"54d39695764ea907c0f34825\" \n     data-businessunit-id=\"64d346c76570bb5b3274fe96\" \n     data-style-height=\"24px\" \n     data-style-width=\"100%\" \n     data-theme=\"light\" \n     data-sku=\"{{ product.handle}}ALL,{{ product.variants | map: 'sku' | join: \",\" }}\" \n     data-no-reviews=\"hide\" \n     data-scroll-to-list=\"true\" \n     data-style-alignment=\"left\">\n  <a href=\"https:\/\/es.trustpilot.com\/review\/izas-outdoor.com\" target=\"_blank\" rel=\"noopener\">Trustpilot<\/a>\n<\/div>"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "richtext_Wpjw4J": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "text": ""
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false
+          }
+        },
+        "variant-picker": {
+          "type": "variant-picker",
+          "settings": {
+            "selector_style": "buttons",
+            "enable_dynamic_availability": true,
+            "show_backorder_text": true,
+            "enable_size_chart": true,
+            "size_chart_variant": "Guía de tallas",
+            "size_chart_page": ""
+          }
+        },
+        "message_cAcAEB": {
+          "type": "message",
+          "settings": {
+            "icon": "eye",
+            "title": "<p>Este producto talla grande. Le recomendamos escoger una talla menos de la que utiliza habitualmente.<\/p>",
+            "close": "once",
+            "show_over_media": true,
+            "visibility_duration": 8,
+            "bg_color": "#e4edfa",
+            "text_color": "#1a66d2"
+          }
+        },
+        "pop_up_XkEtge": {
+          "type": "pop-up",
+          "settings": {
+            "link_text": "Guía de tallas",
+            "link_style": "link",
+            "text": "",
+            "page": "guia-de-tallas-izas"
+          }
+        },
+        "richtext_cNqEYx": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>{{ product.metafields.custom.details_model.value }}<\/p>"
+          }
+        },
+        "a66d8542-90a1-4934-bbc5-4e110a74d119": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "show_as_collapsible_content": false,
+            "icon": "none",
+            "open": false
+          }
+        },
+        "buy-buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_qty_selector": false,
+            "enable_dynamic_checkout": false,
+            "show_pickup_availability": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "sequra_on_site_messaging_sequra_promotional_widget_hh8WJD": {
+          "type": "shopify:\/\/apps\/sequra-on-site-messaging\/blocks\/sequra_promotional_widget\/fecac697-26f8-4375-99bc-822fa16c7544",
+          "settings": {
+            "i1": false,
+            "pp5": false,
+            "pp": true,
+            "sp1": false
+          }
+        },
+        "collapsible-content-1": {
+          "type": "collapsible-content",
+          "settings": {
+            "heading": "Caracterísiticas",
+            "icon": "none",
+            "text": "{{ product.metafields.custom.caracteristicas | metafield_tag }}",
+            "page": "",
+            "open": false
+          }
+        },
+        "collapsible_technology_qbbUDc": {
+          "type": "collapsible-technology",
+          "settings": {
+            "heading": "Tecnología",
+            "icon": "none",
+            "open": false
+          }
+        },
+        "421afcb3-2a77-426f-b3fe-f743f5c6afb3": {
+          "type": "collapsible-content",
+          "settings": {
+            "heading": "Detalles",
+            "icon": "none",
+            "text": "{{ product.metafields.custom.detalles | metafield_tag }}{{ product.metafields.custom.detalles_tecnicos | metafield_tag }}",
+            "page": "",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumb_8t79E7",
+        "vendor-sku",
+        "custom_liquid_tNYTye",
+        "title",
+        "richtext_Wpjw4J",
+        "price",
+        "variant-picker",
+        "message_cAcAEB",
+        "pop_up_XkEtge",
+        "richtext_cNqEYx",
+        "a66d8542-90a1-4934-bbc5-4e110a74d119",
+        "buy-buttons",
+        "sequra_on_site_messaging_sequra_promotional_widget_hh8WJD",
+        "collapsible-content-1",
+        "collapsible_technology_qbbUDc",
+        "421afcb3-2a77-426f-b3fe-f743f5c6afb3"
+      ],
+      "settings": {
+        "stick_on_scroll": true,
+        "sticky_atc_panel": false,
+        "sticky_atc_position": "end",
+        "sticky_atc_mobile": true,
+        "media_layout": "slider",
+        "media_size": "large",
+        "media_ratio": "natural",
+        "media_crop": "none",
+        "hover_zoom": "off",
+        "enable_video_looping": true,
+        "stacked_scroll": "always",
+        "underline_active": false,
+        "media_thumbs": "desktop",
+        "thumb_ratio": "1",
+        "thumb_crop": "none",
+        "media_arrows": "never",
+        "show_slide_count": false,
+        "border_color": "rgba(0,0,0,0)",
+        "bg_color": "#f4f4f4",
+        "enable_media_grouping": true,
+        "media_grouping_option": "Color,Colour,Couleur,Farbe",
+        "is_size_selector": "Talla, size",
+        "size_label": "Selecciona tu talla"
+      }
+    },
+    "details": {
+      "type": "product-details",
+      "blocks": {
+        "highlight-text": {
+          "type": "highlight-text",
+          "settings": {
+            "title": "Este producto es ideal para",
+            "text": "{{ product.metafields.custom.iconos_texto | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "highlight-text"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "intent": "complementary",
+        "heading": "Completa tu look",
+        "heading_align": "text-start",
+        "preview_slider": true,
+        "layout": "carousel",
+        "card_size_mobile": "large",
+        "card_size": "medium",
+        "products_to_show": 8,
+        "spacing_top": 57,
+        "spacing_bottom": 127,
+        "spacing_top_mb": 50,
+        "spacing_bottom_mb": 41
+      }
+    },
+    "image_banner_Yeiqmd": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/Rectangle_1663_6267c3d2-699d-4da5-ac3b-9df2af96aaa9.png",
+        "image_mobile": "shopify:\/\/shop_images\/Rectangle_1670.png",
+        "url": "",
+        "height_mode": "auto",
+        "fixed_height_desktop": 602,
+        "fixed_height_mobile": 350,
+        "overlay_position": "justify-center items-center",
+        "overlay_text_align": "text-center",
+        "mob_center_text": false,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 0,
+        "distance_on_both_sides": 55,
+        "distance_on_both_sides_mobile": 21,
+        "distance_above_and_below": 0,
+        "distance_above_and_below_mobile": 0,
+        "prevent_animation": false
+      }
+    },
+    "media_with_text_RDUtrB": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_YJhpYD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Diseñada específicamente para amantes del aire libre",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "text_CQaRkU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>En IZAS Outdoor, te invitamos a explorar nuestra exclusiva colección de chaquetas y chalecos diseñados específicamente para hombres que aman la aventura al aire libre.<\/p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_YJhpYD",
+        "text_CQaRkU"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "{{ product.metafields.custom.media_image.value }}",
+        "video_shopify": "{{ product.metafields.custom.media_video.value }}",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": true,
+        "layout": "left",
+        "image_fit": "contain",
+        "media_width": 55,
+        "media_width_plus": "865",
+        "media_scale": 100,
+        "distance_above_and_below": 17,
+        "distance_above_and_below_mobile": 0,
+        "text_align": "text-start",
+        "show_info_banner_mobile": false,
+        "color_scheme": "none"
+      }
+    },
+    "product-comparison-grid": {
+      "type": "product-comparison-grid",
+      "blocks": {
+        "comparison-product-1": {
+          "type": "product",
+          "settings": {
+            "show_image": true,
+            "show_title": true,
+            "show_button": true
+          }
+        },
+        "comparison-price-3": {
+          "type": "price",
+          "settings": {}
+        },
+        "comparison-description-4": {
+          "type": "description",
+          "settings": {
+            "truncate_description": false,
+            "words_to_show": 20
+          }
+        }
+      },
+      "block_order": [
+        "comparison-product-1",
+        "comparison-price-3",
+        "comparison-description-4"
+      ],
+      "custom_css": [
+        ".btn--primary {font-size: 12px !important;}",
+        "h2 {font-size: 20px !important;}"
+      ],
+      "settings": {
+        "heading": "Compara nuestros productos",
+        "text": "<p>Compara las características técnicas de nuestros productos y llévate el que se adapte a ti perfectamente.<\/p>",
+        "heading_align": "text-center",
+        "view_more_label": "Ver más",
+        "view_more_link": "",
+        "product_list": "{{ product.metafields.custom.comparar_productos.value }}",
+        "empty_field_text": "-",
+        "image_ratio": "shortest",
+        "image_crop": "center",
+        "num_rows": 4,
+        "color_scheme": "none",
+        "highlight_row": false,
+        "spacing_top": 85,
+        "spacing_bottom": 20,
+        "spacing_top_mb": 0,
+        "spacing_bottom_mb": 20
+      }
+    },
+    "recommendationsdadasda": {
+      "type": "product-recommendations",
+      "custom_css": [],
+      "settings": {
+        "intent": "related",
+        "heading": "También te gustarán",
+        "heading_align": "text-start",
+        "preview_slider": true,
+        "layout": "carousel",
+        "card_size_mobile": "large",
+        "card_size": "medium",
+        "products_to_show": 8,
+        "spacing_top": 38,
+        "spacing_bottom": 61,
+        "spacing_top_mb": 33,
+        "spacing_bottom_mb": 53
+      }
+    },
+    "1715859776f1958840": {
+      "type": "apps",
+      "blocks": {
+        "connectif_inline_placeholder_nzRtwq": {
+          "type": "shopify:\/\/apps\/connectif\/blocks\/inline-placeholder\/2b4f4d30-7186-4bfa-b3d9-3e3cbf2f8a81",
+          "disabled": true,
+          "settings": {
+            "placeholder_id": "Recomendador",
+            "min_height_placeholder": 120
+          }
+        }
+      },
+      "block_order": [
+        "connectif_inline_placeholder_nzRtwq"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "details",
+    "recommendations",
+    "image_banner_Yeiqmd",
+    "media_with_text_RDUtrB",
+    "product-comparison-grid",
+    "recommendationsdadasda",
+    "1715859776f1958840"
+  ]
+}

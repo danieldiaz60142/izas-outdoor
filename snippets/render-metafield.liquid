@@ -1,0 +1,67 @@
+{%- if metafield_type == "url" -%}
+  <a href="{{- metafield_value -}}" class="link" target="_blank">{{- metafield_value -}}{{ comma }}</a>
+
+{%- elsif metafield_type == "boolean" -%}
+  {%- if metafield_value -%}
+    <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+      width="20px" height="20px" viewBox="0 0 305.002 305.002"
+      xml:space="preserve">
+      <g>
+        <g>
+          <path d="M152.502,0.001C68.412,0.001,0,68.412,0,152.501s68.412,152.5,152.502,152.5c84.089,0,152.5-68.411,152.5-152.5
+            S236.591,0.001,152.502,0.001z M152.502,280.001C82.197,280.001,25,222.806,25,152.501c0-70.304,57.197-127.5,127.502-127.5
+            c70.304,0,127.5,57.196,127.5,127.5C280.002,222.806,222.806,280.001,152.502,280.001z"/>
+          <path d="M218.473,93.97l-90.546,90.547l-41.398-41.398c-4.882-4.881-12.796-4.881-17.678,0c-4.881,4.882-4.881,12.796,0,17.678
+            l50.237,50.237c2.441,2.44,5.64,3.661,8.839,3.661c3.199,0,6.398-1.221,8.839-3.661l99.385-99.385
+            c4.881-4.882,4.881-12.796,0-17.678C231.269,89.089,223.354,89.089,218.473,93.97z"/>
+        </g>
+      </g>
+    </svg>
+  {%- else -%}
+  {%- endif -%}
+
+{%- elsif metafield_type == "file_reference" -%}
+  {%- if metafield_value.media_type == "image" -%}
+    <img src="{{ metafield_value | image_url }}" height="{{ metafield_value.height }}"
+         width="{{ metafield_value.width }}" loading="lazy" alt="{{ metafield_value.alt | json }}"/>
+
+  {%- else -%}
+
+    {%- liquid
+      assign download_url = metafield_value.url
+      assign additional_attrs = ""
+      if metafield_value.media_type == "video"
+        assign additional_attrs = "target = 'blank'"
+        for source in metafield_value.sources
+          if source != blank and source.format == "mp4"
+            assign download_url = source.url
+            break
+          endif
+        endfor
+      endif
+    -%}
+
+    <a href="{{- download_url -}}" download class="inline-flex items-center link" {{- additional_attrs -}}>
+      <img src="{{ metafield_value.preview_image | image_url: width: 80 }}" class="mr-2"
+           height="{{ 40 | divided_by: metafield_value.preview_image.aspect_ratio | round }}"
+           width="40" loading="lazy" alt="{{ metafield_value.alt | json }}"/>
+      {{- 'products.compare.metafields.file_download' | t -}}
+    </a>
+  {%- endif -%}
+
+{%- elsif metafield_type == "date_time" -%}
+  {{- metafield_value | date: format: 'date_at_time' -}}{{ comma }}
+
+{%- elsif metafield_type == "color" -%}
+  <div class="theme-metafield-color" style="background-color:{{- metafield_value -}}"></div>
+
+{%- elsif metafield_type == "page_reference" or metafield_type == "product_reference" or metafield_type == "variant_reference"or metafield_type == "collection_reference" -%}
+  <a href="{{- metafield_value.url -}}" class="link" target="_blank">{{- metafield_value.title -}}{{ comma }}</a>
+
+{%- elsif metafield.type contains "list." -%}
+  {{- metafield_value | newline_to_br -}}{{ comma }}
+
+{%- else -%}
+  {{- metafield | metafield_tag | replace: "metafield-rich_text_field", "metafield-rich_text_field rte" -}}{{ comma }}
+
+{%- endif -%}

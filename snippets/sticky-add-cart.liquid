@@ -1,0 +1,681 @@
+{% assign countVaritionColor = 0 %}
+{% assign countVaritionSize = 0 %}
+{% assign is_variant_image_style = false %}
+{% assign showColor = false %}
+{% if settings.variant_picker_color_style == 'variant-images' %}
+    {% assign is_variant_image_style = false %}
+{% endif %}
+
+{%- for option in product.options_with_values -%}
+    {% assign countVaritionColor = countVaritionColor | plus: 1 %}
+    {% if option.name == 'Talla' %}
+        {% assign countVaritionSize = countVaritionSize | plus: 1 %}
+    {% endif %}
+{% endfor %}
+<div class="sticky-div hidden">
+    <div class="navication ">
+        <div class="block-navication">
+            <div class="descr stick-block">
+                <span class="title-product">{{ product.title }} </span>
+            </div>
+            <div class="price stick-block">
+                {% render 'price', product: product, use_variant: true %}
+            </div>
+        </div>
+
+     
+      
+        <div class="block-navication">
+            {%- assign downcase_rel_value = current_color_name  %}
+            <div id="colorButton" class="Button Button--secundary Button--full st-son center-container stick-block">
+                <div class="popup">
+                    <div id="colorCont" class="content-div">
+                        <div class="ProductForm__Color" style="overflow-y: scroll; height: 60vh;">
+                            {%- for option in product.options_with_values -%}
+                                {% if option.name != 'Talla' %}
+                                {% assign option_index0 = forloop.index0 %}
+                                    {%- capture option_id %}{{ section.id }}-{{ option.name | handle }}{% endcapture -%}
+                                    {%- assign variant_key = 'option' | append: option.position -%}
+                                   {% render "colores-relacionados-sticky" %}
+                                    {%- for value in option.values -%}
+                                        {%- assign value_index0 = forloop.index0 -%}
+
+                                        {%- liquid
+                                            assign variant_value = product.variants | where: variant_key, value | first
+                                            if option.selected_value == value
+                                                assign selected_color = value
+                                            endif
+                                        -%}
+                                        <div class="variation-color" style="display: flex">
+                                            {% assign imgVartion = blank %}
+                                            {%- if is_variant_image_style -%}
+                                                {%- for variant in product.variants -%}
+                                                    {%- if variant.options[option_index0] == value -%}
+                                                        {%- liquid
+                                                            if settings.variant_picker_swatch_shape == "natural"
+                                                                assign class = 'bg-theme-bg'
+                                                            elsif swatch_crop == 'top'
+                                                                assign class = 'img-fit object-top bg-theme-bg'
+                                                            else
+                                                                assign class = 'img-fit bg-theme-bg'
+                                                            endif
+
+                                                            assign swatch_size = settings.variant_picker_swatch_size | times: 1.5
+                                                        -%}
+                                                        {% assign imgVartion = variant.featured_media %}
+                                                    {% endif %}
+                                                {% endfor %}
+                                            {% else %}
+                                                <label data-price="{{ variant_value.price }}" data-compare="{{ variant_value.compare_at_price }}"  data-variant="{{ variant_value.id }}" class="label-{{ value | replace: ' ',  '_' }}-value variation-color-label" onclick="changeColor(`{{ value }}`, `{% if settings.card_colors_style != 'variant-images' or variant_value.featured_media == blank %}{{ value | replace: '"', '' | downcase }}{% endif %}`, `{{ option_id }}-opt-{{ forloop.index0 }}`, this)" for="{{ option_id }}-opt-{{ forloop.index0 }}-fake"
+
+                                                {% if settings.swatch_option_name contains option.name %}
+                                                    {% if showColor == false %}
+                                                    {% assign showColor = true %}
+                                                        {% endif %}
+                                                       {% if settings.variant_picker_color_style == 'swatches' %}data-swatch="{% if settings.card_colors_style != 'variant-images' or variant_value.featured_media == blank %}{{ value | replace: '"', '' | downcase }}{% endif %}"{% endif %}
+                                                {% endif %}
+                                                    >
+                                                    {% if is_variant_image_style and  imgVartion != blank %}
+                                                        {% render 'image', image: imgVartion, src_width: swatch_size, lazy_load: false, class: class, disable_focal_point: true %}
+                                                    {% endif %}
+                                                </label>
+                                                <style>
+                                                    .label-{{ value | replace: ' ',  '_' }}-value:after {
+                                                        content: '{{ value }}';
+                                                    }
+                                                </style>
+                                            {% endif %}
+                                        </div>
+                                    {% endfor %}
+
+
+                                 
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="center-container flex" {% if countVaritionColor >  0 %} onclick="openColor()" {% endif %} >
+                    <label id="swatch-selected" class="ColorSwatch ColorSwatch--medium {% if downcase_rel_value contains 'white' %}ColorSwatch--white{% endif %} ColorSwatch__Current"
+                       {% if settings.variant_picker_color_style == 'swatches' and showColor %}data-swatch="{% if settings.card_colors_style != 'variant-images' or variant_value.featured_media == blank %}{{ product.selected_or_first_available_variant.option1 | replace: '"', '' | downcase }}{% endif %}"{% endif %}
+                    ></label>
+                    <span id="name-selected" >{{product.selected_or_first_available_variant.option1 | truncate: 18 }}</span>
+                    <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.31664 4.7724L0.701904 4.15768L3.99997 0.859619L7.29803 4.15768L6.6833 4.7724L3.99997 2.08907L1.31664 4.7724Z" fill="#1C1B1F"/>
+                    </svg>
+                </div>
+            </div>
+            <div  id="sizeButton" class="Button Button--secundary Button--full st-son collapseButton center-container p-0 stick-block">
+                <div class="popup">
+                    <div id="tallaCont" class="content-div">
+                        <div class="ProductForm__Variants">
+                            {%- for option in product.options_with_values -%}
+                                {% if option.name == 'Talla' %}
+                                    {%- capture option_id %}{{ section.id }}-{{ option.name | handle }}{% endcapture -%}
+                                    {%- assign variant_key = 'option' | append: option.position -%}
+                                    {%- for value in option.values -%}
+                                        {%- liquid
+                                            assign variant_value = product.variants | where: variant_key, value | first
+                                            if option.selected_value == value
+                                                assign selected_color = value
+                                            endif
+                                        -%}
+                                        <div class="variants-size">
+                                            <label onclick="changeSize(`{{ value }}`,`{{ option_id }}-opt-{{ forloop.index0 }}`)" for="{{ option_id }}-opt-{{ forloop.index0 }}-fake" title="{{ value | replace: '"', '`' }}">
+                                                <span>{{ value }}</span>
+                                            </label>
+                                        </div>
+                                    {% endfor %}
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: center; align-items: center" {% if countVaritionSize >  0 %} onclick="openSize()" {% endif %} >
+                    <p>{{'product.form.size' | t}}: <span id="sizeSpan"> {{product.selected_or_first_available_variant.option2}}</span></p>
+                    <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.31664 4.7724L0.701904 4.15768L3.99997 0.859619L7.29803 4.15768L6.6833 4.7724L3.99997 2.08907L1.31664 4.7724Z" fill="#1C1B1F"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="stick-block action-button">
+                {% assign current_variant = product.selected_or_first_available_variant %}
+
+                <button  {% unless current_variant.available -%} disabled {% endunless %} onclick="stickkyAddTocart()" id="btn-sticky-add-cart" type="button" class="ProductForm__AddToCart Button Button--primary Button--full st-son">
+                    <span class="show-desktop">
+                         {%- if current_variant.available -%}
+                             {{ 'product.form.add' | t }}
+                         {%- else -%}
+                             {{- 'products.product.sold_out' | t -}}
+                         {%- endif -%}
+                    </span>
+                    <span class="show-mobile">
+                          {%- if current_variant.available -%}
+                              {{ 'product.form.add_mobile' | t }}
+                          {%- else -%}
+                              {{- 'products.product.sold_out' | t -}}
+                          {%- endif -%}
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+
+    .ProductForm__Color::-webkit-scrollbar {
+        width: .6rem; /* Ancho de la barra deslizante */
+    }
+
+    .ProductForm__Color::-webkit-scrollbar-thumb {
+        background-color: #888; /* Color de la barra deslizante */
+        border-radius: 10px; 
+    }
+
+    .ProductForm__Color::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+    }
+
+
+                          
+  .sticky-div {
+    display: block !important;
+    z-index:999999 !Important;
+}
+    .sticky-overlay {
+        z-index: 100;
+        background-color: #0006;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        top: 0;
+        display: none;
+    }
+    .sticky-div .block-navication {
+        width: 50%;
+        display: flex;
+        height: 100%
+    }
+    .sticky-div {
+        background-color: white;
+        width: 90.278%;
+        right: 5%;
+        position: fixed;
+        bottom: 33px;
+        height: 47px;
+        border-radius: 10px;
+       box-shadow: 0px 18px 35px -1px rgb(8 8 8 / 29%);
+        z-index: 2001;
+    }
+    .sticky-div  .title-product {
+        font-family: Poppins;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        color: black;
+    }
+    .sticky-div  .navication {
+        height: 100%;
+    }
+    .sticky-div p {
+        margin: 0;
+    }
+    .sticky-div .navication {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sticky-div .stick-block {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sticky-div .price__current {
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        color: black;
+        padding-left: 3px;
+        padding-right: 12px;
+    }
+    .sticky-div .price__default {
+        display: flex;
+    }
+    .sticky-div .price__default s {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        color: #B7B7B7;
+    }
+    .sticky-div .price__discount {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        color: #C83737 !important;
+        margin-left: 10px !important;
+    }
+    .sticky-div #colorButton .center-container{
+        align-items: center;
+    }
+    .sticky-div #name-selected {
+        margin-left: 9px;
+    }
+    .sticky-div #name-selected, .sticky-div #sizeButton, .sticky-div #sizeButton p {
+        font-family: Poppins;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 21px;
+        color: black;
+        text-transform: uppercase;
+    }
+    .is-active svg {
+        transform: rotate(180deg);
+    }
+    .sticky-div #btn-sticky-add-cart {
+        width: 100%;
+        height: 100%;
+        background: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16.1px;
+        border-radius: 0 10px 10px 0;
+        letter-spacing: 0.5px;
+    }
+    .sticky-div #swatch-selected {
+        height: 24px;
+        width: 24px;
+        {% if settings.variant_picker_color_style == 'swatches' and showColor %}
+            border: 2px solid rgba(var(--bg-color));
+            box-shadow: 0 0 0 2px rgb(var(--swatch-border-color-default));
+        {% endif %}
+    }
+    .sticky-div #colorButton, .sticky-div #sizeButton{
+        cursor: pointer;
+        user-select: none;
+    }
+    .sticky-div #colorButton  svg, .sticky-div #sizeButton svg {
+        margin-left: 9.7px;
+    }
+    .sticky-div .popup {
+        position: absolute;
+    }
+    .sticky-div #colorCont {
+        width: 224px;
+    }
+    .sticky-div #tallaCont{
+        width: 141px;
+    }
+    .sticky-div #tallaCont label {
+        width: 100%;
+        display: block;
+     }
+    .sticky-div #tallaCont, .sticky-div #colorCont {
+        background: white;
+        padding: 8px 0 1px 0;
+        border-radius: 10px 10px 0 0;
+    }
+    .sticky-div #tallaCont .variants-size:not(:last-child) {
+        border-bottom: 1px solid #EFEFEF;
+    }
+    .sticky-div #tallaCont .variants-size {
+        padding-left: 14px;
+        padding-top: 10px;
+        padding-bottom: 13px;
+        cursor: pointer;
+    }
+    .sticky-div .variation-color label[data-swatch]:hover, sticky-div .variation-color .filter__label[data-swatch]:hover:before {
+        box-shadow: unset !important;
+        border: unset !important;
+    }
+    .sticky-div #colorCont label {
+        display: flex;
+        width: 100%;
+        border: unset;
+        border-radius: unset;
+        gap: 7px;
+        align-items: center;
+    }
+    .sticky-div #colorCont label:before {
+        width: 20px;
+        height: 20px;
+    }
+    .sticky-div .variation-color {
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+    .sticky-div .variation-color:not(:first-child) {
+        padding-top: 5px;
+    }
+    .sticky-div .variation-color:not(:last-child) {
+        padding-bottom: 5px;
+        border-bottom: 1px solid #EFEFEF;
+    }
+
+    .sticky-div .content-div.active {display: block;}
+    .sticky-div .content-div{ display: none; }
+    .sticky-div #btn-sticky-add-cart{
+        position: relative;
+    }
+
+    .sticky-div .is-loading:after, .sticky-div .is-loading:before {
+        border-color: white;
+    }
+    .sticky-div .is-loading span, .sticky-div .is-success span{
+        display: none;
+    }
+    .sticky-div button[disabled] {
+        opacity: 0.5;
+    }
+    .sticky-div .hidden {
+        display: none;
+    }
+    .sticky-div .descr.stick-block {
+        width: 40%;
+        justify-content: start;
+        padding-left: 4.5%
+    }
+    .sticky-div .price.stick-block {
+        width: 60%;
+        justify-content: start
+    }
+    .sticky-div #colorButton {
+        width: 37.615%;
+        justify-content: end;
+    }
+    .sticky-div #sizeButton {
+        width: 27.615%
+    }
+    .sticky-div .action-button {
+        width: 34.77%
+    }
+    .sticky-div .show-mobile {
+        display: none;
+    }
+    .variation-color-label {
+        overflow: unset !important;
+    }
+    .variation-color-label img {
+        width: 25px;
+        height: 25px;
+        object-fit: cover;
+    }
+    .variation-color-label:hover:before {
+        border: 2px solid rgba(var(--bg-color));
+        box-shadow: 0 0 0 2px rgb(var(--swatch-border-color-default));
+    }
+    .sticky-div .price__discount {
+        display: block;
+    }
+    .sticky-div .popup {
+        box-shadow: 0 0 20px -1px rgb(8 8 8 / 29%);
+        border-radius: 20px 20px;
+    }
+    #colorButton , #sizeButton{
+        position: relative;
+    }
+    .sticky-div #colorButton .popup{
+        right: -25px;
+    }
+    .sticky-div #sizeButton .popup{
+        right: 25px;
+    }
+    .sticky-div .price__was.hidden {
+        display: none;
+    }
+    @media screen  and (max-width: 600px) {
+        .sticky-div #name-selected {
+            max-width: 50px;
+        }
+    }
+    @media screen  and (max-width: 980px) {
+        .sticky-div #name-selected {
+            font-size: 12px !important;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .sticky-div #name-selected {
+            margin-left: 13px;
+        }
+        .sticky-div .price__current{
+            padding-right: 0;
+        }
+        .sticky-div .price__was {
+            padding-left: 15px;
+        }
+        .sticky-overlay.active {
+            display: block;
+        }
+        #colorButton , #sizeButton{
+            position: unset;
+        }
+        .sticky-div #colorButton .popup, .sticky-div #sizeButton .popup{
+            right: 0;
+        }
+        .sticky-div .popup {
+            box-shadow: unset;
+            border-radius: unset;
+        }
+        .sticky-div .show-desktop {
+            display: none;
+        }
+        .sticky-div .show-mobile {
+            display: block;
+            font-size: 12px !important;
+        }
+        .sticky-div {
+            bottom: 0;
+            width: 100%;
+            right: 0;
+            height: 94px;
+            border-radius: unset;
+        }
+        .sticky-div .navication {
+            flex-direction: column;
+            padding-left: 14px;
+        }
+        .sticky-div .block-navication {
+            width: 100%;
+        }
+        .sticky-div #colorButton {
+            justify-content: start;
+            width: 30%;
+        }
+        .sticky-div .descr.stick-block {
+            padding-left: 0;
+        }
+        .sticky-div #btn-sticky-add-cart {
+            border-radius: unset;
+            font-size: 16px;
+            font-weight: 400;
+            width: 86.57%;
+        }
+        .sticky-div .action-button{
+            width: 45%;
+            justify-content: end;
+        }
+        .sticky-div .descr.stick-block {
+            width: 60%;
+        }
+        .sticky-div .price.stick-block {
+            width: 40%;
+            justify-content: end;
+            padding-right: 19px;
+        }
+        .sticky-div .price__discount {
+            display: none;
+        }
+        .sticky-div #sizeButton {
+            width: 25%;
+            justify-content: end;
+        }
+        .sticky-div #colorButton svg, .sticky-div #sizeButton svg {
+            margin-left: 7.7px;
+        }
+        .sticky-div #sizeButton svg {
+            margin-right: 3.1px;
+        }
+        .sticky-div #tallaCont, .sticky-div #colorCont {
+            width: 100vh;
+            padding-bottom: 1.5px;
+            padding-top: 3px;
+            border-radius: unset;
+        }
+        .sticky-div .popup {
+            left: 0 !important;
+        }
+        .sticky-div #tallaCont .variants-size {
+            border-bottom: 1px solid #EFEFEF !important;
+            padding-top: 21px;
+            padding-bottom: 20px;
+        }
+        .sticky-div .variation-color {
+            border-bottom: 1px solid #EFEFEF !important;
+        }
+    }
+
+</style>
+<script>
+    function initStickyAddCartScripts() {
+        let popupSize = document.getElementById('tallaCont')
+        let popupColor = document.getElementById('colorCont')
+
+        window.openSize = function() {
+            let el = document.getElementById('sizeButton')
+            if(!el.classList.contains('is-active')) {
+                closePopup()
+                popupSize.classList.add('active')
+                el.classList.add('is-active')
+                let popup = el.querySelector('.popup')
+                popup.style.top = '-' + (popup.offsetHeight - 1) + 'px'
+                document.querySelector('.sticky-overlay').classList.add('active')
+            } else {
+                closePopup()
+            }
+        }
+
+        window.openColor = function() {
+            let el = document.getElementById('colorButton')
+            if(!el.classList.contains('is-active')) {
+                closePopup()
+                popupColor.classList.add('active')
+                el.classList.add('is-active')
+                let popup = el.querySelector('.popup')
+                popup.style.top = '-' + (popup.offsetHeight - 1) + 'px'
+                document.querySelector('.sticky-overlay').classList.add('active')
+            } else {
+                closePopup()
+            }
+        }
+
+        window.changeColor = function(name, color, id, element) {
+            let swatchSelected = document.getElementById('swatch-selected')
+            let nameSelected = document.getElementById('name-selected')
+            closePopup()
+            nameSelected.innerHTML = name;
+            if (swatchSelected.getAttribute('data-swatch')) {
+                swatchSelected.setAttribute('data-swatch', color)
+            }
+            document.getElementById(id).click();
+            let stickyDiv = document.querySelector('.sticky-div');
+            if (stickyDiv) {
+                let priceRange = stickyDiv.querySelector('.price-sale-tag');
+              if (priceRange && priceRange != null) {
+                let comparePrice = element.dataset.compare;
+                let price = element.dataset.price;
+                let elementVariant = document.querySelector('.variant-picker-product');
+                let dataProductJson = JSON.parse(elementVariant.querySelector('[type="application/json"]').textContent);
+                let divPriceCurrent = priceRange.querySelector('.price__current');
+                divPriceCurrent.innerHTML = dataProductJson.formatted[element.dataset.variant].price;
+                let divPriceWas = priceRange.querySelector('.price__was');
+                let divPriceDiscount = priceRange.querySelector('.price__discount');
+
+                if (comparePrice && comparePrice != null && comparePrice != undefined) {
+                  if (parseFloat(price) < parseFloat(comparePrice) && dataProductJson.formatted[element.dataset.variant].compareAtPrice != 'undefined') {  
+                    divPriceWas.classList.remove('hidden');
+                    divPriceWas.innerHTML = dataProductJson.formatted[element.dataset.variant].compareAtPrice;
+                    if (price && price != null && price != undefined) {
+                        if (parseFloat(comparePrice) > parseFloat(price)) {
+                        let discount = 100 - (Math.round((100 * price) / comparePrice));
+            
+                            if(priceRange.closest('.product-info__sticky')){
+                                priceRange.querySelector(".price__discount").innerHTML = `Ahorra Un ${discount}%`;
+                            } else {
+                                if (priceRange.querySelector('.price__was') && priceRange.querySelector('.price__was') != null) {
+                                priceRange.querySelector(".price__discount").innerHTML = `Ahorra ${discount}%`;
+                                
+                                }
+                            }
+                        }
+                    }
+                  } else {
+                  divPriceWas.classList.remove('hidden');
+                  divPriceWas.classList.add('hidden');
+                  divPriceWas.innerHTML = '';
+                  divPriceDiscount.innerHTML = '';
+                  } 
+                } else {
+                  divPriceWas.classList.remove('hidden');
+                  divPriceWas.classList.add('hidden');
+                  divPriceWas.innerHTML = '';
+                  divPriceDiscount.innerHTML = '';
+                }
+            }
+            }
+
+        }
+
+        window.changeSize = function(value, id) {
+            let htmlSize = document.getElementById('sizeSpan')
+            closePopup()
+            htmlSize.innerHTML = value
+            document.getElementById(id).click()
+        }
+
+        window.closePopup = function() {
+            popupColor.classList.remove('active')
+            popupSize.classList.remove('active')
+            document.getElementById('colorButton').classList.remove('is-active')
+            document.getElementById('sizeButton').classList.remove('is-active')
+            document.querySelector('.sticky-overlay').classList.remove('active')
+            let popup = document.querySelector('.sticky-div').querySelector('.popup')
+            popup.style.top = '0px'
+        }
+
+        window.stickkyAddTocart = function() {
+            let form = document.querySelector('form[action="/cart/add"].js-product-form-main')
+            let button = form.querySelector('button[type="submit"]')
+            button.click()
+        }
+
+        addEventListener('load', function () {
+            showSticky()
+        })
+        addEventListener('scroll', function () {
+            showSticky()
+        })
+
+        function showSticky() {
+            let stickDiv = document.querySelector('.sticky-div')
+            if(window.scrollY > 300) {
+                if(stickDiv.classList.contains('hidden')) {
+                    stickDiv.classList.remove('hidden')
+                }
+            } else {
+                if(!stickDiv.classList.contains('hidden')) {
+                    stickDiv.classList.add('hidden')
+                }
+            }
+        }
+    }
+</script>

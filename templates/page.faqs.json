@@ -1,0 +1,211 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": false,
+        "heading_align": "text-center"
+      }
+    },
+    "image-banner": {
+      "type": "image-banner",
+      "blocks": {
+        "banner-heading-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Preguntas frecuentes",
+            "heading_size": "h0",
+            "heading_font_weight": "normal",
+            "heading_h1": true
+          }
+        },
+        "banner-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Aquí encontrarás la respuesta a las preguntas más frecuentes. Si no la encuentras, siempre puedes ponerte en contacto con nosotros <a href=\"\/pages\/contact\" title=\"Contact\">aquí<\/a>.<\/p>",
+            "heading_size": "h1",
+            "heading_font_weight": "normal",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "banner-heading-0",
+        "banner-text-1"
+      ],
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/cover-izas.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/cover-izas.jpg",
+        "url": "",
+        "height_mode": "fixed",
+        "fixed_height_desktop": 562,
+        "fixed_height_mobile": 400,
+        "overlay_position": "justify-start items-center",
+        "overlay_text_align": "text-start",
+        "mob_center_text": true,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 40,
+        "distance_on_both_sides": 0,
+        "distance_on_both_sides_mobile": 0,
+        "distance_above_and_below": 0,
+        "distance_above_and_below_mobile": 0,
+        "prevent_animation": false
+      }
+    },
+    "faqs": {
+      "type": "faq",
+      "blocks": {
+        "faq-category-1": {
+          "type": "category",
+          "settings": {
+            "text": "Pedidos online"
+          }
+        },
+        "faq-question-1": {
+          "type": "question",
+          "settings": {
+            "icon": "question_mark",
+            "heading": "¿Puedo cancelar mi pedido?",
+            "text": "<p>Lo entendemos, ¡nosotros también cambiamos de opinión! Aunque nos gustaría poder hacerlo, una vez realizado el pedido, no podemos modificarlo ni cancelarlo. En caso de que el artículo no sea de su agrado, asegúrese de cambiarlo por otro que cumpla lo que busca o devuélvalo para obtener un reembolso. Le recordamos que los gastos de devolución nacionales son gratuitos.<\/p>"
+          }
+        },
+        "faq-question-2": {
+          "type": "question",
+          "settings": {
+            "icon": "chat_bubble",
+            "heading": "¿Puedo hablar con alguien?",
+            "text": "<p>Nosotros también queremos hablar con usted. <a href=\"\/pages\/contact\" title=\"Contact\">Póngase en contacto con nosotros <\/a>si tiene alguna pregunta, duda o comentario. Nos aseguraremos de responderle en un plazo de 48 horas. No obstante, tenga en cuenta que las consultas enviadas a partir del viernes por la tarde recibirán respuesta el lunes siguiente, aunque posiblemente antes.<\/p>"
+          }
+        },
+        "faq-category-2": {
+          "type": "category",
+          "settings": {
+            "text": "Envíos"
+          }
+        },
+        "faq-question-3": {
+          "type": "question",
+          "settings": {
+            "icon": "map_pin",
+            "heading": "¿A qué países enviáis?",
+            "text": "<p>Hacemos envíos a España.<\/p><p><strong>No realizamos envíos a Canarias, Ceuta, Melilla y Andorra<\/strong>. Si es tu caso, te informaremos una vez recibidos los datos de envío al hacer el pedido y procederemos a la cancelación del mismo o a modificar la dirección de envío según nos indiques.<br\/><\/p>"
+          }
+        },
+        "faq-question-4": {
+          "type": "question",
+          "settings": {
+            "icon": "calendar",
+            "heading": "¿Cuánto tardará en llegar mi pedido?",
+            "text": "<p>El tiempo de entrega de un pedido a nivel nacional es de 24 a 48 horas laborales desde que sale de nuestras instalaciones, salvo falta de stock, que se notificaría al cliente. En momentos promocionales es posible que este plazo se amplíe debido al aumento del número de pedidos.<\/p><p>En todos los pedidos nacionales, <strong>el envío es gratuito para pedidos superiores a 39,99 euros<\/strong>.<\/p><p>En todos los pedidos nacionales, los gastos de envío son de <strong>3,99 euros para pedidos iguales o inferiores a 39,99 euros<\/strong>.<\/p><p><\/p><p><br\/><\/p>"
+          }
+        },
+        "faq-category-3": {
+          "type": "category",
+          "settings": {
+            "text": "Devoluciones y Reembolsos"
+          }
+        },
+        "faq-question-5": {
+          "type": "question",
+          "settings": {
+            "icon": "return",
+            "heading": "¿Cómo devuelvo mi producto?",
+            "text": "<p>Los artículos deben devolverse en un plazo de 30 días tras la recepción del pedido. Los artículos deben devolverse en el mismo estado en el que se recibieron, sin usar, con las etiquetas puestas y con el embalaje original. Para más información sobre cómo realizar el trámite consulte el apartado de <a href=\"\/policies\/refund-policy\" target=\"_blank\" title=\"Refund Policy\">devoluciones<\/a>.<\/p>"
+          }
+        },
+        "faq-question-6": {
+          "type": "question",
+          "settings": {
+            "icon": "clock",
+            "heading": "¿Cuánto tardaré en recibir mi reembolso?",
+            "text": "<p>Una vez llegue el paquete a nuestro almacén central y se compruebe el estado del mismo, el dinero se reembolsará del mismo modo en el que se había procesado el pago en nuestra tienda online. Debe tener en cuenta que, una vez que se recibió la notificación de dicho procedimiento, pueden pasar unos 5-7 días laborales en ver en tu cuenta dicho trámite.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq-category-1",
+        "faq-question-1",
+        "faq-question-2",
+        "faq-category-2",
+        "faq-question-3",
+        "faq-question-4",
+        "faq-category-3",
+        "faq-question-5",
+        "faq-question-6"
+      ],
+      "settings": {
+        "heading": "Preguntas Frecuentes",
+        "heading_align": "text-center",
+        "color_scheme": "none",
+        "full_width": true
+      }
+    },
+    "contact-form": {
+      "type": "contact-form",
+      "blocks": {
+        "contact-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Si las respuestas que busca no están en nuestras FAQ, envíenos un correo electrónico rellenando el siguiente formulario.<\/p>",
+            "half_width": false
+          }
+        },
+        "contact-name-2": {
+          "type": "name",
+          "settings": {
+            "required": true,
+            "half_width": true
+          }
+        },
+        "contact-email-3": {
+          "type": "email",
+          "settings": {
+            "required": true,
+            "half_width": true
+          }
+        },
+        "contact-dropdown-4": {
+          "type": "dropdown",
+          "settings": {
+            "title": "¿En qué te podemos ayudar?",
+            "options": "Problemas con mi pedido.\nProblemas con el envío.\nDudas a cerca de la devolución y\/o reembolso.",
+            "half_width": false
+          }
+        },
+        "contact-body-5": {
+          "type": "body",
+          "settings": {
+            "required": true,
+            "half_width": false
+          }
+        }
+      },
+      "block_order": [
+        "contact-text-1",
+        "contact-name-2",
+        "contact-email-3",
+        "contact-dropdown-4",
+        "contact-body-5"
+      ],
+      "settings": {
+        "heading": "¿Necesitas más respuestas?",
+        "heading_align": "text-center",
+        "image_position": "top",
+        "color_scheme": "1",
+        "full_width": false,
+        "button_style": "btn btn--primary"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image-banner",
+    "faqs",
+    "contact-form"
+  ]
+}

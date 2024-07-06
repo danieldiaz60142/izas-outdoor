@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-login",
+      "custom_css": [
+        "h2, .h2, .text-h2 {font-size: var(--h2-font-size); line-height: 1.3; margin-top: 80px;}"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

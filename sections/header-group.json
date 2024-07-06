@@ -1,0 +1,513 @@
+{
+  "type": "header",
+  "name": "Header Group",
+  "sections": {
+    "announcement": {
+      "type": "announcement",
+      "blocks": {
+        "announcement-1": {
+          "type": "announcement",
+          "settings": {
+            "text": "<p>Rebajas hasta el <strong>-50% de descuento<\/strong><\/p>"
+          }
+        },
+        "announcement_AQabF6": {
+          "type": "announcement",
+          "settings": {
+            "text": "<p>Envío gratuito a partir de 39,99€<\/p>"
+          }
+        },
+        "announcement-2": {
+          "type": "announcement",
+          "settings": {
+            "text": "<p>Encuentra tu tienda Izas <a href=\"\/pages\/localizador-de-tiendas\" title=\"Localizador de tiendas\">aquí<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "announcement-1",
+        "announcement_AQabF6",
+        "announcement-2"
+      ],
+      "settings": {
+        "link1": "",
+        "link1_label": "",
+        "link2": "",
+        "link2_label": "",
+        "enable_country_selector": false,
+        "enable_language_selector": true,
+        "bg_color": "#f5f5f5",
+        "text_color": "#000000",
+        "text_type_scale": "small",
+        "read_time": 7
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "columns_8bJLd7": {
+          "type": "columns",
+          "settings": {
+            "title": "hombre",
+            "collection_images": "none",
+            "collection_use_product_image": false,
+            "show_underline": false,
+            "promo_position": "right",
+            "promo_text_color": "#ffffff",
+            "promo1_image": "shopify:\/\/shop_images\/banner-primavera-mobile_8b4c7aac-9330-4e71-b8df-2b1c8b983b66.jpg",
+            "promo1_image_mobile": "shopify:\/\/shop_images\/IWJLW01688WH-5.jpg",
+            "promo1_content": "<p>NOVEDADES ROPA HOMBRE<\/p>",
+            "promo1_description": "<p>DESCUBRIR<\/p>",
+            "promo1_link_url": "shopify:\/\/collections\/nueva-coleccion-ropa-hombre",
+            "promo1_text_size": 16,
+            "promo1_text_width": 94,
+            "promo1_text_alignment": "justify-center items-center text-center",
+            "promo2_image": "shopify:\/\/shop_images\/Rectangle_28.png",
+            "promo2_image_mobile": "shopify:\/\/shop_images\/IWJLW01688WH-6.jpg",
+            "promo2_content": "<p>NOVEDADES CALZADO HOMBRE<\/p>",
+            "promo2_description": "<p>DESCUBRIR<\/p>",
+            "promo2_link_url": "shopify:\/\/collections\/nueva-coleccion-calzado-hombre",
+            "promo2_text_size": 16,
+            "promo2_text_width": 100,
+            "promo2_text_alignment": "justify-center items-center text-center",
+            "badge1_color": "#e9914c",
+            "badge1_link": "\/",
+            "badge1_text": "test",
+            "badge2_color": "#000000",
+            "badge2_link": "",
+            "badge2_text": ""
+          }
+        },
+        "columns_EDp6wy": {
+          "type": "columns",
+          "settings": {
+            "title": "nueva colección",
+            "collection_images": "none",
+            "collection_use_product_image": false,
+            "show_underline": false,
+            "promo_position": "right",
+            "promo_text_color": "#1f140f",
+            "promo1_content": "",
+            "promo1_description": "",
+            "promo1_link_url": "",
+            "promo1_text_size": 16,
+            "promo1_text_width": 94,
+            "promo1_text_alignment": "justify-center items-center text-center",
+            "promo2_content": "",
+            "promo2_description": "",
+            "promo2_link_url": "",
+            "promo2_text_size": 16,
+            "promo2_text_width": 100,
+            "promo2_text_alignment": "justify-center items-center text-center",
+            "badge1_color": "#000000",
+            "badge1_link": "",
+            "badge1_text": "",
+            "badge2_color": "#000000",
+            "badge2_link": "",
+            "badge2_text": ""
+          }
+        },
+        "columns_whxBYw": {
+          "type": "columns",
+          "settings": {
+            "title": "mujer",
+            "collection_images": "none",
+            "collection_use_product_image": false,
+            "show_underline": false,
+            "promo_position": "right",
+            "promo_text_color": "#ffffff",
+            "promo1_image": "shopify:\/\/shop_images\/DSC02153.1.jpg",
+            "promo1_content": "<p>NOVEDADES ROPA MUJER<\/p>",
+            "promo1_description": "<p>DESCUBRIR<\/p>",
+            "promo1_link_url": "shopify:\/\/collections\/nueva-coleccion-ropa-mujer",
+            "promo1_text_size": 16,
+            "promo1_text_width": 94,
+            "promo1_text_alignment": "justify-center items-center text-center",
+            "promo2_image": "shopify:\/\/shop_images\/DSC02311-6.jpg",
+            "promo2_content": "<p>NOVEDADES CALZADO MUJER<\/p>",
+            "promo2_description": "<p>DESCUBRIR<\/p>",
+            "promo2_link_url": "shopify:\/\/collections\/nueva-coleccion-mujer-calzado",
+            "promo2_text_size": 16,
+            "promo2_text_width": 100,
+            "promo2_text_alignment": "justify-center items-center text-center",
+            "badge1_color": "#000000",
+            "badge1_link": "",
+            "badge1_text": "",
+            "badge2_color": "#000000",
+            "badge2_link": "",
+            "badge2_text": ""
+          }
+        },
+        "columns_PGAfmm": {
+          "type": "columns",
+          "settings": {
+            "title": "niños",
+            "collection_images": "none",
+            "collection_use_product_image": false,
+            "show_underline": false,
+            "promo_position": "right",
+            "promo_text_color": "#ffffff",
+            "promo1_content": "<p>abc<\/p>",
+            "promo1_description": "",
+            "promo1_link_url": "",
+            "promo1_text_size": 16,
+            "promo1_text_width": 94,
+            "promo1_text_alignment": "justify-center items-center text-center",
+            "promo2_content": "",
+            "promo2_description": "",
+            "promo2_link_url": "",
+            "promo2_text_size": 16,
+            "promo2_text_width": 100,
+            "promo2_text_alignment": "justify-center items-center text-center",
+            "badge1_color": "#000000",
+            "badge1_link": "",
+            "badge1_text": "",
+            "badge2_color": "#000000",
+            "badge2_link": "",
+            "badge2_text": ""
+          }
+        },
+        "columns_dVneL6": {
+          "type": "columns",
+          "settings": {
+            "title": "Calzado",
+            "collection_images": "none",
+            "collection_use_product_image": false,
+            "show_underline": false,
+            "promo_position": "right",
+            "promo_text_color": "#ffffff",
+            "promo1_image": "shopify:\/\/shop_images\/Banner-Calzado-General.jpg",
+            "promo1_content": "<p>NOVEDADES CALZADO <\/p>",
+            "promo1_description": "<p>DESCUBRIR<\/p>",
+            "promo1_link_url": "shopify:\/\/collections\/nueva-coleccion-calzado",
+            "promo1_text_size": 16,
+            "promo1_text_width": 94,
+            "promo1_text_alignment": "justify-center items-center text-center",
+            "promo2_content": "",
+            "promo2_description": "",
+            "promo2_link_url": "",
+            "promo2_text_size": 16,
+            "promo2_text_width": 100,
+            "promo2_text_alignment": "justify-center items-center text-center",
+            "badge1_color": "#000000",
+            "badge1_link": "",
+            "badge1_text": "",
+            "badge2_color": "#000000",
+            "badge2_link": "",
+            "badge2_text": ""
+          }
+        },
+        "columns_wDRAyb": {
+          "type": "columns",
+          "settings": {
+            "title": "actividad",
+            "collection_images": "none",
+            "collection_use_product_image": false,
+            "show_underline": false,
+            "promo_position": "right",
+            "promo_text_color": "#1f140f",
+            "promo1_content": "",
+            "promo1_description": "",
+            "promo1_link_url": "",
+            "promo1_text_size": 16,
+            "promo1_text_width": 94,
+            "promo1_text_alignment": "justify-center items-center text-center",
+            "promo2_content": "",
+            "promo2_description": "",
+            "promo2_link_url": "",
+            "promo2_text_size": 16,
+            "promo2_text_width": 100,
+            "promo2_text_alignment": "justify-center items-center text-center",
+            "badge1_color": "#000000",
+            "badge1_link": "",
+            "badge1_text": "",
+            "badge2_color": "#000000",
+            "badge2_link": "",
+            "badge2_text": ""
+          }
+        },
+        "columns_iVnwHg": {
+          "type": "columns",
+          "settings": {
+            "title": "accesorios",
+            "collection_images": "none",
+            "collection_use_product_image": false,
+            "show_underline": false,
+            "promo_position": "right",
+            "promo_text_color": "#1f140f",
+            "promo1_content": "",
+            "promo1_description": "",
+            "promo1_link_url": "",
+            "promo1_text_size": 16,
+            "promo1_text_width": 94,
+            "promo1_text_alignment": "justify-center items-center text-center",
+            "promo2_content": "",
+            "promo2_description": "",
+            "promo2_link_url": "",
+            "promo2_text_size": 16,
+            "promo2_text_width": 100,
+            "promo2_text_alignment": "justify-center items-center text-center",
+            "badge1_color": "#000000",
+            "badge1_link": "",
+            "badge1_text": "",
+            "badge2_color": "#000000",
+            "badge2_link": "",
+            "badge2_text": ""
+          }
+        },
+        "columns_LA8VMk": {
+          "type": "columns",
+          "settings": {
+            "title": "Mochilas",
+            "collection_images": "none",
+            "collection_use_product_image": false,
+            "show_underline": false,
+            "promo_position": "right",
+            "promo_text_color": "#ffffff",
+            "promo1_content": "",
+            "promo1_description": "",
+            "promo1_link_url": "",
+            "promo1_text_size": 16,
+            "promo1_text_width": 97,
+            "promo1_text_alignment": "justify-center items-center text-center",
+            "promo2_content": "",
+            "promo2_description": "",
+            "promo2_link_url": "",
+            "promo2_text_size": 16,
+            "promo2_text_width": 100,
+            "promo2_text_alignment": "justify-center items-center text-center",
+            "badge1_color": "#000000",
+            "badge1_link": "",
+            "badge1_text": "",
+            "badge2_color": "#000000",
+            "badge2_link": "",
+            "badge2_text": ""
+          }
+        },
+        "columns_NpCGtk": {
+          "type": "columns",
+          "settings": {
+            "title": "outlet",
+            "collection_images": "none",
+            "collection_use_product_image": false,
+            "show_underline": false,
+            "promo_position": "right",
+            "promo_text_color": "#1f140f",
+            "promo1_content": "",
+            "promo1_description": "",
+            "promo1_link_url": "",
+            "promo1_text_size": 16,
+            "promo1_text_width": 94,
+            "promo1_text_alignment": "justify-center items-center text-center",
+            "promo2_content": "",
+            "promo2_description": "",
+            "promo2_link_url": "",
+            "promo2_text_size": 16,
+            "promo2_text_width": 100,
+            "promo2_text_alignment": "justify-center items-center text-center",
+            "badge1_color": "#000000",
+            "badge1_link": "",
+            "badge1_text": "",
+            "badge2_color": "#000000",
+            "badge2_link": "",
+            "badge2_text": ""
+          }
+        },
+        "dfa4ffc9-91e3-4f2a-94f9-0724350c0ea7": {
+          "type": "sidebar",
+          "disabled": true,
+          "settings": {
+            "title": "hombre, mujer, niños, calzado, actividad, accesorios, mochilas, outlet, nueva colección",
+            "collection_images": "none",
+            "collection_use_product_image": false,
+            "show_underline": false,
+            "show_collection_images": true,
+            "sidebar_link_use_product_image": false,
+            "show_product_images": false,
+            "aspect_ratio": "1.77",
+            "badge1_color": "#1f140f",
+            "badge1_link": "",
+            "badge1_text": "",
+            "badge2_color": "#1f140f",
+            "badge2_link": "",
+            "badge2_text": "",
+            "badge3_color": "#1f140f",
+            "badge3_link": "",
+            "badge3_text": ""
+          }
+        },
+        "columns_VJpgMT": {
+          "type": "columns",
+          "settings": {
+            "title": "Padel",
+            "collection_images": "none",
+            "collection_use_product_image": false,
+            "show_underline": false,
+            "promo_position": "bottom",
+            "promo_text_color": "#ffffff",
+            "promo1_content": "",
+            "promo1_description": "",
+            "promo1_link_url": "",
+            "promo1_text_size": 16,
+            "promo1_text_width": 100,
+            "promo1_text_alignment": "justify-center items-center text-center",
+            "promo2_content": "",
+            "promo2_description": "",
+            "promo2_link_url": "",
+            "promo2_text_size": 16,
+            "promo2_text_width": 100,
+            "promo2_text_alignment": "justify-center items-center text-center",
+            "badge1_color": "#000000",
+            "badge1_link": "",
+            "badge1_text": "",
+            "badge2_color": "#000000",
+            "badge2_link": "",
+            "badge2_text": ""
+          }
+        },
+        "columns_KhnrWX": {
+          "type": "columns",
+          "settings": {
+            "title": "Rebajas",
+            "collection_images": "none",
+            "collection_use_product_image": false,
+            "show_underline": true,
+            "promo_position": "bottom",
+            "promo_text_color": "#ffffff",
+            "promo1_content": "",
+            "promo1_description": "",
+            "promo1_link_url": "",
+            "promo1_text_size": 16,
+            "promo1_text_width": 100,
+            "promo1_text_alignment": "justify-center items-center text-center",
+            "promo2_content": "",
+            "promo2_description": "",
+            "promo2_link_url": "",
+            "promo2_text_size": 16,
+            "promo2_text_width": 100,
+            "promo2_text_alignment": "justify-center items-center text-center",
+            "badge1_color": "#000000",
+            "badge1_link": "",
+            "badge1_text": "",
+            "badge2_color": "#000000",
+            "badge2_link": "",
+            "badge2_text": ""
+          }
+        },
+        "columns_nTa7bU": {
+          "type": "columns",
+          "settings": {
+            "title": "",
+            "collection_images": "none",
+            "collection_use_product_image": false,
+            "show_underline": true,
+            "promo_position": "bottom",
+            "promo_text_color": "#ffffff",
+            "promo1_content": "",
+            "promo1_description": "",
+            "promo1_link_url": "",
+            "promo1_text_size": 16,
+            "promo1_text_width": 100,
+            "promo1_text_alignment": "justify-center items-center text-center",
+            "promo2_content": "",
+            "promo2_description": "",
+            "promo2_link_url": "",
+            "promo2_text_size": 16,
+            "promo2_text_width": 100,
+            "promo2_text_alignment": "justify-center items-center text-center",
+            "badge1_color": "#000000",
+            "badge1_link": "",
+            "badge1_text": "",
+            "badge2_color": "#000000",
+            "badge2_link": "",
+            "badge2_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "columns_8bJLd7",
+        "columns_EDp6wy",
+        "columns_whxBYw",
+        "columns_PGAfmm",
+        "columns_dVneL6",
+        "columns_wDRAyb",
+        "columns_iVnwHg",
+        "columns_LA8VMk",
+        "columns_NpCGtk",
+        "dfa4ffc9-91e3-4f2a-94f9-0724350c0ea7",
+        "columns_VJpgMT",
+        "columns_KhnrWX",
+        "columns_nTa7bU"
+      ],
+      "settings": {
+        "enable_sticky": true,
+        "enable_tranparent_header": true,
+        "main_menu_alignment": "left-center",
+        "mobile_menu_position": "burger-left",
+        "logo_text": "tienda de ropa de montaña",
+        "logo_type_scale": "1.5",
+        "logo": "shopify:\/\/shop_images\/logo-izas-negro_2.svg",
+        "logo_width": 100,
+        "logo_h1": true,
+        "logo_center": false,
+        "enable_search": true,
+        "minimise_search_mobile": true,
+        "minimise_search_desktop": true,
+        "menu": "main-menu",
+        "menu_center": true,
+        "repeat_links": true,
+        "menu_featured_link": "Sale",
+        "quicklinks_menu": "",
+        "cta_show": false,
+        "cta_icon": "phone",
+        "cta_label": "Llámanos",
+        "cta_link": "",
+        "cta_border_color": "#333333",
+        "cta_bg_color": "#333333",
+        "cta_text_color": "#ffffff",
+        "bg_color": "#ffffff",
+        "text_color": "#000000",
+        "text_color_home": "#ffffff",
+        "text_color_scroll": "#000000",
+        "accent_color": "#1f140f"
+      }
+    },
+    "promo-strip": {
+      "type": "promo-strip",
+      "blocks": {
+        "heading-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "BLACK FRIDAY",
+            "heading_size": "h6",
+            "show_on_mobile": true,
+            "show_on_desktop": true
+          }
+        },
+        "discount-2": {
+          "type": "discount",
+          "settings": {
+            "discount_code": "IZASBLACK15"
+          }
+        }
+      },
+      "block_order": [
+        "heading-0",
+        "discount-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_height": "xsmall",
+        "color_scheme": "1",
+        "full_width": true,
+        "dividers": "border-top",
+        "prevent_animation": false
+      }
+    }
+  },
+  "order": [
+    "announcement",
+    "header",
+    "promo-strip"
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "heading_align": "text-center"
+      }
+    },
+    "a0db571e-023c-4146-b988-f7430d71c2ee": {
+      "type": "slideshow",
+      "blocks": {
+        "template--21596652896577__a0db571e-023c-4146-b988-f7430d71c2ee-slide-1": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/banner-hombre-izas-abril.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/banner-hombre-izas-abril-mobil.jpg",
+            "url": "",
+            "overlay_position": "justify-start items-center",
+            "overlay_text_align": "text-start",
+            "mob_center_text": false,
+            "subheading": "Colección de Hombre",
+            "heading": "Hombre",
+            "heading_size": "h0",
+            "heading_h1": true,
+            "text": "",
+            "enlarge_text": false,
+            "button_1_label": "Ver todo",
+            "button_1_link": "shopify:\/\/collections\/ropa-para-hombre",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary",
+            "transparent_content_color": "#ffffff",
+            "countdown_show": false,
+            "countdown_end_date": "",
+            "countdown_end_time": "",
+            "countdown_end_text": "",
+            "enlarge_end_text": false,
+            "countdown_hide_on_end": false,
+            "use_custom_colors": false,
+            "count_color": "#ffffff",
+            "bg_color": "#070707",
+            "bg_grad": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21596652896577__a0db571e-023c-4146-b988-f7430d71c2ee-slide-1"
+      ],
+      "settings": {
+        "height_mode": "fixed",
+        "fixed_height_desktop": 590,
+        "fixed_height_mobile": 500,
+        "mobile_stacked": false,
+        "nav_style": "slideshow_nav_lines",
+        "pagination_color": "#ffffff",
+        "nav_position": "justify-end",
+        "transition": "slide-fade",
+        "autoplay": true,
+        "slider_pause": false,
+        "autoplay_speed": 5,
+        "color_scheme": "white",
+        "full_width": true,
+        "tint_color": "#000000",
+        "tint_opacity": 10,
+        "accessibility_info": "",
+        "prevent_animation": true
+      }
+    },
+    "featured_collection_custom_eFNEDw": {
+      "type": "featured-collection-custom",
+      "custom_css": [],
+      "settings": {
+        "title": "Los más vendidos",
+        "heading_align": "text-start",
+        "number_of_swatches_displayed": 7,
+        "number_of_swatches_displayed_mobile": 4,
+        "show_view_all": false,
+        "preview_slider": true,
+        "collection": "ropa-para-hombre",
+        "layout": "carousel",
+        "card_size_mobile": "large",
+        "card_size": "medium",
+        "products_to_show": 12,
+        "show_promo_info": false,
+        "image_ratio": "fill",
+        "promo_title": "A headline to grab attention",
+        "content": "<p>Use this card with an image to highlight your collections or introduce a promotion.<\/p>",
+        "link_url": "",
+        "button_label": "Button",
+        "color_scheme": "2",
+        "button_style": "btn btn--primary",
+        "spacing_top": 71,
+        "spacing_bottom": 74,
+        "spacing_top_mb": 40,
+        "spacing_bottom_mb": 56
+      }
+    },
+    "4f758bbb-84de-4924-bfae-ae17da7b69f3": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "LOS MÁS VENDIDOS",
+        "heading_align": "text-center",
+        "show_view_all": false,
+        "collection": "ropa-para-hombre",
+        "layout": "carousel",
+        "card_size_mobile": "large",
+        "card_size": "medium",
+        "products_to_show": 8,
+        "show_promo_info": false,
+        "image_ratio": "fill",
+        "promo_title": "A headline to grab attention",
+        "content": "<p>Use this card with an image to highlight your collections or introduce a promotion.<\/p>",
+        "link_url": "",
+        "button_label": "Button",
+        "color_scheme": "2",
+        "button_style": "btn btn--primary"
+      }
+    },
+    "db0420d5-bd05-461e-9c96-2e1153561233": {
+      "type": "multi-column",
+      "blocks": {
+        "template--21596652896577__db0420d5-bd05-461e-9c96-2e1153561233-column-2": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/Banner-Chaquetas-Mayo-Hombre.jpg",
+            "media_scale": 100,
+            "heading": "Segundas capas",
+            "text": "<p>Explora sin miedo cada rincón con la mejor colección de chaquetas técnicas.<\/p>",
+            "button_label": "Descubrir",
+            "button_link": "shopify:\/\/collections\/chaquetas-para-actividad-al-aire-libre"
+          }
+        },
+        "template--21596652896577__db0420d5-bd05-461e-9c96-2e1153561233-column-1": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/Banner-Chaquetas-Abril-Hombre.jpg",
+            "video_shopify": "shopify:\/\/files\/videos\/video-izas-lifestyle.mp4",
+            "media_scale": 100,
+            "heading": "Pantalones",
+            "text": "<p>Sumérgete en nuestra colección de pantalones y descubre el que mejor se adapte a tus aventuras.<\/p>",
+            "button_label": "Ver más",
+            "button_link": "shopify:\/\/collections\/pantalones"
+          }
+        },
+        "cb8b2843-5e09-4714-bd5a-4f6c07e0896d": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/Banner-zapatillas-Abril-hombre.jpg",
+            "media_scale": 100,
+            "heading": "Zapatillas",
+            "text": "<p>Disfruta del máximo confort a cada paso con nuestra selección de zapatillas.<\/p>",
+            "button_label": "Ver todo",
+            "button_link": "shopify:\/\/collections\/calzado-de-montana-para-hombre"
+          }
+        }
+      },
+      "block_order": [
+        "template--21596652896577__db0420d5-bd05-461e-9c96-2e1153561233-column-2",
+        "template--21596652896577__db0420d5-bd05-461e-9c96-2e1153561233-column-1",
+        "cb8b2843-5e09-4714-bd5a-4f6c07e0896d"
+      ],
+      "settings": {
+        "title": "",
+        "heading_align": "text-center",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "column_size": "medium",
+        "column_align": "left",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "2",
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "81fda2f0-ec2b-4c72-9120-fd88a24598d4": {
+      "type": "collection-list",
+      "blocks": {
+        "template--21596652896577__81fda2f0-ec2b-4c72-9120-fd88a24598d4-collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "trekking-hombre",
+            "image": "shopify:\/\/shop_images\/coleccion-trekking-hombre.jpg"
+          }
+        },
+        "61a99a99-9a67-4724-bcdb-8d39bdb89720": {
+          "type": "collection",
+          "settings": {
+            "collection": "casual-hombre",
+            "image": "shopify:\/\/shop_images\/coleccion-casual-hombre.jpg"
+          }
+        },
+        "template--21596652896577__81fda2f0-ec2b-4c72-9120-fd88a24598d4-collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "entrenamiento-hombre",
+            "image": "shopify:\/\/shop_images\/coleccion-entrenamiento-hombre.jpg"
+          }
+        },
+        "template--21596652896577__81fda2f0-ec2b-4c72-9120-fd88a24598d4-collection-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "running-hombre",
+            "image": "shopify:\/\/shop_images\/coleccion-running-hombre.jpg"
+          }
+        },
+        "template--21596652896577__81fda2f0-ec2b-4c72-9120-fd88a24598d4-collection-1": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "running"
+          }
+        }
+      },
+      "block_order": [
+        "template--21596652896577__81fda2f0-ec2b-4c72-9120-fd88a24598d4-collection-2",
+        "61a99a99-9a67-4724-bcdb-8d39bdb89720",
+        "template--21596652896577__81fda2f0-ec2b-4c72-9120-fd88a24598d4-collection-3",
+        "template--21596652896577__81fda2f0-ec2b-4c72-9120-fd88a24598d4-collection-4",
+        "template--21596652896577__81fda2f0-ec2b-4c72-9120-fd88a24598d4-collection-1"
+      ],
+      "custom_css": [],
+      "settings": {
+        "title": "Compra por actividad",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "card_size": "large",
+        "use_product_image": false,
+        "circle_image": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "a0db571e-023c-4146-b988-f7430d71c2ee",
+    "featured_collection_custom_eFNEDw",
+    "4f758bbb-84de-4924-bfae-ae17da7b69f3",
+    "db0420d5-bd05-461e-9c96-2e1153561233",
+    "81fda2f0-ec2b-4c72-9120-fd88a24598d4"
+  ]
+}

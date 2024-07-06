@@ -1,0 +1,45 @@
+{% assign statusProduct = product.available %}
+{% if settings.enable_product_variation %}
+  {% assign indexSwatches = 0 %}
+  {%- if settings.card_colors_style != 'none' -%}
+    {% assign filtered_color_arr =  filted_color | split:"||" %}
+    {%- for option in product.options_with_values -%}
+      {%- if settings.swatch_option_name contains option.name -%}
+        {%- if settings.card_colors_style == 'swatches' or settings.card_colors_style == 'variant-images' -%}
+          {%- for value in option.values -%}
+            {% assign valueColorSelect = '' %}
+            {%- for value in option.values -%}
+              {% if indexSwatches == forloop.index0 %}
+                {% assign valueColorSelect = value | escape %}
+              {% endif %}
+            {% endfor %}
+
+           {% assign showElFilter = false %}
+           {% if filtered_color_arr == blank %}
+             {% assign showElFilter = true %}
+           {% else %}
+             {% capture valueColor %}
+               {% render 'findColor', value:valueColorSelect  %}
+             {%endcapture%}
+             {% assign valueColor = valueColor | strip %}
+             {% if filtered_color_arr contains valueColor %}
+               {% assign showElFilter = true %}
+             {% endif %}
+           {% endif %}
+
+            {% if showElFilter %}
+               <li class="js-pagination-result {% if settings.show_pdp_bottom and settings.pagination_infinite %}{% if statusProduct == false %} product-out-stock hidden {% else %} product-in-stock {% endif %} {% endif %}">
+                {% render 'izas-product-card-collection-multi', product: product, collection: collection, image_ratio: image_ratio, show_compare: settings.enable_compare, indexSwatches: indexSwatches, section: section %}
+              </li>
+            {% endif %}
+            {% assign indexSwatches = indexSwatches | plus: 1 %}
+          {% endfor %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% else %}
+  <li class="js-pagination-result {% unless statusProduct %} product-out-stock {% endunless %}">
+    {% render 'izas-product-card-collection-multi', product: product, collection: collection, image_ratio: image_ratio, show_compare: settings.enable_compare, section:section %}
+  </li>
+{% endif %}

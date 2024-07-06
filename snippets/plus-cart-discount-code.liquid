@@ -1,0 +1,84 @@
+{% if plus_cart_discount_code %}
+    <div class="cart__discount-code__section">
+        <style>
+            .drawer__content--flex .cart__discount-code__section {
+                display: none;
+            }
+            .cart__discount-code .cart__discount-code__field {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-top: 10px;
+                justify-content: space-between;
+            }
+            .cart__discount-code__section {
+                position: sticky;
+                top: 100%;
+            }
+            .cart__discount-code .cart__apply-discount-code,
+            .cart__discount-code .cart__apply-discount-code button {
+                height: 100%;
+            }
+            .cart__discount-code .cart__apply-discount-code button {
+                padding: 11px 16px;
+            }
+            .cart__discount-code .input-with-button {
+                width: 60%;
+                max-width: 300px;
+            }
+            .remove-discount {
+                height: 100%;
+                display: flex;
+                width: 36px;
+                min-height: 36px;
+                align-items: center;
+                justify-content: center;
+            }
+            form.cart .cart__discount-code__section {
+                position: unset;
+                padding: 20px 0;
+            }
+            .cart__apply-discount-code button,
+            .cart__apply-discount-code button:focus-visible {
+                outline: none !important;
+            }
+            .cart__discount-code__section .error-cart-input span {
+                font-size: 13px;
+                color: red;
+                padding: 0 10px
+            }
+            .cart__discount-code__section .tw-hidden {
+                display: none;
+            }
+            .cart__discount-code__section .input-with-button {
+                position: relative;
+            }
+            .cart__discount-code__section .icon-loading {
+               position: absolute;
+               left: 50%;
+               transform: translateX(-50%);
+            }
+            .cart__discount-code__section .icon-loading svg {
+                width: 25px;
+                height: 25px;
+            }
+        </style>
+        <div class="cart__discount-code {% if type == "drawer" %}cart-drawer__content{% endif %}">
+            <div class="cart__discount-code__title">
+                <label>{{ 'Introduce tu código de descuento' }}</label>
+            </div>
+            <div class="cart__discount-code__field">
+                <div class="input-with-button">
+                    <input id="input-discount" class="input w-full focus-inset" autocomplete="off" type="text" name="discount" />
+                    <div id="icon-loading-discount" class="icon-loading tw-hidden">
+                        {% render 'icon-loading', color: '#000' %}
+                    </div>
+                </div>
+                <div class="cart__apply-discount-code {% if type == "drawer" %}drawer-apply-code{% endif %}"><button type="button" class="btn btn--secondary btn--sm">{{ 'Aplica el código' }}</button></div>
+            </div>
+            <div id="mess-error-cart-input" class="error-cart-input tw-hidden">
+                <span>{{ 'This promotional code is not valid' }}</span>
+            </div>
+        </div>
+    </div>
+{% endif %}

@@ -1,0 +1,18 @@
+solucion 8-jun sticky cart. 
+
+cambios: 
+Sticky-add-cart.liquid (toda la plantilla para ejecutar el js interno)
+main-product.liquid. (linea 710, se coloco el render dentro de un div y se creo el js para ejecutar el js interno del render
+variant-picker.js (linea 63,  se agrego el ajax para que actualice el div de main-product y ejecute la funcion de js)
+theme.head ( se agrego la libreria ajax)
+
+
+
+solucion 8-jun colores relacionados. 
+cambios:
+Se creo el metacampo de colores relacionados. 
+Se creo el fragmento llamado colores-relacionados.liquid (este valida si existen productos cargados, si es asi aplica css para ocultar variantes de color. 
+main-product.liquid (linea 226, se renderiza el elemento colores-relacionados.liquid9
+variant-picker.liquid (linea 116, se agrego una clase automatica la cual nombre cada selector variant-name-{{- option.name -}} con esto podemos solo ocultar
+solo la lista de variantes de que tengan como nombre "color"
+

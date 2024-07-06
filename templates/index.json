@@ -1,0 +1,1346 @@
+{
+  "sections": {
+    "1ab24084-d56f-4f88-a89e-4dc2777481f2": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21399708401985__1ab24084-d56f-4f88-a89e-4dc2777481f2-subheading-1": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "template--21399708401985__1ab24084-d56f-4f88-a89e-4dc2777481f2-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Rich text headline",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "template--21399708401985__1ab24084-d56f-4f88-a89e-4dc2777481f2-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your store with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "template--21399708401985__1ab24084-d56f-4f88-a89e-4dc2777481f2-button-1": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "Optional button",
+            "button_1_link": "",
+            "button_1_style": "btn--primary",
+            "button_2_label": "Optional button",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--21399708401985__1ab24084-d56f-4f88-a89e-4dc2777481f2-subheading-1",
+        "template--21399708401985__1ab24084-d56f-4f88-a89e-4dc2777481f2-heading-1",
+        "template--21399708401985__1ab24084-d56f-4f88-a89e-4dc2777481f2-text-1",
+        "template--21399708401985__1ab24084-d56f-4f88-a89e-4dc2777481f2-button-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": false,
+        "spacing_top": 20,
+        "spacing_bottom": 20,
+        "spacing_top_mb": 20,
+        "spacing_bottom_mb": 20
+      }
+    },
+    "image_banner_tJWH8R": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_kUyHe4": {
+          "type": "heading",
+          "settings": {
+            "heading": "Nueva Temporada",
+            "heading_size": "h0",
+            "heading_font_weight": "inherit",
+            "heading_h1": false
+          }
+        },
+        "text_zAjYJP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Descubre todas las novedades de la nueva colección<\/p>",
+            "heading_size": "h7",
+            "heading_font_weight": "normal",
+            "enlarge_text": true
+          }
+        },
+        "button_bg9KXA": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "Hombre",
+            "button_1_link": "shopify:\/\/collections\/nueva-coleccion-ropa-hombre",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "Mujer",
+            "button_2_link": "shopify:\/\/collections\/nueva-coleccion-ropa-mujer",
+            "button_2_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_kUyHe4",
+        "text_zAjYJP",
+        "button_bg9KXA"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/Dueros-Unisex-foto-ampliada-1.1.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner-movil-abril-home.jpg",
+        "url": "shopify:\/\/collections\/nueva-coleccion",
+        "height_mode": "fixed",
+        "fixed_height_desktop": 902,
+        "fixed_height_mobile": 500,
+        "overlay_position": "justify-end items-center",
+        "overlay_text_align": "text-end",
+        "mob_center_text": true,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 10,
+        "distance_on_both_sides": 0,
+        "distance_on_both_sides_mobile": 0,
+        "distance_above_and_below": 0,
+        "distance_above_and_below_mobile": 0,
+        "prevent_animation": true
+      }
+    },
+    "slideshow_hEaLiE": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_mEQtjY": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/Banner-Home-Rebajas-Verano.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Banner-movil-6.jpg",
+            "url": "shopify:\/\/collections\/rebajas",
+            "overlay_position": "justify-start items-center",
+            "overlay_text_align": "text-start",
+            "mob_center_text": false,
+            "subheading": "",
+            "heading": "Rebajas",
+            "heading_size": "h0",
+            "heading_h1": false,
+            "text": "<p>¡Ya están aquí las Rebajas de Verano! 🌞<\/p><p>¡No te pierdas nuestras increíbles ofertas con <strong>descuentos de hasta el 50%!<\/strong><\/p>",
+            "enlarge_text": false,
+            "button_1_label": "Mujer",
+            "button_1_link": "shopify:\/\/collections\/rebajas-mujer",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "Hombre",
+            "button_2_link": "shopify:\/\/collections\/rebajas-hombre",
+            "button_2_style": "btn btn--primary",
+            "transparent_content_color": "#ffffff",
+            "countdown_show": false,
+            "countdown_end_date": "",
+            "countdown_end_time": "",
+            "countdown_end_text": "",
+            "enlarge_end_text": false,
+            "countdown_hide_on_end": false,
+            "use_custom_colors": false,
+            "count_color": "#ffffff",
+            "bg_color": "#000000",
+            "bg_grad": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_mEQtjY"
+      ],
+      "settings": {
+        "height_mode": "screen",
+        "fixed_height_desktop": 1000,
+        "fixed_height_mobile": 500,
+        "mobile_stacked": false,
+        "nav_style": "slideshow_nav_lines",
+        "pagination_color": "#ffffff",
+        "nav_position": "justify-end",
+        "transition": "slide-fade",
+        "autoplay": true,
+        "slider_pause": true,
+        "autoplay_speed": 3,
+        "color_scheme": "white",
+        "full_width": true,
+        "tint_color": "#000000",
+        "tint_opacity": 10,
+        "accessibility_info": "",
+        "prevent_animation": true
+      }
+    },
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/Dueros-Unisex-foto-ampliada-1.1.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/SS24-web.jpg",
+            "url": "shopify:\/\/collections\/nueva-coleccion",
+            "overlay_position": "justify-end items-center",
+            "overlay_text_align": "text-start",
+            "mob_center_text": false,
+            "subheading": "",
+            "heading": "New season",
+            "heading_size": "h0",
+            "heading_h1": false,
+            "text": "<p>Descubre todas las novedades de la nueva colección<\/p>",
+            "enlarge_text": false,
+            "button_1_label": "Hombre",
+            "button_1_link": "shopify:\/\/collections\/nueva-coleccion-ropa-hombre",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "Mujer",
+            "button_2_link": "shopify:\/\/collections\/nueva-coleccion-ropa-mujer",
+            "button_2_style": "btn btn--primary",
+            "transparent_content_color": "#ffffff",
+            "countdown_show": false,
+            "countdown_end_date": "",
+            "countdown_end_time": "",
+            "countdown_end_text": "",
+            "enlarge_end_text": false,
+            "countdown_hide_on_end": false,
+            "use_custom_colors": false,
+            "count_color": "#ffffff",
+            "bg_color": "#000000",
+            "bg_grad": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide-1"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "height_mode": "screen",
+        "fixed_height_desktop": 1000,
+        "fixed_height_mobile": 500,
+        "mobile_stacked": false,
+        "nav_style": "slideshow_nav_lines",
+        "pagination_color": "#ffffff",
+        "nav_position": "justify-end",
+        "transition": "slide-fade",
+        "autoplay": true,
+        "slider_pause": true,
+        "autoplay_speed": 3,
+        "color_scheme": "white",
+        "full_width": true,
+        "tint_color": "#000000",
+        "tint_opacity": 10,
+        "accessibility_info": "",
+        "prevent_animation": true
+      }
+    },
+    "image_banner_BAJpAH": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_cPNMnD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Estilo único",
+            "heading_size": "h0",
+            "heading_font_weight": "inherit",
+            "heading_h1": false
+          }
+        },
+        "text_gPG3bC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Encuentra el mejor estilo para el día a día<\/p>",
+            "heading_size": "h7",
+            "heading_font_weight": "normal",
+            "enlarge_text": true
+          }
+        },
+        "button_9dDk9L": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "Hombre",
+            "button_1_link": "shopify:\/\/collections\/casual-hombre",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "Mujer",
+            "button_2_link": "shopify:\/\/collections\/casual-mujer",
+            "button_2_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_cPNMnD",
+        "text_gPG3bC",
+        "button_9dDk9L"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/banner-home-2-abril.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner-hombre-izas-abril-mobil.jpg",
+        "url": "shopify:\/\/collections\/casual",
+        "height_mode": "fixed",
+        "fixed_height_desktop": 902,
+        "fixed_height_mobile": 500,
+        "overlay_position": "justify-center items-center",
+        "overlay_text_align": "text-center",
+        "mob_center_text": true,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 10,
+        "distance_on_both_sides": 0,
+        "distance_on_both_sides_mobile": 0,
+        "distance_above_and_below": 0,
+        "distance_above_and_below_mobile": 0,
+        "prevent_animation": true
+      }
+    },
+    "slideshow_rjDDd9": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_nGh3A7": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/banner-home-2-abril.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/banner-hombre-izas-abril-mobil.jpg",
+            "url": "shopify:\/\/collections\/casual",
+            "overlay_position": "justify-center items-center",
+            "overlay_text_align": "text-start",
+            "mob_center_text": false,
+            "subheading": "",
+            "heading": "Casual",
+            "heading_size": "h0",
+            "heading_h1": false,
+            "text": "<p>Encuentra el mejor estilo para el día a día<\/p>",
+            "enlarge_text": false,
+            "button_1_label": "Hombre",
+            "button_1_link": "shopify:\/\/collections\/casual-hombre",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "Mujer",
+            "button_2_link": "shopify:\/\/collections\/casual-mujer",
+            "button_2_style": "btn btn--primary",
+            "transparent_content_color": "#ffffff",
+            "countdown_show": false,
+            "countdown_end_date": "",
+            "countdown_end_time": "",
+            "countdown_end_text": "",
+            "enlarge_end_text": false,
+            "countdown_hide_on_end": false,
+            "use_custom_colors": false,
+            "count_color": "#ffffff",
+            "bg_color": "#000000",
+            "bg_grad": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_nGh3A7"
+      ],
+      "settings": {
+        "height_mode": "screen",
+        "fixed_height_desktop": 1000,
+        "fixed_height_mobile": 500,
+        "mobile_stacked": false,
+        "nav_style": "slideshow_nav_lines",
+        "pagination_color": "#ffffff",
+        "nav_position": "justify-end",
+        "transition": "slide-fade",
+        "autoplay": true,
+        "slider_pause": true,
+        "autoplay_speed": 3,
+        "color_scheme": "white",
+        "full_width": true,
+        "tint_color": "#000000",
+        "tint_opacity": 10,
+        "accessibility_info": "",
+        "prevent_animation": true
+      }
+    },
+    "slideshow_QaweaW": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_UkQrzC": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/Banner-Sandalias-Verano_1cb9ea19-6c6f-4ece-9b92-a1ef24ec927a.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Banner-Sandalias-Verano-mobile.jpg",
+            "url": "shopify:\/\/collections\/sandalias",
+            "overlay_position": "justify-start items-center",
+            "overlay_text_align": "text-start",
+            "mob_center_text": false,
+            "subheading": "",
+            "heading": "Sandalias",
+            "heading_size": "h0",
+            "heading_h1": false,
+            "text": "<p>¡Ya ha llegado el buen tiempo!<\/p>",
+            "enlarge_text": false,
+            "button_1_label": "Hombre",
+            "button_1_link": "shopify:\/\/collections\/sandalias-para-hombre",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "Mujer",
+            "button_2_link": "shopify:\/\/collections\/sandalias-para-mujer",
+            "button_2_style": "btn btn--primary",
+            "transparent_content_color": "#ffffff",
+            "countdown_show": false,
+            "countdown_end_date": "",
+            "countdown_end_time": "",
+            "countdown_end_text": "",
+            "enlarge_end_text": false,
+            "countdown_hide_on_end": false,
+            "use_custom_colors": false,
+            "count_color": "#ffffff",
+            "bg_color": "#000000",
+            "bg_grad": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_UkQrzC"
+      ],
+      "settings": {
+        "height_mode": "screen",
+        "fixed_height_desktop": 1000,
+        "fixed_height_mobile": 500,
+        "mobile_stacked": false,
+        "nav_style": "slideshow_nav_lines",
+        "pagination_color": "#ffffff",
+        "nav_position": "justify-end",
+        "transition": "slide-fade",
+        "autoplay": true,
+        "slider_pause": true,
+        "autoplay_speed": 3,
+        "color_scheme": "white",
+        "full_width": true,
+        "tint_color": "#000000",
+        "tint_opacity": 0,
+        "accessibility_info": "",
+        "prevent_animation": true
+      }
+    },
+    "slideshow_VgKTJC": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_VHMDBQ": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/banner-home-nuevo-calzado.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Banner-calzado-nuevo-movil_57e786b3-6a0e-4834-a219-f54c81117b9f.jpg",
+            "url": "shopify:\/\/collections\/nueva-coleccion-calzado",
+            "overlay_position": "justify-center items-center",
+            "overlay_text_align": "text-start",
+            "mob_center_text": false,
+            "subheading": "",
+            "heading": "Calzado",
+            "heading_size": "h0",
+            "heading_h1": false,
+            "text": "<p>Ya está aquí la nueva colección de zapatillas<\/p>",
+            "enlarge_text": false,
+            "button_1_label": "Hombre",
+            "button_1_link": "shopify:\/\/collections\/nueva-coleccion-calzado-hombre",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "Mujer",
+            "button_2_link": "shopify:\/\/collections\/nueva-coleccion-mujer-calzado",
+            "button_2_style": "btn btn--primary",
+            "transparent_content_color": "#ffffff",
+            "countdown_show": false,
+            "countdown_end_date": "",
+            "countdown_end_time": "",
+            "countdown_end_text": "",
+            "enlarge_end_text": false,
+            "countdown_hide_on_end": false,
+            "use_custom_colors": false,
+            "count_color": "#ffffff",
+            "bg_color": "#000000",
+            "bg_grad": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_VHMDBQ"
+      ],
+      "settings": {
+        "height_mode": "screen",
+        "fixed_height_desktop": 1000,
+        "fixed_height_mobile": 500,
+        "mobile_stacked": false,
+        "nav_style": "slideshow_nav_lines",
+        "pagination_color": "#ffffff",
+        "nav_position": "justify-end",
+        "transition": "slide-fade",
+        "autoplay": true,
+        "slider_pause": true,
+        "autoplay_speed": 3,
+        "color_scheme": "white",
+        "full_width": true,
+        "tint_color": "#000000",
+        "tint_opacity": 5,
+        "accessibility_info": "",
+        "prevent_animation": true
+      }
+    },
+    "slideshow_peXr7p": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_HJB7p8": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/Banner-Home-Fin-De-Temporada.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Banner-Home-Fin-De-Temporada-Mobile.jpg",
+            "url": "shopify:\/\/collections\/outlet",
+            "overlay_position": "justify-center items-center",
+            "overlay_text_align": "text-start",
+            "mob_center_text": false,
+            "subheading": "",
+            "heading": "Fin de Estación",
+            "heading_size": "h0",
+            "heading_h1": false,
+            "text": "<p>Hasta -50% de descuento<\/p>",
+            "enlarge_text": false,
+            "button_1_label": "Ver descuentos",
+            "button_1_link": "shopify:\/\/collections\/outlet",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "",
+            "button_2_link": "shopify:\/\/collections\/casual-mujer",
+            "button_2_style": "btn btn--primary",
+            "transparent_content_color": "#ffffff",
+            "countdown_show": false,
+            "countdown_end_date": "",
+            "countdown_end_time": "",
+            "countdown_end_text": "",
+            "enlarge_end_text": false,
+            "countdown_hide_on_end": false,
+            "use_custom_colors": false,
+            "count_color": "#ffffff",
+            "bg_color": "#000000",
+            "bg_grad": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_HJB7p8"
+      ],
+      "disabled": true,
+      "settings": {
+        "height_mode": "screen",
+        "fixed_height_desktop": 1000,
+        "fixed_height_mobile": 500,
+        "mobile_stacked": false,
+        "nav_style": "slideshow_nav_lines",
+        "pagination_color": "#ffffff",
+        "nav_position": "justify-end",
+        "transition": "slide-fade",
+        "autoplay": true,
+        "slider_pause": true,
+        "autoplay_speed": 3,
+        "color_scheme": "white",
+        "full_width": true,
+        "tint_color": "#000000",
+        "tint_opacity": 10,
+        "accessibility_info": "",
+        "prevent_animation": true
+      }
+    },
+    "image_banner_hQPVwX": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_wWbaAX": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "heading_font_weight": "normal",
+            "heading_h1": false
+          }
+        },
+        "text_GwhyQW": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "heading_size": "h1",
+            "heading_font_weight": "normal",
+            "enlarge_text": true
+          }
+        },
+        "button_JdJfbR": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_1_label": "Optional button",
+            "button_1_link": "",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "Optional button",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wWbaAX",
+        "text_GwhyQW",
+        "button_JdJfbR"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/Dueros-uniSEX.jpg",
+        "url": "",
+        "height_mode": "auto",
+        "fixed_height_desktop": 602,
+        "fixed_height_mobile": 350,
+        "overlay_position": "justify-center items-center",
+        "overlay_text_align": "text-center",
+        "mob_center_text": false,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 0,
+        "distance_on_both_sides": 0,
+        "distance_on_both_sides_mobile": 0,
+        "distance_above_and_below": 0,
+        "distance_above_and_below_mobile": 0,
+        "prevent_animation": false
+      }
+    },
+    "962a8747-09e9-498e-afd4-f96a4c89b413": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "los esenciales para invierno",
+        "heading_align": "text-center",
+        "show_view_all": false,
+        "collection": "esenciales-otono",
+        "layout": "carousel",
+        "card_size_mobile": "large",
+        "card_size": "medium",
+        "products_to_show": 12,
+        "show_promo_info": false,
+        "image_ratio": "fill",
+        "promo_title": "",
+        "content": "",
+        "link_url": "",
+        "button_label": "Button",
+        "color_scheme": "1",
+        "button_style": "btn btn--primary"
+      }
+    },
+    "1feab10d-ebf6-424e-bc93-b0ead6d33e0f": {
+      "type": "featured-collection-custom",
+      "custom_css": [],
+      "settings": {
+        "title": "Imprescindibles de Rebajas",
+        "heading_align": "text-start",
+        "number_of_swatches_displayed": 7,
+        "number_of_swatches_displayed_mobile": 4,
+        "show_view_all": false,
+        "preview_slider": true,
+        "collection": "rebajas",
+        "layout": "carousel",
+        "card_size_mobile": "large",
+        "card_size": "medium",
+        "products_to_show": 12,
+        "show_promo_info": false,
+        "image_ratio": "fill",
+        "promo_title": "",
+        "content": "",
+        "link_url": "",
+        "button_label": "Button",
+        "color_scheme": "1",
+        "button_style": "btn btn--primary",
+        "spacing_top": 71,
+        "spacing_bottom": 74,
+        "spacing_top_mb": 40,
+        "spacing_bottom_mb": 56
+      }
+    },
+    "ae0e6550-d3d0-413c-b105-ddbdf124611b": {
+      "type": "multi-column",
+      "blocks": {
+        "column_RLLczb": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Column",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--21399708401985__ae0e6550-d3d0-413c-b105-ddbdf124611b-column-1": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "media_scale": 100,
+            "heading": "Encuentra lo que buscas.",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. <\/p><p>Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--21399708401985__ae0e6550-d3d0-413c-b105-ddbdf124611b-column-2": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/izas-banner-mobile-2_ef3b1e12-dae0-4a5c-822d-e8cf00901403.jpg",
+            "media_scale": 100,
+            "heading": "HOMBRE",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--21399708401985__ae0e6550-d3d0-413c-b105-ddbdf124611b-column-3": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify:\/\/shop_images\/coleccion-camisetas.jpg",
+            "media_scale": 100,
+            "heading": "mujer",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_RLLczb",
+        "template--21399708401985__ae0e6550-d3d0-413c-b105-ddbdf124611b-column-1",
+        "template--21399708401985__ae0e6550-d3d0-413c-b105-ddbdf124611b-column-2",
+        "template--21399708401985__ae0e6550-d3d0-413c-b105-ddbdf124611b-column-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "medium",
+        "column_align": "left",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "none",
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "scrolling-banner": {
+      "type": "scrolling-banner",
+      "blocks": {
+        "scrolling-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "ASCIENDE HACIA NUEVAS ALTURAS",
+            "link": "",
+            "font": "heading",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "scrolling-text-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_height": "small",
+        "spacing": 32,
+        "speed": 30,
+        "direction": "normal",
+        "pausable": false,
+        "color_scheme": "none",
+        "dividers": "none",
+        "prevent_animation": false
+      }
+    },
+    "5e635ad6-1648-4ed2-a6f5-9c215c77e25a": {
+      "type": "background-video",
+      "blocks": {
+        "template--21399708401985__5e635ad6-1648-4ed2-a6f5-9c215c77e25a-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Welcome Summer",
+            "heading_size": "h6",
+            "heading_h1": false
+          }
+        },
+        "0d29f674-07ad-4044-b89f-4962d6164243": {
+          "type": "subheading",
+          "settings": {
+            "text": "Let's go together"
+          }
+        },
+        "template--21399708401985__5e635ad6-1648-4ed2-a6f5-9c215c77e25a-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Descubrir",
+            "button_link": "shopify:\/\/collections\/nueva-coleccion",
+            "button_style": "btn btn--secondary"
+          }
+        }
+      },
+      "block_order": [
+        "template--21399708401985__5e635ad6-1648-4ed2-a6f5-9c215c77e25a-heading-1",
+        "0d29f674-07ad-4044-b89f-4962d6164243",
+        "template--21399708401985__5e635ad6-1648-4ed2-a6f5-9c215c77e25a-button-1"
+      ],
+      "custom_css": [],
+      "settings": {
+        "video_shopify": "shopify:\/\/files\/videos\/FINAL IZAS 4K sin logo 12mbs.mp4",
+        "video_external": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_description": "",
+        "video_height": "sm",
+        "overlay_text_align": "text-center",
+        "overlay_position": "justify-center items-center",
+        "mob_center_text": true,
+        "color_scheme": "white",
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 20,
+        "distance_above_and_below": 0,
+        "distance_above_and_below_mobile": 0,
+        "lazyload": true,
+        "prevent_animation": false
+      }
+    },
+    "10981829-0481-4bfb-ba30-f1ade0888db9": {
+      "type": "collection-list",
+      "blocks": {
+        "template--21399708401985__10981829-0481-4bfb-ba30-f1ade0888db9-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "senderismo"
+          }
+        },
+        "template--21399708401985__10981829-0481-4bfb-ba30-f1ade0888db9-collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "trekking"
+          }
+        },
+        "template--21399708401985__10981829-0481-4bfb-ba30-f1ade0888db9-collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "running"
+          }
+        },
+        "template--21399708401985__10981829-0481-4bfb-ba30-f1ade0888db9-collection-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "urban"
+          }
+        },
+        "b9e650dc-7901-4bba-898b-6bae23daaddf": {
+          "type": "collection",
+          "settings": {
+            "collection": "alpinismo"
+          }
+        }
+      },
+      "block_order": [
+        "template--21399708401985__10981829-0481-4bfb-ba30-f1ade0888db9-collection-1",
+        "template--21399708401985__10981829-0481-4bfb-ba30-f1ade0888db9-collection-2",
+        "template--21399708401985__10981829-0481-4bfb-ba30-f1ade0888db9-collection-3",
+        "template--21399708401985__10981829-0481-4bfb-ba30-f1ade0888db9-collection-4",
+        "b9e650dc-7901-4bba-898b-6bae23daaddf"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "card_size": "large",
+        "use_product_image": false,
+        "circle_image": false
+      }
+    },
+    "50d1d904-2a35-4f19-b9c1-7e9b2de22227": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21399708401985__50d1d904-2a35-4f19-b9c1-7e9b2de22227-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "TECNOLOGÍA ADAPTADA A TU ESTILO DE VIDA",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "template--21399708401985__50d1d904-2a35-4f19-b9c1-7e9b2de22227-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Nuestros productos están en continua evolución para que estés dónde estés y hagas lo que hagas puedas disfrutar al 100%.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "template--21399708401985__50d1d904-2a35-4f19-b9c1-7e9b2de22227-button-1": {
+          "type": "button",
+          "settings": {
+            "button_1_label": "ROPA PARA HOMBRE",
+            "button_1_link": "shopify:\/\/collections\/ropa-para-hombre",
+            "button_1_style": "btn--primary",
+            "button_2_label": "ROPA PARA MUJER",
+            "button_2_link": "shopify:\/\/collections\/ropa-para-mujer",
+            "button_2_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--21399708401985__50d1d904-2a35-4f19-b9c1-7e9b2de22227-heading-1",
+        "template--21399708401985__50d1d904-2a35-4f19-b9c1-7e9b2de22227-text-1",
+        "template--21399708401985__50d1d904-2a35-4f19-b9c1-7e9b2de22227-button-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": false,
+        "spacing_top": 20,
+        "spacing_bottom": 20,
+        "spacing_top_mb": 20,
+        "spacing_bottom_mb": 20
+      }
+    },
+    "product-features": {
+      "type": "product-features",
+      "blocks": {
+        "feature-0": {
+          "type": "feature",
+          "settings": {
+            "heading": "TRANSPIRABLE",
+            "text": "<p>Parte superior transpirable reforzada con guías de TPU par amayor agarre.<\/p>",
+            "content_align": "text-start",
+            "hotspot_x": 55,
+            "hotspot_y": 43
+          }
+        },
+        "feature-1": {
+          "type": "feature",
+          "settings": {
+            "heading": "AMORTIGUACIÓN",
+            "text": "<p>Plantilla interior con amortiguación.<\/p>",
+            "content_align": "text-start",
+            "hotspot_x": 48,
+            "hotspot_y": 84
+          }
+        },
+        "feature-2": {
+          "type": "feature",
+          "settings": {
+            "heading": "MÁXIMA TRACCIÓN",
+            "text": "<p>Suela exterior de máxima tracción con tacos de 4 mm.<\/p>",
+            "content_align": "text-start",
+            "hotspot_x": 76,
+            "hotspot_y": 54
+          }
+        }
+      },
+      "block_order": [
+        "feature-0",
+        "feature-1",
+        "feature-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "product": "",
+        "show_content": false,
+        "layout": "text_first",
+        "text_align": "text-center",
+        "mob_center_text": false,
+        "heading_size": "h4",
+        "enlarge_text": false,
+        "image": "shopify:\/\/shop_images\/hotspot-zapatos-radius_131c3317-f2c4-4d4e-a701-1eed78d477ee.jpg",
+        "title": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "hotspot_color": "#ffffff",
+        "color_scheme": "none",
+        "button_style": "btn btn--primary"
+      }
+    },
+    "e4edacda-ce89-4b8a-8eed-1601477857cc": {
+      "type": "collection-list-with-filter",
+      "blocks": {
+        "0a8a6832-5818-49ac-afaa-a8d173c6b4f6": {
+          "type": "collection",
+          "settings": {
+            "title": "Actividad",
+            "collection_list": [
+              "trekking",
+              "running",
+              "casual",
+              "entrenamiento"
+            ]
+          }
+        },
+        "551e00d9-2430-4522-ac8c-482f6ff1fe16": {
+          "type": "collection",
+          "settings": {
+            "title": "Género",
+            "collection_list": [
+              "hombre",
+              "mujer"
+            ]
+          }
+        },
+        "3f9ad5fe-8d53-4e3b-9aa4-49e0e139f131": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "title": "Estaciones",
+            "collection_list": [
+              "chaquetas-de-fibra",
+              "chaquetas-casual",
+              "chaquetas-de-pluma-y-rellenas",
+              "chaquetas-impermeables",
+              "chaquetas-para-actividad-al-aire-libre"
+            ]
+          }
+        },
+        "c833b2f8-2eec-4788-bb4d-f122253f0d3d": {
+          "type": "collection",
+          "settings": {
+            "title": "Chaquetas",
+            "collection_list": [
+              "sudaderas-deportivas",
+              "chalecos-1",
+              "chaquetas"
+            ]
+          }
+        },
+        "04b7d41f-e00c-459f-975a-33f026c5e781": {
+          "type": "collection",
+          "settings": {
+            "title": "Zapatos",
+            "collection_list": [
+              "sandalias",
+              "zapatos",
+              "zapatillas-trekking",
+              "zapatillas-casual",
+              "zapatillas-running"
+            ]
+          }
+        },
+        "684d2532-3a6b-43a8-91eb-6e50862100a3": {
+          "type": "collection",
+          "settings": {
+            "title": "Descuentos",
+            "collection_list": [
+              "outlet"
+            ]
+          }
+        }
+      },
+      "block_order": [
+        "0a8a6832-5818-49ac-afaa-a8d173c6b4f6",
+        "551e00d9-2430-4522-ac8c-482f6ff1fe16",
+        "3f9ad5fe-8d53-4e3b-9aa4-49e0e139f131",
+        "c833b2f8-2eec-4788-bb4d-f122253f0d3d",
+        "04b7d41f-e00c-459f-975a-33f026c5e781",
+        "684d2532-3a6b-43a8-91eb-6e50862100a3"
+      ],
+      "custom_css": [
+        "#section-template--22167497146689__e4edacda-ce89-4b8a-8eed-1601477857cc .card__info.relative.text-center a {font-weight: 700; text-transform: uppercase;}",
+        "#text {display: none;}"
+      ],
+      "settings": {
+        "title": "Encuentra lo que buscas",
+        "heading_align": "text-center",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "card_size": "small",
+        "use_product_image": false,
+        "circle_image": true,
+        "button_style": "option_a",
+        "option_a_active_button_color": "#000000",
+        "option_a_active_color_color": "#ffffff",
+        "option_a_background_color": "#f5f5f5",
+        "option_a_text_color": "#000000",
+        "option_b_button_color": "#f5f5f5",
+        "option_b_active_button_color": "#000000",
+        "option_b_text_color": "#000000",
+        "option_b_active_text_color": "#ffffff",
+        "padding_top": 32,
+        "padding_bottom": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "image_banner_bbfba4": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_YxMeEb": {
+          "type": "heading",
+          "settings": {
+            "heading": "¿AÚN NO TE HAS DECIDIDO?",
+            "heading_size": "h0",
+            "heading_font_weight": "bold",
+            "heading_h1": false
+          }
+        },
+        "text_hKpAeD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>HAZ NUESTROS TEST Y ENCUENTRA EL PRODUCTO <\/p><p>QUE SE MEJOR SE ADAPTE A TUS NECSIDADES<\/p>",
+            "heading_size": "h7",
+            "heading_font_weight": "bold",
+            "enlarge_text": true
+          }
+        },
+        "button_Mmpx3K": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_1_label": "¿Qué me recomendáis?",
+            "button_1_link": "shopify:\/\/collections",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary"
+          }
+        },
+        "custom_liquid_PcYeXM": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<center><div data-tf-live=\"01HFY0S7G32ARMPR3RSVHC9FJ4\"><\/div><script src=\"\/\/embed.typeform.com\/next\/embed.js\"><\/script><\/center>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_YxMeEb",
+        "text_hKpAeD",
+        "button_Mmpx3K",
+        "custom_liquid_PcYeXM"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/Dekstop-Quiz-banner.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Quiz_2.png",
+        "url": "",
+        "height_mode": "auto",
+        "fixed_height_desktop": 492,
+        "fixed_height_mobile": 380,
+        "overlay_position": "justify-end items-center",
+        "overlay_text_align": "text-center",
+        "mob_center_text": false,
+        "mobile_stacked": false,
+        "color_scheme": "white",
+        "full_width": true,
+        "transparent_content_color": "#000000",
+        "tint_color": "#000000",
+        "tint_opacity": 0,
+        "distance_on_both_sides": 0,
+        "distance_on_both_sides_mobile": 0,
+        "distance_above_and_below": 0,
+        "distance_above_and_below_mobile": 0,
+        "prevent_animation": false
+      }
+    },
+    "collection-list": {
+      "type": "collection-list",
+      "blocks": {
+        "collection-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "zapatos"
+          }
+        },
+        "collection-1": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "chaquetas-y-chalecos"
+          }
+        },
+        "collection-2": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "camisetas-y-capas-intermedias"
+          }
+        },
+        "collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "pantalones"
+          }
+        },
+        "collection-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "mochilas-para-hombre"
+          }
+        },
+        "collection-5": {
+          "type": "collection",
+          "settings": {
+            "collection": "accesorios"
+          }
+        }
+      },
+      "block_order": [
+        "collection-0",
+        "collection-1",
+        "collection-2",
+        "collection-3",
+        "collection-4",
+        "collection-5"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "nuestros productos",
+        "heading_align": "text-start",
+        "button_label": "VER TODOS",
+        "button_link": "",
+        "layout": "carousel",
+        "card_size": "large",
+        "use_product_image": false,
+        "circle_image": false
+      }
+    },
+    "video": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "video_shopify": "shopify:\/\/files\/videos\/video-izas-lifestyle.mp4",
+        "video_external": "",
+        "video_description": "",
+        "video_size": "lg",
+        "video_autoplay": true,
+        "text_align": "text-center",
+        "color_scheme": "default"
+      }
+    },
+    "63357c4c-bcf9-4021-a67b-ab66bb5e9de6": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "custom_liquid": "<center><div data-tf-live=\"01HFY0S7G32ARMPR3RSVHC9FJ4\"><\/div><script src=\"\/\/embed.typeform.com\/next\/embed.js\"><\/script><\/center>",
+        "section_height": "xsmall",
+        "full_width": true,
+        "dividers": "none",
+        "prevent_animation": false
+      }
+    },
+    "rich_text_fKfdA3": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_HJJUCK": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ropa de Montaña",
+            "heading_size": "h2",
+            "heading_h1": true
+          }
+        },
+        "text_AHk4Wx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Los amantes de la montaña y los excursionistas en general suelen decir que no existe el mal tiempo, sino una indumentaria inapropiada. En Izas, te ofrecemos la mejor ropa de montaña para tus aventuras. Todos nuestros productos son de la más alta calidad y están diseñados para favorecer el máximo confort del usuario para que disfrute de sus actividades al aire libre con la mejor ropa deportiva.<\/p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_HJJUCK",
+        "text_AHk4Wx"
+      ],
+      "disabled": true,
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": false,
+        "spacing_top": 20,
+        "spacing_bottom": 20,
+        "spacing_top_mb": 20,
+        "spacing_bottom_mb": 20
+      }
+    },
+    "text_home_AM9qX8": {
+      "type": "text-home",
+      "blocks": {
+        "heading_BR9Mzz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ropa de Montaña",
+            "heading_size": "h3",
+            "heading_h1": true
+          }
+        },
+        "text_LxcJcU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Los amantes de la montaña y los excursionistas en general suelen decir que no existe el mal tiempo, sino una indumentaria inapropiada. <\/p>",
+            "text2": "<p>En Izas, te ofrecemos la mejor ropa de montaña para tus aventuras. Todos nuestros productos son de la más alta calidad y están diseñados para favorecer el máximo confort del usuario para que disfrute de sus actividades al aire libre con la mejor ropa deportiva.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_BR9Mzz",
+        "text_LxcJcU"
+      ],
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": false,
+        "spacing_top": 0,
+        "spacing_bottom": 60,
+        "spacing_top_mb": 20,
+        "spacing_bottom_mb": 50
+      }
+    }
+  },
+  "order": [
+    "1ab24084-d56f-4f88-a89e-4dc2777481f2",
+    "image_banner_tJWH8R",
+    "slideshow_hEaLiE",
+    "slideshow",
+    "image_banner_BAJpAH",
+    "slideshow_rjDDd9",
+    "slideshow_QaweaW",
+    "slideshow_VgKTJC",
+    "slideshow_peXr7p",
+    "image_banner_hQPVwX",
+    "962a8747-09e9-498e-afd4-f96a4c89b413",
+    "1feab10d-ebf6-424e-bc93-b0ead6d33e0f",
+    "ae0e6550-d3d0-413c-b105-ddbdf124611b",
+    "scrolling-banner",
+    "5e635ad6-1648-4ed2-a6f5-9c215c77e25a",
+    "10981829-0481-4bfb-ba30-f1ade0888db9",
+    "50d1d904-2a35-4f19-b9c1-7e9b2de22227",
+    "product-features",
+    "e4edacda-ce89-4b8a-8eed-1601477857cc",
+    "image_banner_bbfba4",
+    "collection-list",
+    "video",
+    "63357c4c-bcf9-4021-a67b-ab66bb5e9de6",
+    "rich_text_fKfdA3",
+    "text_home_AM9qX8"
+  ]
+}

@@ -1,0 +1,274 @@
+{
+  "sections": {
+    "b16dfc83-2061-4e4b-b9ae-2f40a1de32b8": {
+      "type": "background-video",
+      "blocks": {
+        "template--21572641358145__b16dfc83-2061-4e4b-b9ae-2f40a1de32b8-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "nuestras tecnologías",
+            "heading_size": "h1",
+            "heading_h1": true
+          }
+        },
+        "template--21572641358145__b16dfc83-2061-4e4b-b9ae-2f40a1de32b8-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Explora y disfruta de la manera más cálida y cómoda.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--21572641358145__b16dfc83-2061-4e4b-b9ae-2f40a1de32b8-heading-1",
+        "template--21572641358145__b16dfc83-2061-4e4b-b9ae-2f40a1de32b8-text-1"
+      ],
+      "settings": {
+        "video_shopify": "shopify:\/\/files\/videos\/video-izas-lifestyle.mp4",
+        "video_external": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_description": "",
+        "video_height": "sm",
+        "overlay_text_align": "text-center",
+        "overlay_position": "justify-center items-center",
+        "mob_center_text": true,
+        "color_scheme": "white",
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 40,
+        "distance_above_and_below": 0,
+        "distance_above_and_below_mobile": 0,
+        "lazyload": true,
+        "prevent_animation": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "heading_align": "text-center"
+      }
+    },
+    "1bc5c52f-ccb6-41cf-bb56-ed5b4b9f8240": {
+      "type": "multi-column",
+      "blocks": {
+        "template--21572641358145__1bc5c52f-ccb6-41cf-bb56-ed5b4b9f8240-column-1": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "image": "shopify:\/\/shop_images\/softshell_915037dd-4241-4b1f-a7b0-2fa3898a6477.png",
+            "media_scale": 65,
+            "heading": "Soft Shell",
+            "text": "<p>El tejido SOFT SHELL, gracias a sus prestaciones térmicas y elásticas, permite llevar<strong> menos capas favoreciendo el movimiento<\/strong>. Principales ventajas:<\/p><ul><li>Protección térmica: interior de polar fleece, cálido y transpirable.<\/li><li>Resistencia: gran resistencia al rozamiento.<\/li><li>Elasticidad: confeccionado con 6% de elastán. <\/li><li>Resistente al agua: La terminación del tejido exterior permite una gran resistencia y repelencia al agua.<\/li><li>Ligereza y menor volumen: su uso permite prescindir de alguna de las prendas que habitualmente llevamos.<\/li><li>Efecto cortavientos: con membranas laminadas entre las capas de tejido windproof. Membrana obtenida a partir de politetrafluoretileno expandido.<\/li><\/ul>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--21572641358145__1bc5c52f-ccb6-41cf-bb56-ed5b4b9f8240-column-2": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "image": "shopify:\/\/shop_images\/MountTex.png",
+            "media_scale": 100,
+            "heading": "Mount Tex",
+            "text": "<p>Tejido con una  membrana laminada  exterior, que logra unas prestanciones excepcionales. Tejido con <strong>costuras termoselladas para garantizar la impermeabilidad<\/strong>. La membrana está compuesta por politetrafluoretileno expandido (ePTFE).<\/p><p>Prestaciones:<\/p><ul><li>Impermebilidad<\/li><li>Transpirabilidad<\/li><li>Cortaviento<\/li><li>Durabilidad<\/li><\/ul><p>Características Técnicas:<\/p><ul><li>Estructura de nanoporos<\/li><li>Columna de agua: &gt; 5.000 mm.<\/li><li>Transpirabilidad: ± 5.000 g\/mq\/24<\/li><\/ul>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--21572641358145__1bc5c52f-ccb6-41cf-bb56-ed5b4b9f8240-column-3": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "image": "shopify:\/\/shop_images\/MountStretch.png",
+            "media_scale": 100,
+            "heading": "Mount Stretch",
+            "text": "<p>El tejido MountStretch es capaz de <strong>repeler el agua <\/strong>en cualquier estado. <\/p><p>Un tejido preparado para que un clima adverso no detenga tus planes. <\/p><p><strong>Tejido de secado rápido y gran transpirabilidad.<\/strong><br\/>Permite la salida del vapor corporal, ayudando al cuerpo a permanecer seco y caliente. <br\/><br\/><strong>Elasticidad del tejido<\/strong> para proporcionar una experiencia cómoda al usuario.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "b620bde5-82bd-4de9-9ccf-20e5f71611c5": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "image": "shopify:\/\/shop_images\/mountloft.png",
+            "media_scale": 100,
+            "heading": "Mount Loft",
+            "text": "<p>Relleno de fibras con aislamiento térmico que proporciona <strong>calidez y confort<\/strong> gracias a su ligereza. <\/p><p>Calidez: Fibras ultras-finas y huecas que forman bolsas de aire que atrapan el calor del cuerpo. <\/p><p>Secado y resistencia al agua: Las fibras crean una superficie que no permite que el agua pase a través del aislamiento. <\/p><p>Resultado final más <strong>suave y ligero<\/strong> haciéndolo más compresible que el resto de componentes de aislamiento.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "97e12f96-3b59-4c49-a513-41114cf754b9": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "image": "shopify:\/\/shop_images\/Dry_5ce1dd54-39a7-4c3a-b2a0-db3582d6e7ec.png",
+            "media_scale": 100,
+            "heading": "Dry",
+            "text": "<p>Tejido muy transpirable que permite que el <strong>vapor de la humedad<\/strong> corporal <strong>atraviese el tejido<\/strong> y sea expulsado <strong>hacia el exterior<\/strong>. <br\/><br\/>La superficie externa extrae el sudor del tejido y lo expande sobre ella para ofrecer una <strong>máxima evaporación<\/strong>. <br\/><br\/>La <strong>superficie interna<\/strong> <strong>permanece seca <\/strong>y cómoda junto a la piel.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "6d9669f9-5ce4-43b0-b4cd-b9a79d408adf": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "image": "shopify:\/\/shop_images\/polarstretch_a674e054-7e26-4a59-b21e-92e8508cd731.png",
+            "media_scale": 100,
+            "heading": "Polar Stretch",
+            "text": "<p><strong>Tejidos bielásticos y transpirables<\/strong> fabricados con dos capas: una exterior, duradera y resistente al viento; y otra interior, cómoda y cálida, que evapora el sudor hacia la superficie exterior. Son <strong>ideales para el ejercicio fitness o deportes al aire libre<\/strong>. Características Técnicas:<\/p><ul><li>Bielástico: el tejido se adapta a cada movimiento en la práctica de ejercicio.<\/li><li>Transpirabilidad y secado rápido del sudor: evapora el sudor hacia el exterior, repartiendo el sudor en una zona más amplia para un secado más rápido.<\/li><li>Cómodo en contacto con la piel: su tejido polar perchado (brushed) interior hace de ella una prenda cómoda y caliente, gracias a que mantiene también el calor corporal.<\/li><li>La capa exterior tiene propiedades resistentes al viento y la fricción.<\/li><\/ul>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "4c92e6e2-e6fe-4a66-9461-578f36a20a29": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "image": "shopify:\/\/shop_images\/ThermalDry_69023154-a1ae-4d14-898c-e1035af20511.png",
+            "media_scale": 100,
+            "heading": "Thermal Dry",
+            "text": "<p><strong>Tejido elástico<\/strong> y agradable al tacto con la piel; pensado para mantener el <strong>equilibrio perfecto entre el calor corporal y el frío externo<\/strong>, evaporando la humedad y el sudor, mientras <strong>protege de la entrada del frío<\/strong>.<br\/><br\/>La composición del tejido favorece que la humedad se traslade a través de sus fibras para la <strong>evaporación del sudor corporal<\/strong>.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "6f1d9d6d-3939-44a9-9ab1-7ce8aacfde27": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "image": "shopify:\/\/shop_images\/AWPS_96bd517d-5da4-47d9-80d5-f5a660fd178c.png",
+            "media_scale": 100,
+            "heading": "A.W.P.S",
+            "text": "<p>La tecnología textil A.W.P.S. ofrece un tejido ligero y <strong>resistente al viento<\/strong>, transpirable y con <strong>excelente resistencia al agua<\/strong>.<\/p><p>Su diseño permite una protección efectiva contra las ráfagas de viento más intensas, manteniendo al usuario cómodo y fresco en todo momento.<\/p><p>Además, su capacidad de <strong>repeler el agua y secar rápidamente<\/strong> garantiza que se mantenga seco y caliente, siendo ideal para actividades al aire libre en climas impredecibles.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "7f8f2cf2-5e05-466d-bdba-ee5221aee840": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "image": "shopify:\/\/shop_images\/HydroSpeed_0d10686d-d59c-4885-b1ff-a30a4820f04b.png",
+            "media_scale": 100,
+            "heading": "Hydro Speed",
+            "text": "<p>Material diseñado para incrementar tu rendimiento durante la actividad física al <strong>absorber el sudor<\/strong> y traspasarlo a la superficie de la prenda donde se <strong>evapora fácilmente gracias al tejido multicanal. <\/strong><\/p><p>Tejido <strong>muy ligero y confortable<\/strong>.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "5df2147a-8e91-4991-b205-ae1f76441f3a": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "image": "shopify:\/\/shop_images\/XtraThermic_d8547a8e-153a-4e86-9b8c-4e271c897b7f.png",
+            "media_scale": 100,
+            "heading": "Xtra termic",
+            "text": "<p>La tecnología XtraThermic te permitirá <strong>mantener el calor corporal <\/strong>en el interior de la prenda ante climatologías frías. Podrás realizar tus actividades deportivas sin que el clima te impida moverte o comportarte de manera habitual. <br\/><br\/>Esta tecnología ha sido fabricada con <strong>materiales aislantes que almacenan y distribuyen el calor<\/strong>.<\/p><p><br\/>Su tejido es <strong>elástico<\/strong>, por lo que también permite una completa <strong>libertad de movimiento<\/strong>, incluso al realizar deportes de alto rendimiento.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_dJTmaN": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "image": "shopify:\/\/shop_images\/Down_bc1dfe09-d624-41ce-bcbf-7ac867774fbd.png",
+            "media_scale": 100,
+            "heading": "Down",
+            "text": "<p>Relleno compuesto por <strong>plumas<\/strong> que proporciona un <strong>aislamiento muy bueno en climas fríos<\/strong>.<\/p><p>Éstas retienen el calor corporal y permiten una <strong>excelente transpirabilidad<\/strong>.<\/p><p>Su<strong> fácil compresión<\/strong> facilita el movimiento y el transporte en espacios más reducidos .<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_3JtYYt": {
+          "type": "column",
+          "settings": {
+            "enable_media": false,
+            "image": "shopify:\/\/shop_images\/MultiFunctional_40de76a7-a856-4268-a506-ca425970ed95.png",
+            "media_scale": 100,
+            "heading": "MultiFunctional",
+            "text": "<p>Materiales pensados para distintos tipos de actividades en interior y exterior.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21572641358145__1bc5c52f-ccb6-41cf-bb56-ed5b4b9f8240-column-1",
+        "template--21572641358145__1bc5c52f-ccb6-41cf-bb56-ed5b4b9f8240-column-2",
+        "template--21572641358145__1bc5c52f-ccb6-41cf-bb56-ed5b4b9f8240-column-3",
+        "b620bde5-82bd-4de9-9ccf-20e5f71611c5",
+        "97e12f96-3b59-4c49-a513-41114cf754b9",
+        "6d9669f9-5ce4-43b0-b4cd-b9a79d408adf",
+        "4c92e6e2-e6fe-4a66-9461-578f36a20a29",
+        "6f1d9d6d-3939-44a9-9ab1-7ce8aacfde27",
+        "7f8f2cf2-5e05-466d-bdba-ee5221aee840",
+        "5df2147a-8e91-4991-b205-ae1f76441f3a",
+        "column_dJTmaN",
+        "column_3JtYYt"
+      ],
+      "settings": {
+        "title": "",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "column_size": "medium",
+        "column_align": "left",
+        "media_align": "text-left",
+        "image_ratio": "1",
+        "color_scheme": "1",
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "195df9f7-845f-4618-896f-7aef44b529ca": {
+      "type": "newsletter",
+      "blocks": {
+        "template--21572641358145__195df9f7-845f-4618-896f-7aef44b529ca-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "NO TE PIERDAS NADA",
+            "heading_size": "h4"
+          }
+        },
+        "template--21572641358145__195df9f7-845f-4618-896f-7aef44b529ca-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Suscríbete a nuestro boletín y entérate de todo antes que nadie.<\/p>",
+            "enlarge_text": false
+          }
+        },
+        "template--21572641358145__195df9f7-845f-4618-896f-7aef44b529ca-form-1": {
+          "type": "form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "template--21572641358145__195df9f7-845f-4618-896f-7aef44b529ca-heading-1",
+        "template--21572641358145__195df9f7-845f-4618-896f-7aef44b529ca-text-1",
+        "template--21572641358145__195df9f7-845f-4618-896f-7aef44b529ca-form-1"
+      ],
+      "settings": {
+        "overlay_position": "justify-center",
+        "text_align": "text-center",
+        "bg_color_cs": "",
+        "bg_color_cs_index": "",
+        "color_scheme": "default",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 20
+      }
+    }
+  },
+  "order": [
+    "b16dfc83-2061-4e4b-b9ae-2f40a1de32b8",
+    "main",
+    "1bc5c52f-ccb6-41cf-bb56-ed5b4b9f8240",
+    "195df9f7-845f-4618-896f-7aef44b529ca"
+  ]
+}

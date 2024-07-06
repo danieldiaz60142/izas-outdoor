@@ -1,0 +1,58 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_page_title": false,
+        "heading_align": "text-start"
+      }
+    },
+    "408099e2-6d19-4906-9954-8747aecf6ac6": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21566011179329__408099e2-6d19-4906-9954-8747aecf6ac6-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Métodos y Gastos de Envío",
+            "heading_size": "h1",
+            "heading_h1": true
+          }
+        },
+        "297aa94f-a3ca-4382-9124-35070b29b451": {
+          "type": "subheading",
+          "settings": {
+            "text": "Métodos y gastos de envío"
+          }
+        },
+        "template--21566011179329__408099e2-6d19-4906-9954-8747aecf6ac6-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><\/h3><p><strong>ATENCIÓN: En fechas especiales (Black Friday, Navidades, Rebajas...) es posible que se produzcan retrasos en los envíos por la gran cantidad de pedidos. También es podrían darse retrasos por motivos meteorológicos.<\/strong><\/p><p>Izas Outdoor envía tu pedido usando su mensajero habitual. Envíos en <strong>territorio nacional<\/strong> con <strong>Correos Express<\/strong> y <strong>envíos internacionales<\/strong> mediante <strong>DHL<\/strong>. Nos reservamos el derecho de variar la compañía por la cual se efectúa, siempre que esta medida sea en beneficio de nuestros clientes.<\/p><h3><span style=\"text-decoration:underline\">1. ESPAÑA (24-48 horas laborables)<\/span><\/h3><h4>ENVÍO PENINSULAR.<\/h4><p>El tiempo de entrega de un pedido a nivel nacional es de 24 a 48 horas laborales desde que sale de nuestras instalaciones, salvo falta de stock, que se notificaría al cliente. En momentos promocionales es posible que este plazo se amplíe debido al aumento del número de pedidos.<\/p><p>En todos los pedidos nacionales, <strong>el envío es gratuito para pedidos superiores a 39,99 euros<\/strong>.<\/p><p>En todos los pedidos nacionales, los gastos de envío son de <strong>4,99 euros para pedidos iguales o inferiores a 39,99 euros<\/strong>.<\/p><p> <\/p><h4><strong>ENVÍO A CANARIAS, CEUTA, MELILLA Y ANDORRA.<\/strong><\/h4><p>No realizamos envíos a Canarias, Ceuta, Melilla y Andorra. Si es tu caso, te informaremos una vez recibidos los datos de envío al hacer el pedido y procederemos a la cancelación del mismo o a modificar la dirección de envío según nos indiques.<\/p><p> <\/p><h3><span style=\"text-decoration:underline\">2. EUROPA (8-10 DÍAS). NO ENVIAMOS A REINO UNIDO E IRLANDA<\/span><\/h3><p>El tiempo de entrega de un pedido a Europa es de 8 a 10 días desde que sale de nuestras instalaciones, salvo falta de stock, que se notificaría al cliente.<\/p><p>En todos los pedidos europeos (excepto España), <strong>el envío es gratuito para pedidos superiores a 49,99 euros<\/strong>.<\/p><p>En todos los pedidos europeos (excepto España), los gastos de envío son de <strong>9,99 euros para pedidos iguales o inferiores a 49,99 euros<\/strong>.<\/p><p> <\/p><h3><span style=\"text-decoration:underline\">3. RESTO DEL MUNDO(13\/15 DÍAS)<\/span><\/h3><p>El tiempo de entrega de un pedido fuera de Europa es de 13 a 15 días, según la zona de entrega, desde que sale de nuestras instalaciones, salvo falta de stock, que se notificaría al cliente. Para conocer con mayor exactitud el plazo y los costes que pueden conllevar, consulta previamente con el departamento de Atención del Cliente.<\/p><p>Correrán también por cuenta del cliente todos los costes de aduanas, aranceles e impuestos que se puedan derivar del pedido.<\/p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "template--21566011179329__408099e2-6d19-4906-9954-8747aecf6ac6-heading-1",
+        "297aa94f-a3ca-4382-9124-35070b29b451",
+        "template--21566011179329__408099e2-6d19-4906-9954-8747aecf6ac6-text-1"
+      ],
+      "settings": {
+        "text_position": "justify-start",
+        "text_align": "text-start",
+        "mob_center_text": true,
+        "color_scheme": "none",
+        "full_width": false,
+        "prevent_animation": false,
+        "spacing_top": 20,
+        "spacing_bottom": 20,
+        "spacing_top_mb": 20,
+        "spacing_bottom_mb": 20
+      }
+    }
+  },
+  "order": [
+    "main",
+    "408099e2-6d19-4906-9954-8747aecf6ac6"
+  ]
+}

@@ -1,0 +1,13 @@
+{% layout none %}
+
+{% capture output %}
+    {% for result in search.results limit: 10 %}
+        {% assign resultURL = result.url %}
+        {% assign thumbURL = result.images[0] | product_img_url: 'thumb' %}
+
+		{"value":"{% include 'json_cleanup' with result.title %}","label":"{% include 'json_cleanup' with result.title %}","url":"{% include 'json_cleanup' with resultURL %}","thumb":"{% include 'json_cleanup' with thumbURL %}","id":{{result.id}} }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+{% endcapture %}
+
+{% comment %} Enclose in square brackets and output the json object {% endcomment %}
+{{ output | strip_newlines | prepend: '[' | append: ']' }}

@@ -1,0 +1,102 @@
+{
+  "sections": {
+    "collection-banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_title": true,
+        "show_product_count": true,
+        "show_collection_description": false,
+        "text_align": "text-start",
+        "collection_image": "1.33",
+        "use_product_image": false,
+        "text_width": "wide",
+        "color_scheme": "default"
+      }
+    },
+    "collection-products": {
+      "type": "main-collection-products",
+      "settings": {
+        "products_per_page": 16,
+        "card_size_mobile": "small",
+        "card_size": "medium",
+        "show_layout_toggle": false,
+        "enable_filtering": true,
+        "filters_open_lg": true,
+        "stick_on_scroll": true,
+        "show_filter_counts": true,
+        "expand_filters": true,
+        "show_filter_deadends": false,
+        "max_filter_options": 5,
+        "enable_sorting": true,
+        "show_feat_sort_opt": true,
+        "sort_first": false
+      }
+    },
+    "04a65c61-7185-45c2-839b-a2a09fc02678": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21399708303681__04a65c61-7185-45c2-839b-a2a09fc02678-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "{{ collection.metafields.custom.texto_seo | metafield_tag }}",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--21399708303681__04a65c61-7185-45c2-839b-a2a09fc02678-text-1"
+      ],
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": true
+      }
+    },
+    "b5f47ea9-8882-4b01-98f4-7fe279cb6b02": {
+      "type": "newsletter",
+      "blocks": {
+        "template--21399708303681__b5f47ea9-8882-4b01-98f4-7fe279cb6b02-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "NO TE PIERDAS NADA",
+            "heading_size": "h4"
+          }
+        },
+        "template--21399708303681__b5f47ea9-8882-4b01-98f4-7fe279cb6b02-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Suscríbete a nuestro boletín y entérate de todo antes que nadie.<\/p>",
+            "enlarge_text": false
+          }
+        },
+        "template--21399708303681__b5f47ea9-8882-4b01-98f4-7fe279cb6b02-form-1": {
+          "type": "form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "template--21399708303681__b5f47ea9-8882-4b01-98f4-7fe279cb6b02-heading-1",
+        "template--21399708303681__b5f47ea9-8882-4b01-98f4-7fe279cb6b02-text-1",
+        "template--21399708303681__b5f47ea9-8882-4b01-98f4-7fe279cb6b02-form-1"
+      ],
+      "settings": {
+        "overlay_position": "justify-center",
+        "text_align": "text-center",
+        "color_scheme": "1",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 20
+      }
+    }
+  },
+  "order": [
+    "collection-banner",
+    "collection-products",
+    "04a65c61-7185-45c2-839b-a2a09fc02678",
+    "b5f47ea9-8882-4b01-98f4-7fe279cb6b02"
+  ]
+}

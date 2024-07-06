@@ -1,0 +1,48 @@
+{
+  "sections": {
+    "8e125ae2-47f4-4cd0-a287-c59f2e88f4d9": {
+      "type": "rich-text",
+      "settings": {
+        "text_position": "justify-start",
+        "text_align": "text-start",
+        "mob_center_text": true,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": false,
+        "spacing_top": 20,
+        "spacing_bottom": 20,
+        "spacing_top_mb": 20,
+        "spacing_bottom_mb": 20
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "show_blog_title": false,
+        "description": "",
+        "show_share_links": false,
+        "text_align": "text-start",
+        "posts_per_page": 12,
+        "three_columns": true,
+        "show_tag_filter": true,
+        "show_featured_image": true,
+        "image_ratio": "shortest",
+        "show_tags": true,
+        "show_excerpt": true,
+        "show_author": true,
+        "show_date": true,
+        "show_button": false,
+        "button_style": "btn btn--secondary",
+        "show_featured_post": true,
+        "show_featured_excerpt": true,
+        "show_featured_button": true,
+        "color_scheme": "1",
+        "featured_button_style": "btn btn--secondary"
+      }
+    }
+  },
+  "order": [
+    "8e125ae2-47f4-4cd0-a287-c59f2e88f4d9",
+    "main"
+  ]
+}

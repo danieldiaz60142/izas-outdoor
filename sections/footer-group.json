@@ -1,0 +1,164 @@
+{
+  "type": "footer",
+  "name": "Footer Group",
+  "sections": {
+    "425dc8bd-063c-4ed8-ad7a-eba044ecc56e": {
+      "type": "newsletter",
+      "blocks": {
+        "template--21399708401985__425dc8bd-063c-4ed8-ad7a-eba044ecc56e-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "¡No te pierdas nada!",
+            "heading_size": "h0"
+          }
+        },
+        "template--21399708401985__425dc8bd-063c-4ed8-ad7a-eba044ecc56e-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Suscríbete a nuestro boletín y entérate de todo antes que nadie<\/p>",
+            "enlarge_text": false
+          }
+        },
+        "template--21399708401985__425dc8bd-063c-4ed8-ad7a-eba044ecc56e-form-1": {
+          "type": "form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "template--21399708401985__425dc8bd-063c-4ed8-ad7a-eba044ecc56e-heading-1",
+        "template--21399708401985__425dc8bd-063c-4ed8-ad7a-eba044ecc56e-text-1",
+        "template--21399708401985__425dc8bd-063c-4ed8-ad7a-eba044ecc56e-form-1"
+      ],
+      "custom_css": [],
+      "settings": {
+        "overlay_position": "justify-center",
+        "text_align": "text-center",
+        "bg_color_cs": "#f9f9f9",
+        "bg_color_cs_index": "#153622",
+        "color_scheme": "default",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#ffffff",
+        "tint_opacity": 0
+      }
+    },
+    "icons_with_text_94rjTn": {
+      "type": "icons-with-text",
+      "blocks": {
+        "item_7Vg9xR": {
+          "type": "item",
+          "settings": {
+            "icon": "map_pin",
+            "heading": "",
+            "text": "<p>Encuentra tu tienda<\/p>",
+            "link": "shopify:\/\/pages\/localizador-de-tiendas"
+          }
+        },
+        "item_AUJFdj": {
+          "type": "item",
+          "settings": {
+            "icon": "box",
+            "heading": "",
+            "text": "<p>Envíos seguros<\/p>",
+            "link": "shopify:\/\/pages\/preguntas-frecuentes"
+          }
+        },
+        "item_EHpwgE": {
+          "type": "item",
+          "settings": {
+            "icon": "return",
+            "heading": "",
+            "text": "<p>Devoluciones gratuitas<\/p>",
+            "link": "shopify:\/\/pages\/preguntas-frecuentes"
+          }
+        },
+        "item_rbktRe": {
+          "type": "item",
+          "settings": {
+            "icon": "feather",
+            "heading": "",
+            "text": "<p>Las últimas tecnologías<\/p>",
+            "link": "shopify:\/\/pages\/tecnologias"
+          }
+        }
+      },
+      "block_order": [
+        "item_7Vg9xR",
+        "item_AUJFdj",
+        "item_EHpwgE",
+        "item_rbktRe"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_align": "text-start",
+        "icon_size": 32,
+        "title_type_scale": "medium",
+        "text_type_scale": "medium",
+        "icon_position": "above",
+        "mobile_stack": false,
+        "section_height": "default",
+        "bg_color_cs": "#f9f9f9",
+        "text_color_cs": "#000000",
+        "bg_color_cs_index": "#153622",
+        "text_color_cs_index": "#ffffff",
+        "color_scheme": "none",
+        "full_width": true,
+        "dividers": "none",
+        "prevent_animation": false
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-izas-blanco.svg",
+            "image_width": 99,
+            "heading": "",
+            "text": "<p>Más de 20 años de experiencia en ropa técnica. Desde las calles hasta las cimas.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "enable_follow_on_shop": false,
+            "show_social": true,
+            "text_align": "text-start"
+          }
+        },
+        "link-list-1": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Mi cuenta",
+            "menu": "footer"
+          }
+        },
+        "link-list-2": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Ayuda",
+            "menu": "footer-menu-2"
+          }
+        }
+      },
+      "block_order": [
+        "text",
+        "link-list-1",
+        "link-list-2"
+      ],
+      "settings": {
+        "show_back_to_top": false,
+        "show_payment_icons": false,
+        "show_powered_by": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "secondary_menu": "",
+        "bg_color": "#000000",
+        "text_color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "425dc8bd-063c-4ed8-ad7a-eba044ecc56e",
+    "icons_with_text_94rjTn",
+    "footer"
+  ]
+}

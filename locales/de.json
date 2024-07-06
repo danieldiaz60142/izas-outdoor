@@ -1,0 +1,956 @@
+{
+  "general": {
+    "localization": {
+      "country_label": "Land\/Region",
+      "countries_error": "Fehler beim Abrufen der Länder, bitte versuchen Sie es erneut.",
+      "language_label": "Sprache",
+      "update": "Aktualisieren"
+    },
+    "icon_labels": {
+      "menu": "Menü",
+      "play": "Abspielen",
+      "search": "Suche",
+      "voice_search": "Sprachsuche"
+    },
+    "labels": {
+      "please_select": "Bitte auswählen"
+    },
+    "navigation": {
+      "back": "Zurück"
+    },
+    "breadcrumbs": {
+      "title": "Semmelbrösel",
+      "home": "Startseite",
+      "collections": "Kategorien"
+    },
+    "pagination": {
+      "label": "Seitennummerierung",
+      "next": "Nächste",
+      "previous": "Vorherige",
+      "position": "Seite {{ current_page }} \/ {{ total_pages }}",
+      "position_results": "{{ visible_results }} von {{ total_results }} wird angezeigt",
+      "show_more": "Mehr anzeigen"
+    },
+    "search": {
+      "title": "Suchen",
+      "input_label": "Suchen",
+      "submit": "Suchen",
+      "reset": "Reset",
+      "no_results": "Keine Ergebnisse gefunden für \"{{ terms }}\".",
+      "products": "Produkte",
+      "collections": "Kategorien",
+      "pages": "Seiten",
+      "queries": "Vorschläge",
+      "articles": "Artikel",
+      "view_all": "Alle Suchergebnisse anzeigen",
+      "all_product_types": "Alle"
+    },
+    "slider": {
+      "next": "Nächste",
+      "previous": "Vorherige",
+      "of": "von"
+    },
+    "social": {
+      "share_heading": "Teilen",
+      "share_on_facebook": "Auf Facebook teilen",
+      "share_on_twitter": "Auf Twitter twittern",
+      "share_on_pinterest": "Auf Pinterest pinnen",
+      "follow_shop": "{{ shop_name }} auf {{ social_platform }}"
+    },
+    "meta": {
+      "page": "Seite {{ page }}",
+      "tags": "Getaggt \"{{ tags }}\""
+    },
+    "discount_code": {
+      "copy_button": "Code kopieren",
+      "copy_success": "Kopiert",
+      "copy_fail": "Code konnte nicht in die Zwischenablage kopiert werden. Ihr Browser unterstützt dies möglicherweise nicht."
+    },
+    "quick_navigation_panel": {
+      "button_label": "Suche",
+      "show_products_none": "keine Produkte :(",
+      "show_products_one": "{{ quantity }} Produkt anzeigen",
+      "show_products_other": "Zeige {{ quantity }} produkte"
+    }
+  },
+  "accessibility": {
+    "skip_to_content": "Direkt zum Inhalt",
+    "close": "Schließen",
+    "loading": "Wird geladen...",
+    "main_navigation": "Primär",
+    "secondary_navigation": "Sekundär",
+    "star_reviews_info": "{{ rating_value }} von {{ rating_max }} Sternen",
+    "view_details": "Einzelheiten anzeigen"
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "In den Warenkorb",
+      "added_to_cart": "Hinzugefügt",
+      "awaiting_sale": "Dieses Produkt ist noch nicht verfügbar.",
+      "backorder": "ist auf Lager und wird versandt, sobald es wieder verfügbar ist",
+      "choose_options": "Optionen auswählen",
+      "description": "Beschreibung",
+      "from": "Ab",
+      "include_taxes": "inkl. MwSt.",
+      "media": {
+        "gallery_viewer": "Galerie-Viewer",
+        "image_available": "Bild {{ index }} ist nun in der Galerieansicht verfügbar",
+        "load_image": "Bild {{ index }} in Galerieansicht laden",
+        "load_model": "3D-Modell {{ index }} in Galerieansicht laden",
+        "load_video": "Video {{ index }} in Galerieansicht abspielen",
+        "previous": "Vorherige",
+        "next": "Nächste",
+        "of": "von",
+        "play_model": "3D-Viewer abspielen",
+        "play_video": "Video abspielen"
+      },
+      "new": "Neuankömmling",
+      "next_product": "Neben",
+      "percent_reduction": "Um {{ amount }}% reduziert",
+      "percent_reduction_up_to": "Bis zu {{ amount }}% Rabatt",
+      "pickup_availability": {
+        "check_other_stores": "Verfügbarkeit in anderen Shops überprüfen",
+        "pick_up_available": "Abholung verfügbar",
+        "pick_up_available_at_html": "Abholung bei <strong>{{ location_name }}<\/strong> verfügbar",
+        "pick_up_unavailable": "Abholung derzeit nicht verfügbar",
+        "pick_up_unavailable_at_html": "Abholung bei <strong>{{ location_name }}<\/strong> derzeit nicht verfügbar",
+        "refresh": "Aktualisieren",
+        "unavailable": "Verfügbarkeit für Abholungen konnte nicht geladen werden",
+        "view_store_info": "Shop-Informationen anzeigen"
+      },
+      "preorder": "Vorbestellung",
+      "prev_product": "Vorausgehend",
+      "price": {
+        "label": "Preis",
+        "regular_price": "Normaler Preis",
+        "sale_price": "Verkaufspreis",
+        "unit_price": "Grundpreis",
+        "unit_price_separator": " \/ "
+      },
+      "product_variants": "Produktvarianten",
+      "qty": "Anzahl",
+      "rating": "Bewertung",
+      "reviews": "Bewertungen",
+      "sale": "Sale",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Versand<\/a> wird beim Checkout berechnet.",
+      "size_chart": "Größentabelle",
+      "sku": "SKU:",
+      "sold_out": "Ausverkauft",
+      "specification": "Spezifikation",
+      "title": "Title",
+      "type": "Art",
+      "value_reduction_html": "Um {{ amount }} reduziert",
+      "value_reduction_up_to_html": "Bis zu {{ amount }} Rabatt",
+      "vendor": "Anbieter",
+      "view_details": "Alle Einzelheiten",
+      "xr_button": "In deinem Bereich ansehen"
+    },
+    "filtering": {
+      "title": "Filtern",
+      "applied_filters": "Ausgewählte Filtern",
+      "applied_filter_count": {
+        "one": "{{ count }} ausgewählt",
+        "other": "{{ count }} ausgewählt"
+      },
+      "apply": "Anwenden",
+      "clear": "Löschen",
+      "clear_all": "Alle entfernen",
+      "filter": "Filter",
+      "filter_sort": "Filtern und sortieren",
+      "min_price_label": "Von",
+      "max_price_label": "Bis",
+      "show_more": "Mehr anzeigen",
+      "show_result_count": {
+        "one": "Zeige {{ count }} Ergebnis",
+        "other": "Zeige {{ count }} Ergebnisse"
+      }
+    },
+    "sorting": {
+      "sort_by_label": "Sortieren nach"
+    },
+    "inventory": {
+      "in_stock": "Auf Lager",
+      "low_stock": "Begrenzter Vorrat",
+      "very_low_stock": "Sehr geringer Bestand",
+      "only_x_left": "{{ quantity }} auf Lager",
+      "backordered": "Nachbestellt",
+      "available_count": {
+        "one": "{{ count }} Einheit",
+        "other": "{{ count }} Einheiten"
+      }
+    },
+    "variant": {
+      "no_stock": "Ausverkauft",
+      "non_existent": "Nicht verfügbar"
+    },
+    "compare": {
+      "switch_label": "Vergleichen",
+      "drawer": {
+        "open_button": "Vergleichen",
+        "title": "Vergleichen",
+        "compare_button": "Jetzt vergleichen",
+        "clear_all": "Alle entfernen",
+        "remove": "Aus Vergleich entfernen",
+        "limit_reached": "Sie können nur {{ quantity }} Produkte vergleichen.",
+        "select_more": "Wählen Sie ein anderes Produkt zum Vergleichen aus.",
+        "empty": "Wählen Sie mindestens zwei Produkte zum Vergleich aus.",
+        "close_continue": "Schließen, um fortzufahren."
+      },
+      "modal": {
+        "title": "Produktvergleich",
+        "view_product": "Produkt anzeigen",
+        "remove_product": "Löschen"
+      },
+      "metafields": {
+        "boolean_true": "Jawohl",
+        "boolean_false": "Nein",
+        "file_download": "Download"
+      }
+    }
+  },
+  "sections": {
+    "header": {
+      "account": "Konto",
+      "log_in": "Einloggen",
+      "bag": "Einkaufstasche",
+      "basket": "Einkaufskorb",
+      "cart": "Einkaufswagen",
+      "cart_count": {
+        "one": "{{ count }} Artikel",
+        "other": "{{ count }} Artikel"
+      },
+      "go_to": "Gehe zu {{ title }}"
+    },
+    "footer": {
+      "payment_methods": "Zahlungsmethoden",
+      "back_to_top": "Zurück nach oben"
+    },
+    "collection": {
+      "empty": "Keine Produkte gefunden",
+      "product_count": {
+        "other": "{{ count }} produkte"
+      },
+      "layout_label": "Ansicht als",
+      "grid_layout": "Produktraster",
+      "list_layout": "Produktliste",
+      "colors_single": "1 Farbe verfügbar",
+      "colors_count": "{{ count }} Farben verfügbar",
+      "view": "Kategorie anzeigen"
+    },
+    "countdown": {
+      "days": "Tage",
+      "hours": "Stunden",
+      "minutes": "Minuten",
+      "seconds": "Sekunden",
+      "end_date": "Endet {{ date }}"
+    },
+    "featured_blog": {
+      "view_all": "Alle anzeigen"
+    },
+    "featured_collection": {
+      "view_all": "Alle anzeigen"
+    },
+    "slideshow": {
+      "load_slide": "Folie laden",
+      "pause": "Slideshow pausieren",
+      "play": "Slideshow abspielen",
+      "carousel": "Karussell",
+      "slide": "Folie"
+    },
+    "testimonials": {
+      "title": "Referenzen"
+    },
+    "product_comparison_grid": {
+      "accessibility_caption": "Eine Tabelle zum Vergleich von {{ count }} Produkten",
+      "accessibility_facet": "Produktfacette",
+      "show_rows": "{{ count }} weitere Zeilen anzeigen",
+      "hide_rows": "{{ count }} Zeilen ausblenden"
+    }
+  },
+  "templates": {
+    "404": {
+      "title": "Seite nicht gefunden",
+      "subtext": "Die angeforderte Seite existiert nicht.",
+      "link": "Einkauf fortzusetzen"
+    },
+    "password": {
+      "general": {
+        "login_link": "Mit Passwort betreten",
+        "powered_by": "Dieser Shop wird unterstützt von"
+      },
+      "login_form": {
+        "admin_link_html": "Bist du der Shop-Inhaber? <a href=\"\/admin\">Hier einloggen<\/a>",
+        "error": "Falsches Passwort!",
+        "heading": "Shop mit Passwort betreten",
+        "password_label": "Passwort",
+        "password_placeholder": "Ihr Passwort",
+        "submit": "Eingeben"
+      },
+      "signup_form": {
+        "email_label": "E-Mail",
+        "email_placeholder": "Ihre E-Mail-Adresse",
+        "submit": "Eingeben",
+        "success": "Wir senden Ihnen eine E-Mail, kurz bevor wir eröffnen!"
+      }
+    },
+    "search": {
+      "page": "Seite",
+      "no_results": "Keine Ergebnisse gefunden für \"{{ terms }}\". Überprüfe die Schreibweise oder versuche es mit einer anderen Suchanfrage."
+    }
+  },
+  "newsletter": {
+    "label": "E-Mail",
+    "placeholder": "Ihre E-Mail-Adresse",
+    "button_label": "Abonnieren",
+    "success": "Danke für deine Anmeldung"
+  },
+  "product_signup": {
+    "label": "E-Mail",
+    "placeholder": "Ihre E-Mail-Adresse",
+    "button_label": "Abonnieren",
+    "success": "Danke für deine Anmeldung"
+  },
+  "contact": {
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "phone": "Telefonnummer",
+      "message": "Kommentar",
+      "send": "Senden",
+      "post_success": "Danke, dass du uns kontaktiert hast. Wir werden uns so schnell wie möglich bei dir melden.",
+      "error_heading": "Bitte passe Folgendes an:"
+    }
+  },
+  "blogs": {
+    "article": {
+      "comments": {
+        "one": "{{ count }} Kommentar",
+        "other": "{{ count }} Kommentare"
+      },
+      "next_post": "Neben",
+      "reading_time": "[x] Minuten gelesen",
+      "previous_post": "Vorausgehend"
+    },
+    "comments": {
+      "form_title": "Hinterlasse einen Kommentar",
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Kommentar",
+      "post": "Kommentar posten",
+      "moderated": "Bitte beachte, dass Kommentare vor der Veröffentlichung freigegeben werden müssen.",
+      "success_moderated": "Dein Kommentar wurde erfolgreich gepostet. Da unser Blog moderiert wird, werden wir ihn erst kurze Zeit später veröffentlichen.",
+      "success": "Dein Kommentar wurde erfolgreich gepostet! Vielen Dank!",
+      "error_heading": "Bitte passe Folgendes an:"
+    },
+    "filtering": {
+      "all": "Alle",
+      "filter_by": "Filter"
+    },
+    "pagination": {
+      "newer_articles": "Neuere Artikle",
+      "older_articles": "Aeltere Artikel"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Ihr Warenkorb",
+      "empty": "Ihr Warenkorb ist leer",
+      "start_shopping": "Beginn mit dem Einkauf",
+      "backorder": "Das Produkt  ist auf Lager und wird versandt, sobald es wieder verfügbar ist.",
+      "view_cart": "Warenkorb ansehen",
+      "free_shipping": "Ihre Bestellung ist versandkostenfrei!",
+      "free_shipping_deficit_html": "Geben Sie <strong>{{ amount }}<\/strong> mehr für <strong>kostenlosen Versand<\/strong> aus!",
+      "taxes_and_shipping_at_checkout": "Steuern und Versand werden beim Checkout berechnet",
+      "taxes_and_shipping_at_checkout_html": "Steuern und <a href=\"{{ link }}\">Versand<\/a> werden beim Checkout berechnet",
+      "taxes_included_shipping_at_checkout": "Inklusive Steuern, Versand wird beim Checkout berechnet",
+      "taxes_included_shipping_at_checkout_html": "Inklusive Steuern. <a href=\"{{ link }}\">Versand <\/a> wird beim Checkout berechnet",
+      "error": "Beim Aktualisieren deines Warenkorbs ist ein Fehler aufgetreten. Bitte versuche es erneut."
+    },
+    "items": {
+      "product": "Produkt",
+      "quantity": "Anzahl",
+      "price": "Preis",
+      "remove": "Löschen",
+      "total": "Gesamtsumme",
+      "quantity_error": "Du kannst deinem Warenkorb nur {{ quantity }} Stück dieses Artikels hinzufügen."
+    },
+    "note": {
+      "add": "Bestellhinweis hinzufügen",
+      "edit": "Bestellnotiz bearbeiten",
+      "label": "Spezielle Bestellanweisungen",
+      "save": "Sparen Sie"
+    },
+    "shipping_calculator": {
+      "title": "Erhalten Sie Versandkostenschätzungen",
+      "country": "Land",
+      "province": "Bundesland\/Provinz",
+      "zip": "PLZ",
+      "submit": "Berechnung",
+      "single_rate": "Es ist eine Versandrate verfügbar für:",
+      "multiple_rates": "Versandkosten verfügbar, beginnend bei:",
+      "no_rates": "Wir liefern nicht an dieses Ziel.",
+      "error": "Bitte passe Folgendes an:"
+    },
+    "summary": {
+      "title": "Ihre Bestellung",
+      "subtotal": "Zwischensumme",
+      "checkout": "Auschecken",
+      "continue_shopping": "Weiter shoppen"
+    },
+    "terms": {
+      "agreement_html": "Ich stimme den <a href=\"{{ terms_url }}\" target=\"_blank\">Bedingungen und Rückerstattungsrichtlinien zu<\/a>",
+      "confirmation": "Sie müssen den Nutzungsbedingungen zustimmen, bevor Sie fortfahren."
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "Konto",
+      "details": "Kontodetails",
+      "view_addresses": "Adressen anzeigen",
+      "home": "Zurück zu Kontodetails",
+      "log_out": "Abmelden"
+    },
+    "activate_account": {
+      "title": "Konto aktivieren",
+      "subtext": "Erstelle ein Passwort, um dein Konto zu aktiveren.",
+      "password": "Passwort",
+      "password_confirm": "Passwort bestätigen",
+      "submit": "Konto aktivieren",
+      "cancel": "Einladung ablehnen"
+    },
+    "addresses": {
+      "title": "Adressen",
+      "default_address": "Standardadresse",
+      "address_number": "Adresse {{ index }}",
+      "edit": "Bearbeiten",
+      "edit_address": "Adresse bearbeiten",
+      "delete": "Löschen",
+      "delete_confirm": "Bist du sicher, dass du diese Adresse löschen möchtest?",
+      "add_new": "Neue Adresse hinzufügen",
+      "first_name": "Vorname",
+      "last_name": "Nachname",
+      "company": "Unternehmen",
+      "address1": "Adresse 1",
+      "address2": "Adresse 2",
+      "city": "Ort",
+      "country": "Land\/Region",
+      "province": "Bundesland\/Provinz",
+      "zip": "PLZ",
+      "phone": "Telefonnummer",
+      "set_default": "Als Standard-Adresse festlegen",
+      "add": "Adresse hinzufügen",
+      "update": "Adresse aktualisieren",
+      "cancel": "Abbrechen"
+    },
+    "login": {
+      "title": "Login",
+      "email": "E-Mail",
+      "password": "Passwort",
+      "forgot_password": "Hast du dein Passwort vergessen?",
+      "sign_in": "Anmelden",
+      "new_customer": "Neuer Kunde?",
+      "create_account": "Konto erstellen",
+      "guest_title": "Als Gast fortsetzen",
+      "guest_continue": "Fortfahren"
+    },
+    "order": {
+      "title": "Bestellung {{ name }}",
+      "date": "Aufgegeben am {{ date }}",
+      "cancelled_on": "Bestellung storniert am {{ date }}",
+      "cancelled_reason": "Grund: {{ reason }}",
+      "billing_address": "Rechnungsadresse",
+      "payment_status": "Zahlungsstatus",
+      "fulfillment_status": "Fulfillmentstatus",
+      "fulfilled_on": "Ausgeführt am {{ date }}",
+      "shipping": "Versand",
+      "shipping_address": "Lieferadresse",
+      "order_details": "Bestelldetails",
+      "product": "Produkt",
+      "sku": "SKU",
+      "quantity": "Menge",
+      "subtotal": "Zwischensumme",
+      "discount": "Rabatt",
+      "tax": "Steuer",
+      "total_duties": "Zollgebühren",
+      "total": "Gesamtsumme",
+      "track_shipment": "Sendung nachverfolgen"
+    },
+    "orders": {
+      "title": "Bestellhistorie",
+      "order_number": "Bestellung",
+      "view_order": "Bestellung ansehen",
+      "date": "Datum",
+      "payment_status": "Zahlungsstatus",
+      "fulfillment_status": "Fulfillmentstatus",
+      "total": "Gesamtsumme",
+      "none": "Du hast noch keine Bestellungen aufgegeben."
+    },
+    "recover_password": {
+      "title": "Setze dein Passwort zurück",
+      "subtext": "Wir werden dir eine E-Mail zum Zurücksetzen deines Passworts schicken",
+      "submit": "Erstellen",
+      "cancel": "Abbrechen",
+      "success": "Wir haben dir eine E-Mail mit einem Link zum Aktualisieren deines Passworts geschickt."
+    },
+    "register": {
+      "title": "Konto erstellen",
+      "first_name": "Vorname",
+      "last_name": "Nachname",
+      "email": "E-Mail",
+      "password": "Passwort",
+      "submit": "Erstellen",
+      "have_account": "Sie haben bereits ein Konto?",
+      "log_in": "Mit Kundenkonto anmelden"
+    },
+    "reset_password": {
+      "title": "Passwort für Konto zurücksetzen",
+      "subtext": "Neues Passwort eingeben",
+      "password": "Passwort",
+      "password_confirm": "Passwort bestätigen",
+      "submit": "Passwort zurücksetzen"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title": "Hier ist dein Geschenkgutschein im Wert von {{ value }} für {{ shop }}!",
+      "subtext": "Dein Geschenkgutschein",
+      "expired": "Abgelaufen",
+      "remaining_html": "{{ balance }} verbleibend",
+      "qr_image_alt": "QR-Code - Scannen, um Geschenkgutschein einzulösen",
+      "code": "Gutscheincode",
+      "add_to_apple_wallet": "Zu Apple Wallet hinzufügen",
+      "shop_link": "Weiter shoppen",
+      "print": "Drucken"
+    },
+    "recipient": {
+      "checkbox": "Ich möchte dies als Geschenk senden",
+      "email_label_optional": "Empfänger E-Mail",
+      "email_label_required": "Empfänger E-Mail *",
+      "name_label": "Name des Empfängers",
+      "message_label": "Nachricht",
+      "max_characters": "Maximal {{ max_chars }} Zeichens"
+    }
+  },
+  "onboarding": {
+    "article": {
+      "title": "Blog-Beitrag",
+      "excerpt": "Verschaffe deinen Kunden eine Übersicht über deinen Blog-Beitrag."
+    },
+    "collection": {
+      "title": "Name deiner Kategorie"
+    },
+    "product": {
+      "title": "Beispiel für Produkttitel",
+      "type": "Art",
+      "vendor": "Anbieter",
+      "sku": "SKU1234",
+      "description": "Eine Beschreibung des Produkts, einschließlich Details wie Verarbeitungsqualität, verwendete Materialien und Kaufgründe."
+    }
+  },
+  "pagefly": {
+    "products": {
+      "product": {
+        "regular_price": "Regular price",
+        "sold_out": "Sold out",
+        "unavailable": "Unavailable",
+        "on_sale": "Sale",
+        "quantity": "Quantity",
+        "add_to_cart": "Add to cart",
+        "back_to_collection": "Back to {{ title }}",
+        "view_details": "View details"
+      }
+    },
+    "article": {
+      "tags": "Tags:",
+      "all_topics": "All topics",
+      "by_author": "by {{ author }}",
+      "posted_in": "Posted in",
+      "read_more": "Read more",
+      "back_to_blog": "Back to {{ title }}"
+    },
+    "comments": {
+      "title": "Leave a comment",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "post": "Post comment",
+      "moderated": "Please note, comments must be approved before they are published",
+      "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
+      "success": "Your comment was posted successfully! Thank you!",
+      "comments_with_count": {
+        "one": "{{ count }} comment",
+        "other": "{{ count }} comments"
+      }
+    },
+    "password_page": {
+      "login_form_message": "Enter store using password:",
+      "login_form_password_label": "Password",
+      "login_form_password_placeholder": "Your password",
+      "login_form_submit": "Enter",
+      "signup_form_email_label": "Email",
+      "signup_form_success": "We will send you an email right before we open!",
+      "password_link": "Enter using password"
+    }
+  },
+  "product": {
+    "tabs": {
+      "composition": {
+        "full_grain_leather": "Echtes Leder",
+        "recycled_eva": "recyceltes Eva",
+        "plata_de_ley": "Sterlingsilber",
+        "recycled_polyurethane": "Recyceltes Polyurethan",
+        "recycled_microfiber": "Recycelte Mikrofaser",
+        "suede": "Spaltleder",
+        "tpu_poliuretano_termoplastico": "TPU (Thermoplastisches Polyurethan)",
+        "recycled_wool": "recycelte Wolle",
+        "polyamide": "Polyamid",
+        "termoplastic": "Thermoplast",
+        "ante_bovino": "Rindswildleder",
+        "piel_de_cabra_certificada": "Zertifiziertes Ziegenleder",
+        "piel_vacuno_certificada": "Zertifiziertes Rindsleder",
+        "eco_tencel": "Öko-Tencel",
+        "ante_vacuno": "Rindswildleder",
+        "eco_viscosa": "Öko-Viskose",
+        "napa_leather": "Nappaleder",
+        "tpr_recycled": "TPR (recycelt)",
+        "poliamide": "Polyamid",
+        "cierre": "Schließen",
+        "recycled_mesh": "recyceltes Netz",
+        "gold": "Gold",
+        "metal": "Metall",
+        "metalico": "Metall",
+        "modacrilica": "Modacryl",
+        "nailon_reciclado": "Recyceltes Nylon",
+        "niquel": "Nickel",
+        "nobuck": "Nubuk",
+        "oro_rosa": "Roségold",
+        "otros": "Andere",
+        "paja": "Stroh",
+        "pana": "Cord",
+        "papel": "Papier",
+        "pelo": "Haar",
+        "pelo_de_conejo": "Kaninchen-Haar",
+        "pelo_de_cordero": "Lammhaar",
+        "pelo_de_coyote": "Kojotenhaar",
+        "pelo_de_mapache": "Waschbärenhaar",
+        "pelo_de_marmota": "Murmeltierhaare",
+        "pelo_de_vison": "Nerzhaar",
+        "pelo_de_zorro": "Fuchshaar",
+        "piel_de_avestruz": "Straußenhaut",
+        "piel_de_bufalo": "Büffelhaut",
+        "piel_de_castor": "Biberfell",
+        "piel_de_ciervo": "Hirschleder",
+        "piel_de_cocodrilo": "Krokodilleder",
+        "piel_de_conejo": "Kaninchenfell",
+        "piel_de_equino": "Pferdehaut",
+        "piel_de_lagarto": "Eidechsenhaut",
+        "piel_de_marmota": "Murmeltierhaut",
+        "piel_de_ovino": "Schaffell",
+        "piel_de_porcino": "Schweinehaut",
+        "piel_de_serpiente": "Schlangenhaut",
+        "piel_de_vison": "Nerzfell",
+        "piel_de_zorro": "Fuchspelz",
+        "piel_ovina": "Schaffell",
+        "plastico": "Plastik",
+        "pluma": "Feder",
+        "plumon": "Marker",
+        "poliacrilico": "Polyacryl",
+        "policarbamida": "Polycarbamid",
+        "policloruro_de_vinilo": "Polyvinylchlorid",
+        "poliester_reciclado": "Recyceltes Polyester",
+        "poliimida": "Polyimid",
+        "polilactida": "Polylactid",
+        "polipropileno": "Polypropylen",
+        "poliuretano": "Polyurethan",
+        "proteinica": "Eiweiß",
+        "rafia": "Bast",
+        "ramio": "Ramie",
+        "recubrimiento__cobre": "Kupferbeschichtung",
+        "recubrimiento__cromo": "Chrombeschichtung",
+        "recubrimiento__laton": "Messingbeschichtung",
+        "recubrimiento__niquel": "Vernickelung",
+        "recubrimiento__zinc": "Zinküberzug",
+        "recubrimiento_tejido_adorno": "Besatz aus gewebtem Stoff",
+        "recubrimiento_estano": "Zinnbeschichtung",
+        "recycled_nylon_nailon": "Recyceltes Nylon",
+        "resina": "Harz",
+        "retama": "Besen",
+        "silicona": "Silikon",
+        "sintetico": "Synthetik",
+        "terciopelo": "Samt",
+        "triacetato": "Triacetat",
+        "trivinilo": "Trivinyl",
+        "vidrio_textil": "Textilglas",
+        "vinilo": "Vinyl",
+        "vison": "Nerz",
+        "vista": "Sicht",
+        "yack": "Jack",
+        "zinc": "Zink",
+        "plumas": "Gefieder",
+        "leather": "Fell",
+        "mesh": "Gittergewebe",
+        "wool": "Wolle",
+        "lambswool": "Lammwolle",
+        "pig_suede": "Schweinswildleder",
+        "action_leather": "Fell",
+        "supima_cotton": "Supima-Baumwolle",
+        "cotton": "Baumwolle",
+        "recycled_rubber": "recycelter Gummi",
+        "recycled_leather": "recyceltes Leder",
+        "bci_cotton": "BCI-Baumwolle",
+        "bronce_banado_en_oro_18k": "18 Karat vergoldete Bronze",
+        "bronce_banado_en_plata_de_ley": "Bronze vergoldet mit Sterlingsilber",
+        "canvas": "Leinwand",
+        "aluminio": "Aluminium",
+        "polyester": "Polyester",
+        "vegetable_wax": "pflanzliches Wachs",
+        "cristal": "Glas",
+        "borosilicato": "Glas",
+        "porcelain": "Porzellan",
+        "pu": "Kunstleder",
+        "recycled_polyamide": "Recyceltes Polyamid",
+        "cashmere": "Kaschmir",
+        "caucho": "Gummi",
+        "concha": "Hülse",
+        "elastano": "Elasthan",
+        "elastodieno": "Elastodien",
+        "esmalte": "Emaille",
+        "eva": "Vorabend",
+        "fibra_de_vidrio": "Fiberglas",
+        "fibra_metalica": "metallische Faser",
+        "goma": "Radiergummi",
+        "goma_reciclada": "recycelter Gummi",
+        "hierro": "Eisen",
+        "hoja_de_palma": "Palmblatt",
+        "lana": "Wolle",
+        "lana_virgen": "Schurwolle",
+        "laton": "Messing",
+        "lino": "Leinen",
+        "lino_natural": "natürliches Leinen",
+        "lona": "Leinwand",
+        "lurex": "Lurex",
+        "microfibras": "Mikrofasern",
+        "nylon": "Nylon",
+        "otras_fibras": "Andere Fasern",
+        "piedra_natural": "Naturstein",
+        "piel": "Fell",
+        "piel_bovina": "Rinderhaut",
+        "piel_de_cabra": "Ziegenleder",
+        "piel_cabra": "Ziegenhaut",
+        "piel_de_cerdo": "Schweinsleder",
+        "piel_cerdo": "Schweinehaut",
+        "piel_de_cordero": "Lammfell",
+        "piel_cordero": "Lammfell",
+        "piel_reciclada": "recyceltes Leder",
+        "piel_serraje": "Spaltleder",
+        "piel_sintetica": "Synthetische Haut",
+        "piel_de_vacuno": "Rindsleder",
+        "piel_vacuno": "Rindsleder",
+        "plata": "Silber",
+        "poliamida": "Polyamid",
+        "policarbonato": "Polycarbonat",
+        "poliester": "Polyester",
+        "polietileno": "Polyethylen",
+        "poliuterano": "Polyurethan",
+        "rayon": "Viskose",
+        "seda": "Seide",
+        "spandex": "Elasthan",
+        "tpr_thermoplastic_rubber": "TPR (Thermoplastischer Gummi)",
+        "viscosa": "Viskose",
+        "yute": "Jute",
+        "zamac": "Zamak",
+        "recycled_nylon": "Recyceltes Nylon",
+        "recycled_polyester": "Recyceltes Polyester",
+        "cuero": "Leder",
+        "fabric": "Stoff",
+        "malla": "Gittergewebe",
+        "camello": "Kamel",
+        "lana_merino": "Merino Wolle",
+        "alpaca": "Alpaka",
+        "abaca": "Abaca",
+        "acero_inoxidable": "Edelstahl",
+        "algodon_supima": "Supima-Baumwolle",
+        "ante_bobino": "Rindswildleder",
+        "ante_de_bufalo": "Büffelwildleder",
+        "ante_de_cabra": "Ziegenwildleder",
+        "bambu": "Bambus",
+        "barniz": "Lack",
+        "bovino": "Rinder",
+        "cabra": "Ziege",
+        "cabra_caprinus": "Caprinus-Ziege",
+        "cachemira": "Kaschmir",
+        "cana": "Stock",
+        "canamo": "Hanf",
+        "carton": "Karton",
+        "celulosa": "Zellulose",
+        "clorofibra": "Chlorofaser",
+        "cobre": "Kupfer",
+        "coco": "Kokosnuss",
+        "crin": "Pferdehaar",
+        "cromo": "Chrom",
+        "estano": "Zinn",
+        "fibra_metalizada": "Metallisierte Faser",
+        "fibras_proteinicas": "Proteinfasern",
+        "fluorofibra": "Fluorfaser",
+        "guanaco": "Guanako",
+        "hilo_metalico": "Metallfaden",
+        "hilo_metalizado": "Metallfaden",
+        "licra": "Lycra",
+        "llama": "Anrufe",
+        "madera": "Holz",
+        "title": "Komposition",
+        "exterior": "im Ausland",
+        "forro": "Abdeckung",
+        "forro_cuerpo": "Körperfutter",
+        "forro_mangas": "Ärmelfutter",
+        "forro_capucha": "Kapuzenfutter",
+        "forro_del_relleno": "ausgestopft",
+        "forro_interior": "Innenfutter",
+        "principal": "wesentlich",
+        "adornos": "Ornamente",
+        "hebilla": "Schnalle",
+        "parte_de_atras": "zurück",
+        "parte_delantera": "vor",
+        "parte_inferior": "unten",
+        "parte_superior": "oberer Teil",
+        "parte_trasera": "hinteren",
+        "bolsillo": "Tasche",
+        "bordado": "Stickerei",
+        "capucha": "Haube",
+        "cuello": "Nacken",
+        "cuerpo": "Körper",
+        "delantero": "Nach vorne",
+        "espalda": "zurück",
+        "falda": "Rock",
+        "forro_delantero": "Vorderfutter",
+        "forro_delantero_y_mangas": "Vorderfutter und Ärmel",
+        "forro_espalda": "Rückenfutter",
+        "forro_principal": "Hauptfutter",
+        "forro_superior": "Oberfutter",
+        "forro_inferior": "Innenfutter",
+        "interior": "innen",
+        "mangas": "Ärmel",
+        "recubrimiento": "Abdeckung",
+        "tejido_adorno": "Stoffornament",
+        "tejido_base": "Grundstoff",
+        "tejido_cuerpo": "Körpergewebe",
+        "tejido_exterior": "Außenstoff",
+        "tejido_falda": "Stoffrock",
+        "tejido_interior": "Innenstoff",
+        "tirador_de_cremallera": "Reißverschlussschieber",
+        "cazadora": "Jägerin",
+        "plantilla": "Vorlage",
+        "piso": "Boden",
+        "suela": "Sohle, einzig, alleinig",
+        "planta": "Anlage",
+        "forro_bolsillos": "Futtertaschen",
+        "pinza": "Greifer",
+        "relleno": "ausgestopft",
+        "ala": "zum",
+        "revestimiento": "Beschichtung",
+        "cordones": "Schnürsenkel",
+        "acero": "Stahl",
+        "acetato": "Acetat",
+        "acrilico": "Acryl",
+        "agata": "Achat",
+        "algodon": "Baumwolle",
+        "algodon_organico": "Bio-Baumwolle",
+        "algodon_reciclado": "Recycelte Baumwolle",
+        "ante": "im Hinblick auf",
+        "aventurina_verde": "grüner Aventurin"
+      },
+      "help": "Hilfe",
+      "shipping": "Versand",
+      "returns": "Kehrt zurück",
+      "wash_care": {
+        "title": "Waschpflege",
+        "machine_wash_30": "Maschinenwäsche max. 30°C",
+        "machine_wash_30_soft": "Maschinenwäsche max. 30 °C – keinen Weichspüler verwenden",
+        "machine_wash_30_inside_out": "Maschinenwäsche bei maximal 30 °C auf links",
+        "machine_wash_40": "Maschinenwäsche bei max. 40 °C",
+        "dry_clean_inside_out": "Von innen nach außen chemisch reinigen",
+        "dry_clean": "chemische Reinigung",
+        "dry_clean_perchloroethylene": "Nur mit Perchlorethylen chemisch reinigen",
+        "handwash_only": "Handwäsche ",
+        "no_wash": "Nicht waschen",
+        "no_bleach": "Benutzen Sie keine Bleiche",
+        "no_tumble_dry": "Verwenden Sie keinen Trockner",
+        "iron_110": "Bei niedriger Temperatur bis 110°C bügeln",
+        "iron_110_inside_out": "Bei niedriger Temperatur bis 110°C auf links bügeln",
+        "iron_150": "Bei mittlerer Temperatur bis 150°C bügeln",
+        "no_iron": "Kein Bügeln",
+        "no_dry_clean": "Reinige chemisch nicht",
+        "special_instructions_1": "Separat mit ähnlichen Farben waschen",
+        "special_instructions_0": "Zuerst separat waschen",
+        "special_instructions_2": "Reiben Sie das Kleidungsstück nicht direkt und wenden Sie keine Chemikalien direkt darauf an",
+        "special_instructions_3": "Waschen Sie mit Waschmittel in der Schublade und nicht in der Trommel",
+        "apto_lavavajillas": "Spülmaschinenfest",
+        "no_apto_lavavajillas": "Nicht spülmaschinenfest",
+        "apto_microondas": "Mikrowellenfest",
+        "no_apto_microondas": "Nicht für Mikrowellen geeignet",
+        "no_lavar": "Nicht waschen"
+      },
+      "reviews": "Rezensionen",
+      "tec_info": {
+        "title": "Technische Information",
+        "lweight": "Leicht",
+        "kwarm": "Hält die Temperatur aufrecht",
+        "wseams": "Heißversiegelte Nähte",
+        "mfabric": "Membranstoff",
+        "breathable": "Atmungsaktiv",
+        "wdproof": "Winddicht",
+        "wrproof": "Wasserdicht",
+        "wrepellent": "Wasserfest",
+        "wresistant": "Wasserdicht"
+      }
+    },
+    "buy_it_with": {
+      "title": "Kaufen Sie mit"
+    },
+    "extra": {
+      "color_count": "FARBEN",
+      "free_shipping": "Kostenloser Versand!",
+      "free_shipping_more": "Kostenloser Versand und Rücksendung.",
+      "free_shipping_less": "Kostenloser Versand bei Bestellungen über 40 €.",
+      "returns_less": "Kostenlose Rücksendungen in Geschäften und online.",
+      "color": "Farbe",
+      "colors": "Farben"
+    },
+    "slideshow": {
+      "close": "Schließen (ESC)",
+      "previous": "Zurück (linker Pfeil)",
+      "next": "Weiter (rechter Pfeil)",
+      "image_loading_error": "Dieses Bild kann nicht hochgeladen werden. Versuchen Sie bitte, die Seite zu aktualisieren."
+    },
+    "form": {
+      "price": "Preis",
+      "quantity": "Menge",
+      "from_price_html": "Ab {{min_price}}",
+      "select_model": "Kaufen",
+      "size_chart": "Größentabelle",
+      "inventory_quantity_count": {
+        "one": "{{count}} Einheit auf Lager",
+        "other": "{{count}} Einheiten auf Lager"
+      },
+      "low_inventory_quantity_count": {
+        "one": "Nur {{count}} Einheit auf Lager!",
+        "other": "Nur {{count}} Einheiten auf Lager!"
+      },
+      "add_to_cart": "in den Warenkorb legen",
+      "sold_out": "Erschöpft",
+      "pre_order": "Reservieren",
+      "unavailable": "Nicht verfügbar",
+      "view_info": "Vervollständigen Sie den Look",
+      "view_images": "Siehe Bilder",
+      "sku": "Artikelnummer",
+      "share": "Aktie",
+      "model": "Modell",
+      "height": "Höhe",
+      "size": "Größe",
+      "select_size": "Wähle eine größe",
+      "details": "Einzelheiten",
+      "add": "IN DEN WARENKORB LEGEN",
+      "add_mobile": "HINZUFÜGEN"
+    }
+  }
+}

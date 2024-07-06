@@ -1,0 +1,3572 @@
+<style>
+    *,::backdrop,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#3b82f680;--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.\!tw-pointer-events-none{pointer-events:none!important}.\!tw-absolute{position:absolute!important}.tw-absolute{position:absolute}.\!tw-relative{position:relative!important}.tw-relative{position:relative}.\!tw-bottom-\[14px\]{bottom:14px!important}.\!tw-left-0{left:0!important}.\!tw-left-2\/4{left:50%!important}.\!tw-left-\[45\%\]{left:45%!important}.\!tw-right-0{right:0!important}.\!tw-right-\[10px\]{right:10px!important}.\!tw-top-0{top:0!important}.\!tw-top-\[20px\]{top:20px!important}.\!tw-top-\[65\%\]{top:65%!important}.\!tw-top-\[unset\]{top:unset!important}.tw-left-0{left:0}.tw-right-0{right:0}.tw-right-\[-3px\]{right:-3px}.tw-top-0{top:0}.tw-top-\[9px\]{top:9px}.\!tw-z-\[10\]{z-index:10!important}.\!tw-z-\[3\]{z-index:3!important}.\!tw-z-\[99999\]{z-index:99999!important}.tw-z-0{z-index:0}.tw-z-10{z-index:10}.tw-z-\[1\]{z-index:1}.tw-z-\[2\]{z-index:2}.\!tw-order-\[-1\]{order:-1!important}.tw-order-1{order:1}.tw-order-2{order:2}.tw-order-3{order:3}.tw-float-right{float:right}.\!tw-m-0{margin:0!important}.tw-m-0{margin:0}.tw-m-auto{margin:auto}.\!tw-mx-0{margin-left:0!important;margin-right:0!important}.\!tw-mx-\[10px\]{margin-left:10px!important;margin-right:10px!important}.\!tw-mx-\[15px\]{margin-left:15px!important;margin-right:15px!important}.\!tw-mx-\[4px\]{margin-left:4px!important;margin-right:4px!important}.\!tw-mx-auto{margin-left:auto!important;margin-right:auto!important}.\!tw-my-0{margin-top:0!important;margin-bottom:0!important}.\!tw-my-2{margin-top:.5rem!important;margin-bottom:.5rem!important}.\!tw-my-\[10px\]{margin-top:10px!important;margin-bottom:10px!important}.\!tw-my-\[16px\]{margin-top:16px!important;margin-bottom:16px!important}.\!tw-my-\[68px\]{margin-top:68px!important;margin-bottom:68px!important}.tw-mx-0{margin-left:0;margin-right:0}.tw-mx-\[10px\]{margin-left:10px;margin-right:10px}.tw-mx-\[auto\],.tw-mx-auto{margin-left:auto;margin-right:auto}.tw-my-0{margin-top:0;margin-bottom:0}.\!tw-mb-0{margin-bottom:0!important}.\!tw-mb-\[12px\]{margin-bottom:12px!important}.\!tw-mb-\[16px\]{margin-bottom:16px!important}.\!tw-mb-\[20px\]{margin-bottom:20px!important}.\!tw-mb-\[22px\]{margin-bottom:22px!important}.\!tw-mb-\[23px\]{margin-bottom:23px!important}.\!tw-mb-\[26px\]{margin-bottom:26px!important}.\!tw-mb-\[2rem\]{margin-bottom:2rem!important}.\!tw-mb-\[30px\]{margin-bottom:30px!important}.\!tw-mb-\[32px\]{margin-bottom:32px!important}.\!tw-mb-\[5px\]{margin-bottom:5px!important}.\!tw-mb-\[8px\]{margin-bottom:8px!important}.\!tw-ml-0{margin-left:0!important}.\!tw-ml-2{margin-left:.5rem!important}.\!tw-ml-\[10px\]{margin-left:10px!important}.\!tw-ml-\[15px\]{margin-left:15px!important}.\!tw-ml-\[2px\]{margin-left:2px!important}.\!tw-ml-\[4\.75px\]{margin-left:4.75px!important}.\!tw-ml-\[4px\]{margin-left:4px!important}.\!tw-ml-\[9px\]{margin-left:9px!important}.\!tw-mr-0{margin-right:0!important}.\!tw-mr-2{margin-right:.5rem!important}.\!tw-mr-\[10px\]{margin-right:10px!important}.\!tw-mr-\[14px\]{margin-right:14px!important}.\!tw-mr-\[15px\]{margin-right:15px!important}.\!tw-mr-\[5px\]{margin-right:5px!important}.\!tw-mr-\[6px\]{margin-right:6px!important}.\!tw-mr-\[7px\]{margin-right:7px!important}.\!tw-mr-\[8px\]{margin-right:8px!important}.\!tw-mr-auto{margin-right:auto!important}.\!tw-mt-0{margin-top:0!important}.\!tw-mt-\[-5px\]{margin-top:-5px!important}.\!tw-mt-\[0\],.\!tw-mt-\[0px\]{margin-top:0!important}.\!tw-mt-\[11px\]{margin-top:11px!important}.\!tw-mt-\[15px\]{margin-top:15px!important}.\!tw-mt-\[16px\]{margin-top:16px!important}.\!tw-mt-\[20\.5px\]{margin-top:20.5px!important}.\!tw-mt-\[20px\]{margin-top:20px!important}.\!tw-mt-\[24px\]{margin-top:24px!important}.\!tw-mt-\[32px\]{margin-top:32px!important}.\!tw-mt-\[37px\]{margin-top:37px!important}.\!tw-mt-\[3px\]{margin-top:3px!important}.\!tw-mt-\[40px\]{margin-top:40px!important}.\!tw-mt-\[42px\]{margin-top:42px!important}.\!tw-mt-\[4px\]{margin-top:4px!important}.\!tw-mt-\[6px\]{margin-top:6px!important}.tw-mb-0,.tw-mb-\[0\]{margin-bottom:0}.tw-mb-\[10px\]{margin-bottom:10px}.tw-mb-\[11px\]{margin-bottom:11px}.tw-mb-\[12px\]{margin-bottom:12px}.tw-mb-\[18px\]{margin-bottom:18px}.tw-mb-\[1rem\]{margin-bottom:1rem}.tw-mb-\[20px\]{margin-bottom:20px}.tw-mb-\[22px\]{margin-bottom:22px}.tw-mb-\[26px\]{margin-bottom:26px}.tw-mb-\[27\.5px\]{margin-bottom:27.5px}.tw-mb-\[32px\]{margin-bottom:32px}.tw-mb-\[42px\]{margin-bottom:42px}.tw-mb-\[45px\]{margin-bottom:45px}.tw-mb-\[49px\]{margin-bottom:49px}.tw-mb-\[4px\]{margin-bottom:4px}.tw-mb-\[5px\]{margin-bottom:5px}.tw-ml-\[12px\]{margin-left:12px}.tw-ml-\[32px\]{margin-left:32px}.tw-ml-\[4px\]{margin-left:4px}.tw-ml-\[auto\],.tw-ml-auto{margin-left:auto}.tw-mr-\[15px\]{margin-right:15px}.tw-mr-\[17px\]{margin-right:17px}.tw-mr-\[18px\]{margin-right:18px}.tw-mr-\[4\%\]{margin-right:4%}.tw-mr-\[6\%\]{margin-right:6%}.tw-mr-\[6px\]{margin-right:6px}.tw-mr-\[7\.43\%\]{margin-right:7.43%}.tw-mr-\[8px\]{margin-right:8px}.tw-mt-0{margin-top:0}.tw-mt-\[10px\]{margin-top:10px}.tw-mt-\[12px\]{margin-top:12px}.tw-mt-\[16px\]{margin-top:16px}.tw-mt-\[2\.5px\]{margin-top:2.5px}.tw-mt-\[20\.5px\]{margin-top:20.5px}.tw-mt-\[20px\]{margin-top:20px}.tw-mt-\[22px\]{margin-top:22px}.tw-mt-\[24px\]{margin-top:24px}.tw-mt-\[25px\]{margin-top:25px}.tw-mt-\[28px\]{margin-top:28px}.tw-mt-\[2px\]{margin-top:2px}.tw-mt-\[30px\]{margin-top:30px}.tw-mt-\[32px\]{margin-top:32px}.tw-mt-\[34px\]{margin-top:34px}.tw-mt-\[35px\]{margin-top:35px}.tw-mt-\[37px\]{margin-top:37px}.tw-mt-\[42px\]{margin-top:42px}.tw-mt-\[4px\]{margin-top:4px}.tw-mt-\[6px\]{margin-top:6px}.tw-mt-\[7px\]{margin-top:7px}.tw-mt-\[8px\]{margin-top:8px}.tw-mt-\[9px\]{margin-top:9px}.\!tw-block{display:block!important}.tw-block{display:block}.\!tw-flex{display:flex!important}.tw-flex{display:flex}.\!tw-grid{display:grid!important}.tw-grid{display:grid}.\!tw-hidden{display:none!important}.tw-hidden{display:none}.tw-aspect-\[115\/115\.834\]{aspect-ratio:115/115.834}.tw-aspect-\[483\/576\.48\]{aspect-ratio:483/576.48}.\!tw-h-8{height:2rem!important}.\!tw-h-\[1\.3rem\]{height:1.3rem!important}.\!tw-h-\[100vh\]{height:100vh!important}.\!tw-h-\[17px\]{height:17px!important}.\!tw-h-\[24px\]{height:24px!important}.\!tw-h-\[25px\]{height:25px!important}.\!tw-h-\[40px\]{height:40px!important}.\!tw-h-\[42px\]{height:42px!important}.\!tw-h-auto{height:auto!important}.\!tw-h-fit{height:-moz-fit-content!important;height:fit-content!important}.\!tw-h-full{height:100%!important}.tw-h-\[11px\]{height:11px}.tw-h-\[15px\]{height:15px}.tw-h-\[17px\]{height:17px}.tw-h-\[18px\]{height:18px}.tw-h-\[19px\]{height:19px}.tw-h-\[20px\]{height:20px}.tw-h-\[32px\]{height:32px}.tw-h-\[35px\]{height:35px}.tw-h-\[39px\]{height:39px}.tw-h-\[40px\]{height:40px}.tw-h-\[42px\]{height:42px}.tw-h-\[56px\]{height:56px}.tw-h-\[6px\]{height:6px}.tw-h-\[auto\],.tw-h-auto{height:auto}.tw-h-fit{height:-moz-fit-content;height:fit-content}.tw-h-full{height:100%}.\!tw-max-h-\[23rem\]{max-height:23rem!important}.\!tw-max-h-\[40px\]{max-height:40px!important}.\!tw-max-h-\[42px\]{max-height:42px!important}.tw-max-h-full{max-height:100%}.\!tw-min-h-\[100vh\]{min-height:100vh!important}.\!tw-min-h-\[15px\]{min-height:15px!important}.\!tw-min-h-\[39px\]{min-height:39px!important}.\!tw-min-h-\[42px\]{min-height:42px!important}.\!tw-min-h-\[48px\]{min-height:48px!important}.\!tw-min-h-\[50px\]{min-height:50px!important}.\!tw-min-h-\[unset\]{min-height:unset!important}.\!tw-min-h-fit{min-height:-moz-fit-content!important;min-height:fit-content!important}.tw-min-h-\[39px\]{min-height:39px}.tw-min-h-\[40px\]{min-height:40px}.tw-min-h-\[42px\]{min-height:42px}.tw-min-h-\[514px\]{min-height:514px}.\!tw-w-1\/2{width:50%!important}.\!tw-w-\[1\.3rem\]{width:1.3rem!important}.\!tw-w-\[17px\]{width:17px!important}.\!tw-w-\[18\%\]{width:18%!important}.\!tw-w-\[24px\]{width:24px!important}.\!tw-w-\[313px\]{width:313px!important}.\!tw-w-\[350px\]{width:350px!important}.\!tw-w-\[50\%\]{width:50%!important}.\!tw-w-\[calc\(100\%\/2-5px\)\]{width:calc(50% - 5px)!important}.\!tw-w-\[calc\(50\%-15px\)\]{width:calc(50% - 15px)!important}.\!tw-w-auto{width:auto!important}.\!tw-w-fit{width:-moz-fit-content!important;width:fit-content!important}.\!tw-w-full{width:100%!important}.tw-w-1\/2{width:50%}.tw-w-5\/12{width:41.666667%}.tw-w-7\/12{width:58.333333%}.tw-w-\[-webkit-fill-available\]{width:-webkit-fill-available}.tw-w-\[11px\]{width:11px}.tw-w-\[13px\]{width:13px}.tw-w-\[15\.715\%\]{width:15.715%}.tw-w-\[17px\]{width:17px}.tw-w-\[18px\]{width:18px}.tw-w-\[19px\]{width:19px}.tw-w-\[20px\]{width:20px}.tw-w-\[24\.29\%\]{width:24.29%}.tw-w-\[24\.572\%\]{width:24.572%}.tw-w-\[430px\]{width:430px}.tw-w-\[6px\]{width:6px}.tw-w-\[96px\]{width:96px}.tw-w-\[97\%\]{width:97%}.tw-w-\[calc\(100\%-110px\)\]{width:calc(100% - 110px)}.tw-w-\[calc\(100\%\/2\)\]{width:50%}.tw-w-auto{width:auto}.tw-w-full{width:100%}.\!tw-min-w-\[24px\]{min-width:24px!important}.\!tw-max-w-\[1828px\]{max-width:1828px!important}.\!tw-max-w-\[182px\]{max-width:182px!important}.\!tw-max-w-\[1848px\]{max-width:1848px!important}.\!tw-max-w-\[1850px\]{max-width:1850px!important}.\!tw-max-w-\[18px\]{max-width:18px!important}.\!tw-max-w-\[30px\]{max-width:30px!important}.\!tw-max-w-\[350px\]{max-width:350px!important}.\!tw-max-w-\[490px\]{max-width:490px!important}.\!tw-max-w-\[892px\]{max-width:892px!important}.\!tw-max-w-\[calc\(464px_\+_298px\)\]{max-width:762px!important}.\!tw-max-w-\[calc\(895px_\+_298px\)\]{max-width:1193px!important}.\!tw-max-w-full{max-width:100%!important}.tw-max-w-\[1393px\]{max-width:1393px}.tw-max-w-\[170px\]{max-width:170px}.tw-max-w-\[1920px\]{max-width:1920px}.tw-max-w-\[214\.5px\]{max-width:214.5px}.tw-max-w-\[300px\]{max-width:300px}.tw-max-w-\[44px\]{max-width:44px}.tw-max-w-\[690px\]{max-width:690px}.tw-max-w-\[74\.595\%\]{max-width:74.595%}.tw-max-w-\[74\.596\%\]{max-width:74.596%}.tw-max-w-\[892px\]{max-width:892px}.tw-max-w-\[94\.486\%\]{max-width:94.486%}.tw-max-w-full{max-width:100%}.\!tw-basis-\[100\%\]{flex-basis:100%!important}.\!tw-basis-\[calc\(50\%-15px\)\]{flex-basis:calc(50% - 15px)!important}.\!tw--translate-x-2\/4{--tw-translate-x:-50%!important}.\!tw--translate-x-2\/4,.\!tw--translate-y-2\/4{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))!important}.\!tw--translate-y-2\/4{--tw-translate-y:-50%!important}.\!tw-cursor-pointer{cursor:pointer!important}.tw-cursor-pointer{cursor:pointer}.\!tw-list-none{list-style-type:none!important}.tw-list-none{list-style-type:none}.\!tw-grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))!important}.\!tw-grid-cols-\[1fr\]{grid-template-columns:1fr!important}.tw-grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.\!tw-flex-row{flex-direction:row!important}.tw-flex-row{flex-direction:row}.\!tw-flex-row-reverse{flex-direction:row-reverse!important}.\!tw-flex-col{flex-direction:column!important}.tw-flex-col{flex-direction:column}.tw-flex-col-reverse{flex-direction:column-reverse}.\!tw-flex-wrap{flex-wrap:wrap!important}.tw-flex-wrap{flex-wrap:wrap}.\!tw-content-center{align-content:center!important}.\!tw-items-start{align-items:flex-start!important}.tw-items-start{align-items:flex-start}.\!tw-items-end{align-items:flex-end!important}.tw-items-end{align-items:flex-end}.\!tw-items-center{align-items:center!important}.tw-items-center{align-items:center}.\!tw-justify-start{justify-content:flex-start!important}.tw-justify-start{justify-content:flex-start}.\!tw-justify-end{justify-content:flex-end!important}.tw-justify-end{justify-content:flex-end}.\!tw-justify-center{justify-content:center!important}.tw-justify-center{justify-content:center}.\!tw-justify-between{justify-content:space-between!important}.tw-justify-between{justify-content:space-between}.tw-gap-1{gap:.25rem}.tw-gap-2{gap:.5rem}.tw-gap-2\.5{gap:.625rem}.tw-gap-\[12px\]{gap:12px}.tw-gap-\[4px\]{gap:4px}.tw-gap-\[6px\]{gap:6px}.tw-gap-\[8px\]{gap:8px}.\!tw-gap-x-\[20px\]{-moz-column-gap:20px!important;column-gap:20px!important}.\!tw-gap-y-\[32px\]{row-gap:32px!important}.tw-gap-x-\[5px\]{-moz-column-gap:5px;column-gap:5px}.tw-gap-y-\[10px\]{row-gap:10px}.tw-gap-y-\[17px\]{row-gap:17px}.tw-gap-y-\[5px\]{row-gap:5px}.\!tw-overflow-auto{overflow:auto!important}.\!tw-overflow-x-auto{overflow-x:auto!important}.\!tw-overflow-y-hidden{overflow-y:hidden!important}.\!tw-scroll-smooth{scroll-behavior:smooth!important}.tw-whitespace-nowrap{white-space:nowrap}.\!tw-rounded-none{border-radius:0!important}.tw-rounded{border-radius:.25rem}.tw-rounded-full{border-radius:9999px}.\!tw-border{border-width:1px!important}.\!tw-border-0{border-width:0!important}.\!tw-border-\[2px\]{border-width:2px!important}.tw-border{border-width:1px}.tw-border-0{border-width:0}.\!tw-border-x-0{border-left-width:0!important;border-right-width:0!important}.\!tw-border-y-\[1px\]{border-top-width:1px!important;border-bottom-width:1px!important}.tw-border-x-0{border-left-width:0;border-right-width:0}.\!tw-border-b-\[1px\]{border-bottom-width:1px!important}.tw-border-b{border-bottom-width:1px}.tw-border-b-0{border-bottom-width:0}.tw-border-t{border-top-width:1px}.tw-border-t-0{border-top-width:0}.tw-border-t-\[1px\]{border-top-width:1px}.\!tw-border-solid{border-style:solid!important}.tw-border-solid{border-style:solid}.\!tw-border-none{border-style:none!important}.\!tw-border-\[\#000\]{--tw-border-opacity:1!important;border-color:rgb(0 0 0/var(--tw-border-opacity))!important}.\!tw-border-\[\#C6C6C6\]{--tw-border-opacity:1!important;border-color:rgb(198 198 198/var(--tw-border-opacity))!important}.tw-border-\[\#000\]{--tw-border-opacity:1;border-color:rgb(0 0 0/var(--tw-border-opacity))}.tw-border-\[\#C6C6C6\]{--tw-border-opacity:1;border-color:rgb(198 198 198/var(--tw-border-opacity))}.tw-border-\[\#D8D8D8\]{--tw-border-opacity:1;border-color:rgb(216 216 216/var(--tw-border-opacity))}.tw-border-\[\#E1E0E1\]{--tw-border-opacity:1;border-color:rgb(225 224 225/var(--tw-border-opacity))}.\!tw-border-y-\[\#E0DCDC\]{--tw-border-opacity:1!important;border-top-color:rgb(224 220 220/var(--tw-border-opacity))!important;border-bottom-color:rgb(224 220 220/var(--tw-border-opacity))!important}.\!tw-bg-\[\#000\]{--tw-bg-opacity:1!important;background-color:rgb(0 0 0/var(--tw-bg-opacity))!important}.\!tw-bg-\[\#bdbdbd\]{--tw-bg-opacity:1!important;background-color:rgb(189 189 189/var(--tw-bg-opacity))!important}.\!tw-bg-\[\#f6f6f6\]{--tw-bg-opacity:1!important;background-color:rgb(246 246 246/var(--tw-bg-opacity))!important}.\!tw-bg-\[\#fcc\]{--tw-bg-opacity:1!important;background-color:rgb(255 204 204/var(--tw-bg-opacity))!important}.\!tw-bg-\[transparent\]{background-color:initial!important}.\!tw-bg-\[unset\]{background-color:unset!important}.\!tw-bg-black{background-color:rgb(0 0 0/var(--tw-bg-opacity))!important}.\!tw-bg-black,.\!tw-bg-white{--tw-bg-opacity:1!important}.\!tw-bg-white{background-color:rgb(255 255 255/var(--tw-bg-opacity))!important}.tw-bg-\[\#000\]{--tw-bg-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity))}.tw-bg-\[transparent\]{background-color:initial}.tw-bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity))}.tw-bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.\!tw-stroke-1{stroke-width:1!important}.\!tw-object-contain{-o-object-fit:contain!important;object-fit:contain!important}.tw-object-cover{-o-object-fit:cover;object-fit:cover}.tw-object-fill{-o-object-fit:fill;object-fit:fill}.\!tw-p-0{padding:0!important}.tw-p-0{padding:0}.tw-p-4{padding:1rem}.tw-p-\[13px\]{padding:13px}.tw-p-\[18px\]{padding:18px}.tw-p-\[30px\]{padding:30px}.tw-p-\[40px\]{padding:40px}.\!tw-px-0{padding-left:0!important;padding-right:0!important}.\!tw-px-\[12px\]{padding-left:12px!important;padding-right:12px!important}.\!tw-px-\[13px\]{padding-left:13px!important;padding-right:13px!important}.\!tw-px-\[15px\]{padding-left:15px!important;padding-right:15px!important}.\!tw-px-\[16px\]{padding-left:16px!important;padding-right:16px!important}.\!tw-px-\[18px\]{padding-left:18px!important;padding-right:18px!important}.\!tw-px-\[20px\]{padding-left:20px!important;padding-right:20px!important}.\!tw-px-\[25px\]{padding-left:25px!important;padding-right:25px!important}.\!tw-px-\[3\%\]{padding-left:3%!important;padding-right:3%!important}.\!tw-px-\[4px\]{padding-left:4px!important;padding-right:4px!important}.\!tw-px-\[8px\]{padding-left:8px!important;padding-right:8px!important}.\!tw-py-0{padding-top:0!important;padding-bottom:0!important}.\!tw-py-\[12px\]{padding-top:12px!important;padding-bottom:12px!important}.\!tw-py-\[15px\]{padding-top:15px!important;padding-bottom:15px!important}.\!tw-py-\[16px\]{padding-top:16px!important;padding-bottom:16px!important}.tw-px-0{padding-left:0;padding-right:0}.tw-px-4{padding-left:1rem;padding-right:1rem}.tw-px-\[13px\]{padding-left:13px;padding-right:13px}.tw-px-\[15px\]{padding-left:15px;padding-right:15px}.tw-px-\[16px\]{padding-left:16px;padding-right:16px}.tw-px-\[20px\]{padding-left:20px;padding-right:20px}.tw-px-\[4px\]{padding-left:4px;padding-right:4px}.tw-px-\[5px\]{padding-left:5px;padding-right:5px}.tw-px-\[6px\]{padding-left:6px;padding-right:6px}.tw-py-0{padding-top:0;padding-bottom:0}.tw-py-4{padding-top:1rem;padding-bottom:1rem}.tw-py-\[100px\]{padding-top:100px;padding-bottom:100px}.tw-py-\[10px\]{padding-top:10px;padding-bottom:10px}.tw-py-\[12px\]{padding-top:12px;padding-bottom:12px}.tw-py-\[18px\]{padding-top:18px;padding-bottom:18px}.tw-py-\[30px\]{padding-top:30px;padding-bottom:30px}.tw-py-\[31px\]{padding-top:31px;padding-bottom:31px}.tw-py-\[5px\]{padding-top:5px;padding-bottom:5px}.tw-py-\[8px\]{padding-top:8px;padding-bottom:8px}.\!tw-pb-\[16px\]{padding-bottom:16px!important}.\!tw-pb-\[17px\]{padding-bottom:17px!important}.\!tw-pb-\[19px\]{padding-bottom:19px!important}.\!tw-pb-\[22px\]{padding-bottom:22px!important}.\!tw-pb-\[23px\]{padding-bottom:23px!important}.\!tw-pb-\[24px\]{padding-bottom:24px!important}.\!tw-pb-\[25px\]{padding-bottom:25px!important}.\!tw-pb-\[30px\]{padding-bottom:30px!important}.\!tw-pb-\[40px\]{padding-bottom:40px!important}.\!tw-pb-\[4px\]{padding-bottom:4px!important}.\!tw-pb-\[77px\]{padding-bottom:77px!important}.\!tw-pb-\[8px\]{padding-bottom:8px!important}.\!tw-pl-0{padding-left:0!important}.\!tw-pl-\[15px\]{padding-left:15px!important}.\!tw-pl-\[21px\]{padding-left:21px!important}.\!tw-pl-\[22px\]{padding-left:22px!important}.\!tw-pl-\[26px\]{padding-left:26px!important}.\!tw-pt-0{padding-top:0!important}.\!tw-pt-\[10px\]{padding-top:10px!important}.\!tw-pt-\[12px\]{padding-top:12px!important}.\!tw-pt-\[18px\]{padding-top:18px!important}.\!tw-pt-\[19px\]{padding-top:19px!important}.\!tw-pt-\[23px\]{padding-top:23px!important}.\!tw-pt-\[26px\]{padding-top:26px!important}.\!tw-pt-\[2px\]{padding-top:2px!important}.\!tw-pt-\[32px\]{padding-top:32px!important}.\!tw-pt-\[37px\]{padding-top:37px!important}.\!tw-pt-\[45px\]{padding-top:45px!important}.\!tw-pt-\[4px\]{padding-top:4px!important}.\!tw-pt-\[6px\]{padding-top:6px!important}.tw-pb-\[0\]{padding-bottom:0}.tw-pb-\[12px\]{padding-bottom:12px}.tw-pb-\[17px\]{padding-bottom:17px}.tw-pb-\[22px\]{padding-bottom:22px}.tw-pb-\[26px\]{padding-bottom:26px}.tw-pb-\[2px\]{padding-bottom:2px}.tw-pb-\[31px\]{padding-bottom:31px}.tw-pb-\[7px\]{padding-bottom:7px}.tw-pb-\[8px\]{padding-bottom:8px}.tw-pl-\[12\.5px\]{padding-left:12.5px}.tw-pr-0{padding-right:0}.tw-pr-\[12\.5px\]{padding-right:12.5px}.tw-pr-\[20px\]{padding-right:20px}.tw-pr-\[5px\]{padding-right:5px}.tw-pt-\[12px\]{padding-top:12px}.tw-pt-\[22px\]{padding-top:22px}.tw-pt-\[2px\]{padding-top:2px}.tw-pt-\[3\.75px\]{padding-top:3.75px}.\!tw-text-left{text-align:left!important}.tw-text-left{text-align:left}.\!tw-text-center{text-align:center!important}.tw-text-center{text-align:center}.\!tw-text-right{text-align:right!important}.\!tw-font-Avenbold{font-family:AvenirNextLT-Bold!important}.\!tw-font-Avenit{font-family:AvenirNextLT-It!important}.\!tw-font-Avenmedium{font-family:AvenirNextLT-Medium!important}.\!tw-font-Avenregular{font-family:AvenirNextLT-Regular!important}.\!tw-font-caslonitalic{font-family:Caslon-Italic!important}.\!{font-family:Caslon-Roman!important}.tw-font-Avenbold{font-family:AvenirNextLT-Bold}.tw-font-Avenit{font-family:AvenirNextLT-It}.tw-font-Avenregular{font-family:AvenirNextLT-Regular}.tw-font-caslonitalic{font-family:Caslon-Italic}.{font-family:Caslon-Roman}.\!tw-text-\[11px\]{font-size:11px!important}.\!tw-text-\[13px\]{font-size:13px!important}.\!tw-text-\[14px\]{font-size:14px!important}.\!tw-text-\[16px\]{font-size:16px!important}.\!tw-text-\[18px\]{font-size:18px!important}.\!tw-text-\[20px\]{font-size:20px!important}.\!tw-text-\[23px\]{font-size:23px!important}.\!tw-text-\[24px\]{font-size:24px!important}.\!tw-text-\[25px\]{font-size:25px!important}.\!tw-text-\[34px\]{font-size:34px!important}.\!tw-text-\[9px\]{font-size:9px!important}.\!tw-text-base{font-size:1rem!important;line-height:1.5rem!important}.tw-text-\[1\.3rem\]{font-size:1.3rem}.tw-text-\[100px\]{font-size:100px}.tw-text-\[13px\]{font-size:13px}.tw-text-\[14px\]{font-size:14px}.tw-text-\[16px\]{font-size:16px}.tw-text-\[23px\]{font-size:23px}.tw-text-\[24px\]{font-size:24px}.tw-text-\[25px\]{font-size:25px}.tw-text-\[32px\]{font-size:32px}.tw-text-\[34px\]{font-size:34px}.tw-text-\[36px\]{font-size:36px}.tw-text-\[52px\]{font-size:52px}.tw-text-\[9px\]{font-size:9px}.\!tw-font-medium{font-weight:500!important}.\!tw-font-normal{font-weight:400!important}.tw-font-\[400\],.tw-font-normal{font-weight:400}.\!tw-uppercase{text-transform:uppercase!important}.tw-uppercase{text-transform:uppercase}.\!tw-lowercase{text-transform:lowercase!important}.tw-lowercase{text-transform:lowercase}.\!tw-not-italic{font-style:normal!important}.tw-not-italic{font-style:normal}.\!tw-leading-5{line-height:1.25rem!important}.\!tw-leading-\[1\.2\]{line-height:1.2!important}.\!tw-leading-\[1\.3\]{line-height:1.3!important}.\!tw-leading-\[1\.4\]{line-height:1.4!important}.\!tw-leading-\[1\.69\]{line-height:1.69!important}.\!tw-leading-\[16px\]{line-height:16px!important}.\!tw-leading-\[17px\]{line-height:17px!important}.\!tw-leading-\[18px\]{line-height:18px!important}.\!tw-leading-\[1\]{line-height:1!important}.\!tw-leading-\[20px\]{line-height:20px!important}.\!tw-leading-\[22px\]{line-height:22px!important}.\!tw-leading-\[28px\]{line-height:28px!important}.\!tw-leading-\[40px\]{line-height:40px!important}.\!tw-leading-\[normal\]{line-height:normal!important}.\!tw-leading-loose{line-height:2!important}.tw-leading-6{line-height:1.5rem}.tw-leading-\[0\]{line-height:0}.tw-leading-\[1\.1\]{line-height:1.1}.tw-leading-\[1\.2\]{line-height:1.2}.tw-leading-\[1\.4\]{line-height:1.4}.tw-leading-\[1\.69\]{line-height:1.69}.tw-leading-\[18px\]{line-height:18px}.tw-leading-\[1\]{line-height:1}.tw-leading-\[22px\]{line-height:22px}.tw-leading-\[30px\]{line-height:30px}.tw-leading-\[normal\]{line-height:normal}.tw-leading-loose{line-height:2}.tw-leading-normal{line-height:1.5}.\!-tw-tracking-\[0\.51px\]{letter-spacing:-.51px!important}.\!tw-tracking-\[-0\.353px\]{letter-spacing:-.353px!important}.\!tw-tracking-\[-0\.383px\]{letter-spacing:-.383px!important}.\!tw-tracking-\[-0\.551px\]{letter-spacing:-.551px!important}.\!tw-tracking-\[-0\.618px\]{letter-spacing:-.618px!important}.\!tw-tracking-\[-0\.67px\]{letter-spacing:-.67px!important}.\!tw-tracking-\[-0\.75px\]{letter-spacing:-.75px!important}.\!tw-tracking-\[0\.45px\]{letter-spacing:.45px!important}.\!tw-tracking-\[0\.604px\]{letter-spacing:.604px!important}.\!tw-tracking-\[0\.722px\]{letter-spacing:.722px!important}.\!tw-tracking-\[0\.9px\]{letter-spacing:.9px!important}.\!tw-tracking-\[1\.1px\]{letter-spacing:1.1px!important}.\!tw-tracking-\[1\.304px\]{letter-spacing:1.304px!important}.\!tw-tracking-\[1\.3px\]{letter-spacing:1.3px!important}.\!tw-tracking-\[1\.8px\]{letter-spacing:1.8px!important}.\!tw-tracking-\[1px\]{letter-spacing:1px!important}.\!tw-tracking-\[2px\]{letter-spacing:2px!important}.tw-tracking-\[-0\.353px\]{letter-spacing:-.353px}.tw-tracking-\[-0\.45px\]{letter-spacing:-.45px}.tw-tracking-\[-0\.4px\]{letter-spacing:-.4px}.tw-tracking-\[-0\.507px\]{letter-spacing:-.507px}.tw-tracking-\[-0\.53px\]{letter-spacing:-.53px}.tw-tracking-\[-0\.551px\]{letter-spacing:-.551px}.tw-tracking-\[-0\.55px\]{letter-spacing:-.55px}.tw-tracking-\[-0\.618px\]{letter-spacing:-.618px}.tw-tracking-\[-0\.75px\]{letter-spacing:-.75px}.tw-tracking-\[-1\.1px\]{letter-spacing:-1.1px}.tw-tracking-\[-1\.25px\]{letter-spacing:-1.25px}.tw-tracking-\[0\.4px\]{letter-spacing:.4px}.tw-tracking-\[0\.604px\]{letter-spacing:.604px}.tw-tracking-\[0\.722px\]{letter-spacing:.722px}.tw-tracking-\[0\.9px\]{letter-spacing:.9px}.tw-tracking-\[1\.304px\]{letter-spacing:1.304px}.tw-tracking-\[1\.3px\]{letter-spacing:1.3px}.tw-tracking-\[1\.4px\]{letter-spacing:1.4px}.tw-tracking-\[1\.95px\]{letter-spacing:1.95px}.tw-tracking-\[1px\]{letter-spacing:1px}.tw-tracking-\[2px\]{letter-spacing:2px}.\!tw-text-\[\#000\]{--tw-text-opacity:1!important;color:rgb(0 0 0/var(--tw-text-opacity))!important}.\!tw-text-\[\#858585\]{--tw-text-opacity:1!important;color:rgb(133 133 133/var(--tw-text-opacity))!important}.\!tw-text-\[\#999999\]{--tw-text-opacity:1!important;color:rgb(153 153 153/var(--tw-text-opacity))!important}.\!tw-text-\[\#9A9A9A\]{--tw-text-opacity:1!important;color:rgb(154 154 154/var(--tw-text-opacity))!important}.\!tw-text-\[\#A3A3A3\]{--tw-text-opacity:1!important;color:rgb(163 163 163/var(--tw-text-opacity))!important}.\!tw-text-\[\#B91C1C\]{--tw-text-opacity:1!important;color:rgb(185 28 28/var(--tw-text-opacity))!important}.\!tw-text-\[\#C6C6C6\]{--tw-text-opacity:1!important;color:rgb(198 198 198/var(--tw-text-opacity))!important}.\!tw-text-\[\#ff0200\]{--tw-text-opacity:1!important;color:rgb(255 2 0/var(--tw-text-opacity))!important}.\!tw-text-black{color:rgb(0 0 0/var(--tw-text-opacity))!important}.\!tw-text-black,.\!tw-text-white{--tw-text-opacity:1!important}.\!tw-text-white{color:rgb(255 255 255/var(--tw-text-opacity))!important}.tw-text-\[\#000\]{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity))}.tw-text-\[\#B91C1C\]{--tw-text-opacity:1;color:rgb(185 28 28/var(--tw-text-opacity))}.tw-text-\[\#C6C6C6\]{--tw-text-opacity:1;color:rgb(198 198 198/var(--tw-text-opacity))}.tw-text-\[\#ff0200\]{--tw-text-opacity:1;color:rgb(255 2 0/var(--tw-text-opacity))}.tw-text-\[\#fff\]{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.tw-text-black{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity))}.tw-text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.\!tw-underline{text-decoration-line:underline!important}.tw-underline{text-decoration-line:underline}.\!tw-no-underline{text-decoration-line:none!important}.tw-no-underline{text-decoration-line:none}.\!tw-underline-offset-2{text-underline-offset:2px!important}.tw-underline-offset-\[5px\]{text-underline-offset:5px}.tw-underline-offset-\[7px\]{text-underline-offset:7px}.\!tw-opacity-0{opacity:0!important}.\!tw-opacity-100{opacity:1!important}.\!tw-opacity-75{opacity:.75!important}.\!tw-opacity-\[1\]{opacity:1!important}.tw-opacity-100{opacity:1}.\!tw-shadow-none{--tw-shadow:0 0 #0000!important;--tw-shadow-colored:0 0 #0000!important;box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)!important}.tw-shadow-none{--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.\!tw-outline-none{outline:2px solid #0000!important;outline-offset:2px!important}.\!tw-outline-0{outline-width:0!important}.tw-transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.\!tw-line-clamp-2{overflow:hidden!important;display:-webkit-box!important;-webkit-box-orient:vertical!important;-webkit-line-clamp:2!important}.invalid-feedback{width:100%;text-align:left;font-family:AvenirNextLT-Regular;line-height:1.69;color:rgb(255 0 0/var(--tw-text-opacity))}.invalid-feedback,.text-contact{font-size:13px;font-weight:400;font-style:normal;letter-spacing:1px;--tw-text-opacity:1}.text-contact{line-height:22px;color:rgb(0 0 0/var(--tw-text-opacity))}.placeholder\:\!tw-font-Avenregular::-moz-placeholder{font-family:AvenirNextLT-Regular!important}.placeholder\:\!tw-font-Avenregular::placeholder{font-family:AvenirNextLT-Regular!important}.after\:tw-relative:after{content:var(--tw-content);position:relative}.after\:tw-block:after{content:var(--tw-content);display:block}.after\:tw-h-px:after{content:var(--tw-content);height:1px}.after\:tw-w-full:after{content:var(--tw-content);width:100%}.after\:\!tw-bg-\[transparent\]:after{content:var(--tw-content);background-color:initial!important}.after\:tw-bg-black:after{content:var(--tw-content);--tw-bg-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity))}.after\:\!tw-shadow-none:after{content:var(--tw-content);--tw-shadow:0 0 #0000!important;--tw-shadow-colored:0 0 #0000!important;box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)!important}.after\:\!tw-outline-none:after{content:var(--tw-content);outline:2px solid #0000!important;outline-offset:2px!important}.after\:tw-content-\[\'\'\]:after{--tw-content:"";content:var(--tw-content)}.first\:\!tw-mt-0:first-child{margin-top:0!important}.focus\:tw-m-0:focus{margin:0}.focus\:\!tw-border-0:focus{border-width:0!important}.focus\:\!tw-py-\[15px\]:focus{padding-top:15px!important;padding-bottom:15px!important}.focus\:tw-shadow-none:focus{--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}@media (min-width:360px){.xs\:tw-pr-\[14px\]{padding-right:14px}.xs\:\!tw-leading-\[20px\]{line-height:20px!important}}@media (min-width:640px){.sm\:\!tw-mt-0{margin-top:0!important}.sm\:tw-w-\[50\%\]{width:50%}.sm\:\!tw-flex-row{flex-direction:row!important}}@media (min-width:750px){.ls\:\!tw-block{display:block!important}.ls\:tw-block{display:block}}@media (min-width:768px){.md\:\!tw-absolute{position:absolute!important}.md\:\!tw-relative{position:relative!important}.md\:\!tw-my-\[10px\]{margin-top:10px!important;margin-bottom:10px!important}.md\:\!tw-my-\[22px\]{margin-top:22px!important;margin-bottom:22px!important}.md\:\!tw-mb-\[17px\]{margin-bottom:17px!important}.md\:\!tw-mb-\[36px\]{margin-bottom:36px!important}.md\:\!tw-mb-\[46px\]{margin-bottom:46px!important}.md\:\!tw-mb-\[49px\]{margin-bottom:49px!important}.md\:\!tw-mb-\[4px\]{margin-bottom:4px!important}.md\:\!tw-mb-\[51px\]{margin-bottom:51px!important}.md\:\!tw-mb-\[54px\]{margin-bottom:54px!important}.md\:\!tw-mb-\[5rem\]{margin-bottom:5rem!important}.md\:\!tw-mb-\[68px\]{margin-bottom:68px!important}.md\:\!tw-mr-\[18px\]{margin-right:18px!important}.md\:\!tw-mt-0{margin-top:0!important}.md\:\!tw-mt-\[27px\]{margin-top:27px!important}.md\:\!tw-mt-\[45px\]{margin-top:45px!important}.md\:tw-mb-4{margin-bottom:1rem}.md\:tw-mr-\[51px\]{margin-right:51px}.md\:tw-mr-\[71px\]{margin-right:71px}.md\:tw-mt-\[24px\]{margin-top:24px}.md\:\!tw-block{display:block!important}.md\:tw-block{display:block}.md\:tw-flex{display:flex}.md\:\!tw-hidden{display:none!important}.md\:tw-hidden{display:none}.md\:\!tw-h-\[1\.7rem\]{height:1.7rem!important}.md\:\!tw-min-h-\[24px\]{min-height:24px!important}.md\:\!tw-w-1\/2{width:50%!important}.md\:\!tw-w-\[1\.7rem\]{width:1.7rem!important}.md\:\!tw-w-full{width:100%!important}.md\:tw-w-\[11\%\]{width:11%}.md\:tw-w-\[19\.443\%\]{width:19.443%}.md\:tw-w-\[20\%\]{width:20%}.md\:tw-w-\[23\%\]{width:23%}.md\:tw-w-\[27\%\]{width:27%}.md\:tw-w-\[37\.767\%\]{width:37.767%}.md\:tw-w-\[8\.38\%\]{width:8.38%}.md\:tw-w-\[9\.498\%\]{width:9.498%}.md\:\!tw-grid-cols-\[1fr_1fr\]{grid-template-columns:1fr 1fr!important}.md\:tw-flex-row{flex-direction:row}.md\:\!tw-items-start{align-items:flex-start!important}.md\:\!tw-items-end{align-items:flex-end!important}.md\:\!tw-items-center{align-items:center!important}.md\:\!tw-justify-start{justify-content:flex-start!important}.md\:\!tw-justify-end{justify-content:flex-end!important}.md\:\!tw-justify-center{justify-content:center!important}.md\:tw-self-center{align-self:center}.md\:\!tw-object-cover{-o-object-fit:cover!important;object-fit:cover!important}.md\:tw-p-\[23px\]{padding:23px}.md\:tw-p-\[40px\]{padding:40px}.md\:\!tw-px-\[18px\]{padding-left:18px!important;padding-right:18px!important}.md\:\!tw-px-\[20px\]{padding-left:20px!important;padding-right:20px!important}.md\:tw-px-\[18px\]{padding-left:18px;padding-right:18px}.md\:tw-py-\[15px\]{padding-top:15px;padding-bottom:15px}.md\:\!tw-pb-\[36px\]{padding-bottom:36px!important}.md\:\!tw-pl-\[21px\]{padding-left:21px!important}.md\:\!tw-font-Avenbold{font-family:AvenirNextLT-Bold!important}.md\:\!tw-font-Avenit{font-family:AvenirNextLT-It!important}.md\:\!tw-font-Avenmedium{font-family:AvenirNextLT-Medium!important}.md\:\!tw-font-Avenregular{font-family:AvenirNextLT-Regular!important}.md\:\!tw-font-caslonitalic{font-family:Caslon-Italic!important}.md\:\!{font-family:Caslon-Roman!important}.md\:\!tw-text-\[13px\]{font-size:13px!important}.md\:\!tw-text-\[18px\]{font-size:18px!important}.md\:\!tw-text-\[24px\]{font-size:24px!important}.md\:\!tw-text-\[28px\]{font-size:28px!important}.md\:\!tw-text-\[34px\]{font-size:34px!important}.md\:tw-text-\[18px\]{font-size:18px}.md\:\!tw-font-bold{font-weight:700!important}.md\:\!tw-leading-\[22px\]{line-height:22px!important}.md\:\!tw-tracking-\[-0\.75px\]{letter-spacing:-.75px!important}.md\:tw-tracking-\[0\.77px\]{letter-spacing:.77px}}@media (min-width:990px){.tab\:\!tw-mb-\[24px\]{margin-bottom:24px!important}.tab\:\!tw-ml-\[8px\]{margin-left:8px!important}.tab\:\!tw-mr-\[5px\]{margin-right:5px!important}.tab\:\!tw-mr-\[8px\]{margin-right:8px!important}.tab\:\!tw-mt-\[0px\]{margin-top:0!important}.tab\:\!tw-mt-\[16px\]{margin-top:16px!important}.tab\:\!tw-mt-\[46px\]{margin-top:46px!important}.tab\:\!tw-mt-\[56px\]{margin-top:56px!important}.tab\:tw-mb-\[10px\]{margin-bottom:10px}.tab\:tw-mb-\[37px\]{margin-bottom:37px}.tab\:tw-mb-\[51px\]{margin-bottom:51px}.tab\:tw-mr-\[61px\]{margin-right:61px}.tab\:tw-mr-\[81px\]{margin-right:81px}.tab\:tw-mt-\[18px\]{margin-top:18px}.tab\:tw-mt-\[22px\]{margin-top:22px}.tab\:tw-mt-\[42px\]{margin-top:42px}.tab\:tw-mt-\[45px\]{margin-top:45px}.tab\:tw-mt-\[57px\]{margin-top:57px}.tab\:\!tw-block{display:block!important}.tab\:tw-block{display:block}.tab\:\!tw-flex{display:flex!important}.tab\:\!tw-hidden{display:none!important}.tab\:tw-hidden{display:none}.tab\:\!tw-min-h-\[18px\]{min-height:18px!important}.tab\:\!tw-min-h-\[42px\]{min-height:42px!important}.tab\:\!tw-min-h-fit{min-height:-moz-fit-content!important;min-height:fit-content!important}.tab\:tw-min-h-\[42px\]{min-height:42px}.tab\:\!tw-w-\[619px\]{width:619px!important}.tab\:tw-w-\[153px\]{width:153px}.tab\:tw-w-\[20px\]{width:20px}.tab\:tw-w-\[9\.498\%\]{width:9.498%}.tab\:tw-w-\[calc\(100\%-168px\)\]{width:calc(100% - 168px)}.tab\:tw-w-full{width:100%}.tab\:\!tw-max-w-\[619px\]{max-width:619px!important}.tab\:tw-max-w-\[322px\]{max-width:322px}.tab\:tw-max-w-\[calc\(100\%\/2\)\]{max-width:50%}.tab\:\!tw-grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))!important}.tab\:tw-flex-row{flex-direction:row}.tab\:\!tw-items-start{align-items:flex-start!important}.tab\:\!tw-items-end{align-items:flex-end!important}.tab\:\!tw-items-center{align-items:center!important}.tab\:\!tw-justify-start{justify-content:flex-start!important}.tab\:\!tw-justify-end{justify-content:flex-end!important}.tab\:\!tw-justify-center{justify-content:center!important}.tab\:\!tw-px-\[10px\]{padding-left:10px!important;padding-right:10px!important}.tab\:\!tw-px-\[18px\]{padding-left:18px!important;padding-right:18px!important}.tab\:\!tw-px-\[22px\]{padding-left:22px!important;padding-right:22px!important}.tab\:\!tw-px-\[50px\]{padding-left:50px!important;padding-right:50px!important}.tab\:\!tw-px-\[52px\]{padding-left:52px!important;padding-right:52px!important}.tab\:tw-px-\[12px\]{padding-left:12px;padding-right:12px}.tab\:tw-py-\[21px\]{padding-top:21px;padding-bottom:21px}.tab\:\!tw-pb-\[12px\]{padding-bottom:12px!important}.tab\:\!tw-pb-\[28px\]{padding-bottom:28px!important}.tab\:\!tw-pb-\[47px\]{padding-bottom:47px!important}.tab\:\!tw-pr-\[298px\]{padding-right:298px!important}.tab\:\!tw-pr-\[80px\]{padding-right:80px!important}.tab\:\!tw-pt-\[10px\]{padding-top:10px!important}.tab\:\!tw-pt-\[28px\]{padding-top:28px!important}.tab\:\!tw-pt-\[32px\]{padding-top:32px!important}.tab\:\!tw-pt-\[7px\]{padding-top:7px!important}.tab\:tw-pb-\[28px\]{padding-bottom:28px}.tab\:tw-pr-\[20px\]{padding-right:20px}.tab\:tw-text-left{text-align:left}.tab\:\!tw-text-\[11px\]{font-size:11px!important}.tab\:\!tw-text-\[13px\]{font-size:13px!important}.tab\:\!tw-text-\[15px\]{font-size:15px!important}.tab\:\!tw-text-\[16px\]{font-size:16px!important}.tab\:\!tw-text-\[17px\]{font-size:17px!important}.tab\:\!tw-text-\[28px\]{font-size:28px!important}.tab\:\!tw-text-\[34px\]{font-size:34px!important}.tab\:\!tw-text-\[36px\]{font-size:36px!important}.tab\:tw-text-\[13px\]{font-size:13px}.tab\:tw-text-\[18px\]{font-size:18px}.tab\:tw-text-\[34px\]{font-size:34px}.tab\:\!tw-leading-\[20px\]{line-height:20px!important}.tab\:\!tw-leading-\[normal\]{line-height:normal!important}.tab\:tw-leading-\[18px\]{line-height:18px}.tab\:tw-leading-\[40\.8px\]{line-height:40.8px}.tab\:\!-tw-tracking-\[0\.62px\]{letter-spacing:-.62px!important}.tab\:\!tw-tracking-\[-0\.75px\]{letter-spacing:-.75px!important}.tab\:\!tw-tracking-\[-0\.794px\]{letter-spacing:-.794px!important}.tab\:\!tw-tracking-\[1\.06px\]{letter-spacing:1.06px!important}.tab\:\!tw-tracking-\[1\.1px\]{letter-spacing:1.1px!important}.tab\:\!tw-tracking-\[1\.5px\]{letter-spacing:1.5px!important}.tab\:tw-tracking-\[-0\.75px\]{letter-spacing:-.75px}.tab\:tw-tracking-\[-0\.8px\]{letter-spacing:-.8px}.tab\:tw-tracking-\[-1\.39px\]{letter-spacing:-1.39px}.tab\:tw-tracking-\[1\.3px\]{letter-spacing:1.3px}}@media (min-width:992px){.tax\:tw-absolute{position:absolute}.tax\:tw-right-0{right:0}.tax\:tw-top-\[12px\]{top:12px}.tax\:tw-order-1{order:1}.tax\:tw-order-2{order:2}.tax\:tw-mx-auto{margin-left:auto;margin-right:auto}.tax\:\!tw-mr-\[32px\]{margin-right:32px!important}.tax\:\!tw-mt-0{margin-top:0!important}.tax\:\!tw-mt-\[130px\]{margin-top:130px!important}.tax\:\!tw-mt-\[26px\]{margin-top:26px!important}.tax\:\!tw-mt-\[9px\]{margin-top:9px!important}.tax\:tw-mb-\[32px\]{margin-bottom:32px}.tax\:tw-mb-\[38px\]{margin-bottom:38px}.tax\:tw-mr-\[18px\]{margin-right:18px}.tax\:tw-mt-0{margin-top:0}.tax\:tw-mt-\[120px\]{margin-top:120px}.tax\:tw-mt-\[18px\]{margin-top:18px}.tax\:tw-mt-\[28px\]{margin-top:28px}.tax\:tw-mt-\[34px\]{margin-top:34px}.tax\:tw-mt-\[38px\]{margin-top:38px}.tax\:tw-mt-\[42px\]{margin-top:42px}.tax\:\!tw-block{display:block!important}.tax\:tw-block{display:block}.tax\:\!tw-flex{display:flex!important}.tax\:tw-flex{display:flex}.tax\:\!tw-hidden{display:none!important}.tax\:tw-hidden{display:none}.tax\:tw-aspect-\[1\/1\]{aspect-ratio:1/1}.tax\:tw-aspect-\[481\/536\.05\]{aspect-ratio:481/536.05}.tax\:\!tw-h-\[42px\]{height:42px!important}.tax\:tw-h-0{height:0}.tax\:tw-h-\[42px\]{height:42px}.tax\:tw-h-\[48px\]{height:48px}.tax\:\!tw-max-h-\[941px\]{max-height:941px!important}.tax\:tw-max-h-\[756px\]{max-height:756px}.tax\:tw-min-h-\[44px\]{min-height:44px}.tax\:tw-w-\[20px\]{width:20px}.tax\:tw-w-\[33\.75\%\]{width:33.75%}.tax\:tw-w-\[66\.25\%\]{width:66.25%}.tax\:tw-w-\[calc\(100\%\/2-16px\)\]{width:calc(50% - 16px)}.tax\:tw-w-full{width:100%}.tax\:tw-max-w-\[300px\]{max-width:300px}.tax\:tw-max-w-\[63\.107\%\]{max-width:63.107%}.tax\:tw-max-w-\[66\.25\%\]{max-width:66.25%}.tax\:tw-max-w-\[73\.64\%\]{max-width:73.64%}.tax\:tw-max-w-\[895px\]{max-width:895px}.tax\:tw-max-w-full{max-width:100%}.tax\:tw-grid-flow-row-dense{grid-auto-flow:row dense}.tax\:\!tw-grid-cols-\[1fr_1fr_1fr\]{grid-template-columns:1fr 1fr 1fr!important}.tax\:tw-flex-row{flex-direction:row}.tax\:tw-flex-col{flex-direction:column}.tax\:tw-flex-wrap{flex-wrap:wrap}.tax\:\!tw-items-start{align-items:flex-start!important}.tax\:\!tw-items-end{align-items:flex-end!important}.tax\:\!tw-items-center{align-items:center!important}.tax\:\!tw-justify-start{justify-content:flex-start!important}.tax\:\!tw-justify-end{justify-content:flex-end!important}.tax\:\!tw-justify-center{justify-content:center!important}.tax\:\!tw-gap-x-\[38px\]{-moz-column-gap:38px!important;column-gap:38px!important}.tax\:\!tw-gap-y-\[50px\]{row-gap:50px!important}.tax\:tw-overflow-y-auto{overflow-y:auto}.tax\:tw-overflow-x-hidden{overflow-x:hidden}.tax\:\!tw-bg-\[transparent\]{background-color:initial!important}.tax\:tw-p-0{padding:0}.tax\:tw-p-\[50px\]{padding:50px}.tax\:\!tw-px-\[12px\]{padding-left:12px!important;padding-right:12px!important}.tax\:tw-px-3{padding-left:.75rem;padding-right:.75rem}.tax\:tw-px-\[11px\]{padding-left:11px;padding-right:11px}.tax\:tw-px-\[16px\]{padding-left:16px;padding-right:16px}.tax\:tw-px-\[20px\]{padding-left:20px;padding-right:20px}.tax\:tw-px-\[38px\]{padding-left:38px;padding-right:38px}.tax\:tw-px-\[40px\]{padding-left:40px;padding-right:40px}.tax\:tw-py-0{padding-top:0;padding-bottom:0}.tax\:\!tw-pb-0{padding-bottom:0!important}.tax\:\!tw-pb-\[12px\]{padding-bottom:12px!important}.tax\:\!tw-pb-\[3px\]{padding-bottom:3px!important}.tax\:\!tw-pb-\[6px\]{padding-bottom:6px!important}.tax\:\!tw-pl-0{padding-left:0!important}.tax\:\!tw-pt-\[15px\]{padding-top:15px!important}.tax\:\!tw-pt-\[23px\]{padding-top:23px!important}.tax\:tw-pb-\[28px\]{padding-bottom:28px}.tax\:tw-pb-\[40px\]{padding-bottom:40px}.tax\:tw-pb-\[74px\]{padding-bottom:74px}.tax\:tw-pb-\[8px\]{padding-bottom:8px}.tax\:tw-pl-\[32px\]{padding-left:32px}.tax\:tw-pr-0{padding-right:0}.tax\:tw-pr-\[12px\]{padding-right:12px}.tax\:tw-pr-\[18px\]{padding-right:18px}.tax\:tw-pr-\[30px\]{padding-right:30px}.tax\:tw-pt-\[2px\]{padding-top:2px}.tax\:\!tw-text-left{text-align:left!important}.tax\:\!tw-text-center{text-align:center!important}.tax\:tw-text-center{text-align:center}.tax\:\!tw-text-right{text-align:right!important}.tax\:\!tw-font-Avenbold{font-family:AvenirNextLT-Bold!important}.tax\:\!tw-font-Avenit{font-family:AvenirNextLT-It!important}.tax\:\!tw-font-Avenregular{font-family:AvenirNextLT-Regular!important}.tax\:\!tw-font-caslonitalic{font-family:Caslon-Italic!important}.tax\:\!{font-family:Caslon-Roman!important}.tax\:tw-font-Avenbold{font-family:AvenirNextLT-Bold}.tax\:tw-font-Avenit{font-family:AvenirNextLT-It}.tax\:tw-font-Avenregular{font-family:AvenirNextLT-Regular}.tax\:tw-font-caslonitalic{font-family:Caslon-Italic}.tax\:{font-family:Caslon-Roman}.tax\:\!tw-text-\[13px\]{font-size:13px!important}.tax\:\!tw-text-\[15px\]{font-size:15px!important}.tax\:\!tw-text-\[20px\]{font-size:20px!important}.tax\:\!tw-text-\[28px\]{font-size:28px!important}.tax\:tw-text-\[13px\]{font-size:13px}.tax\:tw-text-\[16px\]{font-size:16px}.tax\:tw-text-\[18px\]{font-size:18px}.tax\:tw-text-\[20px\]{font-size:20px}.tax\:tw-text-\[34px\]{font-size:34px}.tax\:tw-text-\[48px\]{font-size:48px}.tax\:tw-leading-\[1\.2\]{line-height:1.2}.tax\:tw-leading-\[normal\]{line-height:normal}.tax\:\!tw-tracking-\[0\.9px\]{letter-spacing:.9px!important}.tax\:tw-tracking-\[-0\.353px\]{letter-spacing:-.353px}.tax\:tw-tracking-\[-0\.485px\]{letter-spacing:-.485px}.tax\:tw-tracking-\[-0\.55px\]{letter-spacing:-.55px}.tax\:tw-tracking-\[-0\.75px\]{letter-spacing:-.75px}.tax\:tw-tracking-\[-1\.4px\]{letter-spacing:-1.4px}.tax\:tw-tracking-\[0\.722px\]{letter-spacing:.722px}.tax\:tw-tracking-\[1px\]{letter-spacing:1px}.tax\:tw-tracking-\[2\.2px\]{letter-spacing:2.2px}.tax\:tw-tracking-\[4px\]{letter-spacing:4px}}@media (min-width:1024px){.lg\:tw-grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.lg\:\!tw-justify-start{justify-content:flex-start!important}.lg\:\!tw-justify-end{justify-content:flex-end!important}.lg\:\!tw-justify-center{justify-content:center!important}}@media (min-width:1280px){.xl\:\!tw-mx-\[36px\]{margin-left:36px!important;margin-right:36px!important}.xl\:tw-w-\[58\%\]{width:58%}.xl\:\!tw-max-w-\[calc\(464px_\+_322px\)\]{max-width:786px!important}.xl\:\!tw-max-w-\[calc\(895px_\+_322px\)\]{max-width:1217px!important}.xl\:tw-max-w-\[236px\]{max-width:236px}.xl\:tw-max-w-\[410px\]{max-width:410px}.xl\:tw-max-w-\[644px\]{max-width:644px}.xl\:\!tw-pr-\[322px\]{padding-right:322px!important}.xl\:tw-pr-\[48px\]{padding-right:48px}}@media (min-width:1440px){.\32xl\:\!tw-ml-\[136px\]{margin-left:136px!important}.\32xl\:tw-pl-\[72px\]{padding-left:72px}.\32xl\:tw-pr-\[72px\]{padding-right:72px}.\32xl\:\!tw-text-\[34px\]{font-size:34px!important}}@media (min-width:1640px){.\33xl\:tw-mx-auto{margin-left:auto;margin-right:auto}.\33xl\:\!tw-ml-\[236px\]{margin-left:236px!important}.\33xl\:tw-max-w-\[432px\]{max-width:432px}.\33xl\:tw-px-\[30px\]{padding-left:30px;padding-right:30px}.\33xl\:tw-pr-0{padding-right:0}}.\[\&\>\*\:last-child\]\:tw-mb-0>:last-child{margin-bottom:0}.\[\&\>\*\:last-child\]\:\!tw-max-w-\[22\%\]>:last-child{max-width:22%!important}.\[\&\>\*\:last-child\]\:\!tw-pb-\[0\]>:last-child{padding-bottom:0!important}.\[\&\>\*\:last-child\]\:\!tw-pr-0>:last-child{padding-right:0!important}.\[\&\>\*\:last-child\]\:tw-pl-\[50px\]>:last-child{padding-left:50px}@media (min-width:1280px){.xl\:\[\&\>\*\:last-child\]\:\!tw-w-\[30\%\]>:last-child{width:30%!important}.xl\:\[\&\>\*\:last-child\]\:\!tw-max-w-\[30\%\]>:last-child{max-width:30%!important}.xl\:\[\&\>\*\:last-child\]\:\!tw-pr-0>:last-child{padding-right:0!important}.xl\:\[\&\>\*\:last-child\]\:tw-pl-\[128px\]>:last-child{padding-left:128px}}.\[\&\>\*\]\:\!tw-m-0>*{margin:0!important}.\[\&\>\*\]\:tw-m-0>*{margin:0}.\[\&\>\*\]\:\!tw-my-0>*{margin-top:0!important;margin-bottom:0!important}.\[\&\>\*\]\:tw-my-0>*{margin-top:0;margin-bottom:0}.\[\&\>\*\]\:\!tw-mb-0>*{margin-bottom:0!important}.\[\&\>\*\]\:tw-w-fit>*{width:-moz-fit-content;width:fit-content}.\[\&\>\*\]\:\!tw-bg-\[unset\]>*{background-color:unset!important}.\[\&\>\*\]\:\!tw-p-0>*{padding:0!important}.\[\&\>\*\]\:\!tw-py-0>*{padding-top:0!important;padding-bottom:0!important}.\[\&\>\*\]\:\!tw-font-Avenregular>*{font-family:AvenirNextLT-Regular!important}.\[\&\>\*\]\:\!tw-text-\[13px\]>*{font-size:13px!important}.\[\&\>\*\]\:tw-text-\[13px\]>*{font-size:13px}.\[\&\>\*\]\:tw-text-\[14px\]>*{font-size:14px}.\[\&\>\*\]\:tw-text-\[32px\]>*{font-size:32px}.\[\&\>\*\]\:tw-font-normal>*{font-weight:400}.\[\&\>\*\]\:\!tw-uppercase>*{text-transform:uppercase!important}.\[\&\>\*\]\:tw-not-italic>*{font-style:normal}.\[\&\>\*\]\:\!tw-leading-\[16px\]>*{line-height:16px!important}.\[\&\>\*\]\:tw-leading-\[1\.1\]>*{line-height:1.1}.\[\&\>\*\]\:tw-leading-\[1\.2\]>*{line-height:1.2}.\[\&\>\*\]\:tw-leading-\[22px\]>*{line-height:22px}.\[\&\>\*\]\:\!tw-tracking-\[0\.604px\]>*{letter-spacing:.604px!important}.\[\&\>\*\]\:\!tw-tracking-\[0\.6px\]>*{letter-spacing:.6px!important}.\[\&\>\*\]\:tw-tracking-\[0\.4px\]>*{letter-spacing:.4px}.\[\&\>\*\]\:tw-tracking-\[1\.95px\]>*{letter-spacing:1.95px}.\[\&\>\*\]\:tw-tracking-\[1px\]>*{letter-spacing:1px}.\[\&\>\*\]\:\!tw-text-black>*{--tw-text-opacity:1!important;color:rgb(0 0 0/var(--tw-text-opacity))!important}.\[\&\>\*\]\:\!tw-text-white>*{--tw-text-opacity:1!important;color:rgb(255 255 255/var(--tw-text-opacity))!important}.\[\&\>\*\]\:tw-text-black>*{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity))}.\[\&\>\*\]\:tw-text-white>*{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}@media (min-width:768px){.md\:\[\&\>\*\]\:tw-text-\[100px\]>*{font-size:100px}.md\:\[\&\>\*\]\:tw-text-\[18px\]>*{font-size:18px}.md\:\[\&\>\*\]\:tw-text-\[48px\]>*{font-size:48px}.md\:\[\&\>\*\]\:tw-leading-\[1\.1\]>*{line-height:1.1}.\[\&\>\*\]\:md\:\!tw-tracking-\[1\.3px\]>*{letter-spacing:1.3px!important}.md\:\[\&\>\*\]\:tw-tracking-\[0\.77px\]>*{letter-spacing:.77px}.md\:\[\&\>\*\]\:tw-tracking-\[1\.4px\]>*{letter-spacing:1.4px}}.\[\&\>a\]\:\!tw-text-black>a{--tw-text-opacity:1!important;color:rgb(0 0 0/var(--tw-text-opacity))!important}
+    .map-{{ section.id }} div, .map-{{ section.id }} p, .map-{{ section.id }} span, .map-{{ section.id }} a, .map-{{ section.id }} button, .map-{{ section.id }} input, .map-{{ section.id }} select {
+        font-family: "Neue Haas Grotesk Display Pro",{{ settings.type_body_font.fallback_families }};
+    }
+
+    .lsl-highlight {
+        border-left: solid 5px #000000 !important;
+    }
+    .action-search {
+        position: relative;
+    }
+    .action-input-search-map {
+        display: inline-block;
+    }
+    .map-{{ section.id }} .store-info {
+        position: relative;
+    }
+    .autocomplete-items {
+        position: absolute;
+        border: 1px solid #d4d4d4;
+        border-bottom: none;
+        border-top: none;
+        z-index: 99;
+        top: 100%;
+        left: 0;
+        right: -1px;
+    }
+    .wrap-map.wrap {
+        margin-left: 0 !important;
+    }
+    .gm-style-iw.gm-style-iw-c {
+        min-width: 250px !important;
+        padding: 10px;
+        border: 1px solid black;
+    }
+    button.gm-ui-hover-effect {
+        right: 0 !important;
+        top: 0 !important;
+    }
+    .autocomplete-items div {
+        padding: 10px;
+        cursor: pointer;
+        background-color: #fff;
+        border-bottom: 1px solid #d4d4d4;
+        font-size: 13px;
+    }
+    .autocomplete-items div:hover {
+        background-color: #e9e9e9;
+    }
+    .autocomplete-active {
+        background-color: DodgerBlue !important;
+        color: #ffffff;
+    }
+    .infor-window-map {
+        color: black;
+        font-weight: 400;
+        padding: 2px 0;
+    }
+    .infor-window-map a {
+        color: black;
+        font-weight: 400;
+    }
+    .decoration-none {
+        text-decoration: none;
+    }
+    .gm-style-iw-d {
+        padding: 0 !important;
+    }
+    #WebPixelsManagerSandboxContainer {
+        display: none;
+    }
+    .map-{{ section.id }} {
+        padding-top: {{ section.settings.padding_top_mb }}px;
+        padding-bottom: {{ section.settings.padding_bottom_mb }}px;
+    }
+    .map-{{ section.id }} *:focus-visible {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .map-{{ section.id }} .description-store p:empty {
+        height: 11px;
+        display: block;
+    }
+
+    .map-{{ section.id }} .search_distance_information {
+        font-family: Helvetica, "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+        font-size: 13px;
+        text-transform: initial;
+        color: #000000;
+        opacity: 0.25;
+        padding-left: 2rem;
+    }
+    .map-{{ section.id }} .name-store {
+        display: flex;
+        align-items: baseline;
+        padding-right: 20px;
+    }
+    .map-{{ section.id }} .input-search-map::after {
+        content: url("data:image/svg+xml, %3Csvg class='modal__toggle-open icon !tw-hidden tax:!tw-block ' xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Ccircle cx='8' cy='8' r='7.5' stroke='black' stroke-linecap='square'%3E%3C/circle%3E%3Cpath d='M13.594 14.124L17.503 18.033' stroke='black' stroke-linecap='square'%3E%3C/path%3E%3C/svg%3E");
+    }
+
+    .map-{{ section.id }} #input-search-map::-ms-input-placeholder,
+    .map-{{ section.id }} #input-search-map::placeholder {
+        color: #000;
+        opacity: 0.75;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+    }
+    .map-{{ section.id }} .action-radius img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .map-{{ section.id }} .section_description {
+        font-weight: 500;
+    }
+
+    .map-{{ section.id }} .border-unset {
+        border: unset !important;
+    }
+
+    .map-{{ section.id }} p {
+        margin: 0 !important;
+    }
+    .store-website .decoration-none {
+        text-decoration: underline;
+    }
+    .map-{{ section.id }} .action-list-store {
+        display: none;
+    }
+
+    .map-{{ section.id }} #error-empty-search {
+        color: red;
+        position: absolute;
+        top: 50px;
+        left: 20px
+    }
+    .map-{{ section.id }} .icon-search {
+        position: absolute;
+        top: 12px;
+        right: 25px
+    }
+    .map-{{ section.id }} .section_description {
+        letter-spacing: 0.5px;
+        font-size: 14.5px;
+    }
+    .map-{{ section.id }} .action-list-store {
+        padding-bottom: 1rem;
+    }
+
+    /* New Style */
+    .map-{{ section.id }} {
+        display: flex;
+        justify-content: center;
+    }
+    .map-{{ section.id }} .map__store-locator {
+        width: 100%;
+        max-width: 1240px;
+    }
+    .map-{{ section.id }} .map__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0 33px 0;
+        row-gap: 24px;
+    }
+    .map-{{ section.id }} .section__title,
+    .map-{{ section.id }} .section__sub-title,
+    .map-{{ section.id }} .section__description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Helvetica, "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+        text-align: center;
+    }
+    .map-{{ section.id }} .section__description,
+    .map-{{ section.id }} .section__description p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px !important;
+        font-weight: 400;
+        color: #000000;
+        max-width: 448px;
+        text-align: center;
+        line-height: 16px;
+        letter-spacing: 0;
+    }
+    .map-{{ section.id }} .section__title {
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 33px;
+        color: #000000;
+    }
+    .map-{{ section.id }} .section__sub-title {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    .map-{{ section.id }} .section__sub-title svg {
+        margin: 0 0.25rem;
+    }
+    .map-{{ section.id }} .section__sub-title .icon__minus {
+        display: inline-block;
+        height: 1em;
+        width: 1em;
+        fill: currentColor;
+        vertical-align: middle;
+        stroke-width: 1px;
+        background: none;
+        pointer-events: none;
+    }
+    .map-{{ section.id }} .map__search-form {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 54px;
+    }
+    .map-{{ section.id }} .map__search-form .action-search {
+        display: flex;
+    }
+    .map-{{ section.id }} .map__search-form .map__search-form__input {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .map-{{ section.id }} .map__search-form #input-search-map {
+        width: 100%;
+        border: 1px solid #979797;
+        font-size: 14px;
+        height: 40px;
+        padding: 6px 18px;
+        border-top-left-radius: 90px;
+        border-bottom-left-radius: 90px;
+    }
+    .map-{{ section.id }} .action-input-search-map {
+        width: 309px;
+    }
+    .map-{{ section.id }} .map__search-form .action-radius {
+        min-width: 114px;
+        position: relative;
+    }
+    .map-{{ section.id }} .map__search-form #google-map-radius {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 11px 12px;
+        border: 1px solid #979797;
+        border-radius: unset;
+        font-family: Helvetica;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        background-color: #FFFFFF;
+        color: #000000;
+        cursor: pointer;
+        z-index: 2;
+    }
+    .map-{{ section.id }} .map__search-form .action-radius:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 53%;
+        right: 36px;
+        width: 14px;
+        height: 14px;
+        transform: translateY(-50%);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPG1hc2sgaWQ9Im1hc2swXzI1MF8yOTYiIHN0eWxlPSJtYXNrLXR5cGU6YWxwaGEiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCI+CjxyZWN0IHg9IjE0IiB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHRyYW5zZm9ybT0icm90YXRlKDkwIDE0IDApIiBmaWxsPSIjRDlEOUQ5Ii8+CjwvbWFzaz4KPGcgbWFzaz0idXJsKCNtYXNrMF8yNTBfMjk2KSI+CjxwYXRoIGQ9Ik0zLjUgNS40ODMxN0w0LjMxNjY3IDQuNjY2NUw3IDcuMzQ5ODRMOS42ODMzMyA0LjY2NjVMMTAuNSA1LjQ4MzE3TDcgOC45ODMxN0wzLjUgNS40ODMxN1oiIGZpbGw9ImJsYWNrIi8+CjwvZz4KPC9zdmc+Cg==');
+        pointer-events: none;
+        z-index: 4;
+    }
+    .map-{{ section.id }} .map__search-form #btn-search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 154px;
+        max-height: 40px;
+        padding: 6px 12px;
+        font-family: Helvetica, "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #000000;
+        border-top-right-radius: 90px;
+        border-bottom-right-radius: 90px;
+        cursor: pointer;
+    }
+    .map-{{ section.id }} #list-info-store {
+        width: 100%;
+        margin-right: 0 !important;
+    }
+    .map-{{ section.id }} .header-query-search {
+        margin-bottom: 11px;
+    }
+    .map-{{ section.id }} .header-query-search span {
+        font-family: Helvetica, "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
+        color: #000000;
+    }
+    .map-{{ section.id }} .store-info {
+        position: relative;
+        border-top: 1px solid #ccc;
+        padding: 10px 0 16px 0;
+        margin-right: 5px;
+    }
+    .map-{{ section.id }} .store-info.lsl-highlight {
+        padding-left: 4px;
+    }
+    .map-{{ section.id }} .description-store {
+        display: flex;
+        justify-content: space-between;
+    }
+    .map-{{ section.id }} .description-store-directions {
+        display: flex;
+        align-items: flex-end;
+        padding-right: 17px;
+    }
+    .map-{{ section.id }} .description-store-info p:first-child {
+        padding-top: 5px;
+    }
+    .map-{{ section.id }} .description-store-info p:not(:first-child) {
+        padding-top: 7px;
+    }
+
+    .map-{{ section.id }} #notStoreSearch,
+    .map-{{ section.id }} .map__search-form #input-search-map,
+    .map-{{ section.id }} .store-info .title-store,
+    .map-{{ section.id }} .store-info .store-address,
+    .map-{{ section.id }} .store-info .store-email,
+    .map-{{ section.id }} .store-info .store-phone,
+    .map-{{ section.id }} .store-time,
+    .map-{{ section.id }} .store-info .store-directions {
+        font-family: Helvetica, "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+        color: #000;
+    }
+    .map-{{ section.id }} .store-info .store-address,
+    .map-{{ section.id }} .store-info .store-email,
+    .map-{{ section.id }} .store-info .store-phone,
+    .map-{{ section.id }} .store-time,
+    .map-{{ section.id }} .store-info .store-directions {
+        font-size: 14px !important;
+    }
+    .map-{{ section.id }} .store-info .title-store {
+        font-size: 16px !important;
+        font-weight: 400;
+    }
+    .store-directions,
+    .store-directions a,
+    .store-email a,
+    .decoration-none {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .store-directions svg,
+    .store-email a svg,
+    .decoration-none svg
+    {
+        width: 18px;
+        height: 18px;
+    }
+    .store-full-address {
+        color: #888888 !important;
+        padding-bottom: 8px;
+    }
+    .map-{{ section.id }} .store-info .store-address,
+    .map-{{ section.id }} .store-info .store-email a,
+    .map-{{ section.id }} .store-info .store-directions{
+        font-weight: 400;
+    }
+    .map-{{ section.id }} .store-info .store-directions {
+        text-decoration: underline;
+    }
+    .map-{{ section.id }} .store-info .title-store:hover,
+    .map-{{ section.id }} .store-info .store-email a:hover,
+    .map-{{ section.id }} .store-info .store-directions:hover {
+        text-decoration: underline;
+    }
+    .map-{{ section.id }} .store-time {
+        padding-right: 35px;
+    }
+    .map-{{ section.id }} .map__wrapper {
+        margin-bottom: 50px;
+    }
+    .map-{{ section.id }} .google-map {
+        width: 100%;
+    }
+    .map-{{ section.id }} #list-info-store,
+    .map-{{ section.id }} .google-map {
+        height: 500px;
+    }
+    .map-{{ section.id }} .info-map.disabled,
+    .map-{{ section.id }} .google-map.disabled {
+        display: none;
+    }
+    .map-{{ section.id }} .info-map {
+        display: none;
+        overflow-y: scroll;
+    }
+    .map-{{ section.id }} .info-map.show{
+        display: block;
+    }
+    .map-{{ section.id }} .info-map-store .infor-window-map.name-store {
+        font-size: 12px;
+    }
+    .map-{{ section.id }} .info-map-store .infor-window-map,
+    .map-{{ section.id }} .info-map-store .directions a {
+        font-family: Helvetica;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .map-{{ section.id }} .info-map-store .directions {
+        position: absolute;
+        right: 10px;
+        bottom: 12px;
+    }
+    .map-{{ section.id }} .info-map-store .directions a {
+        text-decoration: underline;
+        color: #000000;
+    }
+    .map-{{ section.id }} button.gm-ui-hover-effect {
+        display: none !important;
+    }
+    .map-{{ section.id }} .show-list svg path,
+    .map-{{ section.id }} .hidden-list svg path {
+        fill: #000000;
+    }
+    .map-{{ section.id }} .show-list.active svg path,
+    .map-{{ section.id }} .hidden-list.active svg path {
+        fill: #FFFFFF;
+    }
+    .map-{{ section.id }} .description-store-info {
+        max-width: 80%;
+    }
+    .map-{{ section.id }} .description-store-directions {
+        position: absolute;
+        bottom: 16px;
+        right: 0;
+    }
+    @media screen and (min-width: 480px) {
+        .map-{{ section.id }} .map__wrapper {
+            margin-bottom: 100px;
+        }
+    }
+    @media screen and (min-width: 992px) {
+        .map-{{ section.id }} .map__store-locator {
+            padding: 20px;
+        }
+        .map-{{ section.id }} #list-info-store {
+            width: 50%;
+        }
+        .map-{{ section.id }} .info-map {
+            display: block;
+            overflow-y: unset;
+        }
+        .map-{{ section.id }} .info-map.disabled {
+            display: block;
+        }
+        .map-{{ section.id }} .google-map {
+            width: 50%;
+        }
+    }
+    @media screen and (max-width: 576px) {
+        .map-{{ section.id }} .map__search-form .action-input-search-map {
+            width: 70%;
+        }
+        .map-{{ section.id }} .map__search-form .action-radius {
+            width: 30%;
+            min-width: 114px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .map-{{ section.id }} .section__sub-title {
+            display: none !important;
+        }
+
+        .map-{{ section.id }} .map__header {
+            margin-bottom: 25px;
+        }
+
+        .map-{{ section.id }} .map__search-form {
+            margin-bottom: 0;
+        }
+
+        .map-{{ section.id }} .map__search-form .map__search-form__input {
+            margin-bottom: 6px;
+            width: 100%;
+            max-width: 423px;
+        }
+
+        .map-{{ section.id }} .map__search-form #btn-search {
+            width: 100%;
+            border-bottom-left-radius: 90px;
+            border-top-left-radius: 90px;
+        }
+
+        .map-{{ section.id }} .map__search-form #google-map-radius {
+            border-top-right-radius: 90px;
+            border-bottom-right-radius: 90px;
+            padding-right: 50px;
+            text-align: right;
+        }
+        .map-{{ section.id }} .action-search {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        .map-{{ section.id }} #btn-hidden-list svg,
+        .map-{{ section.id }} #btn-show-list svg {
+            width: 45px;
+            border-radius: 40px;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        .wrap-map.wrap {
+            margin: 0 !important;
+        }
+        .map-{{ section.id }} #list-info-store {
+            width: 100%;
+            padding: 0 10px;
+        }
+        .map-{{ section.id }} .icon-search {
+            top: 5px;
+            right: 28px
+        }
+        .map-{{ section.id }} .action-list-store {
+            display: flex;
+            gap: 4px;
+        }
+        .map-{{ section.id }} .action-list-store div {
+            cursor: pointer;
+        }
+        .map-{{ section.id }} .action-list-store svg {
+            border: 1px solid black;
+            padding: 5px;
+            width: 30px;
+            height: 30px;
+        }
+        .map-{{ section.id }} .action-list-store .active svg {
+            fill: white;
+            background: black;
+        }
+        .map-{{ section.id }} #error-empty-search {
+            top: 7px;
+            left: unset;
+            right: 10px;
+        }
+        .cs-section-{{ section.id }}-padding {
+            flex-direction: column;
+        }
+        .map-{{ section.id }} .map__search-form #btn-search {
+            max-width: 423px;
+            height: 39px;
+        }
+        .map-{{ section.id }} .map__search-form,
+        .map-{{ section.id }} .action-list-store {
+            padding: 10px;
+        }
+    }
+
+    @media screen and (min-width: 551px) and (max-width: 991px) {
+        .action-input-search-map {
+            position: relative;
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+        .map-{{ section.id }} #error-empty-search {
+            top: -22px;
+            left: 0;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .map-{{ section.id }} {
+            padding-top: {{ section.settings.padding_top }}px;
+            padding-bottom: {{ section.settings.padding_bottom }}px;
+        }
+        .map-{{ section.id }} .info-map::-webkit-scrollbar {
+            width: 10px;
+            background: #F6F6F6;
+            border-radius: 999px;
+            position: absolute;
+        }
+        .map-{{ section.id }} .info-map::-webkit-scrollbar-track {
+            border-radius: 999px;
+            background: #D8D8D8;
+            padding: 1.5px;
+        }
+        .map-{{ section.id }} .info-map::-webkit-scrollbar-thumb {
+            background: #F6F6F6;
+            border: 3.5px solid #D8D8D8;
+            border-radius: 999px;
+            opacity: 0;
+            transition: 300ms;
+        }
+        .map-{{ section.id }} .info-map::-webkit-scrollbar-thumb:hover {
+            background: #F6F6F6;
+            border-radius: 999px;
+            opacity: 1;
+        }
+        .map-{{ section.id }} .description-store p:empty {
+            height: 22px;
+            display: block;
+        }
+        .map-{{ section.id }} .map__search-form .action-radius {
+            width: 114px;
+        }
+    }
+
+</style>
+
+<div class="map-{{ section.id }}">
+    <div class="map__store-locator">
+        {% if section.settings.map_api != blank and section.settings.lat_center != blank and section.settings.lng_center != blank %}
+            <div class="map__header wrap">
+                <div class="section__title">
+                    {{ section.settings.section_title }}
+                </div>
+                <div class="section__description">
+                    {{ section.settings.section_description }}
+                </div>
+            </div>
+
+            <div class="map__search-form">
+                <div class="action-search wrap">
+                    <div class="map__search-form__input">
+                        <div class="action-input-search-map">
+                            <input class="input-search-map"
+                                   id="input-search-map"
+                                   type="text"
+                                   name="postal-code"
+                                   placeholder="{{ 'general.map.placeholder' | t }}">
+                            <span id="error-empty-search"
+                                  class="hidden  tw-text-[13px] tw-not-italic tw-font-normal">{{ 'general.map.error_empty' | t }}</span>
+                        </div>
+                        <div class="action-radius" style="position: relative">
+                            <select name="radius" id="google-map-radius">
+                                {%- assign distance_values = '100,50,25,10,5' | split: ',' -%}
+                                {%- for distance in distance_values %}
+                                    <option
+                                            {% if distance == section.settings.map_zoom_level %}
+                                                selected
+                                            {% endif %}
+                                            value="{{distance}}000"
+                                    >
+                                        {{ distance }} Km
+                                    </option>
+                                {%- endfor -%}
+                            </select>
+                        </div>
+                    </div>
+                    <button id="btn-search">{{ 'general.map.btn_search' | t }}</button>
+                </div>
+            </div>
+
+            <div class="action-list-store wrap">
+                <div id="btn-hidden-list" class="hidden-list active" onclick="showOrHiddenListStore(this,'none')">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="mask0_250_288" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+                            <rect width="18" height="18" fill="#D9D9D9"/>
+                        </mask>
+                        <g mask="url(#mask0_250_288)">
+                            <path d="M9 15.7875L2.25 10.5375L3.4875 9.6L9 13.875L14.5125 9.6L15.75 10.5375L9 15.7875ZM9 12L2.25 6.75L9 1.5L15.75 6.75L9 12ZM9 10.0875L13.3125 6.75L9 3.4125L4.6875 6.75L9 10.0875Z" fill="white"/>
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="show-list" id="btn-show-list" onclick="showOrHiddenListStore(this,'block')">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="mask0_250_291" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                            <rect width="20" height="20" fill="#D9D9D9"/>
+                        </mask>
+                        <g mask="url(#mask0_250_291)">
+                            <path d="M10 8.33333H14.1667V6.66667H10V8.33333ZM10 13.3333H14.1667V11.6667H10V13.3333ZM7.5 9.16667C7.95833 9.16667 8.35083 9.00333 8.6775 8.67667C9.00361 8.35055 9.16667 7.95833 9.16667 7.5C9.16667 7.04167 9.00361 6.64917 8.6775 6.3225C8.35083 5.99639 7.95833 5.83333 7.5 5.83333C7.04167 5.83333 6.64944 5.99639 6.32333 6.3225C5.99667 6.64917 5.83333 7.04167 5.83333 7.5C5.83333 7.95833 5.99667 8.35055 6.32333 8.67667C6.64944 9.00333 7.04167 9.16667 7.5 9.16667ZM7.5 14.1667C7.95833 14.1667 8.35083 14.0036 8.6775 13.6775C9.00361 13.3508 9.16667 12.9583 9.16667 12.5C9.16667 12.0417 9.00361 11.6492 8.6775 11.3225C8.35083 10.9964 7.95833 10.8333 7.5 10.8333C7.04167 10.8333 6.64944 10.9964 6.32333 11.3225C5.99667 11.6492 5.83333 12.0417 5.83333 12.5C5.83333 12.9583 5.99667 13.3508 6.32333 13.6775C6.64944 14.0036 7.04167 14.1667 7.5 14.1667ZM4.16667 17.5C3.70833 17.5 3.31583 17.3369 2.98917 17.0108C2.66306 16.6842 2.5 16.2917 2.5 15.8333V4.16667C2.5 3.70833 2.66306 3.31583 2.98917 2.98917C3.31583 2.66306 3.70833 2.5 4.16667 2.5H15.8333C16.2917 2.5 16.6842 2.66306 17.0108 2.98917C17.3369 3.31583 17.5 3.70833 17.5 4.16667V15.8333C17.5 16.2917 17.3369 16.6842 17.0108 17.0108C16.6842 17.3369 16.2917 17.5 15.8333 17.5H4.16667ZM4.16667 15.8333H15.8333V4.16667H4.16667V15.8333Z" fill="black"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="cs-section-{{ section.id }}-padding site-box-container container--fullscreen revolution--map tw-flex map__wrapper">
+                <div id="list-info-store"
+                     class="wrap info-map tax:tw-overflow-y-auto tax:tw-overflow-x-hidden tax:tw-max-h-[756px] tax:!tw-mt-0 !tw-mt-[32px] tw-w-full">
+                    <div class="multi-stores tw-flex tw-flex-col">
+                        <div id="header-query-search" class="header-query-search hidden">
+                            <span class="">{{ 'general.map.header_query_search' | t }}:</span>
+                            <span class="" id="key_query_search"></span>
+                        </div>
+                        <div class="tw-hidden tw-text-black tax:tw-text-[20px] tw-text-[16px] tw-not-italic tw-font-normal  tw-leading-[22px] tw-tracking-[1px]"
+                             id="notStoreSearch">
+                            {{ 'general.map.empty' | t }}
+                        </div>
+                        {% assign order = 1 %}
+                        {%- for block in section.blocks -%}
+                            {% case block.type %}
+                                {%- when 'list' -%}
+                                    {% if block.settings.lat != blank and block.settings.lng != blank and block.settings.title_1 != blank and block.settings.address != blank %}
+                                        <div onclick="getContactStore('{{ block.settings.title_1 | remove: " " | remove: "'" }}')"
+                                             class="store-info tw-cursor-pointer"
+                                             id="{{ block.settings.title_1 | remove: " " }}"
+                                             style="order: {{ order }}"
+                                        >
+                                            <div class="name-store"
+                                                 onmouseover="bounce('{{ block.settings.title_1 | remove: " " | remove: "'" }}')"
+                                            >
+                                                <span class="title-store">{{ block.settings.title_1 }}</span>
+                                                <span class="search_distance_information"></span>
+                                            </div>
+                                            <div class="description-store">
+                                                <div class="description-store-info">
+                                                    {% if block.settings.address != blank %}
+                                                        <p class="store-address">{{ block.settings.address }}</p>
+                                                    {% endif %}
+                                                    {% if block.settings.email != blank and section.settings.enable_display_email %}
+                                                        <p class="store-email">
+                                                            <a class="decoration-none" href="mailto:{{ block.settings.email }}">
+                                                                {{ block.settings.email }}
+                                                            </a>
+                                                        </p>
+                                                    {% endif %}
+
+                                                    {% if block.settings.phone != blank and section.settings.enable_display_phone %}
+                                                        <p class="store-phone">
+                                                            <a class="decoration-none"
+                                                               href="tel:{{ block.settings.phone }}">
+                                                                {{ block.settings.phone }}</a>
+                                                        </p>
+                                                    {% endif %}
+                                                    {% if block.settings.closing_time != blank %}
+                                                        <p class="store-time">
+                                                            {{ 'general.map.closing_time' | t }}: {{ block.settings.closing_time }}
+                                                        </p>
+                                                    {% endif %}
+                                                    {% if block.settings.website != blank and section.settings.enable_display_website %}
+                                                        <p class="store-website">
+                                                            <a target="_blank" class="decoration-none"
+                                                               href="{{ block.settings.website }}">
+                                                                {{  block.settings.website }}</a>
+                                                        </p>
+                                                    {% endif %}
+                                                </div>
+                                                <div class="description-store-directions">
+                                                    {% if block.settings.address != blank %}
+                                                        <a class="store-directions directions"
+                                                           href="https://maps.google.com/maps?saddr=&daddr={{ block.settings.address }}"
+                                                           target="_blank">
+                                                            {{ 'general.map.directions' | t }}</a>
+                                                    {% endif %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+
+                                    {% if block.settings.lat_2 != blank and block.settings.lng_2 != blank and block.settings.title_2 != blank and block.settings.address_2 != blank %}
+                                        <div onclick="getContactStore('{{ block.settings.title_2 | remove: " " | remove: " ' " }}')"
+                                             class="store-info tw-cursor-pointer"
+                                             id="{{ block.settings.title_2 | remove: " " }}" style="order: {{ order }}">
+                                            <div class="name-store"
+                                                 onmouseover="bounce('{{ block.settings.title_2 | remove: " " | remove: "'" }}')"
+                                            >
+                                                <span class="title-store">{{ block.settings.title_2 }}</span>
+                                                <span class="search_distance_information"></span>
+                                            </div>
+                                            <div class="description-store">
+                                                <div class="description-store-info">
+                                                {% if block.settings.address_2 != blank %}
+                                                    <p class="store-address">{{ block.settings.address_2 }}</p>
+                                                {% endif %}
+                                                {% if block.settings.email_2 != blank and section.settings.enable_display_email%}
+                                                    <p class="store-email">
+                                                        <a class="decoration-none"
+                                                           href="mailto:{{ block.settings.email_2 }}">
+                                                            {{ block.settings.email_2 }}
+                                                        </a>
+                                                    </p>
+                                                {% endif %}
+
+                                                {% if block.settings.phone_2 != blank and section.settings.enable_display_phone %}
+                                                    <p class="store-phone">
+                                                        <a class="decoration-none"
+                                                           href="tel:{{ block.settings.phone_2 }}">
+                                                            {{ block.settings.phone_2 }}</a>
+                                                    </p>
+                                                {% endif %}
+                                                {% if block.settings.closing_time_2 != blank %}
+                                                    <p class="store-time">
+                                                        {{ 'general.map.closing_time' | t }}: {{ block.settings.closing_time_2 }}
+                                                    </p>
+                                                {% endif %}
+                                                {% if block.settings.website_2 != blank and section.settings.enable_display_website %}
+                                                    <p class="store-website">
+                                                        <a target="_blank"
+                                                           href="{{ block.settings.website_2 }}">
+                                                            {{ block.settings.website_2 }}</a>
+                                                    </p>
+                                                {% endif %}
+                                                </div>
+                                                <div class="description-store-directions">
+                                                {% if block.settings.address_2 != blank %}
+                                                    <a class="store-directions directions"
+                                                       href="https://maps.google.com/maps?saddr=&daddr={{ block.settings.address_2 }}"
+                                                       target="_blank">
+                                                        {{ 'general.map.directions' | t }}</a>
+                                                {% endif %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+
+                                    {% if block.settings.lat_3 != blank and block.settings.lng_3 != blank and block.settings.title_3 != blank and block.settings.address_3 != blank %}
+                                        <div onclick="getContactStore('{{ block.settings.title_3 | remove: " " | remove: " ' " }}')"
+                                             class="store-info tw-cursor-pointer"
+                                             id="{{ block.settings.title_3 | remove: " " }}" style="order: {{ order }}">
+                                            <div class="name-store"
+                                                 onmouseover="bounce('{{ block.settings.title_3 | remove: " " | remove: "'" }}')"
+                                            >
+                                                <span class="title-store"> {{ block.settings.title_3 }}</span>
+                                                <span class="search_distance_information"></span>
+                                            </div>
+                                            <div class="description-store">
+                                                <div class="description-store-info">
+                                                {% if block.settings.address_3 != blank %}
+                                                    <p class="store-address">{{ block.settings.address_3 }}</p>
+                                                {% endif %}
+
+                                                {% if block.settings.email_3 != blank and section.settings.enable_display_email%}
+                                                    <p class="store-email">
+                                                        <a href="mailto:{{ block.settings.email_3 }}">
+                                                            {{ block.settings.email_3 }}
+                                                        </a>
+                                                    </p>
+                                                {% endif %}
+
+                                                {% if block.settings.phone_3 != blank and section.settings.enable_display_phone %}
+                                                    <p class="store-phone">
+                                                        <a class="decoration-none"
+                                                           href="tel:{{ block.settings.phone_3 }}">
+                                                            {{ block.settings.phone_3 }}</a>
+                                                    </p>
+                                                {% endif %}
+                                                {% if block.settings.closing_time_3 != blank %}
+                                                    <p class="store-time">
+                                                        {{ 'general.map.closing_time' | t }}: {{ block.settings.closing_time_3 }}
+                                                    </p>
+                                                {% endif %}
+                                                {% if block.settings.website_3 != blank and section.settings.enable_display_website %}
+                                                    <p class="store-website">
+                                                        <a target="_blank"
+                                                           href="{{ block.settings.website_3 }}">
+                                                            {{ block.settings.website_3 }}</a>
+                                                    </p>
+                                                {% endif %}
+                                                </div>
+                                                <div class="description-store-directions">
+                                                {% if block.settings.address_3 != blank %}
+                                                    <a class="store-directions directions"
+                                                       href="https://maps.google.com/maps?saddr=&daddr={{ block.settings.address_3 }}"
+                                                       target="_blank">
+                                                        {{ 'general.map.directions' | t }}</a>
+                                                {% endif %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+
+                                    {% if block.settings.lat_4 != blank and block.settings.lng_4 != blank and block.settings.title_4 != blank and block.settings.address_4 != blank %}
+                                        <div onclick="getContactStore('{{ block.settings.title_4 | remove: " " | remove: " ' " }}')"
+                                             class="store-info tw-cursor-pointer"
+                                             id="{{ block.settings.title_4 | remove: " " }}" style="order: {{ order }}">
+                                            <div class="name-store"
+                                                 onmouseover="bounce('{{ block.settings.title_4 | remove: " " | remove: "'" }}')"
+                                            >
+                                                <span class="title-store"> {{ block.settings.title_4 }}</span>
+                                                <span class="search_distance_information"></span>
+                                            </div>
+                                            <div class="description-store">
+                                                <div class="description-store-info">
+                                                {% if block.settings.address_4 != blank %}
+                                                    <p class="store-address">{{ block.settings.address_4 }}</p>
+                                                {% endif %}
+                                                {% if block.settings.email_4 != blank and section.settings.enable_display_email %}
+                                                    <p class="store-email">
+                                                        <a href="mailto:{{ block.settings.email_4 }}">
+                                                            {{ block.settings.email_4 }}
+                                                        </a>
+                                                    </p>
+                                                {% endif %}
+
+                                                {% if block.settings.phone_4 != blank and section.settings.enable_display_phone %}
+                                                    <p class="store-phone">
+                                                        <a class="decoration-none"
+                                                           href="tel:{{ block.settings.phone_4 }}">
+                                                            {{ block.settings.phone_4 }}</a>
+                                                    </p>
+                                                {% endif %}
+                                                {% if block.settings.closing_time_4 != blank %}
+                                                    <p class="store-time">
+                                                        {{ 'general.map.closing_time' | t }}: {{ block.settings.closing_time_4 }}
+                                                    </p>
+                                                {% endif %}
+                                                {% if block.settings.website_4 != blank and section.settings.enable_display_website %}
+                                                    <p class="store-website">
+                                                        <a target="_blank"
+                                                           href="{{ block.settings.website_4 }}">
+                                                            {{  block.settings.website_4  }}</a>
+                                                    </p>
+                                                {% endif %}
+                                                </div>
+                                                <div class="description-store-directions">
+                                                {% if block.settings.address_4 != blank %}
+                                                    <a class="store-directions directions"
+                                                       href="https://maps.google.com/maps?saddr=&daddr={{ block.settings.address_4 }}"
+                                                       target="_blank">
+                                                        {{ 'general.map.directions' | t }}</a>
+                                                {% endif %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+
+                                    {% if block.settings.lat_5 != blank and block.settings.lng_5 != blank and block.settings.title_5 != blank and block.settings.address_5 != blank %}
+                                        <div onclick="getContactStore('{{ block.settings.title_5 | remove: " " | remove: " ' " }}')"
+                                             class="store-info tw-cursor-pointer"
+                                             id="{{ block.settings.title_5 | remove: " " }}" style="order: {{ order }}">
+                                            <div class="name-store"
+                                                 onmouseover="bounce('{{ block.settings.title_5 | remove: " " | remove: "'" }}')"
+                                            >
+                                                <span class="title-store"> {{ block.settings.title_5 }}</span>
+                                                <span class="search_distance_information"></span>
+                                            </div>
+                                            <div class="description-store">
+                                                <div class="description-store-info">
+                                                {% if block.settings.address_5 != blank %}
+                                                    <p class="store-address">{{ block.settings.address_5 }}</p>
+                                                {% endif %}
+
+                                                {% if block.settings.email_5 != blank and section.settings.enable_display_email %}
+                                                    <p class="store-email">
+                                                        <a href="mailto:{{ block.settings.email_5 }}">
+                                                            {{ block.settings.email_5 }}
+                                                        </a>
+                                                    </p>
+                                                {% endif %}
+
+                                                {% if block.settings.phone_5 != blank and section.settings.enable_display_phone %}
+                                                    <p class="store-phone">
+                                                        <a class="decoration-none"
+                                                           href="tel:{{ block.settings.phone_5 }}">
+                                                            {{ block.settings.phone_5 }}</a>
+                                                    </p>
+                                                {% endif %}
+                                                {% if block.settings.closing_time_5 != blank %}
+                                                    <p class="store-time">
+                                                        {{ 'general.map.closing_time' | t }}: {{ block.settings.closing_time_5 }}
+                                                    </p>
+                                                {% endif %}
+                                                {% if block.settings.website_5 != blank and section.settings.enable_display_website %}
+                                                    <p class="store-website">
+                                                        <a target="_blank"
+                                                           href="{{ block.settings.website_5 }}">
+                                                            {{ block.settings.website_5 }}</a>
+                                                    </p>
+                                                {% endif %}
+                                                </div>
+                                                <div class="description-store-directions">
+                                                {% if block.settings.address_5 != blank %}
+                                                    <a class="store-directions directions"
+                                                       href="https://maps.google.com/maps?saddr=&daddr={{ block.settings.address_5 }}"
+                                                       target="_blank">
+                                                        {{ 'general.map.directions' | t }}</a>
+                                                {% endif %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+
+                                    {% assign order = order | plus: 1 %}
+                            {% endcase %}
+                        {% endfor %}
+                    </div>
+
+                </div>
+                <div id="section-map" class="google-map wrap-map wrap tw-w-full">
+                    <div class="contact-map-holder" id="map_google" style="height: 500px;"></div>
+                </div>
+            </div>
+        {% else %}
+            <div class="tw-w-full tw-h-full"
+                 style="height: 50rem; display: flex; justify-content: center; align-items: center">
+                <h1 class="tw-uppercase tw-m-auto tw-text-center tw-h-full tw-w-full">{{ 'API invalid'}}</h1>
+            </div>
+        {% endif %}
+    </div>
+</div>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<script type="application/json" data-store-json>
+    {
+    {%- assign listBlocks = section.blocks | where: 'type', 'list' -%}
+      {%- for block in listBlocks -%}
+        "store{{ forloop.index }}_index1": {
+          "lat": {{ block.settings.lat | json }},
+          "lng":  {{ block.settings.lng | json }} ,
+          "name": {{ block.settings.title_1 | json }},
+          "city": {{ block.settings.city | json }},
+          "province": {{ block.settings.province | json }},
+          "address": {{ block.settings.address | json }},
+          "zipcode" : {{ block.settings.zipcode | json }},
+          "phone": {{ block.settings.phone | json }},
+          "email": {{ block.settings.email | json }},
+          "website": {{ block.settings.website | json }},
+          "closing_time": {{ block.settings.closing_time | json }}
+        },
+        "store{{ forloop.index }}_index2": {
+          "lat": {{ block.settings.lat_2 | json }},
+          "lng":  {{ block.settings.lng_2 | json }} ,
+          "name": {{ block.settings.title_2 | json }},
+          "city": {{ block.settings.city_2 | json }},
+          "province": {{ block.settings.province_2 | json }},
+          "address": {{ block.settings.address_2 | json }},
+          "zipcode" : {{ block.settings.zipcode_2 | json }},
+          "phone": {{ block.settings.phone_2 | json }},
+          "email": {{ block.settings.email_2 | json }},
+          "website": {{ block.settings.website_2 | json }},
+          "closing_time": {{ block.settings.closing_time_2 | json }}
+        },
+        "store{{ forloop.index }}_index3": {
+          "lat": {{ block.settings.lat_3 | json }},
+          "lng":  {{ block.settings.lng_3 | json }} ,
+          "name": {{ block.settings.title_3 | json }},
+          "city": {{ block.settings.city_3 | json }},
+          "province": {{ block.settings.province_3 | json }},
+          "address": {{ block.settings.address_3 | json }},
+          "zipcode" : {{ block.settings.zipcode_3 | json }},
+          "phone": {{ block.settings.phone_3 | json }},
+          "email": {{ block.settings.email_3 | json }},
+          "website": {{ block.settings.website_3 | json }},
+          "closing_time": {{ block.settings.closing_time_3 | json }}
+        },
+          "store{{ forloop.index }}_index4": {
+          "lat": {{ block.settings.lat_4 | json }},
+          "lng":  {{ block.settings.lng_4 | json }} ,
+          "name": {{ block.settings.title_4 | json }},
+          "city": {{ block.settings.city_4 | json }},
+          "province": {{ block.settings.province_4 | json }},
+          "address": {{ block.settings.address_4 | json }},
+          "zipcode" : {{ block.settings.zipcode_4 | json }},
+          "phone": {{ block.settings.phone_4 | json }},
+          "email": {{ block.settings.email_4 | json }},
+          "website": {{ block.settings.website_4 | json }},
+          "closing_time": {{ block.settings.closing_time_4 | json }}
+        },
+        "store{{ forloop.index }}_index5": {
+          "lat": {{ block.settings.lat_5 | json }},
+          "lng":  {{ block.settings.lng_5 | json }} ,
+          "name": {{ block.settings.title_5 | json }},
+          "city": {{ block.settings.city_5 | json }},
+          "province": {{ block.settings.province_5 | json }},
+          "address": {{ block.settings.address_5 | json }},
+          "zipcode" : {{ block.settings.zipcode_5 | json }},
+          "phone": {{ block.settings.phone_5 | json }},
+          "email": {{ block.settings.email_5 | json }},
+          "website": {{ block.settings.website_5 | json }},
+          "closing_time": {{ block.settings.closing_time_5 | json }}
+        }
+    {%- unless forloop.last and forloop.index == listBlocks.size -%},{% endunless %}
+    {%- endfor -%}
+    }
+
+</script>
+<script>
+    const mapStyles = {
+        default: [],
+        silver: [
+            {
+                elementType: 'geometry',
+                stylers: [{ color: '#f5f5f5' }]
+            },
+            {
+                elementType: 'labels.icon',
+                stylers: [{ visibility: 'off' }]
+            },
+            {
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#616161' }]
+            },
+            {
+                elementType: 'labels.text.stroke',
+                stylers: [{ color: '#f5f5f5' }]
+            },
+            {
+                featureType: 'administrative.land_parcel',
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#bdbdbd' }]
+            },
+            {
+                featureType: 'poi',
+                elementType: 'geometry',
+                stylers: [{ color: '#eeeeee' }]
+            },
+            {
+                featureType: 'poi',
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#757575' }]
+            },
+            {
+                featureType: 'poi.park',
+                elementType: 'geometry',
+                stylers: [{ color: '#e5e5e5' }]
+            },
+            {
+                featureType: 'poi.park',
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#9e9e9e' }]
+            },
+            {
+                featureType: 'road',
+                elementType: 'geometry',
+                stylers: [{ color: '#ffffff' }]
+            },
+            {
+                featureType: 'road.arterial',
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#757575' }]
+            },
+            {
+                featureType: 'road.highway',
+                elementType: 'geometry',
+                stylers: [{ color: '#dadada' }]
+            },
+            {
+                featureType: 'road.highway',
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#616161' }]
+            },
+            {
+                featureType: 'road.local',
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#9e9e9e' }]
+            },
+            {
+                featureType: 'transit.line',
+                elementType: 'geometry',
+                stylers: [{ color: '#e5e5e5' }]
+            },
+            {
+                featureType: 'transit.station',
+                elementType: 'geometry',
+                stylers: [{ color: '#eeeeee' }]
+            },
+            {
+                featureType: 'water',
+                elementType: 'geometry',
+                stylers: [{ color: '#c9c9c9' }]
+            },
+            {
+                featureType: 'water',
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#9e9e9e' }]
+            }
+        ],
+        night: [
+            { elementType: 'geometry', stylers: [{ color: '#242f3e' }] },
+            { elementType: 'labels.text.stroke', stylers: [{ color: '#242f3e' }] },
+            { elementType: 'labels.text.fill', stylers: [{ color: '#746855' }] },
+            {
+                featureType: 'administrative.locality',
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#d59563' }]
+            },
+            {
+                featureType: 'poi',
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#d59563' }]
+            },
+            {
+                featureType: 'poi.park',
+                elementType: 'geometry',
+                stylers: [{ color: '#263c3f' }]
+            },
+            {
+                featureType: 'poi.park',
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#6b9a76' }]
+            },
+            {
+                featureType: 'road',
+                elementType: 'geometry',
+                stylers: [{ color: '#38414e' }]
+            },
+            {
+                featureType: 'road',
+                elementType: 'geometry.stroke',
+                stylers: [{ color: '#212a37' }]
+            },
+            {
+                featureType: 'road',
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#9ca5b3' }]
+            },
+            {
+                featureType: 'road.highway',
+                elementType: 'geometry',
+                stylers: [{ color: '#746855' }]
+            },
+            {
+                featureType: 'road.highway',
+                elementType: 'geometry.stroke',
+                stylers: [{ color: '#1f2835' }]
+            },
+            {
+                featureType: 'road.highway',
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#f3d19c' }]
+            },
+            {
+                featureType: 'transit',
+                elementType: 'geometry',
+                stylers: [{ color: '#2f3948' }]
+            },
+            {
+                featureType: 'transit.station',
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#d59563' }]
+            },
+            {
+                featureType: 'water',
+                elementType: 'geometry',
+                stylers: [{ color: '#17263c' }]
+            },
+            {
+                featureType: 'water',
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#515c6d' }]
+            },
+            {
+                featureType: 'water',
+                elementType: 'labels.text.stroke',
+                stylers: [{ color: '#17263c' }]
+            }
+        ],
+        retro: [
+            { elementType: 'geometry', stylers: [{ color: '#ebe3cd' }] },
+            { elementType: 'labels.text.fill', stylers: [{ color: '#523735' }] },
+            { elementType: 'labels.text.stroke', stylers: [{ color: '#f5f1e6' }] },
+            {
+                featureType: 'administrative',
+                elementType: 'geometry.stroke',
+                stylers: [{ color: '#c9b2a6' }]
+            },
+            {
+                featureType: 'administrative.land_parcel',
+                elementType: 'geometry.stroke',
+                stylers: [{ color: '#dcd2be' }]
+            },
+            {
+                featureType: 'administrative.land_parcel',
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#ae9e90' }]
+            },
+            {
+                featureType: 'landscape.natural',
+                elementType: 'geometry',
+                stylers: [{ color: '#dfd2ae' }]
+            },
+            {
+                featureType: 'poi',
+                elementType: 'geometry',
+                stylers: [{ color: '#dfd2ae' }]
+            },
+            {
+                featureType: 'poi',
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#93817c' }]
+            },
+            {
+                featureType: 'poi.park',
+                elementType: 'geometry.fill',
+                stylers: [{ color: '#a5b076' }]
+            },
+            {
+                featureType: 'poi.park',
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#447530' }]
+            },
+            {
+                featureType: 'road',
+                elementType: 'geometry',
+                stylers: [{ color: '#f5f1e6' }]
+            },
+            {
+                featureType: 'road.arterial',
+                elementType: 'geometry',
+                stylers: [{ color: '#fdfcf8' }]
+            },
+            {
+                featureType: 'road.highway',
+                elementType: 'geometry',
+                stylers: [{ color: '#f8c967' }]
+            },
+            {
+                featureType: 'road.highway',
+                elementType: 'geometry.stroke',
+                stylers: [{ color: '#e9bc62' }]
+            },
+            {
+                featureType: 'road.highway.controlled_access',
+                elementType: 'geometry',
+                stylers: [{ color: '#e98d58' }]
+            },
+            {
+                featureType: 'road.highway.controlled_access',
+                elementType: 'geometry.stroke',
+                stylers: [{ color: '#db8555' }]
+            },
+            {
+                featureType: 'road.local',
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#806b63' }]
+            },
+            {
+                featureType: 'transit.line',
+                elementType: 'geometry',
+                stylers: [{ color: '#dfd2ae' }]
+            },
+            {
+                featureType: 'transit.line',
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#8f7d77' }]
+            },
+            {
+                featureType: 'transit.line',
+                elementType: 'labels.text.stroke',
+                stylers: [{ color: '#ebe3cd' }]
+            },
+            {
+                featureType: 'transit.station',
+                elementType: 'geometry',
+                stylers: [{ color: '#dfd2ae' }]
+            },
+            {
+                featureType: 'water',
+                elementType: 'geometry.fill',
+                stylers: [{ color: '#b9d3c2' }]
+            },
+            {
+                featureType: 'water',
+                elementType: 'labels.text.fill',
+                stylers: [{ color: '#92998d' }]
+            }
+        ],
+        hiding: [
+            {
+                featureType: 'poi.business',
+                stylers: [{ visibility: 'off' }]
+            },
+            {
+                featureType: 'transit',
+                elementType: 'labels.icon',
+                stylers: [{ visibility: 'off' }]
+            }
+        ],
+        vintage: [
+            { elementType: 'geometry', stylers: [{ color: '#eae3c8' }] },
+            { elementType: 'labels.text.fill', stylers: [{ color: '#523735' }] },
+            { elementType: 'labels.text.stroke', stylers: [{ color: '#f5f1e6' }] },
+            { featureType: 'administrative', elementType: 'geometry.stroke', stylers: [{ color: '#c9b2a6' }] },
+            { featureType: 'landscape.natural', elementType: 'geometry', stylers: [{ color: '#dadeb6' }] },
+            { featureType: 'poi', elementType: 'geometry', stylers: [{ color: '#dfd2ae' }] },
+            { featureType: 'poi', elementType: 'labels.text.fill', stylers: [{ color: '#93817c' }] },
+            { featureType: 'poi.park', elementType: 'geometry.fill', stylers: [{ color: '#a5b076' }] },
+            { featureType: 'road', elementType: 'geometry', stylers: [{ color: '#f5f1e6' }] },
+            { featureType: 'road.arterial', elementType: 'labels.text.fill', stylers: [{ color: '#757575' }] },
+            { featureType: 'road.highway', elementType: 'geometry', stylers: [{ color: '#f8c967' }] },
+            { featureType: 'road.local', elementType: 'labels.text.fill', stylers: [{ color: '#806b63' }] },
+            { featureType: 'transit.line', elementType: 'geometry', stylers: [{ color: '#dfd2ae' }] },
+            { featureType: 'water', elementType: 'geometry.fill', stylers: [{ color: '#b9d3c2' }] }
+        ],
+        minimalist: [
+            { elementType: 'geometry', stylers: [{ color: '#fafafa' }] },
+            { elementType: 'labels.icon', stylers: [{ visibility: 'off' }] },
+            { elementType: 'labels.text.fill', stylers: [{ color: '#616161' }] },
+            { elementType: 'labels.text.stroke', stylers: [{ color: '#f5f5f5' }] },
+            { featureType: 'administrative.land_parcel', elementType: 'labels.text.fill', stylers: [{ color: '#bdbdbd' }] },
+            { featureType: 'poi', elementType: 'geometry', stylers: [{ color: '#eeeeee' }] },
+            { featureType: 'poi', elementType: 'labels.text.fill', stylers: [{ color: '#757575' }] },
+            { featureType: 'poi.park', elementType: 'geometry', stylers: [{ color: '#e5e5e5' }] },
+            { featureType: 'road', elementType: 'geometry', stylers: [{ color: '#ffffff' }] },
+            { featureType: 'road.arterial', elementType: 'labels.text.fill', stylers: [{ color: '#757575' }] },
+            { featureType: 'road.highway', elementType: 'geometry', stylers: [{ color: '#dadada' }] },
+            { featureType: 'road.local', elementType: 'labels.text.fill', stylers: [{ color: '#9e9e9e' }] },
+            { featureType: 'transit.line', elementType: 'geometry', stylers: [{ color: '#e5e5e5' }] },
+            { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#c9c9c9' }] }
+        ],
+        greyscale: [
+            { elementType: 'geometry', stylers: [{ color: '#808080' }] },
+            { elementType: 'labels.text.fill', stylers: [{ color: '#333333' }] },
+            { elementType: 'labels.text.stroke', stylers: [{ color: '#ffffff' }] },
+            { featureType: 'administrative', elementType: 'geometry.stroke', stylers: [{ color: '#737373' }] },
+            { featureType: 'landscape.natural', elementType: 'geometry', stylers: [{ color: '#bdbdbd' }] },
+            { featureType: 'poi', elementType: 'geometry', stylers: [{ color: '#eeeeee' }] },
+            { featureType: 'poi', elementType: 'labels.text.fill', stylers: [{ color: '#757575' }] },
+            { featureType: 'poi.park', elementType: 'geometry', stylers: [{ color: '#e5e5e5' }] },
+            { featureType: 'poi.park', elementType: 'labels.text.fill', stylers: [{ color: '#9e9e9e' }] },
+            { featureType: 'road', elementType: 'geometry', stylers: [{ color: '#ffffff' }] },
+            { featureType: 'road.arterial', elementType: 'labels.text.fill', stylers: [{ color: '#757575' }] },
+            { featureType: 'road.highway', elementType: 'geometry', stylers: [{ color: '#dadada' }] },
+            { featureType: 'road.highway', elementType: 'labels.text.fill', stylers: [{ color: '#616161' }] },
+            { featureType: 'road.local', elementType: 'labels.text.fill', stylers: [{ color: '#9e9e9e' }] },
+            { featureType: 'transit.line', elementType: 'geometry', stylers: [{ color: '#e5e5e5' }] },
+            { featureType: 'transit.station', elementType: 'geometry', stylers: [{ color: '#eeeeee' }] },
+            { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#c9c9c9' }] },
+            { featureType: 'water', elementType: 'labels.text.fill', stylers: [{ color: '#9e9e9e' }] }
+        ],
+        neon: [
+            { elementType: 'geometry', stylers: [{ color: '#000000' }] },
+            { elementType: 'labels.text.stroke', stylers: [{ color: '#000000' }] },
+            { elementType: 'labels.text.fill', stylers: [{ color: '#ffffff' }] },
+            { featureType: 'administrative.locality', elementType: 'labels.text.fill', stylers: [{ color: '#ff00ff' }] },
+            { featureType: 'poi', elementType: 'labels.text.fill', stylers: [{ color: '#00ffff' }] },
+            { featureType: 'poi.park', elementType: 'geometry', stylers: [{ color: '#009900' }] },
+            { featureType: 'road', elementType: 'geometry', stylers: [{ color: '#ff0000' }] },
+            { featureType: 'road', elementType: 'geometry.stroke', stylers: [{ color: '#ff00ff' }] },
+            { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#0000ff' }] },
+            { featureType: 'water', elementType: 'labels.text.fill', stylers: [{ color: '#00ffff' }] }
+        ],
+        pixelArt: [
+            { elementType: 'geometry', stylers: [{ color: '#808080' }] },
+            { elementType: 'labels.text.fill', stylers: [{ color: '#d40000' }] },
+            { featureType: 'road', elementType: 'geometry', stylers: [{ color: '#ffffff' }] },
+            { featureType: 'road.arterial', elementType: 'labels.text.fill', stylers: [{ color: '#ff0000' }] },
+            { featureType: 'landscape', elementType: 'geometry', stylers: [{ color: '#00ff00' }] },
+            { featureType: 'poi.park', elementType: 'geometry', stylers: [{ color: '#005500' }] },
+            { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#0000ff' }] },
+            { featureType: 'water', elementType: 'labels.text.fill', stylers: [{ color: '#00ffff' }] }
+        ],
+        sketch: [
+            { elementType: 'geometry', stylers: [{ color: '#ffffff' }] },
+            { elementType: 'labels.text.fill', stylers: [{ color: '#000000' }] },
+            { elementType: 'labels.text.stroke', stylers: [{ color: '#ffffff' }] },
+            { featureType: 'road', elementType: 'geometry', stylers: [{ color: '#000000' }] },
+            { featureType: 'landscape', elementType: 'geometry', stylers: [{ color: '#cccccc' }] },
+            { featureType: 'poi', elementType: 'geometry', stylers: [{ color: '#eeeeee' }] },
+            { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#aadaff' }] }
+        ],
+        assassin: [
+            {
+                featureType: 'all',
+                elementType: 'all',
+                stylers: [
+                    {
+                        visibility: 'on'
+                    }
+                ]
+            },
+            {
+                featureType: 'all',
+                elementType: 'labels',
+                stylers: [
+                    {
+                        visibility: 'off'
+                    },
+                    {
+                        saturation: '-100'
+                    }
+                ]
+            },
+            {
+                featureType: 'all',
+                elementType: 'labels.text.fill',
+                stylers: [
+                    {
+                        saturation: 36
+                    },
+                    {
+                        color: '#000000'
+                    },
+                    {
+                        lightness: 40
+                    },
+                    {
+                        visibility: 'off'
+                    }
+                ]
+            },
+            {
+                featureType: 'all',
+                elementType: 'labels.text.stroke',
+                stylers: [
+                    {
+                        visibility: 'off'
+                    },
+                    {
+                        color: '#000000'
+                    },
+                    {
+                        lightness: 16
+                    }
+                ]
+            },
+            {
+                featureType: 'all',
+                elementType: 'labels.icon',
+                stylers: [
+                    {
+                        visibility: 'off'
+                    }
+                ]
+            },
+            {
+                featureType: 'administrative',
+                elementType: 'geometry.fill',
+                stylers: [
+                    {
+                        color: '#000000'
+                    },
+                    {
+                        lightness: 20
+                    }
+                ]
+            },
+            {
+                featureType: 'administrative',
+                elementType: 'geometry.stroke',
+                stylers: [
+                    {
+                        color: '#000000'
+                    },
+                    {
+                        lightness: 17
+                    },
+                    {
+                        weight: 1.2
+                    }
+                ]
+            },
+            {
+                featureType: 'landscape',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        color: '#000000'
+                    },
+                    {
+                        lightness: 20
+                    }
+                ]
+            },
+            {
+                featureType: 'landscape',
+                elementType: 'geometry.fill',
+                stylers: [
+                    {
+                        color: '#4d6059'
+                    }
+                ]
+            },
+            {
+                featureType: 'landscape',
+                elementType: 'geometry.stroke',
+                stylers: [
+                    {
+                        color: '#4d6059'
+                    }
+                ]
+            },
+            {
+                featureType: 'landscape.natural',
+                elementType: 'geometry.fill',
+                stylers: [
+                    {
+                        color: '#4d6059'
+                    }
+                ]
+            },
+            {
+                featureType: 'poi',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        lightness: 21
+                    }
+                ]
+            },
+            {
+                featureType: 'poi',
+                elementType: 'geometry.fill',
+                stylers: [
+                    {
+                        color: '#4d6059'
+                    }
+                ]
+            },
+            {
+                featureType: 'poi',
+                elementType: 'geometry.stroke',
+                stylers: [
+                    {
+                        color: '#4d6059'
+                    }
+                ]
+            },
+            {
+                featureType: 'road',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        visibility: 'on'
+                    },
+                    {
+                        color: '#7f8d89'
+                    }
+                ]
+            },
+            {
+                featureType: 'road',
+                elementType: 'geometry.fill',
+                stylers: [
+                    {
+                        color: '#7f8d89'
+                    }
+                ]
+            },
+            {
+                featureType: 'road.highway',
+                elementType: 'geometry.fill',
+                stylers: [
+                    {
+                        color: '#7f8d89'
+                    },
+                    {
+                        lightness: 17
+                    }
+                ]
+            },
+            {
+                featureType: 'road.highway',
+                elementType: 'geometry.stroke',
+                stylers: [
+                    {
+                        color: '#7f8d89'
+                    },
+                    {
+                        lightness: 29
+                    },
+                    {
+                        weight: 0.2
+                    }
+                ]
+            },
+            {
+                featureType: 'road.arterial',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        color: '#000000'
+                    },
+                    {
+                        lightness: 18
+                    }
+                ]
+            },
+            {
+                featureType: 'road.arterial',
+                elementType: 'geometry.fill',
+                stylers: [
+                    {
+                        color: '#7f8d89'
+                    }
+                ]
+            },
+            {
+                featureType: 'road.arterial',
+                elementType: 'geometry.stroke',
+                stylers: [
+                    {
+                        color: '#7f8d89'
+                    }
+                ]
+            },
+            {
+                featureType: 'road.local',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        color: '#000000'
+                    },
+                    {
+                        lightness: 16
+                    }
+                ]
+            },
+            {
+                featureType: 'road.local',
+                elementType: 'geometry.fill',
+                stylers: [
+                    {
+                        color: '#7f8d89'
+                    }
+                ]
+            },
+            {
+                featureType: 'road.local',
+                elementType: 'geometry.stroke',
+                stylers: [
+                    {
+                        color: '#7f8d89'
+                    }
+                ]
+            },
+            {
+                featureType: 'transit',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        color: '#000000'
+                    },
+                    {
+                        lightness: 19
+                    }
+                ]
+            },
+            {
+                featureType: 'water',
+                elementType: 'all',
+                stylers: [
+                    {
+                        color: '#2b3638'
+                    },
+                    {
+                        visibility: 'on'
+                    }
+                ]
+            },
+            {
+                featureType: 'water',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        color: '#2b3638'
+                    },
+                    {
+                        lightness: 17
+                    }
+                ]
+            },
+            {
+                featureType: 'water',
+                elementType: 'geometry.fill',
+                stylers: [
+                    {
+                        color: '#24282b'
+                    }
+                ]
+            },
+            {
+                featureType: 'water',
+                elementType: 'geometry.stroke',
+                stylers: [
+                    {
+                        color: '#24282b'
+                    }
+                ]
+            },
+            {
+                featureType: 'water',
+                elementType: 'labels',
+                stylers: [
+                    {
+                        visibility: 'off'
+                    }
+                ]
+            },
+            {
+                featureType: 'water',
+                elementType: 'labels.text',
+                stylers: [
+                    {
+                        visibility: 'off'
+                    }
+                ]
+            },
+            {
+                featureType: 'water',
+                elementType: 'labels.text.fill',
+                stylers: [
+                    {
+                        visibility: 'off'
+                    }
+                ]
+            },
+            {
+                featureType: 'water',
+                elementType: 'labels.text.stroke',
+                stylers: [
+                    {
+                        visibility: 'off'
+                    }
+                ]
+            },
+            {
+                featureType: 'water',
+                elementType: 'labels.icon',
+                stylers: [
+                    {
+                        visibility: 'off'
+                    }
+                ]
+            }
+        ],
+        lightGray: [
+            {
+                featureType: 'water',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        color: '#e9e9e9'
+                    },
+                    {
+                        lightness: 17
+                    }
+                ]
+            },
+            {
+                featureType: 'landscape',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        color: '#f5f5f5'
+                    },
+                    {
+                        lightness: 20
+                    }
+                ]
+            },
+            {
+                featureType: 'road.highway',
+                elementType: 'geometry.fill',
+                stylers: [
+                    {
+                        color: '#ffffff'
+                    },
+                    {
+                        lightness: 17
+                    }
+                ]
+            },
+            {
+                featureType: 'road.highway',
+                elementType: 'geometry.stroke',
+                stylers: [
+                    {
+                        color: '#ffffff'
+                    },
+                    {
+                        lightness: 29
+                    },
+                    {
+                        weight: 0.2
+                    }
+                ]
+            },
+            {
+                featureType: 'road.arterial',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        color: '#ffffff'
+                    },
+                    {
+                        lightness: 18
+                    }
+                ]
+            },
+            {
+                featureType: 'road.local',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        color: '#ffffff'
+                    },
+                    {
+                        lightness: 16
+                    }
+                ]
+            },
+            {
+                featureType: 'poi',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        color: '#f5f5f5'
+                    },
+                    {
+                        lightness: 21
+                    }
+                ]
+            },
+            {
+                featureType: 'poi.park',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        color: '#dedede'
+                    },
+                    {
+                        lightness: 21
+                    }
+                ]
+            },
+            {
+                elementType: 'labels.text.stroke',
+                stylers: [
+                    {
+                        visibility: 'on'
+                    },
+                    {
+                        color: '#ffffff'
+                    },
+                    {
+                        lightness: 16
+                    }
+                ]
+            },
+            {
+                elementType: 'labels.text.fill',
+                stylers: [
+                    {
+                        saturation: 36
+                    },
+                    {
+                        color: '#333333'
+                    },
+                    {
+                        lightness: 40
+                    }
+                ]
+            },
+            {
+                elementType: 'labels.icon',
+                stylers: [
+                    {
+                        visibility: 'off'
+                    }
+                ]
+            },
+            {
+                featureType: 'transit',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        color: '#f2f2f2'
+                    },
+                    {
+                        lightness: 19
+                    }
+                ]
+            },
+            {
+                featureType: 'administrative',
+                elementType: 'geometry.fill',
+                stylers: [
+                    {
+                        color: '#fefefe'
+                    },
+                    {
+                        lightness: 20
+                    }
+                ]
+            },
+            {
+                featureType: 'administrative',
+                elementType: 'geometry.stroke',
+                stylers: [
+                    {
+                        color: '#fefefe'
+                    },
+                    {
+                        lightness: 17
+                    },
+                    {
+                        weight: 1.2
+                    }
+                ]
+            }
+        ],
+        paper: [
+            {
+                featureType: 'administrative',
+                elementType: 'all',
+                stylers: [
+                    {
+                        visibility: 'off'
+                    }
+                ]
+            },
+            {
+                featureType: 'landscape',
+                elementType: 'all',
+                stylers: [
+                    {
+                        visibility: 'simplified'
+                    },
+                    {
+                        hue: '#0066ff'
+                    },
+                    {
+                        saturation: 74
+                    },
+                    {
+                        lightness: 100
+                    }
+                ]
+            },
+            {
+                featureType: 'poi',
+                elementType: 'all',
+                stylers: [
+                    {
+                        visibility: 'simplified'
+                    }
+                ]
+            },
+            {
+                featureType: 'road',
+                elementType: 'all',
+                stylers: [
+                    {
+                        visibility: 'simplified'
+                    }
+                ]
+            },
+            {
+                featureType: 'road.highway',
+                elementType: 'all',
+                stylers: [
+                    {
+                        visibility: 'off'
+                    },
+                    {
+                        weight: 0.6
+                    },
+                    {
+                        saturation: -85
+                    },
+                    {
+                        lightness: 61
+                    }
+                ]
+            },
+            {
+                featureType: 'road.highway',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        visibility: 'on'
+                    }
+                ]
+            },
+            {
+                featureType: 'road.arterial',
+                elementType: 'all',
+                stylers: [
+                    {
+                        visibility: 'off'
+                    }
+                ]
+            },
+            {
+                featureType: 'road.local',
+                elementType: 'all',
+                stylers: [
+                    {
+                        visibility: 'on'
+                    }
+                ]
+            },
+            {
+                featureType: 'transit',
+                elementType: 'all',
+                stylers: [
+                    {
+                        visibility: 'simplified'
+                    }
+                ]
+            },
+            {
+                featureType: 'water',
+                elementType: 'all',
+                stylers: [
+                    {
+                        visibility: 'simplified'
+                    },
+                    {
+                        color: '#5f94ff'
+                    },
+                    {
+                        lightness: 26
+                    },
+                    {
+                        gamma: 5.86
+                    }
+                ]
+            }
+        ],
+        vintageGold: [
+            {
+                featureType: 'all',
+                elementType: 'all',
+                stylers: [
+                    {
+                        color: '#ff7000'
+                    },
+                    {
+                        lightness: '69'
+                    },
+                    {
+                        saturation: '100'
+                    },
+                    {
+                        weight: '1.17'
+                    },
+                    {
+                        gamma: '2.04'
+                    }
+                ]
+            },
+            {
+                featureType: 'all',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        color: '#cb8536'
+                    }
+                ]
+            },
+            {
+                featureType: 'all',
+                elementType: 'labels',
+                stylers: [
+                    {
+                        color: '#ffb471'
+                    },
+                    {
+                        lightness: '66'
+                    },
+                    {
+                        saturation: '100'
+                    }
+                ]
+            },
+            {
+                featureType: 'all',
+                elementType: 'labels.text.fill',
+                stylers: [
+                    {
+                        gamma: 0.01
+                    },
+                    {
+                        lightness: 20
+                    }
+                ]
+            },
+            {
+                featureType: 'all',
+                elementType: 'labels.text.stroke',
+                stylers: [
+                    {
+                        saturation: -31
+                    },
+                    {
+                        lightness: -33
+                    },
+                    {
+                        weight: 2
+                    },
+                    {
+                        gamma: 0.8
+                    }
+                ]
+            },
+            {
+                featureType: 'all',
+                elementType: 'labels.icon',
+                stylers: [
+                    {
+                        visibility: 'off'
+                    }
+                ]
+            },
+            {
+                featureType: 'landscape',
+                elementType: 'all',
+                stylers: [
+                    {
+                        lightness: '-8'
+                    },
+                    {
+                        gamma: '0.98'
+                    },
+                    {
+                        weight: '2.45'
+                    },
+                    {
+                        saturation: '26'
+                    }
+                ]
+            },
+            {
+                featureType: 'landscape',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        lightness: 30
+                    },
+                    {
+                        saturation: 30
+                    }
+                ]
+            },
+            {
+                featureType: 'poi',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        saturation: 20
+                    }
+                ]
+            },
+            {
+                featureType: 'poi.park',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        lightness: 20
+                    },
+                    {
+                        saturation: -20
+                    }
+                ]
+            },
+            {
+                featureType: 'road',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        lightness: 10
+                    },
+                    {
+                        saturation: -30
+                    }
+                ]
+            },
+            {
+                featureType: 'road',
+                elementType: 'geometry.stroke',
+                stylers: [
+                    {
+                        saturation: 25
+                    },
+                    {
+                        lightness: 25
+                    }
+                ]
+            },
+            {
+                featureType: 'water',
+                elementType: 'all',
+                stylers: [
+                    {
+                        lightness: -20
+                    },
+                    {
+                        color: '#ecc080'
+                    }
+                ]
+            }
+        ],
+        pale: [
+            {
+                featureType: 'administrative',
+                elementType: 'all',
+                stylers: [
+                    {
+                        visibility: 'on'
+                    },
+                    {
+                        lightness: 33
+                    }
+                ]
+            },
+            {
+                featureType: 'landscape',
+                elementType: 'all',
+                stylers: [
+                    {
+                        color: '#f2e5d4'
+                    }
+                ]
+            },
+            {
+                featureType: 'poi.park',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        color: '#c5dac6'
+                    }
+                ]
+            },
+            {
+                featureType: 'poi.park',
+                elementType: 'labels',
+                stylers: [
+                    {
+                        visibility: 'on'
+                    },
+                    {
+                        lightness: 20
+                    }
+                ]
+            },
+            {
+                featureType: 'road',
+                elementType: 'all',
+                stylers: [
+                    {
+                        lightness: 20
+                    }
+                ]
+            },
+            {
+                featureType: 'road.highway',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        color: '#c5c6c6'
+                    }
+                ]
+            },
+            {
+                featureType: 'road.arterial',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        color: '#e4d7c6'
+                    }
+                ]
+            },
+            {
+                featureType: 'road.local',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        color: '#fbfaf7'
+                    }
+                ]
+            },
+            {
+                featureType: 'water',
+                elementType: 'all',
+                stylers: [
+                    {
+                        visibility: 'on'
+                    },
+                    {
+                        color: '#acbcc9'
+                    }
+                ]
+            }
+        ],
+        darkBlue: [
+            {
+                featureType: 'water',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        color: '#193341'
+                    }
+                ]
+            },
+            {
+                featureType: 'landscape',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        color: '#2c5a71'
+                    }
+                ]
+            },
+            {
+                featureType: 'road',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        color: '#29768a'
+                    },
+                    {
+                        lightness: -37
+                    }
+                ]
+            },
+            {
+                featureType: 'poi',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        color: '#406d80'
+                    }
+                ]
+            },
+            {
+                featureType: 'transit',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        color: '#406d80'
+                    }
+                ]
+            },
+            {
+                elementType: 'labels.text.stroke',
+                stylers: [
+                    {
+                        visibility: 'on'
+                    },
+                    {
+                        color: '#3e606f'
+                    },
+                    {
+                        weight: 2
+                    },
+                    {
+                        gamma: 0.84
+                    }
+                ]
+            },
+            {
+                elementType: 'labels.text.fill',
+                stylers: [
+                    {
+                        color: '#ffffff'
+                    }
+                ]
+            },
+            {
+                featureType: 'administrative',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        weight: 0.6
+                    },
+                    {
+                        color: '#1a3541'
+                    }
+                ]
+            },
+            {
+                elementType: 'labels.icon',
+                stylers: [
+                    {
+                        visibility: 'off'
+                    }
+                ]
+            },
+            {
+                featureType: 'poi.park',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        color: '#2c5a71'
+                    }
+                ]
+            }
+        ],
+        space: [
+            {
+                featureType: 'all',
+                elementType: 'labels.text.fill',
+                stylers: [
+                    {
+                        color: '#ffffff'
+                    }
+                ]
+            },
+            {
+                featureType: 'all',
+                elementType: 'labels.text.stroke',
+                stylers: [
+                    {
+                        color: '#000000'
+                    },
+                    {
+                        lightness: 13
+                    }
+                ]
+            },
+            {
+                featureType: 'administrative',
+                elementType: 'geometry.fill',
+                stylers: [
+                    {
+                        color: '#000000'
+                    }
+                ]
+            },
+            {
+                featureType: 'administrative',
+                elementType: 'geometry.stroke',
+                stylers: [
+                    {
+                        color: '#144b53'
+                    },
+                    {
+                        lightness: 14
+                    },
+                    {
+                        weight: 1.4
+                    }
+                ]
+            },
+            {
+                featureType: 'administrative',
+                elementType: 'labels.text.fill',
+                stylers: [
+                    {
+                        color: '#1ee7e4'
+                    }
+                ]
+            },
+            {
+                featureType: 'landscape',
+                elementType: 'all',
+                stylers: [
+                    {
+                        color: '#08304b'
+                    }
+                ]
+            },
+            {
+                featureType: 'landscape',
+                elementType: 'labels.text.fill',
+                stylers: [
+                    {
+                        color: '#fbf6f6'
+                    }
+                ]
+            },
+            {
+                featureType: 'poi',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        color: '#0c4152'
+                    },
+                    {
+                        lightness: 5
+                    }
+                ]
+            },
+            {
+                featureType: 'poi',
+                elementType: 'geometry.fill',
+                stylers: [
+                    {
+                        color: '#084a69'
+                    }
+                ]
+            },
+            {
+                featureType: 'road.highway',
+                elementType: 'geometry.fill',
+                stylers: [
+                    {
+                        color: '#000000'
+                    }
+                ]
+            },
+            {
+                featureType: 'road.highway',
+                elementType: 'geometry.stroke',
+                stylers: [
+                    {
+                        color: '#0b434f'
+                    },
+                    {
+                        lightness: 25
+                    }
+                ]
+            },
+            {
+                featureType: 'road.arterial',
+                elementType: 'geometry.fill',
+                stylers: [
+                    {
+                        color: '#000000'
+                    }
+                ]
+            },
+            {
+                featureType: 'road.arterial',
+                elementType: 'geometry.stroke',
+                stylers: [
+                    {
+                        color: '#0b3d51'
+                    },
+                    {
+                        lightness: 16
+                    }
+                ]
+            },
+            {
+                featureType: 'road.local',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        color: '#000000'
+                    }
+                ]
+            },
+            {
+                featureType: 'transit',
+                elementType: 'all',
+                stylers: [
+                    {
+                        color: '#146474'
+                    }
+                ]
+            },
+            {
+                featureType: 'water',
+                elementType: 'all',
+                stylers: [
+                    {
+                        color: '#021019'
+                    }
+                ]
+            }
+        ]
+    };
+
+    (g => {
+        let h, a, k, p = 'The Google Maps JavaScript API', c = 'google', l = 'importLibrary', q = '__ib__',
+            m = document, b = window
+        b = b[c] || (b[c] = {})
+        let d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams,
+            u = () => h || (h = new Promise(async (f, n) => {
+                await (a = m.createElement('script'))
+                e.set('libraries', [...r] + '')
+                for (k in g) e.set(k.replace(/[A-Z]/g, t => '_' + t[0].toLowerCase()), g[k])
+                e.set('callback', c + '.maps.' + q)
+                a.src = `https://maps.${c}apis.com/maps/api/js?` + e
+                d[q] = f
+                a.onerror = () => h = n(Error(p + ' could not load.'))
+                a.nonce = m.querySelector('script[nonce]')?.nonce || ''
+                m.head.append(a)
+            }))
+        d[l] ? console.warn(p + ' only loads once. Ignoring:', g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n))
+    })
+    ({ key: "{{ section.settings.map_api }}", v: 'weekly' })
+
+    let gmarkers = [], cityCircle = null, listDataSearch = [], infowindow, midpointCenter, initializedMap, LatLngbounds;
+
+    function initMap () {
+        let listStore = JSON.parse(document.querySelector(('[data-store-json]')).innerHTML);
+        let lat_center = {{ section.settings.lat_center }};
+        let lng_center = {{ section.settings.lng_center }};
+
+        let center = new google.maps.LatLng(lat_center, lng_center)
+        let mapOptions = {
+            zoom: {{ section.settings.default_zoom_map }},
+            center: center,
+            mapTypeId: "roadmap"
+        }
+
+        infowindow = new google.maps.InfoWindow();
+        LatLngbounds = new google.maps.LatLngBounds();
+
+        map = new google.maps.Map(document.getElementById('map_google'), mapOptions)
+        for (let key in listStore) {
+            let marker = listStore[key]
+            if (marker.lat && marker.lng && marker.name && marker.address) {
+                addMarker(marker)
+                if (marker.name) {
+                    listDataSearch.push(marker.name)
+                }
+                if (marker.address) {
+                    listDataSearch.push(marker.address)
+                }
+            }
+        }
+
+        map.setOptions({ styles: mapStyles['{{section.settings.map_style}}'] });
+        initializedMap = map;
+
+        initSearchBar();
+    }
+
+    function infoCallback (content, marker) {
+        let storeLive = document.getElementById(marker.name.replaceAll(' ', '')),
+            span = document.createElement('span'),
+            stringDistance = ''
+        if (storeLive) {
+            stringDistance = storeLive.querySelector('.search_distance_information').innerHTML
+            span.innerHTML = content
+            span.querySelector('.search_distance_information').innerHTML = stringDistance
+            content = span.innerHTML
+        }
+        infowindow.setContent(content)
+        infowindow.open(map, marker)
+    }
+
+    function addMarker (marker) {
+        let contentInfoStore = '<div class="info-map-store" id="info-map-store-' + marker.name + '">'
+        if (marker.name) {
+            contentInfoStore += '<div class="infor-window-map name-store"><span>' + marker.name + '</span><span class="search_distance_information"></span></div>'
+        }
+        if (marker.address) {
+            contentInfoStore += '<div class="infor-window-map">' + marker.address + ' </div>'
+        }
+        if (marker.phone) {
+            contentInfoStore += '<div class="infor-window-map"><a class="decoration-none" href="tel:' + marker.phone + '">' + marker.phone + '</a></div>'
+        }
+        if (marker.closing_time) {
+            contentInfoStore += '<div class="infor-window-map">{{ 'general.map.closing_time' | t }}' + ' ' + marker.closing_time + ' </div>'
+        }
+
+        contentInfoStore += '<div class="directions"><a href="https://maps.google.com/maps?saddr=&daddr=' + marker.address + '" target="_blank">{{ 'general.map.directions' | t }}</a></div>'
+        contentInfoStore += '</div>'
+        let icon = marker.icon,
+            iconMapDefault = {{ section.settings.image_icon_map_default | img_url: '50x50' | json }};
+
+        if (icon == null && iconMapDefault) {
+            icon = iconMapDefault
+        }
+
+        let pos = new google.maps.LatLng(marker.lat, marker.lng)
+        marker = new google.maps.Marker({
+            position: pos,
+            name: marker.name,
+            address: marker.address,
+            lat: marker.lat,
+            lng: marker.lng,
+            zipcode: marker.zipcode,
+            icon: icon,
+            contentInfoStore: contentInfoStore,
+            map: map
+        })
+
+        gmarkers.push(marker)
+        marker.addListener('click', () => {
+            infoCallback(contentInfoStore, marker);
+            let markerId = marker.name.replace(/\s/g, "");
+            let allStores = document.querySelectorAll('.store-info');
+            allStores.forEach(function (element) {
+                element.classList.remove('lsl-highlight');
+            });
+            document.getElementById(markerId).classList.add('lsl-highlight');
+            var target = document.getElementById(markerId);
+            window.target = document.getElementById(markerId);
+
+            let listInfoStore = document.getElementById('list-info-store');
+
+            listInfoStore.scrollTo({
+                top: target.offsetTop - listInfoStore.offsetTop,
+                behavior: 'smooth'
+            });
+
+            map.setZoom({{ section.settings.default_zoom_map | plus: 3 }})
+            map.setCenter(marker.getPosition())
+        })
+    }
+
+    function initSearchBar() {
+        const searchInput = document.getElementById("input-search-map");
+        const searchBox = new google.maps.places.SearchBox(searchInput);
+        let radius, searchQuery;
+
+        searchBox.addListener("places_changed", () => {
+            const places = searchBox.getPlaces();
+
+            if (places.length === 0) return;
+
+            const place = places[0];
+            document.getElementById('input-search-map').addEventListener('keypress', function(event) {
+                // Check if the pressed key is Enter (key code 13)
+                if (event.key === 'Enter') {
+                    document.getElementById('btn-search').click();
+                }
+            });
+
+
+            document.getElementById('btn-search').addEventListener('click', function (e) {
+                e.preventDefault();
+
+                radius = parseFloat(document.getElementById('google-map-radius').value);
+                searchQuery = searchInput.value;
+
+                if (searchQuery == '') {
+                    initMap();
+                    document.getElementById('notStoreSearch').classList.add('tw-hidden');
+                    document.querySelectorAll('.search_distance_information').forEach(item => {
+                        item.innerHTML = '';
+                    })
+                    let allStores = document.querySelectorAll('.store-info');
+                    allStores.forEach(function (element) {
+                        element.classList.remove('hidden')
+                    });
+                } else {
+                    let showResultText = document.querySelector('.header-query-search');
+                    let showKeySearch = showResultText.querySelector('#key_query_search');
+                    showKeySearch.innerHTML = '"' + searchQuery + '"';
+                    showResultText.classList.remove('hidden');
+
+                    handlePlacesChanged(places, radius);
+                    searchStoresByDistance(searchQuery, radius);
+                }
+            })
+        });
+    }
+
+    function searchStoresByDistance(searchQuery, radius) {
+
+        const geocoder = new google.maps.Geocoder();
+
+        // Use the Google Maps Geocoder to geocode the searched location
+        geocoder.geocode({ address: searchQuery, bounds: this.bounds }, (results, status) => {
+            if (status === 'OK') {
+                const searchLocation = results[0].geometry.location;
+                const searchedPos = createLngLatObject(searchLocation);
+
+                // Add a marker at the searched location
+                let iconMap = {{ section.settings.image_icon_map_default | img_url: '50x50' | json }};
+                const markerForSearchInput = new google.maps.Marker({
+                    map: map,
+                    opacity: 0.2,
+                    position: searchLocation,
+                    icon: {
+                        url: iconMap,
+                    },
+                });
+
+                showStoresNearby(searchedPos, radius);
+            } else if (status === 'ZERO_RESULTS') {
+                console.log('zero results, searching storeArray');
+                LatLngbounds = new google.maps.LatLngBounds();
+
+                const hasFoundStore = this.storeArray.some((store) => {
+                    //returns store if ANY value of store is equal to what we're searching for.
+                    const matchesSearch = Object.values(store).some((value) => {
+                        try {
+                            return value.toString().includes(searchQuery);
+                        } catch {
+                            return false;
+                        }
+                    });
+
+                    toggleStoreView(store, matchesSearch);
+
+                    return matchesSearch;
+                });
+                if (!hasFoundStore) return console.log('cant find search term');
+                showOnlyStoresInBound(radius);
+            } else {
+                console.error('Geocode was not successful for the following reason:', status);
+            }
+        });
+    }
+
+    function createLngLatObject(obj) {
+        return { lat: obj.lat(), lng: obj.lng() };
+    }
+
+    function showStoresNearby(location, radius) {
+        LatLngbounds = new google.maps.LatLngBounds();
+        let noResult = true;
+        let distance, distanceMessage, showDistance, storeId, storePanel;
+
+        gmarkers.forEach((store) => {
+            const distanceFromSearch = calculateDistance(location, store);
+            const isWithingRange = distanceFromSearch <= radius;
+
+            if(isWithingRange) {
+                noResult = false;
+
+                distance = (parseFloat(distanceFromSearch) / 1000 ).toFixed(2);
+                distanceMessage = 'Está a ' + distance + 'Km' + ' de tu búsqueda.';
+
+                storeId = store.name.replace(/\s+/g, '');
+                storePanel = document.getElementById(storeId);
+                storePanel.querySelector('.search_distance_information').innerHTML = distanceMessage;
+            }
+
+            toggleStoreView(store, isWithingRange);
+        });
+
+        if(noResult) {
+            document.getElementById('notStoreSearch').classList.remove('tw-hidden');
+        } else {
+            document.getElementById('notStoreSearch').classList.add('tw-hidden');
+        }
+
+        showOnlyStoresInBound(radius);
+    }
+
+    function calculateDistance(point1, point2) {
+        const earthRadiusMeters = 6371e3;
+
+        const lat1 = toRadians(point1.lat);
+        const lat2 = toRadians(point2.lat);
+        const deltaLat = toRadians(point2.lat - point1.lat);
+        const deltaLng = toRadians(point2.lng - point1.lng);
+
+        const a =
+            Math.sin(deltaLat / 2) * Math.sin(deltaLat / 2) +
+            Math.cos(lat1) * Math.cos(lat2) * Math.sin(deltaLng / 2) * Math.sin(deltaLng / 2);
+
+        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+
+        return earthRadiusMeters * c;
+    }
+
+    function toRadians(degrees) {
+        return degrees * (Math.PI / 180);
+    }
+
+    function toggleStoreView(store, bool) {
+        let storeName, storeId;
+        storeName = store.name;
+        storeId = storeName.replace(/\s+/g, '');
+
+        if (bool) {
+            document.getElementById(storeId).classList.remove('hidden');
+        } else {
+            document.getElementById(storeId).classList.add('hidden');
+        }
+    }
+
+    function showOnlyStoresInBound(radius) {
+        const currentZoom = initializedMap.getZoom();
+        const settingsZoom = getZoomLevel(radius);
+
+        if (currentZoom > settingsZoom) {
+            initializedMap.setZoom(settingsZoom);
+        }
+    }
+
+    function closeAllInfoWindows() {
+        gmarkers.forEach(function (store) {
+            if (store.infoWindow) {
+                store.infoWindow.close();
+            }
+        });
+    }
+
+    function handlePlacesChanged(places, radius) {
+        if (places?.length == (0 || null || undefined)) {
+            return console.log('No places');
+        }
+
+        const zoomLevel = getZoomLevel(radius);
+        const place = places[0];
+
+        initializedMap.setCenter(place.geometry.location);
+        initializedMap.setZoom(zoomLevel);
+    }
+
+    function getZoomLevel(viewDistance) {
+        const radius = parseFloat(viewDistance) * 40;
+        const earthCircumference = 40075017; // Earth's circumference in meters
+        const zoomLevel = Math.round(Math.log2(earthCircumference / (radius * 2 * Math.PI / 360)));
+
+        return zoomLevel;
+    }
+
+    function getContactStore (titleStore) {
+        searchStore(titleStore, 'zoom')
+    }
+
+    async function searchStore (value, event) {
+        for (let i = 0; i < gmarkers.length; i++) {
+            var marker = gmarkers[i]
+            if (marker.name.toLowerCase().replaceAll(' ', '').replaceAll('\'', '').normalize('NFD').replace(/[\u0300-\u036f]/g, '') == value.toLowerCase().replaceAll(' ', '').replaceAll('\'', '').normalize('NFD').replace(/[\u0300-\u036f]/g, '')) {
+                map.setZoom({{ section.settings.default_zoom_map | plus: 3 }})
+                map.setCenter(marker.getPosition())
+                infoCallback(marker.contentInfoStore, marker);
+                let markerId = marker.name.replace(/\s/g, "");
+                let allStores = document.querySelectorAll('.store-info');
+                allStores.forEach(function (element) {
+                    element.classList.remove('lsl-highlight');
+                });
+                document.getElementById(markerId).classList.add('lsl-highlight');
+                showOrHiddenListStore(document.getElementById('btn-hidden-list'),'none');
+            }
+        }
+    }
+
+    function showOrHiddenListStore (el, type) {
+        let listStore = document.getElementById('list-info-store'),
+            section_map = document.getElementById('section-map');
+        if (listStore) {
+            if (type == 'block') {
+                listStore.classList.remove('disabled');
+                listStore.classList.add('show');
+                section_map.classList.add('disabled');
+
+                let listInfoStore = document.getElementById('list-info-store');
+
+                if (typeof target !== 'undefined' && target !== null) {
+                    listInfoStore.scrollTo({
+                        top: target.offsetTop - listInfoStore.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            } else {
+                listStore.classList.add('disabled');
+                listStore.classList.remove('show');
+                section_map.classList.remove('disabled');
+            }
+        }
+        el.closest('.action-list-store').querySelector('.active').classList.remove('active')
+        el.classList.add('active')
+    }
+    function bounce(id) {
+        for (let i = 0; i < gmarkers.length; i++) {
+            if (gmarkers[i].name.replace(/\s/g, "") == id) {
+                gmarkers[i].setAnimation(google.maps.Animation.BOUNCE);
+                setTimeout(function() {
+                    gmarkers[i].setAnimation(null);
+                }, 500);
+            }
+        }
+    }
+
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key={{ section.settings.map_api }}&language=es&callback=initMap&v=3.exp&libraries=places" async></script>
+{% schema %}
+{
+  "name": "Google map",
+  "class": "revolution--map",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Settings store locator"
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section title",
+      "default": "Localizador de tiendas"
+    },
+    {
+      "type": "richtext",
+      "id": "section_description",
+      "label": "Section description"
+    },
+    {
+      "type": "header",
+      "content": "Settings google map"
+    },
+    {
+      "type": "select",
+      "id": "map_style",
+      "label": "Map style",
+      "options": [
+        { "value": "default", "label": "Default" },
+        { "value": "silver", "label": "Silver" },
+        { "value": "night", "label": "Night" },
+        { "value": "retro", "label": "Retro" },
+        { "value": "hiding", "label": "Hiding" },
+        { "value": "vintage", "label": "Vintage" },
+        { "value": "minimalist", "label": "Minimalist" },
+        { "value": "greyscale", "label": "Greyscale" },
+        { "value": "neon", "label": "Neon" },
+        { "value": "pixelArt", "label": "Pixel Art" },
+        { "value": "sketch", "label": "Sketch" },
+        { "value": "assassin", "label": "Assassin" },
+        { "value": "lightGray", "label": "Light grey" },
+        { "value": "paper", "label": "Paper" },
+        { "value": "vintageGold", "label": "Vintage Gold" },
+        { "value": "pale", "label": "Pale" },
+        { "value": "darkBlue", "label": "Dark Blue" },
+        { "value": "space", "label": "Space" }
+      ],
+      "default": "default"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_icon_map_default",
+      "label": "Icon map default",
+      "info": "Applies to all store icons if that store does not have an image. Leave blank if you want to use Google's default icon"
+    },
+    {
+      "type": "text",
+      "id": "map_api",
+      "label": "Google Maps API Key",
+      "info": "You'll need to register a [Google Maps API Key](https://shopify-support.krownthemes.com/article/385-generate-an-api-key-for-google-maps) to display the map.",
+      "default": "AIzaSyBHOkdqwftKi96UfcW4K9-H2t8RFBhuyNE"
+    },
+    {
+      "type": "text",
+      "id": "lat_center",
+      "label": "Lat Center",
+      "info": "This field is required, omitting it will cause an error",
+      "default": "40.416775"
+    },
+    {
+      "type": "text",
+      "id": "lng_center",
+      "label": "Lng Center",
+      "info": "This field is required, omitting it will cause an error",
+      "default": "-3.703790"
+    },
+    {
+      "type": "range",
+      "id": "default_zoom_map",
+      "min": 0,
+      "max": 20,
+      "step": 1,
+      "default": 5,
+      "label": "Default zoom map"
+    },
+    {
+      "type": "header",
+      "content": "Settings search by radius"
+    },
+    {
+      "type": "color",
+      "id": "fill_color_radius",
+      "label": "Fill Color Radius",
+      "default": "#7adaf9"
+    },
+    {
+      "type": "color",
+      "id": "stroke_color_radius",
+      "label": "Stroke Color Radius",
+      "default": "#00acfc"
+    },
+    {
+      "type": "header",
+      "content": "Settings display content"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_display_phone",
+      "label": "Display phone",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_display_email",
+      "label": "Display email",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_display_city",
+      "label": "Display ciudad",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_display_province",
+      "label": "Display provincia",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_display_website",
+      "label": "Display web link",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_display_zipcode",
+      "label": "Display postal code",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "label": "Padding Top"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "label": "Padding Bottom"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mb",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "label": "Padding Top on Mobile"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mb",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "label": "Padding Bottom on Mobile"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "list",
+      "name": "Store",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Store 1"
+        },
+        {
+          "type": "text",
+          "id": "lat",
+          "label": "Lat",
+          "info": "This field is required, omitting it will cause an error"
+        },
+        {
+          "type": "text",
+          "id": "lng",
+          "label": "lng",
+          "info": "This field is required, omitting it will cause an error"
+        },
+        {
+          "type": "text",
+          "id": "title_1",
+          "label": "Name Store",
+          "info": "This field is required, omitting it will cause an error"
+        },
+        {
+          "type": "text",
+          "id": "closing_time",
+          "label": "Time (Horario)"
+        },
+        {
+          "type": "text",
+          "id": "city",
+          "label": "City"
+        },
+        {
+          "type": "text",
+          "id": "province",
+          "label": "Province"
+        },
+        {
+          "type": "text",
+          "id": "address",
+          "label": "Address",
+          "info": "This field is required, omitting it will cause an error"
+        },
+        {
+          "type": "text",
+          "id": "zipcode",
+          "label": "Zip code",
+          "info": "This field is required, omitting it will cause an error"
+        },
+        {
+          "type": "text",
+          "id": "phone",
+          "label": "Phone"
+        },
+        {
+          "type": "text",
+          "id": "email",
+          "label": "Email"
+        },
+        {
+          "type": "text",
+          "id": "website",
+          "label": "Website"
+        },
+        {
+          "type": "header",
+          "content": "Store 2"
+        },
+        {
+          "type": "text",
+          "id": "lat_2",
+          "label": "Lat",
+          "info": "This field is required, omitting it will cause an error"
+        },
+        {
+          "type": "text",
+          "id": "lng_2",
+          "label": "lng",
+          "info": "This field is required, omitting it will cause an error"
+        },
+        {
+          "type": "text",
+          "id": "title_2",
+          "label": "Name Store",
+          "info": "This field is required, omitting it will cause an error"
+        },
+        {
+          "type": "text",
+          "id": "closing_time_2",
+          "label": "Time (Horario)"
+        },
+        {
+          "type": "text",
+          "id": "city_2",
+          "label": "City"
+        },
+        {
+          "type": "text",
+          "id": "province_2",
+          "label": "Province"
+        },
+        {
+          "type": "text",
+          "id": "address_2",
+          "label": "Address",
+          "info": "This field is required, omitting it will cause an error"
+        },
+        {
+          "type": "text",
+          "id": "zipcode_2",
+          "label": "Zip code",
+          "info": "This field is required, omitting it will cause an error"
+        },
+        {
+          "type": "text",
+          "id": "phone_2",
+          "label": "Phone"
+        },
+        {
+          "type": "text",
+          "id": "email_2",
+          "label": "Email"
+        },
+        {
+          "type": "text",
+          "id": "website_2",
+          "label": "Website"
+        },
+        {
+          "type": "header",
+          "content": "Store 3"
+        },
+        {
+          "type": "text",
+          "id": "lat_3",
+          "label": "Lat",
+          "info": "This field is required, omitting it will cause an error"
+        },
+        {
+          "type": "text",
+          "id": "lng_3",
+          "label": "lng",
+          "info": "This field is required, omitting it will cause an error"
+        },
+        {
+          "type": "text",
+          "id": "title_3",
+          "label": "Name Store",
+          "info": "This field is required, omitting it will cause an error"
+        },
+        {
+          "type": "text",
+          "id": "closing_time_3",
+          "label": "Time (Horario)"
+        },
+        {
+          "type": "text",
+          "id": "city_3",
+          "label": "City"
+        },
+        {
+          "type": "text",
+          "id": "province_3",
+          "label": "Province"
+        },
+        {
+          "type": "text",
+          "id": "address_3",
+          "label": "Address",
+          "info": "This field is required, omitting it will cause an error"
+        },
+        {
+          "type": "text",
+          "id": "zipcode_3",
+          "label": "Zip code",
+          "info": "This field is required, omitting it will cause an error"
+        },
+        {
+          "type": "text",
+          "id": "phone_3",
+          "label": "Phone"
+        },
+        {
+          "type": "text",
+          "id": "email_3",
+          "label": "Email"
+        },
+        {
+          "type": "text",
+          "id": "website_3",
+          "label": "Website"
+        },
+        {
+          "type": "header",
+          "content": "Store 4"
+        },
+        {
+          "type": "text",
+          "id": "lat_4",
+          "label": "Lat",
+          "info": "This field is required, omitting it will cause an error"
+        },
+        {
+          "type": "text",
+          "id": "lng_4",
+          "label": "lng",
+          "info": "This field is required, omitting it will cause an error"
+        },
+        {
+          "type": "text",
+          "id": "title_4",
+          "label": "Name Store",
+          "info": "This field is required, omitting it will cause an error"
+        },
+        {
+          "type": "text",
+          "id": "closing_time_4",
+          "label": "Time (Horario)"
+        },
+        {
+          "type": "text",
+          "id": "city_4",
+          "label": "City"
+        },
+        {
+          "type": "text",
+          "id": "province_4",
+          "label": "Province"
+        },
+        {
+          "type": "text",
+          "id": "address_4",
+          "label": "Address",
+          "info": "This field is required, omitting it will cause an error"
+        },
+        {
+          "type": "text",
+          "id": "zipcode_4",
+          "label": "Zip code",
+          "info": "This field is required, omitting it will cause an error"
+        },
+        {
+          "type": "text",
+          "id": "phone_4",
+          "label": "Phone"
+        },
+        {
+          "type": "text",
+          "id": "email_4",
+          "label": "Email"
+        },
+        {
+          "type": "text",
+          "id": "website_4",
+          "label": "Website"
+        },
+        {
+          "type": "header",
+          "content": "Store 5"
+        },
+        {
+          "type": "text",
+          "id": "lat_5",
+          "label": "Lat",
+          "info": "This field is required, omitting it will cause an error"
+        },
+        {
+          "type": "text",
+          "id": "lng_5",
+          "label": "lng",
+          "info": "This field is required, omitting it will cause an error"
+        },
+        {
+          "type": "text",
+          "id": "title_5",
+          "label": "Name Store",
+          "info": "This field is required, omitting it will cause an error"
+        },
+        {
+          "type": "text",
+          "id": "closing_time_5",
+          "label": "Time (Horario)"
+        },
+        {
+          "type": "text",
+          "id": "city_5",
+          "label": "City"
+        },
+        {
+          "type": "text",
+          "id": "province_5",
+          "label": "Province"
+        },
+        {
+          "type": "text",
+          "id": "address_5",
+          "label": "Address",
+          "info": "This field is required, omitting it will cause an error"
+        },
+        {
+          "type": "text",
+          "id": "zipcode_5",
+          "label": "Zip code",
+          "info": "This field is required, omitting it will cause an error"
+        },
+        {
+          "type": "text",
+          "id": "phone_5",
+          "label": "Phone"
+        },
+        {
+          "type": "text",
+          "id": "email_5",
+          "label": "Email"
+        },
+        {
+          "type": "text",
+          "id": "website_5",
+          "label": "Website"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Google map",
+      "category": "Store information"
+    }
+  ]
+}
+{% endschema %}

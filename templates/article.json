@@ -1,0 +1,85 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "settings": {
+        "show_tags": true,
+        "show_author": false,
+        "show_date": true,
+        "featured_image_width": "page",
+        "heading_align": "text-start",
+        "show_share_buttons": true,
+        "pagination": "bar-reading"
+      }
+    },
+    "article-comments": {
+      "type": "article-comments",
+      "settings": {
+        "comments_per_page": 16
+      }
+    },
+    "c2a39456-c6d3-4863-809d-69286a862e69": {
+      "type": "featured-blog",
+      "settings": {
+        "title": "También te pueden interesar",
+        "heading_align": "text-start",
+        "show_view_all": true,
+        "blog": "noticias",
+        "layout": "carousel",
+        "posts_to_show": 8,
+        "show_featured_image": true,
+        "show_tags": true,
+        "show_excerpt": false,
+        "show_author": false,
+        "show_date": false,
+        "show_button": false,
+        "color_scheme": "none",
+        "image_ratio": "1.77",
+        "button_style": "btn btn--primary"
+      }
+    },
+    "cf8dfd0e-1438-4a66-8849-56b42253a59d": {
+      "type": "newsletter",
+      "blocks": {
+        "template--21399708959041__cf8dfd0e-1438-4a66-8849-56b42253a59d-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "NO TE PIERDAS NADA",
+            "heading_size": "h4"
+          }
+        },
+        "template--21399708959041__cf8dfd0e-1438-4a66-8849-56b42253a59d-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Suscríbete a nuestro boletín y entérate de todo antes que nadie.<\/p>",
+            "enlarge_text": false
+          }
+        },
+        "template--21399708959041__cf8dfd0e-1438-4a66-8849-56b42253a59d-form-1": {
+          "type": "form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "template--21399708959041__cf8dfd0e-1438-4a66-8849-56b42253a59d-heading-1",
+        "template--21399708959041__cf8dfd0e-1438-4a66-8849-56b42253a59d-text-1",
+        "template--21399708959041__cf8dfd0e-1438-4a66-8849-56b42253a59d-form-1"
+      ],
+      "settings": {
+        "overlay_position": "justify-center",
+        "text_align": "text-center",
+        "color_scheme": "1",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 20
+      }
+    }
+  },
+  "order": [
+    "main",
+    "article-comments",
+    "c2a39456-c6d3-4863-809d-69286a862e69",
+    "cf8dfd0e-1438-4a66-8849-56b42253a59d"
+  ]
+}

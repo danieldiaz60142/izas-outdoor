@@ -1,0 +1,746 @@
+<main-menu style="background-color: rgb(0,0,0,0);" class="main-menu{% if section.settings.mobile_menu_position == "burger-left" %} main-menu--left-mob{% endif %} {{ custom_class }}" data-menu-sensitivity="200">
+    <details class="main-menu__disclosure{% if section.settings.enable_sticky %} has-motion{% endif %}{% if template.name == "index" %} storeHeaderHamburguer{% endif %} !tw-w-fit" open>
+        <summary class="main-menu__toggle md:hidden !tw-m-0">
+            <span class="main-menu__toggle-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">{{ 'general.icon_labels.menu' | t }}</span>
+        </summary>
+
+        <div class="main-menu__content has-motion {% if section.settings.quicklinks_menu == blank and section.settings.cta_show == false and section.settings.menu_center %}justify-center{% else %}justify-between{% endif %}">
+            <nav aria-label="{{ 'accessibility.main_navigation' | t }}">
+                <ul class="main-nav{% if section.settings.quicklinks_menu == blank and section.settings.cta_show == false and section.settings.menu_center %} justify-center{% endif %}">
+                    {%- for link in section.settings.menu.links -%}
+                    {%- assign link_title_downcase = link.title | downcase -%}
+                    <li>
+                        {%- if link.links == blank -%}
+                            <a class="menu-level-1 main-nav__item main-nav__item--primary{% if link.current %} is-active{% endif %}{% if featured_links contains link_title_downcase %} main-nav__link--featured{% endif %}" {% if template.name == "index" %}id="storeHeaderLinkActive"{% endif %} href="{{ link.url }}"{% if link.current %} aria-current="page"{% endif %}>
+                                {{- link.title | escape -}}
+                            </a>
+                        {%- else -%}
+                        {%- liquid
+                            assign mega_nav = false
+                            assign link_title_downcase = link.title | strip | downcase
+                            for block in section.blocks
+                                assign mega_name_titles = block.settings.title | downcase | replace: ', ', ',' | replace: ' ,', ',' | split: ','
+                                if mega_name_titles contains link_title_downcase
+                                    assign mega_nav = block
+                                    break
+                                endif
+                            endfor
+                        -%}
+
+                        <details class="{% if mega_nav %}js-mega-nav{% endif %} menu-link-{{- link.title | escape -}}" {% if mega_nav %}{{ mega_nav.shopify_attributes }}{% endif %}>
+                            <summary class="main-nav__item--toggle relative js-nav-hover js-toggle">
+                                <a class="menu-level-1 main-nav__item main-nav__item--primary main-nav__item-content{% if link.current %} is-active{% endif %}{% if featured_links contains link_title_downcase %} main-nav__link--featured{% endif %}" href="{{ link.url }}"{% if link.current %} aria-current="page"{% endif %}>
+                                    <span {% if template.name == "index" %}class="storeHeaderLink"{% endif %}>{{ link.title | escape }}</span>
+                                </a>
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="md:hidden ">
+                                    <mask id="mask0_1141_3476" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="14" height="14">
+                                    <rect x="14" y="14" width="14" height="14" transform="rotate(-180 14 14)" fill="#D9D9D9"/>
+                                    </mask>
+                                    <g mask="url(#mask0_1141_3476)">
+                                    <path d="M8.16743 1.3686L13.7988 7L8.16743 12.6314L7.33956 11.8035L12.1431 7L7.33956 2.19647L8.16743 1.3686Z" fill="#1C1B1F"/>
+                                    </g>
+                                </svg>
+                            </summary>
+                            {%- liquid
+                                assign child_nav_classes = ""
+                                assign grandchild_nav_classes = ""
+                                assign flex_auto = false
+                                assign has_badges = false
+                                assign mega_nav_has_columns = false
+
+                                if mega_nav.type == "columns" or mega_nav.type == "sidebar"
+                                    assign mega_nav_has_columns = true
+                                endif
+
+                                if mega_nav == false
+                                    assign child_nav_classes = "child-nav--dropdown"
+                                else
+                                    assign has_grandchildren_menus = false
+                                    for child_link in link.links
+                                        if child_link.links != blank
+                                            assign has_grandchildren_menus = true
+                                            break
+                                        endif
+                                    endfor
+
+                                    assign promo_count = 0
+                                    if mega_nav.settings.promo1_image != blank
+                                        assign promo_count = promo_count | plus: 1
+                                    endif
+                                    if mega_nav.settings.promo2_image != blank
+                                        assign promo_count = promo_count | plus: 1
+                                    endif
+                                    assign total_promo_count = total_promo_count | plus: promo_count
+
+                                    assign badge_colors = ""
+                                    if mega_nav_has_columns
+                                        if mega_nav.settings.badge1_link != blank and mega_nav.settings.badge1_text != blank
+                                            assign has_badges = true
+                                            assign badge1 = mega_nav.settings.badge1_link | downcase | replace: ', ', ',' | replace: ' ,', ',' | split: ','
+                                            assign badge_colors = "--badge-1-color:" | append: mega_nav.settings.badge1_color.rgb | append: ";"
+                                        endif
+
+                                        if mega_nav.settings.badge2_link != blank and mega_nav.settings.badge2_text != blank
+                                            assign has_badges = true
+                                            assign badge2 = mega_nav.settings.badge2_link | downcase | replace: ', ', ',' | replace: ' ,', ',' | split: ','
+                                            assign badge_colors = badge_colors | append: "--badge-2-color:" | append: mega_nav.settings.badge2_color.rgb | append: ";"
+                                        endif
+
+                                    endif
+
+                                    assign num_columns = link.links | size
+                                    if mega_nav.type == "columns"
+                                        if num_columns < 4 and promo_count > 0
+                                            assign child_nav_classes = "md:flex nav-gap-83"
+                                            assign flex_auto = true
+                                        else
+                                            assign child_nav_classes = "md:grid nav-gap-83 nav-gap-y-52 md:grid-cols-3"
+                                            if mega_nav.settings.promo_position == "bottom" or promo_count == 0
+                                                assign child_nav_classes = child_nav_classes | append: " lg:grid-cols-3"
+                                            else
+                                                assign child_nav_classes = child_nav_classes | append: " self-start xl:grid-cols-3"
+                                            endif
+                                        endif
+                                    elsif mega_nav.type == "sidebar"
+                                        assign grandchild_nav_classes = "md:grid md:nav-gap-x-8 nav-gap-y-52 md:nav-grid-cols-4"
+                                    endif
+                                endif
+                            -%}
+                            <div class="main-nav__child{% if mega_nav %} mega-nav mega-nav--{{ mega_nav.type }}{% if has_grandchildren_menus == false %} mega-nav--no-grandchildren{% endif %}{% endif %} has-motion">
+                                {% if mega_nav %}<div class="container{% if promo_count > 0 %} mega-nav--promos-{{ mega_nav.settings.promo_position }}{% endif %}">{% endif %}
+                                    <ul class="child-nav{% if child_nav_classes %} {{ child_nav_classes }}{% endif %}">
+                                        <li class="md:hidden">
+                                            <button type="button" class="main-nav__item main-nav__item--back relative js-back">
+                                                <div class="main-nav__item-content text-start">
+                                                    {% render 'icon-chevron-left' %} {{- 'general.navigation.back' | t -}}
+                                                </div>
+                                            </button>
+                                        </li>
+
+                                        <li class="md:hidden" id="s">
+                                            <a href="{{ link.url }}" class="main-nav__item child-nav__item large-text main-nav__item-header">
+                                                {{- link.title | escape -}}
+                                            </a>
+                                        </li>
+
+                                        {% assign indexLi = 1 %}
+                                        {%- for child_link in link.links -%}
+                                            {%- liquid
+                                                assign child_link_title_downcase = child_link.title | downcase
+                                                assign collection_image = false
+
+                                                if has_grandchildren_menus == false and mega_nav.type == "pills"
+                                                    assign pills_without_grandchildren = true
+                                                else
+                                                    assign pills_without_grandchildren = false
+                                                endif
+
+                                                if mega_nav and mega_nav.settings.collection_images != "none" and pills_without_grandchildren == false and child_link.type == 'collection_link'
+                                                    assign collection_image = true
+                                                    if mega_nav.settings.collection_images == "standard"
+                                                        assign collection_image_width = 30
+                                                    elsif mega_nav.settings.collection_images == "large"
+                                                        assign collection_image_width = 40
+                                                    endif
+                                                    assign collection_image_size = collection_image_width
+                                                    assign collection_image_size_large = collection_image_size | times: 2
+                                                    assign collection_image_size_xlarge = collection_image_size | times: 4
+                                                endif
+                                            -%}
+
+                                            <li class="{% if flex_auto %}flex-auto{% endif %} row-item-{{ indexLi }}">
+                                                {%- if child_link.links == blank -%}
+                                                    {%- if collection_image -%}<div class="child-nav__item--toggle flex items-center child-nav__item-collection-image{% if mega_nav and mega_nav_has_columns and mega_nav.settings.show_underline == false %} nav__item--no-underline{% endif %}{% if mega_nav.type == "sidebar" %} js-sidebar-hover{% endif %}">{%- endif -%}
+                                                    {%- if collection_image -%}
+                                                        {%- liquid
+                                                            assign alt_text = child_link.title | escape
+                                                            if mega_nav.settings.collection_use_product_image
+                                                                assign collection_image_object = collections[child_link.object.handle].all_products.first
+                                                            else
+                                                                assign collection_image_object = child_link.object
+                                                            endif
+                                                        -%}
+                                                        <div class="main-nav__collection-image media relative main-nav__collection-image--flex main-nav__collection-image--{{ mega_nav.settings.collection_images }}{% if mega_nav.type == "pills" %} md:hidden{% endif %}">
+                                                            {% render 'image',
+                                                                    image: collection_image_object,
+                                                                    src_width: collection_image_size_large,
+                                                                    srcset_2x: true,
+                                                                    class: "img-fit",
+                                                                    alt_text: alt_text
+                                                            %}
+                                                        </div>
+
+                                                        {%- if mega_nav.type == "pills" -%}
+                                                            <div class="main-nav__collection-image media relative main-nav__collection-image--{{ mega_nav.settings.collection_images }} hidden md:block">
+                                                                {% render 'image',
+                                                                        image: collection_image_object,
+                                                                        src_width: collection_image_size_xlarge,
+                                                                        srcset_2x: true,
+                                                                        alt_text: alt_text
+                                                                %}
+                                                            </div>
+                                                        {%- endif -%}
+                                                    {%- endif -%}
+                                                    <a class="main-nav__item child-nav__item{% if mega_nav and mega_nav_has_columns and mega_nav.settings.show_underline == false %} nav__item--no-underline{% endif %}{% if has_grandchildren_menus and mega_nav.type == "pills" %} md:flex md:items-center md:nav-pb-6{% endif %}{% if mega_nav.type == "sidebar" and forloop.first %} is-visible{% endif %}{% unless collection_image %}{% if mega_nav.type == "sidebar" %} js-sidebar-hover{% endif %}{% endunless %}"
+                                                       href="{{ child_link.url }}"{% if child_link.current %} aria-current="page"{% endif %}>
+                                                        {{- child_link.title | escape -}}
+                                                        {% if has_grandchildren_menus and mega_nav.type == "pills" %}
+                                                            <div class="hidden md:inline-flex main-nav__icon-circle">
+                                                                {% render 'icon-chevron-right' %}
+                                                            </div>
+                                                        {% endif %}
+                                                    </a>
+                                                    {%- if collection_image -%}</div>{%- endif -%}
+                                                {%- else -%}
+                                                    <nav-menu {% if mega_nav %}class="js-mega-nav"{% endif %}>
+                                                        <details open>
+                                                            <summary class="child-nav__item--toggle main-nav__item--toggle relative{% if mega_nav %} js-no-toggle-md{% if mega_nav_has_columns and mega_nav.settings.show_underline == false %} nav__item--no-underline{% endif %}{% if mega_nav.type == "sidebar" %} js-sidebar-hover{% if forloop.first %} is-visible{% endif %}{% endif %}{% endif %}">
+                                                                <div class="main-nav__item-content{% if mega_nav.settings.collection_images != 'none' %} child-nav__collection-image w-full{% endif %}">
+                                                                    {%- if collection_image -%}
+                                                                        {%- liquid
+                                                                            assign alt_text = child_link.title | escape
+                                                                            if mega_nav.settings.collection_use_product_image
+                                                                                assign collection_image_object = collections[child_link.object.handle].all_products.first
+                                                                            else
+                                                                                assign collection_image_object = child_link.object
+                                                                            endif
+                                                                        -%}
+                                                                        <div class="main-nav__collection-image main-nav__collection-image--flex main-nav__collection-image--{{ mega_nav.settings.collection_images }} media relative{% if mega_nav and mega_nav.type == "pills" %} md:hidden{% endif %}">
+                                                                            {% render 'image',
+                                                                                    image: collection_image_object,
+                                                                                    src_width: collection_image_size_large,
+                                                                                    srcset_2x: true,
+                                                                                    class: "img-fit",
+                                                                                    alt_text: alt_text
+                                                                            %}
+                                                                        </div>
+                                                                    {%- endif -%}
+                                                                    <a class="header-menu child-nav__item main-nav__item main-nav__item-content{% if child_link.current %} is-active{% endif %}{% if featured_links contains child_link_title_downcase %} main-nav__link--featured{% endif %}" href="{{ child_link.url }}"{% if settings.preload_links %} data-no-instant{% endif %}>
+                                                                        {{- child_link.title | escape -}}
+                                                                    </a>
+                                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="md:hidden ">
+                                                                        <mask id="mask0_1141_3476" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="14" height="14">
+                                                                        <rect x="14" y="14" width="14" height="14" transform="rotate(-180 14 14)" fill="#D9D9D9"/>
+                                                                        </mask>
+                                                                        <g mask="url(#mask0_1141_3476)">
+                                                                        <path d="M8.16743 1.3686L13.7988 7L8.16743 12.6314L7.33956 11.8035L12.1431 7L7.33956 2.19647L8.16743 1.3686Z" fill="#1C1B1F"/>
+                                                                        </g>
+                                                                    </svg>
+                                                                </div>
+                                                            </summary>
+
+                                                            <div class="disclosure__panel{% if collection_image and mega_nav and mega_nav.type == "pills" %} main-nav__image-container{% endif %} has-motion">
+                                                                {%- if collection_image and mega_nav and mega_nav.type == "pills" -%}
+                                                                    {%- liquid
+                                                                        if mega_nav.settings.collection_use_product_image
+                                                                            assign collection_image_object = collections[child_link.object.handle].all_products.first
+                                                                        else
+                                                                            assign collection_image_object = child_link.object
+                                                                        endif
+                                                                    -%}
+
+                                                                    <div class="main-nav__collection-image shrink-0 main-nav__collection-image--{{ mega_nav.settings.collection_images }} media relative hidden md:block">
+                                                                        {% render 'image',
+                                                                                image: collection_image_object,
+                                                                                src_width: collection_image_size_xlarge,
+                                                                                srcset_2x: true,
+                                                                                alt_text: alt_text
+                                                                        %}
+                                                                    </div>
+                                                                {%- endif -%}
+
+                                                                {%- liquid
+                                                                    assign image_grid_classes = ""
+                                                                    if mega_nav.type == "sidebar"
+                                                                        for grandchild_link in child_link.links
+                                                                            if mega_nav.settings.show_collection_images and grandchild_link.type == 'collection_link'
+                                                                                assign image_grid_classes = "main-nav__grandchild-grid grid grid-cols-2 gap-theme"
+                                                                                break
+                                                                            elsif mega_nav.settings.show_product_images and grandchild_link.type == 'product_link'
+                                                                                assign image_grid_classes = "main-nav__grandchild-grid grid grid-cols-2 gap-theme"
+                                                                                break
+                                                                            endif
+                                                                        endfor
+                                                                    endif
+                                                                -%}
+
+                                                                <ul class="main-nav__grandchild has-motion{% if image_grid_classes %} {{ image_grid_classes }}{% endif %}{% if grandchild_nav_classes %} {{ grandchild_nav_classes }}{% endif %}" role="list"{% if badge_colors %} style="{{ badge_colors }}"{% endif %}>
+                                                                    {%- if section.settings.repeat_links and child_link.url != '#' -%}
+                                                                        <li class="col-start-1 col-end-3">
+                                                                            <a href="{{ child_link.url }}" class="main-nav__item--go">
+                                                                                {{- 'sections.header.go_to' | t -}}
+                                                                                <svg class="md:hidden" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" style="padding-left: 4px;">
+                                                                                <mask id="mask0_1141_4016" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="15">
+                                                                                <rect width="14.3112" height="14.3112" fill="#D9D9D9"/>
+                                                                                </mask>
+                                                                                <g mask="url(#mask0_1141_4016)">
+                                                                                <path d="M7.77169 7.1556L5.93807 8.98922L6.56072 9.62678L9.03191 7.1556L6.56072 4.68441L5.93807 5.32197L7.77169 7.1556ZM7.15802 12.8204C6.37452 12.8204 5.63807 12.6718 4.94867 12.3744C4.25926 12.077 3.65957 11.6735 3.1496 11.1638C2.63963 10.654 2.2359 10.0546 1.93841 9.36548C1.64093 8.67639 1.49219 7.94009 1.49219 7.1566C1.49219 6.3731 1.64087 5.63665 1.93822 4.94724C2.23557 4.25783 2.63912 3.65814 3.14886 3.14818C3.6586 2.6382 4.25803 2.23447 4.94713 1.93699C5.63623 1.63951 6.37252 1.49076 7.15602 1.49076C7.93952 1.49076 8.67597 1.63944 9.36537 1.9368C10.0548 2.23415 10.6545 2.6377 11.1644 3.14743C11.6744 3.65718 12.0781 4.25661 12.3756 4.94571C12.6731 5.6348 12.8219 6.3711 12.8219 7.1546C12.8219 7.9381 12.6732 8.67455 12.3758 9.36395C12.0785 10.0534 11.6749 10.653 11.1652 11.163C10.6554 11.673 10.056 12.0767 9.36691 12.3742C8.67781 12.6717 7.94152 12.8204 7.15802 12.8204ZM7.15702 11.926C8.48876 11.926 9.61676 11.4639 10.541 10.5396C11.4653 9.61533 11.9274 8.48733 11.9274 7.1556C11.9274 5.82386 11.4653 4.69586 10.541 3.7716C9.61676 2.84733 8.48876 2.3852 7.15702 2.3852C5.82528 2.3852 4.69728 2.84733 3.77302 3.7716C2.84875 4.69586 2.38662 5.82386 2.38662 7.1556C2.38662 8.48733 2.84875 9.61533 3.77302 10.5396C4.69728 11.4639 5.82528 11.926 7.15702 11.926Z" fill="black"/>
+                                                                                </g>
+                                                                                </svg>
+                                                                            </a>
+                                                                        </li>
+                                                                    {%- endif -%}
+                                                                    {%- for grandchild_link in child_link.links -%}
+                                                                        <li class="menu-child">
+                                                                            {%- assign grandchild_link_title_downcase = grandchild_link.title | downcase -%}
+                                                                            <a style="color: black;" class="grandchild-nav__item main-nav__item{% if featured_links contains grandchild_link_title_downcase %} main-nav__link--featured{% endif %}" href="{{ grandchild_link.url }}"{% if grandchild_link.current %} aria-current="page"{% endif %}>
+                                                                                {%- liquid
+                                                                                    assign grandchild_image = null
+                                                                                    if mega_nav.type == "sidebar"
+                                                                                        if mega_nav.settings.show_collection_images and grandchild_link.type == 'collection_link'
+                                                                                            if mega_nav.settings.sidebar_link_use_product_image
+                                                                                                assign grandchild_image = collections[grandchild_link.object.handle].all_products.first
+                                                                                                if grandchild_image == blank
+                                                                                                    assign grandchild_image = grandchild_link.object
+                                                                                                endif
+                                                                                            else
+                                                                                                assign grandchild_image = grandchild_link.object
+                                                                                            endif
+                                                                                        elsif mega_nav.settings.show_product_images and grandchild_link.type == 'product_link'
+                                                                                            assign grandchild_image = grandchild_link.object
+                                                                                        endif
+                                                                                    endif
+                                                                                -%}
+
+                                                                                {%- if grandchild_image -%}
+                                                                                    <div class="media relative mb-2 w-full grandchild-nav__image{% if settings.blend_product_images and grandchild_link.type == 'product_link' %} image-blend{% elsif settings.blend_collection_images and grandchild_link.type == 'collection_link' %} image-blend{% endif %}"{%- if mega_nav.settings.aspect_ratio != "natural" -%} style="padding-top: {{ 1 | divided_by: mega_nav.settings.aspect_ratio | times: 100 }}%;"{%- endif -%}>
+                                                                                        {%- if mega_nav.settings.aspect_ratio == "natural" -%}
+                                                                                            {%- capture image -%}{% render 'image', image: grandchild_image, src_width: 300, class: 'w-full', alt_text: grandchild_link.title %}{%- endcapture -%}
+                                                                                        {%- else -%}
+                                                                                            {%- liquid
+                                                                                                assign image_width = 300
+                                                                                                assign image_height = image_width | divided_by: mega_nav.settings.aspect_ratio | round
+                                                                                            -%}
+                                                                                            {%- capture image -%}
+                                                                                                <img src="{{ grandchild_image | image_url: width: image_width, height: image_height, crop: 'center' }}"
+                                                                                                     class="img-fit"
+                                                                                                     loading="lazy"
+                                                                                                     alt="{{ grandchild_link.title | escape }}"
+                                                                                                     height="{{ image_height }}"
+                                                                                                     width="{{ image_width }}">
+                                                                                            {%- endcapture -%}
+                                                                                        {%- endif -%}
+
+                                                                                        {%- unless image contains "Liquid error" -%}
+                                                                                            {{ image }}
+                                                                                        {%- endunless -%}
+                                                                                    </div>
+                                                                                {%- endif -%}
+
+                                                                                {%- if has_badges -%}
+                                                                                    {%- assign grandchild_link_title_downcase = grandchild_link.title | downcase -%}
+                                                                                    {%- if badge1 and badge1 contains grandchild_link_title_downcase -%}
+                                                                                        <span class="md:mr-2">{{- grandchild_link.title | escape -}}</span>
+                                                                                        <span class="badge main-nav__badge main-nav__badge--1">{{ mega_nav.settings.badge1_text }}</span>
+                                                                                    {% elsif badge2 and badge2 contains grandchild_link_title_downcase -%}
+                                                                                        <span class="md:mr-2">{{- grandchild_link.title | escape -}}</span>
+                                                                                        <span class="badge main-nav__badge main-nav__badge--2">{{ mega_nav.settings.badge2_text }}</span>
+                                                                                    {% elsif badge3 and badge3 contains grandchild_link_title_downcase -%}
+                                                                                        <span class="md:mr-2">{{- grandchild_link.title | escape -}}</span>
+                                                                                    {%- else -%}
+                                                                                        {{- grandchild_link.title | escape -}}
+                                                                                    {%- endif -%}
+                                                                                {%- else -%}
+                                                                                    {{- grandchild_link.title | escape -}}
+                                                                                {%- endif -%}
+                                                                            </a>
+                                                                        </li>
+                                                                    {%- endfor -%}
+                                                                </ul>
+                                                            </div>
+                                                        </details>
+                                                    </nav-menu>
+                                                {%- endif -%}
+                                            </li>
+                                            {% assign indexLi = indexLi | plus: 1 %}
+                                            {% if indexLi > 3  %}
+                                                {% assign indexLi = 1 %}
+                                            {% endif %}
+                                        {%- endfor -%}
+                                    </ul>
+
+                                    <style>
+                                        @media (min-width: 769px) {
+                                            main-menu .menu-link-{{ link.title | escape }} .child-promos {
+                                            {% if mega_nav.settings.promo_position == "right"  %}
+                                                width: {{ 85 | times: promo_count }}px !important;
+                                            {% else %}
+                                                max-width: 59.2%;
+                                                margin: 5px auto;
+                                                height: 478px;
+                                            {% endif %}
+                                            }
+                                            main-menu .menu-link-{{ link.title | escape }} .banner-media {
+                                                width: {{ 100 | divided_by: promo_count }}%;
+                                                padding: calc(4 * var(--space-unit)) !important;
+                                            }
+                                            main-menu .menu-link-{{ link.title | escape }} .main-nav__child.mega-nav {
+                                                padding-top: 0;
+                                            {% if promo_count > 0 and mega_nav.settings.promo_position == "right" %}
+                                                padding-bottom: 0;
+                                            {% endif %}
+                                            }
+                                        {% if promo_count > 0 %}
+                                            main-menu .menu-link-{{ link.title | escape }} .nav-gap-83 {
+                                                column-gap: 83px;
+                                            }
+                                        {% else %}
+                                            main-menu .menu-link-{{ link.title | escape }} .row-item-2 {
+                                                margin-left: 79px;
+                                            }
+                                            main-menu .menu-link-{{ link.title | escape }} .row-item-3 {
+                                                margin-left: 127px;
+                                            }
+                                        {% endif %}
+                                            main-menu .menu-link-{{ link.title | escape }} .child-nav {
+                                                padding-top: 36px;
+                                            {% if promo_count > 0 and mega_nav.settings.promo_position == "right"  %}
+                                                width: calc(100% - {{ 85 | times: promo_count }}px);
+                                                padding-right: 20px;
+                                                grid-template-columns: repeat(3,minmax(0,221px)) !important;
+                                                padding-bottom: 40px;
+                                            {% else %}
+                                                max-width: 90%;
+                                                margin: 0 auto;
+                                            {% endif %}
+                                            }
+                                        }
+                                        @media screen and (min-width: 960px) {
+                                            main-menu .menu-link-{{ link.title | escape }} .child-promos {
+                                            {% if mega_nav.settings.promo_position == "right"  %}
+                                                width: {{ 125 | times: promo_count }}px !important;
+                                            {% else %}
+                                                max-width: 59.2%;
+                                                margin: 5px auto;
+                                                height: 478px;
+                                            {% endif %}
+                                            }
+                                            main-menu .menu-link-{{ link.title | escape }} .child-nav {
+                                                padding-top: 36px;
+                                            {% if promo_count > 0 and mega_nav.settings.promo_position == "right" %}
+                                                width: calc(100% - {{ 125 | times: promo_count }}px);
+                                                padding-right: 20px;
+                                                grid-template-columns: repeat(3,minmax(0,221px)) !important;
+                                                padding-bottom: 40px;
+                                            {% else %}
+                                                max-width: 59.2%;
+                                                margin: 0 auto;
+                                            {% endif %}
+                                            }
+                                        }
+                                        @media screen and (min-width: 1250px) {
+                                            main-menu .menu-link-{{ link.title | escape }} .child-promos {
+                                            {% if mega_nav.settings.promo_position == "right"  %}
+                                                width: {{ 248 | times: promo_count }}px !important;
+                                            {% else %}
+                                                max-width: 59.2%;
+                                                margin: 5px auto;
+                                                height: 478px;
+                                            {% endif %}
+                                            }
+                                            main-menu .menu-link-{{ link.title | escape }} .child-nav {
+                                                padding-top: 36px;
+                                            {% if promo_count > 0 and mega_nav.settings.promo_position == "right" %}
+                                                width: calc(100% - {{ 248 | times: promo_count }}px);
+                                                padding-right: 20px;
+                                                grid-template-columns: repeat(3,minmax(0,221px)) !important;
+                                                padding-bottom: 40px;
+                                            {% else %}
+                                                max-width: 59.2%;
+                                                margin: 0 auto;
+                                            {% endif %}
+                                            }
+                                        }
+                                    </style>
+
+                                    {%- if mega_nav and promo_count > 0 -%}
+
+                                    {% assign article = blank %}
+                                    {% if mega_nav.settings.promo1_image != blank or mega_nav.settings.promo1_image_mobile != blank %}
+                                        {% if mega_nav.settings.promo1_image_mobile != blank %}
+                                            {% assign article = mega_nav.settings.promo1_image_mobile %}
+                                        {% else %}
+                                            {% assign article = mega_nav.settings.promo1_image %}
+                                        {% endif %}
+                                    {% elsif mega_nav.settings.promo2_image != blank or mega_nav.settings.promo2_image_mobile != blank  %}
+                                        {% if mega_nav.settings.promo2_image_mobile != blank %}
+                                            {% assign article = mega_nav.settings.promo2_image_mobile %}
+                                        {% else %}
+                                            {% assign article = mega_nav.settings.promo2_image %}
+                                        {% endif %}
+                                    {% endif %}
+
+                                    {% if article != blank %}
+                                        {% assign img_padding = 1 | divided_by: article.image.aspect_ratio | times: 100 | append: '%' %}
+                                    {% else %}
+                                        {% assign img_padding = '125%' %}
+                                    {% endif %}
+
+                                    <style>
+                                        main-menu .menu-link-{{ link.title | escape }} .banner-media {
+                                            width: {{ 100 | divided_by: promo_count }}%;
+                                            padding: 0 0 {{ img_padding }} 0;
+                                        }
+                                    </style>
+                                    <div class="child-promos megamenu-fix" data-promo-count="{{ promo_count }}">
+                                        <div class="megamenu-fix-item h-full main-nav__promos md:nav-mt-4 sm:nav-gap-x-6 sm:grid{% if promo_count < 3 %} sm:grid-cols-2{% else %} sm:nav-grid-cols-3{% endif %}{% if mega_nav.settings.promo_position == "bottom" %} lg:grid-cols-3{% else %} lg:block{% endif %}"
+                                             style="--promo-text-color: {{- mega_nav.settings.promo_text_color -}}; display: flex">
+
+                                            {%- if mega_nav.settings.promo1_image != blank or mega_nav.settings.promo1_image_mobile != blank -%}
+                                            {%- liquid
+                                                assign is_link = false
+                                                if mega_nav.settings.promo1_link_url != blank
+                                                    unless mega_nav.settings.promo1_content contains "<a"
+                                                        assign is_link = true
+                                                    endunless
+                                                endif
+                                            -%}
+                                        {%- if is_link -%}
+                                            <a href="{{- mega_nav.settings.promo1_link_url -}}" class="banner-media h-full promo hover:grow-media overflow-hidden relative flex {{ promo_padding }} {{ mega_nav.settings.promo1_text_alignment }}">
+                                                {%- else -%}
+                                                <div class="banner-media h-full promo relative flex {{ promo_padding }} {{ mega_nav.settings.promo1_text_alignment }}">
+                                                    {%- endif -%}
+
+                                                    {%- if mega_nav.settings.promo1_image -%}
+                                                        <div class="media absolute top-0 left-0 w-full h-full {% if mega_nav.settings.promo1_image_mobile -%} is-desktop {% endif %}">
+                                                            {% render 'image', image: mega_nav.settings.promo1_image, src_width: 400, srcset_2x: true, class: 'img-fit' %}
+                                                        </div>
+                                                    {%- endif -%}
+
+                                                    {%- if mega_nav.settings.promo1_image_mobile -%}
+                                                        <div class="media absolute top-0 left-0 w-full h-full is-mobile">
+                                                            {% render 'image', image: mega_nav.settings.promo1_image_mobile, src_width: 400, srcset_2x: true, class: 'img-fit' %}
+                                                        </div>
+                                                    {%- endif -%}
+
+                                                    {%- if mega_nav.settings.promo1_content != blank -%}
+                                                        <div class="promo__content relative" style="--font-size: {{ mega_nav.settings.promo1_text_size }}px; max-width: {{ mega_nav.settings.promo1_text_width }}%;">
+                                                            <div class="rte rte--inherit-heading-color promo-header" style="color: {{ mega_nav.settings.promo_text_color }}; font-size: {{ mega_nav.settings.promo1_text_size }}px">
+                                                                {{- mega_nav.settings.promo1_content -}}
+                                                            </div>
+                                                            <div class="rte rte--inherit-heading-color promo-title" style="color: {{ mega_nav.settings.promo_text_color }}; font-size: {{ mega_nav.settings.promo1_text_size | minus: 4 }}px">
+                                                                {{- mega_nav.settings.promo1_description -}}
+                                                            </div>
+                                                        </div>
+                                                    {%- endif -%}
+                                                    {%- if is_link -%}
+                                            </a>
+                                            {%- else -%}
+                                        </div>
+                                        {%- endif -%}
+                                        {%- endif -%}
+
+                                        {%- if mega_nav.settings.promo2_image != blank or mega_nav.settings.promo2_image_mobile != blank -%}
+                                        {%- liquid
+                                            assign is_link = false
+                                            if mega_nav.settings.promo2_link_url != blank
+                                                unless mega_nav.settings.promo2_content contains "<a"
+                                                    assign is_link = true
+                                                endunless
+                                            endif
+                                        -%}
+                                    {%- if is_link -%}
+                                        <a href="{{- mega_nav.settings.promo2_link_url -}}" class="banner-media h-full promo hover:grow-media overflow-hidden relative flex {{ promo_padding }} {{ mega_nav.settings.promo2_text_alignment }}">
+                                            {%- else -%}
+                                            <div class="banner-media h-full promo relative flex {{ promo_padding }} {{ mega_nav.settings.promo2_text_alignment }}">
+                                                {%- endif -%}
+
+                                                {%- if mega_nav.settings.promo2_image -%}
+                                                    <div class="media absolute top-0 left-0 w-full h-full {% if mega_nav.settings.promo2_image_mobile -%} is-desktop {% endif %}">
+                                                        {% render 'image', image: mega_nav.settings.promo2_image, src_width: 400, srcset_2x: true, class: 'img-fit' %}
+                                                    </div>
+                                                {%- endif -%}
+
+                                                {%- if mega_nav.settings.promo2_image_mobile -%}
+                                                    <div class="media absolute top-0 left-0 w-full h-full is-mobile">
+                                                        {% render 'image', image: mega_nav.settings.promo2_image_mobile, src_width: 400, srcset_2x: true, class: 'img-fit' %}
+                                                    </div>
+                                                {%- endif -%}
+
+                                                {%- if mega_nav.settings.promo2_content != blank -%}
+                                                    <div class="promo__content relative" style="--font-size: {{ mega_nav.settings.promo2_text_size }}px; max-width: {{ mega_nav.settings.promo2_text_width }}%;">
+                                                        <div class="rte rte--inherit-heading-color promo-header" style="color: {{ mega_nav.settings.promo_text_color }}; font-size: {{ mega_nav.settings.promo2_text_size }}px">
+                                                            {{- mega_nav.settings.promo2_content -}}
+                                                        </div>
+                                                        <div class="rte rte--inherit-heading-color promo-title" style="color: {{ mega_nav.settings.promo_text_color }}; font-size: {{ mega_nav.settings.promo2_text_size | minus: 4 }}px">
+                                                            {{- mega_nav.settings.promo2_description -}}
+                                                        </div>
+                                                    </div>
+                                                {%- endif -%}
+                                                {%- if is_link -%}
+                                        </a>
+                                        {%- else -%}
+                                    </div>
+                                    {%- endif -%}
+                                    {%- endif -%}
+
+                                </div>
+                            </div>
+                            {%- endif -%}
+
+            {%- if mega_nav -%}</div>{%- endif -%}
+        </div>
+    </details>
+    {%- endif -%}
+    </li>
+    {%- endfor -%}
+    </ul>
+    </nav>
+
+    {%- if section.settings.quicklinks_menu != blank or section.settings.cta_show -%}
+        <nav aria-label="{{ 'accessibility.secondary_navigation' | t }}" class="secondary-nav-container">
+            <ul class="secondary-nav" role="list">
+                {% for link in section.settings.quicklinks_menu.links %}
+                    <li>
+                        <a class="secondary-nav__item" href="{{ link.url }}"{% if link.current %} aria-current="page"{% endif %}>
+                            {{- link.title | escape -}}
+                        </a>
+                    </li>
+                    {%- liquid
+                        if forloop.index == 4
+                            break
+                        endif
+                    -%}
+                {% endfor %}
+
+                {%- if section.settings.cta_show -%}
+                    {%- assign cta_bg_color_hover = section.settings.cta_bg_color | color_mix: section.settings.cta_text_color, 85 | color_lighten: 3 -%}
+                    <li class="inline-flex items-center">
+                        <a href="{{ section.settings.cta_link }}" class="secondary-nav__item secondary-nav__cta{% if section.settings.cta_bg_color.alpha > 0 or section.settings.cta_border_color.alpha > 0 %} secondary-nav__cta--button{% endif %} flex items-center"{% if link.current %} aria-current="page"{% endif %}
+                           style="{% if section.settings.cta_bg_color.alpha > 0 %}--cta-bg-color: {{ section.settings.cta_bg_color.rgb }};--cta-bg-hover-color: {{ cta_bg_color_hover.rgb }};{% endif %}color: {{ section.settings.cta_text_color }};{% if section.settings.cta_border_color.alpha > 0 %}border: var(--btn-border-width, 1px) solid {{ section.settings.cta_border_color }};{% endif %}">
+                            {%- if section.settings.cta_icon != "none" -%}
+                                {%- render 'icon', icon: section.settings.cta_icon, width: 17, height: 17 -%}
+                            {%- endif -%}
+                            {%- if section.settings.cta_label != blank -%}
+                                <span>{{ section.settings.cta_label }}</span>
+                            {%- endif -%}
+                        </a>
+                    </li>
+                {%- endif -%}
+            </ul>
+        </nav>
+    {%- endif -%}
+    </div>
+    </details>
+    <div class="header__icon trigger-show-search !tw-cursor-pointer ls:!tw-hidden" onclick="triggerBtn(this, 'a.js-show-search')">
+        {% render 'icon-search' %}
+        <span class="visually-hidden">{{ 'general.icon_labels.search' | t }}</span>
+    </div>
+</main-menu>
+<style>
+    main-menu .child-promos {
+        width: 100%;
+    }
+    .is-mobile {
+        display: block;
+    }
+    .is-desktop {
+        display: none;
+    }
+    @media screen and (max-width: 768px) {
+        main-menu .child-promos {
+            display: none;
+            min-height: 40rem;
+            height: 40rem;
+        }
+        main-menu .menu-link-Hombre .banner-media {
+            padding: 0 !important;
+        }
+    }
+    @media (min-width: 769px) {
+        .megamenu-fix {
+            display: flex;
+        }
+
+        .megamenu-fix-item {
+            width: 100%;
+            max-height: 100%;
+        }
+
+        main-menu .promo__content {
+            position: absolute;
+        }
+        .is-mobile {
+            display: none;
+        }
+        .is-desktop {
+            display: block;
+        }
+        main-menu .menu-level-1 {
+            text-transform: unset;
+            font-weight: 400 !important;
+            font-size: 13px !important;
+            line-height: 18px !important;
+            padding-bottom: 13px !important;
+        }
+       main-menu .header-menu, .row-item-1 a, .row-item-2 a, .row-item-3 a {
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 16px;
+            padding-bottom: 12px;
+            padding-top: 0;
+            color: black;
+        }
+        main-menu .header-menu:hover {
+            color: black;
+        }
+        main-menu nav-menu ul .menu-child a {
+            font-weight: 300;
+            font-size: 11px !important;
+            line-height: 16px;
+            color: black;
+        }
+        main-menu .mega-nav--columns .main-nav__grandchild .main-nav__item {
+            padding-top: 0;
+
+        }
+        main-menu .mega-nav--columns .main-nav__grandchild .main-nav__item:not(:last-child) {
+            padding-bottom: 4px;
+        }
+        main-menu .main-nav__grandchild {
+            padding-bottom: 0;
+        }
+        main-menu .mega-nav--promos-right {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 36px !important;
+        }
+        main-menu .container {
+            padding: 0;
+            max-width: 100%;
+        }
+        main-menu .promo__content .promo-header p {
+            font-family: Helvetica;
+            font-weight: 400;
+            line-height: 20.7px;
+        }
+        main-menu .promo__content .promo-title p {
+            font-weight: 400;
+            line-height: 21px;
+            text-decoration: underline;
+        }
+        main-menu .nav-gap-y-52 {
+            row-gap: 36px;
+        }
+        main-menu li {
+            width: fit-content;
+        }
+        .row-item-1, .row-item-2, .row-item-3 {
+            width: 100%;
+        }
+        main-menu {
+            margin-top: 19.5px !important;
+        }
+    }
+    @media screen and (min-width: 1250px) {
+        main-menu .mega-nav--promos-right {
+            padding-left: 78px !important;
+        }
+        .header__icons {
+            margin-top:  0 !important;
+            margin-right: -6px !important;
+        }
+    }
+</style>
