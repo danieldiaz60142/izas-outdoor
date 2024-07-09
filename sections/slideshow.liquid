@@ -117,7 +117,6 @@
     #{{ section.id }} .text-overlay { background: {{ bg_color }}; }
   {%- endif -%}
 {%- endstyle -%}
-
 <div slideshow-layout class="slideshow-section section {% if section.settings.full_width %}section--full-width{% else %}container{% endif %}{% if section.settings.mobile_stacked and section.settings.height_mode != 'screen' %} mobile-stacked{% endif %}{% unless color_scheme == 'default' %} color-scheme color-scheme--{{ color_scheme }}{% endunless %}" id="{{ section.id }}">
   <slide-show class="block relative overflow-hidden" role="region" aria-roledescription="{{ 'sections.slideshow.carousel' | t }}" aria-label="{{ section.settings.accessibility_info | escape }}" data-autoplay="{{ section.settings.autoplay }}" data-speed="{{ section.settings.autoplay_speed }}" data-transition="{{ section.settings.transition }}">
     <div class="slideshow flex" id="slideshow-{{ section.id }}" aria-live="polite" aria-atomic="true">
@@ -228,11 +227,17 @@
                   </p>
                 {%- endif -%}
 
+
                 {%- if block.settings.heading != blank -%}
-                  <{% if block.settings.heading_h1 %}h1{% else %}h2{% endif %} class="text-overlay__heading {{ block.settings.heading_size }}">
+                  {% assign heading_tag = block.settings.heading_h1 | default: 'h2' %}
+                  <{{ heading_tag }} class="text-overlay__heading {{ block.settings.heading_size }}">
                     {% render 'multiline-text' with block.settings.heading %}
-                  </{% if block.settings.heading_h1 %}h1{% else %}h2{% endif %}>
+                  </{{ heading_tag }}>
                 {%- endif -%}
+                
+                
+
+
 
                 {%- if block.settings.text != blank -%}
                   <div class="text-overlay__block rte{% if block.settings.enlarge_text %} enlarge-text{% endif %}">

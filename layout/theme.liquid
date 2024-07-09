@@ -1,12 +1,6 @@
-
-
-  {% if settings.seo_index_follow %}
-   
-    <meta name="robots" content="index, follow" />
-  {% endif %}
-
-
-
+{% if settings.seo_index_follow %}
+  <meta name="robots" content="index, follow">
+{% endif %}
 
 {%- liquid
   assign rtl = false
@@ -29,32 +23,30 @@
   assign gutter_lg = 64
 -%}
 
-
-
 <html class="no-js" lang="{{ request.locale.iso_code }}" dir="{% if rtl %}rtl{% else %}ltr{% endif %}">
   <head>
-      <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <!-- Google Tag Manager -->
-<script>
-  (function(w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-    var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-    j.async = true;
-    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, 'script', 'dataLayer', 'GTM-MZD9XR8');
-</script>
+    <script async>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.defer = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-MZD9XR8');
+    </script>
+    <!-- End Google Tag Manager -->
 
-<!-- End Google Tag Manager -->
-    
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="cb54c231-a23e-4ed4-b63d-8a3f726ffc30" type="text/javascript" async></script>
-    
+    <!-- Cookiebot -->
+    <script src="{{'theme-cookiebot.js' | asset_url}}" defer="defer" ></script>
+
     {%- render 'doc-head-core' -%}
     {%- render 'doc-head-social' -%}
     {% include 'ultimate-datalayer' %}
@@ -382,33 +374,41 @@
     {%- endif -%}
 
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-      {% if template.name == "collection" %}
-      #main-content {
-          padding-top: 0;
-      }
-      @media screen and (min-width: 769px) {
-          #main-content {
-              padding-top: 0;
-          }
-      }
-    {% elsif template.name != "index" and template.name != "blog" %}
-         #main-content {
-            padding-top: 10px;
+        @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        {% if template.name == "collection" %}
+        #main-content {
+            padding-top: 0;
         }
-      {% endif %}
+        @media screen and (min-width: 769px) {
+            #main-content {
+                padding-top: 0;
+            }
+        }
+      {% elsif template.name != "index" and template.name != "blog" %}
+           #main-content {
+              padding-top: 10px;
+          }
+        {% endif %}
     </style>
-    {{ 'custom-discount.js' | asset_url | script_tag }}
-  <!--DOOFINDER-SHOPIFY--> {% if content_for_header contains 'doofinder-installed.js' %} {% render 'doofinder-script-tag' %} {% endif %} <!--/DOOFINDER-SHOPIFY-->
-  <!-- Start nofollow noidex /es -->
+   
+ <script
+      src="custom-discount.js" type="text/javascript" async defer
+  ></script>
+
+   <!--  <script src="{{ 'custom-discount.js' }}" type="text/javascript" defer="defer"></script> -->
+
+    <!-- DOOFINDER-SHOPIFY -->
+    {% if content_for_header contains 'doofinder-installed.js' %} {% render 'doofinder-script-tag' %} {% endif %}
+    <!-- /DOOFINDER-SHOPIFY -->
+    <!-- Start nofollow noidex /es -->
     {% if request.path == '/es' %}
-  <meta name="robots" content="index, follow">
-  {% endif %}
-  <!-- End nofollow noidex /es -->
-  <!-- TrustBox script -->
-  <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
-  <!-- End TrustBox script -->
+      <meta name="robots" content="index, follow">
+    {% endif %}
+    <!-- End nofollow noidex /es -->
+    <!-- TrustBox script -->
+    <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+    <!-- End TrustBox script -->
   </head>
 
   <body
@@ -419,11 +419,17 @@
     <a class="skip-link btn btn--primary visually-hidden" href="#main-content">
       {{- 'accessibility.skip_to_content' | t -}}
     </a>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZD9XR8"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MZD9XR8"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     {%- sections 'header-group' -%}
 
     <main id="main-content">
@@ -485,7 +491,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     -%}
 
     <div class="overlay fixed top-0 right-0 bottom-0 left-0 js-overlay"></div>
-    <script>
+    <script async>
       window.theme = {
         info: {
           name: 'Enterprise',
@@ -589,41 +595,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           }
 
           // Set recently viewed list and limit to 12 products.
-          localStorage.setItem('cc-recently-viewed', JSON.stringify(items.slice(0, 12)));
+          localStorage.setItem('cc-recently-viewed', JSON.stringify(items.slice(0, 6)));
         } catch (e) {}
       {%- endif %}
     </script>
 
     {%- if request.design_mode == false and settings.preload_links -%}
-      <script src="{{ 'instant-page.js' | asset_url }}" type="module" defer="defer"></script>
+      <script src="{{ 'instant-page.js' | asset_url }}" type="module" async></script>
     {%- endif -%}
     <div class="sticky-overlay"></div>
+
+    <script src="{{ 'theme-color.js' | asset_url }}" defer="defer"></script>
+
   </body>
-  <script>
-    function showOrCloseColorOption(btn) {
-      let statusOpen = 'false';
-      let characters = '+'
-      if(btn.getAttribute('is-open') == 'false') {
-        btn.setAttribute('is-open', 'true');
-        statusOpen = 'true'
-        characters = "-"
-      }
-      btn.setAttribute('is-open', `${statusOpen}`);
-      let cartSwatch = btn.closest('.card__swatches');
-      let listItems =  cartSwatch.querySelectorAll('.variation-color-hidden');
-      if(window.screen.width < 769) {
-        listItems =  cartSwatch.querySelectorAll('.variation-color-mobile-hidden');
-      }
-      listItems.forEach(item => {
-        if(statusOpen == 'true') {
-          item.classList.add('show')
-        } else {
-          item.classList.remove('show')
-        }
-      });
-      btn.querySelectorAll('.characters').forEach(item => {
-        item.innerHTML = characters
-      })
-    }
-  </script>
 </html>

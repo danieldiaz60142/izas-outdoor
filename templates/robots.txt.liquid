@@ -1,15 +1,10 @@
-# we use Shopify as our ecommerce platform
-
+# Permitimos que todos los bots rastreen la mayor parte del sitio
 User-agent: *
-Disallow: /a/downloads/-/*
 Disallow: /admin
 Disallow: /cart
 Disallow: /orders
 Disallow: /checkouts/
 Disallow: /checkout
-Disallow: /83415793985/checkouts
-Disallow: /83415793985/orders
-Disallow: /carts
 Disallow: /account
 Disallow: /collections/*sort_by*
 Disallow: /*/collections/*sort_by*
@@ -40,35 +35,29 @@ Disallow: /.well-known/shopify/monorail
 Disallow: /cdn/wpm/*.js
 Disallow: /services/login_with_shop
 
-# Google adsbot ignores robots.txt unless specifically named!
+# Google adsbot
 User-agent: adsbot-google
 Disallow: /checkouts/
 Disallow: /checkout
 Disallow: /carts
 Disallow: /orders
-Disallow: /83415793985/checkouts
-Disallow: /83415793985/orders
 Disallow: /*?*oseid=*
 Disallow: /*preview_theme_id*
 Disallow: /*preview_script_id*
 Disallow: /services/login_with_shop
 Disallow: /cdn/wpm/*.js
 
-# Specific bots with special rules
+# Bots específicos con reglas especiales
 User-agent: Nutch
 Disallow: /
 
 User-agent: AhrefsBot
 Crawl-delay: 10
-Disallow: /a/downloads/-/*
 Disallow: /admin
 Disallow: /cart
 Disallow: /orders
 Disallow: /checkouts/
 Disallow: /checkout
-Disallow: /83415793985/checkouts
-Disallow: /83415793985/orders
-Disallow: /carts
 Disallow: /account
 Disallow: /collections/*sort_by*
 Disallow: /*/collections/*sort_by*

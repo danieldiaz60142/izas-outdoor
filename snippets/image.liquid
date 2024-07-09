@@ -162,7 +162,7 @@
            {% if js_class %}class="{{ js_class }}" {% endif -%}
            {% if attributes %}{{ attributes }} {% endif -%}
            {% if disable_focal_point == false and image.presentation %}style="object-position: {{ image.presentation.focal_point }}" {% endif -%}
-           loading="{% if lazy_load %}lazy{% else %}eager{% endif %}"
+           loading="{% if lazy_load %}lazy{% else %}lazy{% endif %}"
            width="{{ image_width }}"
            height="{{ image_height }}"
            alt="{{ alt_text | default: image.alt | escape }}">
@@ -174,7 +174,7 @@
   {%- if lazy_load -%}
     <noscript>
       <img src="{{ image | image_url: width: src_width }}"
-           loading="{% if lazy_load %}lazy{% else %}eager{% endif %}"
+           loading="{% if lazy_load %}lazy{% else %}lazy{% endif %}"
            {% if class %}class="{{ class }}" {% endif -%}
            {% if disable_focal_point == false and image.presentation %}style="object-position: {{ image.presentation.focal_point }}" {% endif -%}
            width="{{ image_width }}"

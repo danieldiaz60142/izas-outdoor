@@ -327,7 +327,7 @@
     }
   },
   "current": {
-    "seo_index_follow": false,
+    "seo_index_follow": true,
     "heading_color": "#1f140f",
     "text_color": "#1f140f",
     "link_color": "#1f140f",

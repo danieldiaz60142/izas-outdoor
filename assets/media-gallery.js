@@ -249,7 +249,7 @@ if (!customElements.get('media-gallery')) {
         // Eager load the slider images for smooth UX
         this.viewer.querySelectorAll('.product-image[loading="lazy"]').forEach((img, index) => {
           setTimeout(() => {
-            img.loading = 'eager';
+            img.loading = 'lazy';
           }, 500 * (index + 1));
         });
       }

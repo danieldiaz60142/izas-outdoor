@@ -9,7 +9,7 @@
   <input type="text" class="gift-card__number" value="{{ gift_card.code | format_code }}" aria-label="{{ 'gift_cards.issued.code' | t }}" readonly>
   {%- if gift_card.pass_url -%}
     <a href="{{ gift_card.pass_url }}">
-      <img src="{{ 'gift-card/add-to-apple-wallet.svg' | shopify_asset_url }}" loading="eager" width="120" height="40" alt="{{ 'gift_cards.issued.add_to_apple_wallet' | t }}">
+      <img src="{{ 'gift-card/add-to-apple-wallet.svg' | shopify_asset_url }}" loading="lazy" width="120" height="40" alt="{{ 'gift_cards.issued.add_to_apple_wallet' | t }}">
     </a>
   {%- endif -%}
 </div>

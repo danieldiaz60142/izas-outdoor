@@ -116,7 +116,7 @@
                                 -%}
                                 {%- if img != blank -%}
                                   <div class="predictive-result__media media relative{% if settings.blend_product_images and type == 'products' %} image-blend{% elsif settings.blend_collection_images and type == 'collections' %} image-blend{% endif %}">
-                                    {{ img | image_url: width: 112 | image_tag: loading: 'eager', class: 'predictive-result__media' }}
+                                    {{ img | image_url: width: 112 | image_tag: loading: 'lazy', class: 'predictive-result__media' }}
                                   </div>
                                 {%- else -%}
                                   <div class="predictive-result__media media relative">
@@ -125,7 +125,7 @@
                                 {%- endif -%}
                               {%- elsif group_articles_pages or type == 'articles' -%}
                                 {%- if item.image != blank -%}
-                                  {{ item.image | image_url: width: 112 | image_tag: loading: 'eager', class: 'predictive-result__media' }}
+                                  {{ item.image | image_url: width: 112 | image_tag: loading: 'lazy', class: 'predictive-result__media' }}
                                  {%- else -%}
                                   <div class="predictive-result__media"></div>
                                  {%- endif -%}

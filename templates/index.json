@@ -125,8 +125,8 @@
         "slide_mEQtjY": {
           "type": "slide",
           "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/Banner-Home-Rebajas-Verano.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/Banner-movil-6.jpg",
+            "image_desktop": "shopify:\/\/shop_images\/Banner-Home-Rebajas-Verano_3c72721c-3552-4bb2-a9e8-2acb9e9f8897.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Banner-movil-6_d29ece41-2e81-4bfe-aac4-ec33b80255bf.jpg",
             "url": "shopify:\/\/collections\/rebajas",
             "overlay_position": "justify-start items-center",
             "overlay_text_align": "text-start",
@@ -171,7 +171,7 @@
         "transition": "slide-fade",
         "autoplay": true,
         "slider_pause": true,
-        "autoplay_speed": 3,
+        "autoplay_speed": 8,
         "color_scheme": "white",
         "full_width": true,
         "tint_color": "#000000",
