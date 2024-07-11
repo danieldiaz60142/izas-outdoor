@@ -1,3 +1,4 @@
+{%- if section.settings.section_visible -%}
 {%- comment -%}theme-check-disable LiquidTag{%- endcomment -%}
 {%- if section.blocks.size > 0 -%}
   {%- liquid
@@ -220,12 +221,20 @@
     {%- endif -%}
   </div>
 {%- endif -%}
-
+{%- else -%}
+<div style="display: none"></div>
+{% endif %}
 {% schema %}
 {
   "name": "Multi-column",
   "class": "cc-multi-column",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "section_visible",
+      "label": "Mostrar esta sección",
+      "default": true
+    },
     {
       "type": "header",
       "content": "Section header"

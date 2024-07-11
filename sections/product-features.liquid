@@ -1,3 +1,4 @@
+{%- if section.settings.section_visible -%}
 {%- if section.index > 2 -%}
   <link rel="stylesheet" href="{{ 'hotspots-image.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- else -%}
@@ -118,13 +119,22 @@
     {%- endif -%}
   </div>
 </div>
-
+{%- else -%}
+<div style="display: none"></div>
+{% endif %}
 {% schema %}
 {
   "name": "Product features",
   "tag": "section",
   "class": "cc-product-features",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "section_visible",
+      "label": "Mostrar esta sección",
+      "default": true
+    },
+
     {
       "type": "product",
       "id": "product",

@@ -1,7 +1,7 @@
 {% if section.settings.image == blank %}
-  <img class="gift-card__image" src="{{ 'gift-card/card.svg' | shopify_asset_url }}" loading="lazy" width="570" height="{{ 570 | divided_by: 1.5 }}" alt="">
+  <img class="gift-card__image" src="{{ 'gift-card/card.svg' | shopify_asset_url }}" loading="lazy" decoding="async" width="570" height="{{ 570 | divided_by: 1.5 }}" alt="">
 {% else %}
-  <img src="{{ section.settings.image | image_url: width: 800 }}" loading="lazy" width="400" height="{{ 400 | divided_by: section.settings.image.aspect_ratio | ceil }}" alt="">
+  <img src="{{ section.settings.image | image_url: width: 800 }}" loading="lazy" decoding="async" width="400" height="{{ 400 | divided_by: section.settings.image.aspect_ratio | ceil }}" alt="">
 {% endif %}
 
 <div class="gift-card__qr-code" data-identifier="{{ gift_card.qr_identifier }}"></div>
@@ -9,7 +9,7 @@
   <input type="text" class="gift-card__number" value="{{ gift_card.code | format_code }}" aria-label="{{ 'gift_cards.issued.code' | t }}" readonly>
   {%- if gift_card.pass_url -%}
     <a href="{{ gift_card.pass_url }}">
-      <img src="{{ 'gift-card/add-to-apple-wallet.svg' | shopify_asset_url }}" loading="lazy" width="120" height="40" alt="{{ 'gift_cards.issued.add_to_apple_wallet' | t }}">
+      <img src="{{ 'gift-card/add-to-apple-wallet.svg' | shopify_asset_url }}" loading="lazy" decoding="async" width="120" height="40" alt="{{ 'gift_cards.issued.add_to_apple_wallet' | t }}">
     </a>
   {%- endif -%}
 </div>

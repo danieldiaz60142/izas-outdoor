@@ -1,4 +1,5 @@
-{%- if section.blocks.size > 0 -%}
+{%- if section.settings.section_visible -%}
+  {%- if section.blocks.size > 0 -%}
   {%- if section.index > 2 -%}
     <link rel="stylesheet" href="{{ 'text-overlay.css' | asset_url }}" media="print" onload="this.media='all'">
   {%- else -%}
@@ -305,6 +306,7 @@
                     src_width: 980,
                     src_placeholder: true,
                     sizes: sizes,
+                    decoding="async",
                     lazy_load: lazy_load_images,
                     class: 'img-fit lg:hidden'
             -%}
@@ -316,6 +318,7 @@
                   src_width: 1400,
                   src_placeholder: true,
                   sizes: sizes,
+                  decoding="async",
                   lazy_load: lazy_load_images,
                   class: desktop_image_class
           -%}
@@ -377,12 +380,20 @@
     {%- endif -%}
   </div>
 </div>
-
+{%- else -%}
+<div style="display: none"></div>
+{% endif %}
 {% schema %}
 {
   "name": "Image banner",
   "class": "cc-image-banner",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "section_visible",
+      "label": "Mostrar esta sección",
+      "default": true
+    },
     {
       "type": "image_picker",
       "id": "image_desktop",

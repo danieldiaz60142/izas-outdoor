@@ -155,13 +155,8 @@
               height="{{ mobile_image_width | divided_by: image.aspect_ratio | round }}">
   {%- endif -%}
 
-      <img {% if srcset %}{% if lazy_load %}data-{% endif %}srcset="{{ srcset }}" {% endif -%}
-           {% if sizes and srcset %}sizes="{{ sizes }}" {% endif -%}
-           {% if lazy_load %}data-{% endif %}src="{{ image | image_url: width: src_width }}"
-           {% if lazy_load and src_placeholder %}src="{{ placeholder_image }}" {% endif -%}
-           {% if js_class %}class="{{ js_class }}" {% endif -%}
-           {% if attributes %}{{ attributes }} {% endif -%}
-           {% if disable_focal_point == false and image.presentation %}style="object-position: {{ image.presentation.focal_point }}" {% endif -%}
+      <img class="{{class}} d-data-src"
+          d-data-src="{{ image | image_url: width: src_width }}"
            loading="{% if lazy_load %}lazy{% else %}lazy{% endif %}"
            width="{{ image_width }}"
            height="{{ image_height }}"
@@ -173,7 +168,8 @@
 
   {%- if lazy_load -%}
     <noscript>
-      <img src="{{ image | image_url: width: src_width }}"
+      <img class="{{class}} d-data-src"
+        d-data-src="{{ image | image_url: width: src_width }}"
            loading="{% if lazy_load %}lazy{% else %}lazy{% endif %}"
            {% if class %}class="{{ class }}" {% endif -%}
            {% if disable_focal_point == false and image.presentation %}style="object-position: {{ image.presentation.focal_point }}" {% endif -%}

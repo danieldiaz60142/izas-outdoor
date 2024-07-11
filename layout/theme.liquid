@@ -22,7 +22,8 @@
   assign gutter_md = 32
   assign gutter_lg = 64
 -%}
-
+<!DOCTYPE html>
+  <html lang="es"> 
 <html class="no-js" lang="{{ request.locale.iso_code }}" dir="{% if rtl %}rtl{% else %}ltr{% endif %}">
   <head>
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -36,8 +37,6 @@
         var f = d.getElementsByTagName(s)[0],
           j = d.createElement(s),
           dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.defer = true;
         j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
         f.parentNode.insertBefore(j, f);
       })(window, document, 'script', 'dataLayer', 'GTM-MZD9XR8');
@@ -310,12 +309,13 @@
     {%- endstyle %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
+    <link href="{{'google-font-gstatic.ttf' | asset_url}}">
+     <!-- <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
-    >
+    > -->
     <link rel="stylesheet" href="{{ 'main.css' | asset_url }}">
-    <script src="{{ 'main.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'main.min.js' | asset_url }}" defer="defer"></script>
     <link rel="stylesheet" href="{{ 'tailwindoutput.css' | asset_url }}">
     {%- unless settings.body_font.system? -%}
       <link
@@ -606,6 +606,17 @@
     <div class="sticky-overlay"></div>
 
     <script src="{{ 'theme-color.js' | asset_url }}" defer="defer"></script>
-
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const width = window.innerWidth;
+          const imgElements = document.querySelectorAll('.d-data-src');
+          if (width >= 640) {
+              imgElements.forEach(imgElement => {
+                  const imgSrc = imgElement.getAttribute('d-data-src');
+                  imgElement.setAttribute('src', imgSrc);
+              });
+          }
+      });
+  </script>
   </body>
 </html>

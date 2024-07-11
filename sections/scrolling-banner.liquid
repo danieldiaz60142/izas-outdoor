@@ -1,3 +1,4 @@
+{%- if section.settings.section_visible -%}
 {%- liquid
   # constants
   assign breakpoint_sm = 600
@@ -94,6 +95,9 @@
     {%- endfor -%}
   </div>
 </div>
+{%- else -%}
+<div style="display: none"></div>
+{% endif %}
 
 {% schema %}
 {
@@ -102,6 +106,13 @@
   "class": "cc-scrolling-banner",
   "max_blocks": 16,
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "section_visible",
+      "label": "Mostrar esta sección",
+      "default": true
+    },
+
     {
       "type": "header",
       "content": "Layout"

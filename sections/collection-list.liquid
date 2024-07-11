@@ -1,3 +1,4 @@
+{%- if section.settings.section_visible -%}
 {%- liquid
   if section.settings.layout == 'carousel'
     assign carousel = true
@@ -116,7 +117,9 @@
     </carousel-slider>
   {%- endif -%}
 </div>
-
+{%- else -%}
+<div style="display: none"></div>
+{% endif %}
 {% schema %}
 {
   "name": "Collection list",
@@ -124,6 +127,12 @@
   "class": "cc-collection-list",
   "max_blocks": 16,
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "section_visible",
+      "label": "Mostrar esta sección",
+      "default": true
+    },
     {
       "type": "header",
       "content": "Section header"

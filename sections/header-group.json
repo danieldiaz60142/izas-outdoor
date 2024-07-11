@@ -497,6 +497,7 @@
       ],
       "disabled": true,
       "settings": {
+        "section_visible": false,
         "section_height": "xsmall",
         "color_scheme": "1",
         "full_width": true,

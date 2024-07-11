@@ -1,179 +1,231 @@
-{%- liquid
-  assign color_scheme = section.settings.color_scheme
-  assign bg_color = false
-
-  if color_scheme == '1'
-    assign bg_color = settings.color_scheme_1_bg
-  elsif color_scheme == '2'
-    assign bg_color = settings.color_scheme_2_bg
-  elsif color_scheme == '3'
-    assign bg_color = settings.color_scheme_3_bg
-  endif
-
-  if bg_color == settings.bg_color or bg_color == 'rgba(0,0,0,0)'
+{%- if section.settings.section_visible -%}
+  {%- liquid
+    assign color_scheme = section.settings.color_scheme
     assign bg_color = false
-  endif
--%}
 
-{%- unless section.settings.full_width -%}
-  <div class="container">
-{%- endunless -%}
+    if color_scheme == '1'
+      assign bg_color = settings.color_scheme_1_bg
+    elsif color_scheme == '2'
+      assign bg_color = settings.color_scheme_2_bg
+    elsif color_scheme == '3'
+      assign bg_color = settings.color_scheme_3_bg
+    endif
 
-<style>
-  [seo-readmore-layout].section{
-    margin: 0 auto;
-    padding: {{ section.settings.spacing_top_mb | append: 'px' }} 0 {{ section.settings.spacing_bottom_mb | append: 'px' }};
-  }
-  [seo-readmore-layout].section .container,
-  [seo-readmore-layout].section .max-w-text-overlay{
-    max-width: 100%;
-  }
-  [seo-readmore-layout].section .enlarge-text.reading-width--inline{
-    padding: 0 2px;
-  }
-  
-  [seo-readmore-layout] .view-more, [seo-readmore-layout] .view-less {
-    font-weight: 300;
-    font-size: 12px;
-    cursor: pointer;
-    font-family: var(--body-font-family);
-    text-decoration: underline;
-    /* padding-top: 49px; */
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-top: 15px;
-    transform: translateX(-50%);
-    letter-spacing: -0.1px;
-    color: #000;
+    if bg_color == settings.bg_color or bg_color == 'rgba(0,0,0,0)'
+      assign bg_color = false
+    endif
+  -%}
 
-  }
-  [seo-readmore-layout] .max-w-text-overlay{
-    position: relative;
-  }
-  [seo-readmore-layout] .metafield-rich_text_field {
-      color: #000;
-      margin-bottom: 0 !important;
-      -webkit-line-clamp: 5;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      display: -webkit-box;
-      text-overflow:clip;
-  }
-  [seo-readmore-layout] .metafield-rich_text_field.active-more {
-      -webkit-line-clamp: unset;
-  }
-  [seo-readmore-layout] .metafield-rich_text_field > * {
-    font-size: 12px !important;
-    line-height: 18px;
-    font-weight: 300;
-    letter-spacing: -0.1px;
-    color: #000;
-    font-family: var(--body-font-family);
-  }
-  [seo-readmore-layout] .metafield-rich_text_field > *:first-child {
-      font-size: 18px !important;
-      line-height: 20.7px;
-      font-family: var(--body-font-family);
-      font-weight: 400;
-      margin-bottom: 15px;
-      color: #000;
-  }
-  [seo-readmore-layout] .metafield-rich_text_field > *:first-child strong{
-      font-size: 18px !important;
-      line-height: 20.7px;
-      font-weight: 400;
-      font-family: var(--body-font-family);
-  }
-  @media screen and (min-width: 980px) {
+  {%- unless section.settings.full_width -%}
+    <div class="container">
+  {%- endunless -%}
+
+  <style>
     [seo-readmore-layout].section{
       margin: 0 auto;
-      padding: {{ section.settings.spacing_top | append: 'px' }} 0 {{ section.settings.spacing_bottom | append: 'px' }};
-    }  
+      padding: {{ section.settings.spacing_top_mb | append: 'px' }} 0 {{ section.settings.spacing_bottom_mb | append: 'px' }};
+    }
     [seo-readmore-layout].section .container,
     [seo-readmore-layout].section .max-w-text-overlay{
-      max-width: 80%;
+      max-width: 100%;
+    }
+    [seo-readmore-layout].section .enlarge-text.reading-width--inline{
+      padding: 0 2px;
+    }
+
+    [seo-readmore-layout] .view-more, [seo-readmore-layout] .view-less {
+      font-weight: 300;
+      font-size: 12px;
+      cursor: pointer;
+      font-family: var(--body-font-family);
+      text-decoration: underline;
+      /* padding-top: 49px; */
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-top: 15px;
+      transform: translateX(-50%);
+      letter-spacing: -0.1px;
+      color: #000;
+
+    }
+    [seo-readmore-layout] .max-w-text-overlay{
+      position: relative;
     }
     [seo-readmore-layout] .metafield-rich_text_field {
-      -webkit-line-clamp: 3;
+        color: #000;
+        margin-bottom: 0 !important;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        display: -webkit-box;
+        text-overflow:clip;
     }
-  }
-</style>
-<script>
-  function viewMore(el) {
-      let sectionBlock = el.closest('.section__block')
-      let buttonViewLess = sectionBlock.querySelector('.view-less')
-      el.classList.add('hidden')
-      buttonViewLess.classList.remove('hidden')
-      sectionBlock.querySelector('.metafield-rich_text_field').classList.add('active-more')
-  }
-  function viewLess(el) {
-      let sectionBlock = el.closest('.section__block')
-      let buttonViewMore = sectionBlock.querySelector('.view-more')
-      el.classList.add('hidden')
-      buttonViewMore.classList.remove('hidden')
-      sectionBlock.querySelector('.metafield-rich_text_field').classList.remove('active-more')
-  }
-</script>
+    [seo-readmore-layout] .metafield-rich_text_field.active-more {
+        -webkit-line-clamp: unset;
+    }
+    [seo-readmore-layout] .metafield-rich_text_field > * {
+      font-size: 12px !important;
+      line-height: 18px;
+      font-weight: 300;
+      letter-spacing: -0.1px;
+      color: #000;
+      font-family: var(--body-font-family);
+    }
+    [seo-readmore-layout] .metafield-rich_text_field > *:first-child {
+        font-size: 18px !important;
+        line-height: 20.7px;
+        font-family: var(--body-font-family);
+        font-weight: 400;
+        margin-bottom: 15px;
+        color: #000;
+    }
+    [seo-readmore-layout] .metafield-rich_text_field > *:first-child strong{
+        font-size: 18px !important;
+        line-height: 20.7px;
+        font-weight: 400;
+        font-family: var(--body-font-family);
+    }
+    @media screen and (min-width: 980px) {
+      [seo-readmore-layout].section{
+        margin: 0 auto;
+        padding: {{ section.settings.spacing_top | append: 'px' }} 0 {{ section.settings.spacing_bottom | append: 'px' }};
+      }
+      [seo-readmore-layout].section .container,
+      [seo-readmore-layout].section .max-w-text-overlay{
+        max-width: 80%;
+      }
+      [seo-readmore-layout] .metafield-rich_text_field {
+        -webkit-line-clamp: 3;
+      }
+    }
+  </style>
+  <script>
+    function viewMore(el) {
+      let sectionBlock = el.closest('.section__block');
+      let buttonViewLess = sectionBlock.querySelector('.view-less');
+      el.classList.add('hidden');
+      buttonViewLess.classList.remove('hidden');
+      sectionBlock.querySelector('.metafield-rich_text_field').classList.add('active-more');
+    }
+    function viewLess(el) {
+      let sectionBlock = el.closest('.section__block');
+      let buttonViewMore = sectionBlock.querySelector('.view-more');
+      el.classList.add('hidden');
+      buttonViewMore.classList.remove('hidden');
+      sectionBlock.querySelector('.metafield-rich_text_field').classList.remove('active-more');
+    }
+  </script>
 
-<div seo-readmore-layout class="section{% unless bg_color == false %} section--padded{% if section.settings.full_width %} section--full-width{% endif %}{% endunless %}{% unless color_scheme == 'none' %} color-scheme color-scheme--{{ color_scheme }}{% endunless %}{% if bg_color == false %} color-scheme--transparent{% endif %}" id="{{ section.id }}"{% if settings.animations_enabled != "disabled" and section.settings.prevent_animation == false %} data-cc-animate{% endif %}>
-  <div class="container flex {{ section.settings.text_position }} {{ section.settings.text_align }}{% if section.settings.mob_center_text %} md-down:text-center{% endif %}">
-    <div class="max-w-text-overlay">
-      {%- for block in section.blocks -%}
-        {%- case block.type -%}
-          {%- when 'heading' -%}
-            {%- if block.settings.heading != blank -%}
-              <{% if block.settings.heading_h1 %}h1{% else %}h2{% endif %} class="section__block section__block--heading md-down:px-gutter {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-                <span class="contained-heading inline-block">{{- block.settings.heading | escape -}}</span>
-              </{% if block.settings.heading_h1 %}h1{% else %}h2{% endif %}>
-            {%- endif -%}
+  <div
+    seo-readmore-layout
+    class="section{% unless bg_color == false %} section--padded{% if section.settings.full_width %} section--full-width{% endif %}{% endunless %}{% unless color_scheme == 'none' %} color-scheme color-scheme--{{ color_scheme }}{% endunless %}{% if bg_color == false %} color-scheme--transparent{% endif %}"
+    id="{{ section.id }}"
+    {% if settings.animations_enabled != 'disabled' and section.settings.prevent_animation == false %}
+      data-cc-animate
+    {% endif %}
+  >
+    <div class="container flex {{ section.settings.text_position }} {{ section.settings.text_align }}{% if section.settings.mob_center_text %} md-down:text-center{% endif %}">
+      <div class="max-w-text-overlay">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'heading' -%}
+              {%- if block.settings.heading != blank -%}
+                {% if block.settings.heading_h1 %}
+                  <h1
+                    class="section__block section__block--heading md-down:px-gutter {{ block.settings.heading_size }}"
+                    {{ block.shopify_attributes }}
+                  >
+                    <span class="contained-heading inline-block">{{- block.settings.heading | escape -}}</span>
+                  </h1>
+                {% else %}
+                  <h2
+                    class="section__block section__block--heading md-down:px-gutter {{ block.settings.heading_size }}"
+                    {{ block.shopify_attributes }}
+                  >
+                    <span class="contained-heading inline-block">{{- block.settings.heading | escape -}}</span>
+                  </h2>
+                {% endif -%}
+              {%- endif -%}
 
-          {%- when 'subheading' -%}
-            {%- if block.settings.text != blank -%}
-              <p class="section__block section__block--subheading subheading md-down:px-gutter" {{ block.shopify_attributes }}>
-                <span class="contained-heading inline-block">{{- block.settings.text | escape -}}</span>
-              </p>
-            {%- endif -%}
+            {%- when 'subheading' -%}
+              {%- if block.settings.text != blank -%}
+                <p
+                  class="section__block section__block--subheading subheading md-down:px-gutter"
+                  {{ block.shopify_attributes }}
+                >
+                  <span class="contained-heading inline-block">{{- block.settings.text | escape -}}</span>
+                </p>
+              {%- endif -%}
 
-          {%- when 'text' -%}
-            {%- if block.settings.text != blank -%}
-                <div class="section__block reading-width--inline md-down:px-gutter rte{% if section.settings.text_align == 'text-start' %} mr-auto{% elsif section.settings.text_align == 'text-end' %} ml-auto{% else %} mx-auto{% endif %}{% if block.settings.enlarge_text %} enlarge-text{% endif %}" {{ block.shopify_attributes }}>
-                    {{ block.settings.text }}
-                    <span class="view-more" onclick="viewMore(this)">Ver más</span>
-                    <span class="view-less hidden" onclick="viewLess(this)">Ver menos</span>
+            {%- when 'text' -%}
+              {%- if block.settings.text != blank -%}
+                <div
+                  class="section__block reading-width--inline md-down:px-gutter rte{% if section.settings.text_align == 'text-start' %} mr-auto{% elsif section.settings.text_align == 'text-end' %} ml-auto{% else %} mx-auto{% endif %}{% if block.settings.enlarge_text %} enlarge-text{% endif %}"
+                  {{ block.shopify_attributes }}
+                >
+                  {{ block.settings.text }}
+                  <span class="view-more" onclick="viewMore(this)">Ver más</span>
+                  <span class="view-less hidden" onclick="viewLess(this)">Ver menos</span>
                 </div>
-            {%- endif -%}
+              {%- endif -%}
 
-          {%- when 'button' -%}
-            {%- if block.settings.button_1_label != blank or block.settings.button_2_label != blank -%}
-              <div class="section__block section__block--buttons md-down:px-gutter inline-flex flex-wrap {% if section.settings.text_align == 'text-start' %} justify-start{% elsif section.settings.text_align == 'text-end' %} justify-end{% else %} justify-center{% endif %}{% if section.settings.mob_center_text %} md-down:center{% endif %}" {{ block.shopify_attributes }}>
-                {%- if block.settings.button_1_label != blank %}
-                  <a class="btn {{ block.settings.button_1_style }}" {% if block.settings.button_1_link == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.button_1_link }}"{% endif %}>
-                    {{- block.settings.button_1_label | escape -}}
-                  </a>
-                {%- endif -%}
-                {%- if block.settings.button_2_label != blank %}
-                  <a class="btn {{ block.settings.button_2_style }}" {% if block.settings.button_2_link == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.button_2_link }}"{% endif %}>
-                    {{- block.settings.button_2_label | escape -}}
-                  </a>
-                {%- endif -%}
-              </div>
-            {%- endif -%}
-        {%- endcase -%}
-      {%- endfor -%}
+            {%- when 'button' -%}
+              {%- if block.settings.button_1_label != blank or block.settings.button_2_label != blank -%}
+                <div
+                  class="section__block section__block--buttons md-down:px-gutter inline-flex flex-wrap {% if section.settings.text_align == 'text-start' %} justify-start{% elsif section.settings.text_align == 'text-end' %} justify-end{% else %} justify-center{% endif %}{% if section.settings.mob_center_text %} md-down:center{% endif %}"
+                  {{ block.shopify_attributes }}
+                >
+                  {%- if block.settings.button_1_label != blank %}
+                    <a
+                      class="btn {{ block.settings.button_1_style }}"
+                      {% if block.settings.button_1_link == blank %}
+                        role="link" aria-disabled="true"
+                      {% else %}
+                        href="{{ block.settings.button_1_link }}"
+                      {% endif %}
+                    >
+                      {{- block.settings.button_1_label | escape -}}
+                    </a>
+                  {%- endif -%}
+                  {%- if block.settings.button_2_label != blank %}
+                    <a
+                      class="btn {{ block.settings.button_2_style }}"
+                      {% if block.settings.button_2_link == blank %}
+                        role="link" aria-disabled="true"
+                      {% else %}
+                        href="{{ block.settings.button_2_link }}"
+                      {% endif %}
+                    >
+                      {{- block.settings.button_2_label | escape -}}
+                    </a>
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
     </div>
   </div>
-</div>
 
-{%- unless section.settings.full_width -%}
-  </div>
-{%- endunless -%}
+  {%- unless section.settings.full_width -%}
+    </div>
+  {%- endunless -%}
+{%- else -%}
+  <div style="display: none"></div>
+{% endif %}
 
 {% schema %}
 {
   "name": "Rich text",
   "class": "cc-rich-text",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "section_visible",
+      "label": "Mostrar esta sección",
+      "default": true
+    },
     {
       "type": "header",
       "content": "Layout"
@@ -477,11 +529,7 @@
     }
   ],
   "disabled_on": {
-    "groups": [
-      "header",
-      "footer",
-      "aside"
-    ]
+    "groups": ["header", "footer", "aside"]
   }
 }
 {% endschema %}

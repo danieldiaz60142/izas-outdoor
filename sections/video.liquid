@@ -1,24 +1,25 @@
-{%- comment -%}theme-check-disable LiquidTag{%- endcomment -%}
-{%- unless section.settings.video_external == blank and section.settings.video_shopify == blank -%}
-  {%- if section.index > 2 -%}
-    <link rel="stylesheet" href="{{ 'video.css' | asset_url }}" media="print" onload="this.media='all'">
-  {%- else -%}
-    {{ 'video.css' | asset_url | stylesheet_tag }}
-  {%- endif -%}
+{%- if section.settings.section_visible -%}
+  {%- comment -%}theme-check-disable LiquidTag{%- endcomment -%}
+  {%- unless section.settings.video_external == blank and section.settings.video_shopify == blank -%}
+    {%- if section.index > 2 -%}
+      <link rel="stylesheet" href="{{ 'video.css' | asset_url }}" media="print" onload="this.media='all'">
+    {%- else -%}
+      {{ 'video.css' | asset_url | stylesheet_tag }}
+    {%- endif -%}
 
-  <script src="{{ 'video.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'video.js' | asset_url }}" defer="defer"></script>
 
-  {%- liquid
-    assign using_video_tag = false
-    assign autoplay = section.settings.video_autoplay
-    assign color_scheme = section.settings.color_scheme
+    {%- liquid
+      assign using_video_tag = false
+      assign autoplay = section.settings.video_autoplay
+      assign color_scheme = section.settings.color_scheme
 
-    if section.settings.video_shopify != blank
-      assign using_video_tag = true
-    endif
-  -%}
+      if section.settings.video_shopify != blank
+        assign using_video_tag = true
+      endif
+    -%}
 
-  {%- capture video_component -%}
+    {%- capture video_component -%}
     <video-component class="{% if using_video_tag %}has-video{% else %}has-iframe{% endif %} block w-full h-full"
                      {%- unless using_video_tag %}data-video-url="{{ section.settings.video_external | escape }}" {% endunless -%}
                      data-video-id="{{ section.id }}"
@@ -33,18 +34,38 @@
     </video-component>
   {%- endcapture -%}
 
-  <div class="section{% unless color_scheme == 'default' %} section--full-width section--padded color-scheme color-scheme--{{ color_scheme }}{% endunless %}" id="{{ section.id }}">
-    <div class="container">
-      <div class="video-section relative flex mx-auto overflow-hidden flex-col{% if section.settings.video_size == 'sm' %} max-w-screen-md{% elsif section.settings.video_size == 'md' %} max-w-screen-lg{% endif %}">
-        {%- if section.blocks.size > 0 -%}
-            <div class="video-section__text {{ section.settings.text_align }}"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>
+    <div
+      class="section{% unless color_scheme == 'default' %} section--full-width section--padded color-scheme color-scheme--{{ color_scheme }}{% endunless %}"
+      id="{{ section.id }}"
+    >
+      <div class="container">
+        <div class="video-section relative flex mx-auto overflow-hidden flex-col{% if section.settings.video_size == 'sm' %} max-w-screen-md{% elsif section.settings.video_size == 'md' %} max-w-screen-lg{% endif %}">
+          {%- if section.blocks.size > 0 -%}
+            <div
+              class="video-section__text {{ section.settings.text_align }}"
+              {% if settings.animations_enabled != 'disabled' %}
+                data-cc-animate
+              {% endif %}
+            >
               {%- for block in section.blocks -%}
                 {%- case block.type -%}
                   {%- when 'heading' -%}
                     {%- if block.settings.heading != blank -%}
-                      <{% if block.settings.heading_h1 %}h1{% else %}h2{% endif %} class="section__block section__block--heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-                        {{- block.settings.heading | newline_to_br -}}
-                      </{% if block.settings.heading_h1 %}h1{% else %}h2{% endif %}>
+                      {% if block.settings.heading_h1 %}
+                        <h1
+                          class="section__block section__block--heading {{ block.settings.heading_size }}"
+                          {{ block.shopify_attributes }}
+                        >
+                          {{- block.settings.heading | newline_to_br -}}
+                        </h1>
+                      {% else %}
+                        <h2
+                          class="section__block section__block--heading {{ block.settings.heading_size }}"
+                          {{ block.shopify_attributes }}
+                        >
+                          {{- block.settings.heading | newline_to_br -}}
+                        </h2>
+                      {%- endif -%}
                     {%- endif -%}
 
                   {%- when 'subheading' -%}
@@ -56,7 +77,10 @@
 
                   {%- when 'text' -%}
                     {%- if block.settings.text != blank -%}
-                      <div class="section__block section__block--rte rte{% if block.settings.enlarge_text %} enlarge-text{% endif %}" {{ block.shopify_attributes }}>
+                      <div
+                        class="section__block section__block--rte rte{% if block.settings.enlarge_text %} enlarge-text{% endif %}"
+                        {{ block.shopify_attributes }}
+                      >
                         {{ block.settings.text }}
                       </div>
                     {%- endif -%}
@@ -64,7 +88,14 @@
                   {%- when 'button' -%}
                     {%- if block.settings.button_label != blank -%}
                       <div class="section__block section__block--button" {{ block.shopify_attributes }}>
-                        <a class="{{ block.settings.button_style }}" {% if block.settings.button_link != blank %}href="{{ block.settings.button_link }}"{% else %}role="link" aria-disabled="true"{% endif %}>
+                        <a
+                          class="{{ block.settings.button_style }}"
+                          {% if block.settings.button_link != blank %}
+                            href="{{ block.settings.button_link }}"
+                          {% else %}
+                            role="link" aria-disabled="true"
+                          {% endif %}
+                        >
                           {{- block.settings.button_label | escape -}}
                         </a>
                       </div>
@@ -72,66 +103,90 @@
                 {%- endcase -%}
               {%- endfor -%}
             </div>
-        {%- endif -%}
-
-        <div class="video-section__media block w-full relative"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>
-          {%- if autoplay -%}
-            <deferred-media class="absolute block top-0 left-0 w-full h-full no-js-hidden">
-              <template>{{ video_component }}</template>
-            </deferred-media>
-
-            <noscript>
-              <div class="absolute top-0 left-0 w-full h-full">
-                {{ video_component }}
-              </div>
-            </noscript>
-          {%- else -%}
-            <deferred-media class="height-clip absolute top-0 left-0 w-full h-full no-js-hidden"{% if using_video_tag and autoplay == false %} data-hide-controls-instantly="true"{% endif %}>
-              <button type="button" class="video-section__play-btn absolute top-0 left-0 flex justify-center items-center w-full h-full video-played-hidden js-load-media">
-                <span class="visually-hidden">{{ 'general.icon_labels.play' | t }}</span>
-                {%- render 'icon-play' -%}
-              </button>
-              <template>
-                {{ video_component }}
-              </template>
-            </deferred-media>
           {%- endif -%}
 
-          <div class="media media--has-overlay absolute top-0 left-0 w-full h-full video-played-hidden">
-            {%- liquid
-              assign sizes = false
-              assign class = 'img-fit object-center'
-            -%}
-            {%- if section.settings.poster_image != blank or section.settings.video_shopify != blank -%}
-              {%- assign poster_image = section.settings.poster_image | default: section.settings.video_shopify.preview_image -%}
-              {%- capture sizes -%}
+          <div
+            class="video-section__media block w-full relative"
+            {% if settings.animations_enabled != 'disabled' %}
+              data-cc-animate
+            {% endif %}
+          >
+            {%- if autoplay -%}
+              <deferred-media class="absolute block top-0 left-0 w-full h-full no-js-hidden">
+                <template>{{ video_component }}</template>
+              </deferred-media>
+
+              <noscript>
+                <div class="absolute top-0 left-0 w-full h-full">
+                  {{ video_component }}
+                </div>
+              </noscript>
+            {%- else -%}
+              <deferred-media
+                class="height-clip absolute top-0 left-0 w-full h-full no-js-hidden"
+                {% if using_video_tag and autoplay == false %}
+                  data-hide-controls-instantly="true"
+                {% endif %}
+              >
+                <button
+                  type="button"
+                  class="video-section__play-btn absolute top-0 left-0 flex justify-center items-center w-full h-full video-played-hidden js-load-media"
+                >
+                  <span class="visually-hidden">{{ 'general.icon_labels.play' | t }}</span>
+                  {%- render 'icon-play' -%}
+                </button>
+                <template>
+                  {{ video_component }}
+                </template>
+              </deferred-media>
+            {%- endif -%}
+
+            <div class="media media--has-overlay absolute top-0 left-0 w-full h-full video-played-hidden">
+              {%- liquid
+                assign sizes = false
+                assign class = 'img-fit object-center'
+              -%}
+              {%- if section.settings.poster_image != blank or section.settings.video_shopify != blank -%}
+                {%- assign poster_image = section.settings.poster_image
+                  | default: section.settings.video_shopify.preview_image
+                -%}
+                {%- capture sizes -%}
                 {%- render 'sizes-attribute', min: '100vw', sm: 'page', md: false, lg: false, xl: 'page', max: 'page' -%}
               {%- endcapture -%}
-              {% render 'image',
-                image: poster_image,
-                widths: '750, 856, 1440, 1680, 1920, 2560',
-                src_width: 1680,
-                src_placeholder: true,
-                sizes: sizes,
-                section_index: section.index,
-                class: class
-              %}
-            {%- else -%}
-              {%- assign class = class | prepend: 'media__placeholder ' -%}
-              {{ 'lifestyle-1' | placeholder_svg_tag: class }}
-            {%- endif -%}
+                {% render 'image',
+                  image: poster_image,
+                  widths: '750, 856, 1440, 1680, 1920, 2560',
+                  src_width: 1680,
+                  src_placeholder: true,
+                  sizes: sizes,
+                  section_index: section.index,
+                  class: class
+                %}
+              {%- else -%}
+                {%- assign class = class | prepend: 'media__placeholder ' -%}
+                {{ 'lifestyle-1' | placeholder_svg_tag: class }}
+              {%- endif -%}
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-{%- endunless -%}
+  {%- endunless -%}
+{%- else -%}
+  <div style="display: none"></div>
+{% endif %}
 
 {% schema %}
 {
   "name": "Video",
   "class": "cc-video",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "section_visible",
+      "label": "Mostrar esta sección",
+      "default": true
+    },
     {
       "type": "video",
       "id": "video_shopify",
@@ -380,11 +435,7 @@
     }
   ],
   "disabled_on": {
-    "groups": [
-      "header",
-      "footer",
-      "aside"
-    ]
+    "groups": ["header", "footer", "aside"]
   }
 }
 {% endschema %}

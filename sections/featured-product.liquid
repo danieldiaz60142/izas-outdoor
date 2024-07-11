@@ -71,7 +71,7 @@
 {%- endstyle -%}
 
 {%- if first_3d_model -%}
-  <link rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ 'model-viewer-ui.css' | asset_url}}" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="{{ 'model-viewer.css' | asset_url }}" media="print" onload="this.media='all'">
   <script src="{{ 'product-model.js' | asset_url }}" defer></script>
 {%- endif -%}

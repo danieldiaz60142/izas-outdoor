@@ -10,7 +10,7 @@
   {%- unless section.settings.full_width -%}
     <div class="container">
   {%- endunless -%}
-
+  {%- if section.settings.section_visible -%}
   <div class="section{% if section.settings.full_width %} section--full-width{% if section.settings.dividers != "none" %} {{ section.settings.dividers }}{% endif %}{% endif %} section--padded-{{ section.settings.section_height }}{% unless color_scheme == 'none' %} color-scheme color-scheme--{{ color_scheme }}{% endunless %}" id="{{ section.id }}">
     <div class="container text-center flex-wrap flex-auto items-center justify-center gap-x-theme promo-strip__container"{% if settings.animations_enabled != "disabled" and section.settings.prevent_animation == false %} data-cc-animate{% endif %}>
       {%- for block in section.blocks -%}
@@ -58,6 +58,9 @@
       {%- endfor -%}
     </div>
   </div>
+  {%- else -%}
+  <div style="display: none"></div>
+  {% endif %}
 
   {%- unless section.settings.full_width -%}
     </div>
@@ -69,6 +72,12 @@
   "name": "Promo strip",
   "class": "cc-promo-strip",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "section_visible",
+      "label": "Mostrar esta sección",
+      "default": true
+    },
     {
       "type": "header",
       "content": "Layout"

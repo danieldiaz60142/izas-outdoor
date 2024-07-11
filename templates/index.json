@@ -45,6 +45,7 @@
       ],
       "disabled": true,
       "settings": {
+        "section_visible": false,
         "text_position": "justify-center",
         "text_align": "text-center",
         "mob_center_text": true,
@@ -97,6 +98,7 @@
       ],
       "disabled": true,
       "settings": {
+        "section_visible": false,
         "image_desktop": "shopify:\/\/shop_images\/Dueros-Unisex-foto-ampliada-1.1.jpg",
         "image_mobile": "shopify:\/\/shop_images\/banner-movil-abril-home.jpg",
         "url": "shopify:\/\/collections\/nueva-coleccion",
@@ -125,8 +127,8 @@
         "slide_mEQtjY": {
           "type": "slide",
           "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/Banner-Home-Rebajas-Verano_3c72721c-3552-4bb2-a9e8-2acb9e9f8897.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/Banner-movil-6_d29ece41-2e81-4bfe-aac4-ec33b80255bf.jpg",
+            "image_desktop": "shopify:\/\/shop_images\/Banner-Home-Rebajas-Verano_3c72721c-3552-4bb2-a9e8-2acb9e9f8897.webp",
+            "image_mobile": "shopify:\/\/shop_images\/Banner-movil-6_d29ece41-2e81-4bfe-aac4-ec33b80255bf.webp",
             "url": "shopify:\/\/collections\/rebajas",
             "overlay_position": "justify-start items-center",
             "overlay_text_align": "text-start",
@@ -161,6 +163,7 @@
         "slide_mEQtjY"
       ],
       "settings": {
+        "section_visible": true,
         "height_mode": "screen",
         "fixed_height_desktop": 1000,
         "fixed_height_mobile": 500,
@@ -224,6 +227,7 @@
       "disabled": true,
       "custom_css": [],
       "settings": {
+        "section_visible": false,
         "height_mode": "screen",
         "fixed_height_desktop": 1000,
         "fixed_height_mobile": 500,
@@ -283,6 +287,7 @@
       ],
       "disabled": true,
       "settings": {
+        "section_visible": false,
         "image_desktop": "shopify:\/\/shop_images\/banner-home-2-abril.jpg",
         "image_mobile": "shopify:\/\/shop_images\/banner-hombre-izas-abril-mobil.jpg",
         "url": "shopify:\/\/collections\/casual",
@@ -347,7 +352,9 @@
       "block_order": [
         "slide_nGh3A7"
       ],
+      "disabled": true,
       "settings": {
+        "section_visible": false,
         "height_mode": "screen",
         "fixed_height_desktop": 1000,
         "fixed_height_mobile": 500,
@@ -409,6 +416,7 @@
         "slide_UkQrzC"
       ],
       "settings": {
+        "section_visible": true,
         "height_mode": "screen",
         "fixed_height_desktop": 1000,
         "fixed_height_mobile": 500,
@@ -435,7 +443,7 @@
           "type": "slide",
           "settings": {
             "image_desktop": "shopify:\/\/shop_images\/banner-home-nuevo-calzado.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/Banner-calzado-nuevo-movil_57e786b3-6a0e-4834-a219-f54c81117b9f.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Banner-calzado-nuevo-movil_06af57e1-6e6d-42b0-a74c-c473959d1c78.jpg",
             "url": "shopify:\/\/collections\/nueva-coleccion-calzado",
             "overlay_position": "justify-center items-center",
             "overlay_text_align": "text-start",
@@ -470,6 +478,7 @@
         "slide_VHMDBQ"
       ],
       "settings": {
+        "section_visible": true,
         "height_mode": "screen",
         "fixed_height_desktop": 1000,
         "fixed_height_mobile": 500,
@@ -494,9 +503,10 @@
       "blocks": {
         "slide_HJB7p8": {
           "type": "slide",
+          "disabled": true,
           "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/Banner-Home-Fin-De-Temporada.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/Banner-Home-Fin-De-Temporada-Mobile.jpg",
+            "image_desktop": "shopify:\/\/shop_images\/Banner-Home-Fin-De-Temporada_9914bc5a-a1c5-4e18-8816-9982a0bbf608.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Banner-Home-Fin-De-Temporada-Mobile_d2aa8768-0dfd-4371-a2f0-fa3bc15bd245.jpg",
             "url": "shopify:\/\/collections\/outlet",
             "overlay_position": "justify-center items-center",
             "overlay_text_align": "text-start",
@@ -532,6 +542,7 @@
       ],
       "disabled": true,
       "settings": {
+        "section_visible": false,
         "height_mode": "screen",
         "fixed_height_desktop": 1000,
         "fixed_height_mobile": 500,
@@ -594,6 +605,7 @@
       ],
       "disabled": true,
       "settings": {
+        "section_visible": false,
         "image_desktop": "shopify:\/\/shop_images\/Dueros-uniSEX.jpg",
         "url": "",
         "height_mode": "auto",
@@ -693,9 +705,10 @@
         },
         "template--21399708401985__ae0e6550-d3d0-413c-b105-ddbdf124611b-column-2": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/izas-banner-mobile-2_ef3b1e12-dae0-4a5c-822d-e8cf00901403.jpg",
+            "image": "shopify:\/\/shop_images\/izas-banner-mobile-2_d77442d9-5b78-4ef4-a981-84cb2bbb32b3.jpg",
             "media_scale": 100,
             "heading": "HOMBRE",
             "text": "",
@@ -705,9 +718,10 @@
         },
         "template--21399708401985__ae0e6550-d3d0-413c-b105-ddbdf124611b-column-3": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "enable_media": true,
-            "image": "shopify:\/\/shop_images\/coleccion-camisetas.jpg",
+            "image": "shopify:\/\/shop_images\/coleccion-camisetas_cbd60a18-cbe7-486e-8074-a3386726748e.jpg",
             "media_scale": 100,
             "heading": "mujer",
             "text": "",
@@ -724,6 +738,7 @@
       ],
       "disabled": true,
       "settings": {
+        "section_visible": false,
         "title": "",
         "heading_align": "text-start",
         "button_label": "",
@@ -755,6 +770,7 @@
       ],
       "disabled": true,
       "settings": {
+        "section_visible": false,
         "section_height": "small",
         "spacing": 32,
         "speed": 30,
@@ -858,6 +874,7 @@
       ],
       "disabled": true,
       "settings": {
+        "section_visible": false,
         "title": "",
         "heading_align": "text-start",
         "button_label": "",
@@ -905,6 +922,7 @@
       ],
       "disabled": true,
       "settings": {
+        "section_visible": false,
         "text_position": "justify-center",
         "text_align": "text-center",
         "mob_center_text": true,
@@ -958,6 +976,7 @@
       ],
       "disabled": true,
       "settings": {
+        "section_visible": false,
         "product": "",
         "show_content": false,
         "layout": "text_first",
@@ -1132,6 +1151,7 @@
       ],
       "disabled": true,
       "settings": {
+        "section_visible": false,
         "image_desktop": "shopify:\/\/shop_images\/Dekstop-Quiz-banner.jpg",
         "image_mobile": "shopify:\/\/shop_images\/Quiz_2.png",
         "url": "",
@@ -1165,7 +1185,6 @@
         },
         "collection-1": {
           "type": "collection",
-          "disabled": true,
           "settings": {
             "collection": "chaquetas-y-chalecos"
           }
@@ -1206,6 +1225,7 @@
       ],
       "disabled": true,
       "settings": {
+        "section_visible": false,
         "title": "nuestros productos",
         "heading_align": "text-start",
         "button_label": "VER TODOS",
@@ -1220,6 +1240,7 @@
       "type": "video",
       "disabled": true,
       "settings": {
+        "section_visible": false,
         "video_shopify": "shopify:\/\/files\/videos\/video-izas-lifestyle.mp4",
         "video_external": "",
         "video_description": "",
@@ -1232,7 +1253,6 @@
     "63357c4c-bcf9-4021-a67b-ab66bb5e9de6": {
       "type": "custom-liquid",
       "disabled": true,
-      "custom_css": [],
       "settings": {
         "custom_liquid": "<center><div data-tf-live=\"01HFY0S7G32ARMPR3RSVHC9FJ4\"><\/div><script src=\"\/\/embed.typeform.com\/next\/embed.js\"><\/script><\/center>",
         "section_height": "xsmall",
@@ -1266,6 +1286,7 @@
       ],
       "disabled": true,
       "settings": {
+        "section_visible": false,
         "text_position": "justify-center",
         "text_align": "text-center",
         "mob_center_text": true,

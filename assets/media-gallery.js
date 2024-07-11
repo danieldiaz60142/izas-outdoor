@@ -250,6 +250,7 @@ if (!customElements.get('media-gallery')) {
         this.viewer.querySelectorAll('.product-image[loading="lazy"]').forEach((img, index) => {
           setTimeout(() => {
             img.loading = 'lazy';
+            img.decoding="async";
           }, 500 * (index + 1));
         });
       }
