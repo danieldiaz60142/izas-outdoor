@@ -132,8 +132,8 @@
           {% render 'icon-mic' %}
         </speech-search-button>
 
-        {{ 'speech-search.css' | asset_url | stylesheet_tag }}
-        <script src="{{ 'speech-search.js' | asset_url }}" defer="defer"></script>
+        {{ 'speech-search.min.css' | asset_url | stylesheet_tag }}
+        <script src="{{ 'speech-search.min.js' | asset_url }}" defer="defer"></script>
       {%- endif -%}
     </search-form>
 

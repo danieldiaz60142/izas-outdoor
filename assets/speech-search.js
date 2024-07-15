@@ -1,10 +1,10 @@
 /**
  * Returns a function that as long as it continues to be invoked, won't be triggered.
  * @param {Function} fn - Callback function.
- * @param {number} [wait=300] - Delay (in milliseconds).
+ * @param {number} [wait=200] - Delay (in milliseconds).
  * @returns {Function}
  */
-function debounce(fn, wait = 300) {
+function debounce(fn, wait = 200) {
   let t;
   return (...args) => {
     clearTimeout(t);

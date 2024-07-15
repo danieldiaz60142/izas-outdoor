@@ -33,14 +33,13 @@
                                 <a class="menu-level-1 main-nav__item main-nav__item--primary main-nav__item-content{% if link.current %} is-active{% endif %}{% if featured_links contains link_title_downcase %} main-nav__link--featured{% endif %}" href="{{ link.url }}"{% if link.current %} aria-current="page"{% endif %}>
                                     <span {% if template.name == "index" %}class="storeHeaderLink"{% endif %}>{{ link.title | escape }}</span>
                                 </a>
-                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="md:hidden ">
-                                    <mask id="mask0_1141_3476" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="14" height="14">
-                                    <rect x="14" y="14" width="14" height="14" transform="rotate(-180 14 14)" fill="#D9D9D9"/>
-                                    </mask>
-                                    <g mask="url(#mask0_1141_3476)">
-                                    <path d="M8.16743 1.3686L13.7988 7L8.16743 12.6314L7.33956 11.8035L12.1431 7L7.33956 2.19647L8.16743 1.3686Z" fill="#1C1B1F"/>
-                                    </g>
-                                </svg>
+                                {% render 'image',
+                                    image_src: '{{"arrow-rigth.svg" | asset_url}}',
+                                    widths: '14, 14',
+                                    src_width: 14,
+                                    sizes: sizes,
+                                    class: 'md:hidden'
+                                  %}
                             </summary>
                             {%- liquid
                                 assign child_nav_classes = ""
@@ -219,14 +218,13 @@
                                                                     <a class="header-menu child-nav__item main-nav__item main-nav__item-content{% if child_link.current %} is-active{% endif %}{% if featured_links contains child_link_title_downcase %} main-nav__link--featured{% endif %}" href="{{ child_link.url }}"{% if settings.preload_links %} data-no-instant{% endif %}>
                                                                         {{- child_link.title | escape -}}
                                                                     </a>
-                                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="md:hidden ">
-                                                                        <mask id="mask0_1141_3476" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="14" height="14">
-                                                                        <rect x="14" y="14" width="14" height="14" transform="rotate(-180 14 14)" fill="#D9D9D9"/>
-                                                                        </mask>
-                                                                        <g mask="url(#mask0_1141_3476)">
-                                                                        <path d="M8.16743 1.3686L13.7988 7L8.16743 12.6314L7.33956 11.8035L12.1431 7L7.33956 2.19647L8.16743 1.3686Z" fill="#1C1B1F"/>
-                                                                        </g>
-                                                                    </svg>
+                                                                    {% render 'image',
+                                                                       image_src: '{{"arrow-rigth.svg" | asset_url}}'
+                                                                        widths: '14, 14',
+                                                                        src_width: 14,
+                                                                        sizes: sizes,
+                                                                        class: 'md:hidden'
+                                                                      %}
                                                                 </div>
                                                             </summary>
 
@@ -270,14 +268,13 @@
                                                                         <li class="col-start-1 col-end-3">
                                                                             <a href="{{ child_link.url }}" class="main-nav__item--go">
                                                                                 {{- 'sections.header.go_to' | t -}}
-                                                                                <svg class="md:hidden" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" style="padding-left: 4px;">
-                                                                                <mask id="mask0_1141_4016" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="15">
-                                                                                <rect width="14.3112" height="14.3112" fill="#D9D9D9"/>
-                                                                                </mask>
-                                                                                <g mask="url(#mask0_1141_4016)">
-                                                                                <path d="M7.77169 7.1556L5.93807 8.98922L6.56072 9.62678L9.03191 7.1556L6.56072 4.68441L5.93807 5.32197L7.77169 7.1556ZM7.15802 12.8204C6.37452 12.8204 5.63807 12.6718 4.94867 12.3744C4.25926 12.077 3.65957 11.6735 3.1496 11.1638C2.63963 10.654 2.2359 10.0546 1.93841 9.36548C1.64093 8.67639 1.49219 7.94009 1.49219 7.1566C1.49219 6.3731 1.64087 5.63665 1.93822 4.94724C2.23557 4.25783 2.63912 3.65814 3.14886 3.14818C3.6586 2.6382 4.25803 2.23447 4.94713 1.93699C5.63623 1.63951 6.37252 1.49076 7.15602 1.49076C7.93952 1.49076 8.67597 1.63944 9.36537 1.9368C10.0548 2.23415 10.6545 2.6377 11.1644 3.14743C11.6744 3.65718 12.0781 4.25661 12.3756 4.94571C12.6731 5.6348 12.8219 6.3711 12.8219 7.1546C12.8219 7.9381 12.6732 8.67455 12.3758 9.36395C12.0785 10.0534 11.6749 10.653 11.1652 11.163C10.6554 11.673 10.056 12.0767 9.36691 12.3742C8.67781 12.6717 7.94152 12.8204 7.15802 12.8204ZM7.15702 11.926C8.48876 11.926 9.61676 11.4639 10.541 10.5396C11.4653 9.61533 11.9274 8.48733 11.9274 7.1556C11.9274 5.82386 11.4653 4.69586 10.541 3.7716C9.61676 2.84733 8.48876 2.3852 7.15702 2.3852C5.82528 2.3852 4.69728 2.84733 3.77302 3.7716C2.84875 4.69586 2.38662 5.82386 2.38662 7.1556C2.38662 8.48733 2.84875 9.61533 3.77302 10.5396C4.69728 11.4639 5.82528 11.926 7.15702 11.926Z" fill="black"/>
-                                                                                </g>
-                                                                                </svg>
+                                                                                {% render 'image',
+                                                                                    image_src: '{{"arrow-rigth.svg" | asset_url}}',
+                                                                                    widths: '15, 15',
+                                                                                    src_width: 15,
+                                                                                    sizes: sizes,
+                                                                                    class: 'md:hidden'
+                                                                                  %}
                                                                             </a>
                                                                         </li>
                                                                     {%- endif -%}
