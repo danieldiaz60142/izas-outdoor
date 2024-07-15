@@ -127,8 +127,12 @@
 
                     {%- if settings.card_colors_style == 'swatches' or settings.card_colors_style == 'variant-images' -%}
                         {%- assign variant_media = product.variants | map: 'featured_media' -%}
-                        {%- for media in variant_media -%}
-                            {%- unless media == product.featured_media -%}
+                        Tamaño: {{ product.options.first.values.size }}
+                        {%- for option in product.options_with_values -%}
+                        {%- endfor -%}
+                         {% comment %} {%- for media in variant_media -%}
+                            trtretretret{{ media.title }}
+                            {% comment %} {%- unless media == product.featured_media -%}
                                 {%- capture attributes %}data-media-id="{{ media.id }}" hidden{% endcapture -%}
                                 {% render 'image',
                                         image: media,
@@ -140,8 +144,8 @@
                                         disable_focal_point: true,
                                         quality: image_quality
                                 %}
-                            {%- endunless -%}
-                        {%- endfor -%}
+                            {%- endunless -%} {% endcomment %}
+                        {%- endfor -%} {% endcomment %}
                     {%- endif -%}
 
                     {%- if show_hover_image -%}

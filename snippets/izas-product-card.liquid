@@ -1,4 +1,8 @@
 {% if settings.enable_product_variation %}
+  <li>
+    imagen #{{ forloopIndex }}
+  </li>
+  {{ forloopIndex }}
   {% assign indexSwatches = 0 %}
   {%- if settings.card_colors_style != 'none' -%}
     <!-- {%- for option in product.options_with_values -%}
