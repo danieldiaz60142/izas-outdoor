@@ -5,7 +5,7 @@
   {{ forloopIndex }}
   {% assign indexSwatches = 0 %}
   {%- if settings.card_colors_style != 'none' -%}
-    <!-- {%- for option in product.options_with_values -%}
+    {%- for option in product.options_with_values -%}
       {%- if settings.swatch_option_name contains option.name -%}
         {%- if settings.card_colors_style == 'swatches' or settings.card_colors_style == 'variant-images' -%}
           {{ product.options_with_values }}
@@ -17,7 +17,7 @@
           {% endfor %} 
         {% endif %}
       {% endif %}
-    {% endfor %} -->
+    {% endfor %}
   {% endif %}
 {% else %}
   <li {% if carousel %}class="slider__item"{% endif %}{% if settings.animations_enabled != "disabled" %}data-cc-animatedata-cc-animate-delay="{{ forloopIndex | times: 0.07 }}s"{% endif %}>

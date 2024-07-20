@@ -290,10 +290,10 @@
                 {%- for product in collection.products limit: section.settings.products_to_show -%}                
                  {% render 'izas-product-card',carousel:carousel,forloopIndex: forloop.index, product: product, collection: collection, image_ratio: image_ratio, section: section %} 
               
-                <!--{%- else -%}
+                {%- else -%}
                  {%- for i in (1..section.settings.products_to_show) -%}
                     {% render 'izas-product-card',carousel:carousel,forloopIndex: forloop.index, product: product, collection: collection, image_ratio: image_ratio, section: section %}
-                  {%- endfor -%} -->
+                  {%- endfor -%}
                 {%- endfor -%} 
               </ul>
             </div> 
