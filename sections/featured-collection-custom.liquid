@@ -185,7 +185,7 @@
       <div class="section__header items-center flex{% if section.settings.heading_align == 'text-center' %} flex-col text-center{% elsif section.settings.heading_align == 'text-end' %} flex-row-reverse flex-wrap{% else %} flex-row flex-wrap{% endif %} gap-x-theme"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>
         {%- if section.settings.title != blank -%}
           <h2 class="h4 mb-0 flex-auto section__heading {{ section.settings.heading_align }}">
-            {{- section.settings.title | escape -}}
+            {{- section.settings.title | escape -}} 
           </h2>
         {%- endif -%}
 
@@ -198,7 +198,7 @@
 
  {%- if section.settings.show_promo_info -%}
     <div class="featured-collection-container relative w-full mx-auto"{% if section.settings.image_ratio == 'fill' and section.settings.layout != 'carousel' and section.settings.image %} data-css-var-height=".card--product"{% endif %}>
-      <div class="flex flex-col md:flex-row">
+      <div class="flex flex-col md:flex-row"> 
 
         <div class="featured-collection-info mb-6 md:mb-0 flex shrink-0 flex-col{% if section.settings.layout == 'carousel' %} featured-collection-info--carousel items-stretch{% endif %}"{% if settings.animations_enabled != "disabled" %}data-cc-animate{% endif %}>
           {%- if section.settings.layout == 'grid' or section.settings.layout == 'carousel_on_mobile' -%}
@@ -287,7 +287,7 @@
 
             <div class="container products-grid-container shrink-0">
               <ul class="{% if carousel %}slider__grid {% endif %}grid {% if section.settings.preview_slider == true %} {{ grid_classes_pre }} {% else %} {{ grid_classes }} {% endif %} {% if section.settings.layout == 'carousel_on_mobile' and section.settings.card_size_mobile == 'small' and settings.card_contain %} sm:gap-x-theme sm:gap-y-8{% else %} gap-x-theme gap-y-8{% endif %}{% if section.settings.card_size_mobile == 'small' and settings.card_contain %} small__grid{% endif %}" role="list">
-                {%- for product in collection.products limit: section.settings.products_to_show -%}                
+                {%- for product in collection.products limit: section.settings.products_to_show -%}     <!--for de las cartas del slider-->           
                  {% render 'izas-product-card',carousel:carousel,forloopIndex: forloop.index, product: product, collection: collection, image_ratio: image_ratio, section: section %} 
               
                 {%- else -%}

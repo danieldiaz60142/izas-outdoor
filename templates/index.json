@@ -121,6 +121,102 @@
         "prevent_animation": true
       }
     },
+    "video_LCqEKB": {
+      "type": "video",
+      "blocks": {
+        "heading_WkhjdV": {
+          "type": "heading",
+          "settings": {
+            "heading": "Rebajas",
+            "heading_size": "h1",
+            "heading_h1": false
+          }
+        },
+        "text_rafmRk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Descuentos de hasta el -70%<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_RY4dUW": {
+          "type": "button",
+          "settings": {
+            "button_label": "Ver rebajas",
+            "button_link": "shopify:\/\/collections\/rebajas",
+            "button_style": "btn btn--secondary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WkhjdV",
+        "text_rafmRk",
+        "button_RY4dUW"
+      ],
+      "settings": {
+        "section_visible": true,
+        "video_shopify": "shopify:\/\/files\/videos\/0716.webm",
+        "video_external": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_description": "",
+        "video_size": "lg",
+        "video_autoplay": true,
+        "text_align": "text-center",
+        "color_scheme": "1"
+      }
+    },
+    "background_video_jQqPVM": {
+      "type": "background-video",
+      "blocks": {
+        "heading_ATgqX6": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Background Video",
+            "heading_size": "h1",
+            "heading_h1": false
+          }
+        },
+        "text_rM6WwR": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Hola<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "button_xz8wXN": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "hola",
+            "button_link": "",
+            "button_style": "btn btn--secondary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ATgqX6",
+        "text_rM6WwR",
+        "button_xz8wXN"
+      ],
+      "settings": {
+        "video_shopify": "shopify:\/\/files\/videos\/0716.webm",
+        "video_external": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_description": "",
+        "video_height": "lg",
+        "overlay_text_align": "text-center",
+        "overlay_position": "justify-center items-center",
+        "mob_center_text": true,
+        "color_scheme": "white",
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 0,
+        "distance_above_and_below": 0,
+        "distance_above_and_below_mobile": 0,
+        "lazyload": true,
+        "prevent_animation": false
+      }
+    },
     "slideshow_hEaLiE": {
       "type": "slideshow",
       "blocks": {
@@ -162,6 +258,7 @@
       "block_order": [
         "slide_mEQtjY"
       ],
+      "disabled": true,
       "settings": {
         "section_visible": true,
         "height_mode": "screen",
@@ -244,69 +341,6 @@
         "tint_color": "#000000",
         "tint_opacity": 10,
         "accessibility_info": "",
-        "prevent_animation": true
-      }
-    },
-    "image_banner_BAJpAH": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_cPNMnD": {
-          "type": "heading",
-          "settings": {
-            "heading": "Estilo único",
-            "heading_size": "h0",
-            "heading_font_weight": "inherit",
-            "heading_h1": false
-          }
-        },
-        "text_gPG3bC": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Encuentra el mejor estilo para el día a día<\/p>",
-            "heading_size": "h7",
-            "heading_font_weight": "normal",
-            "enlarge_text": true
-          }
-        },
-        "button_9dDk9L": {
-          "type": "button",
-          "settings": {
-            "button_1_label": "Hombre",
-            "button_1_link": "shopify:\/\/collections\/casual-hombre",
-            "button_1_style": "btn btn--primary",
-            "button_2_label": "Mujer",
-            "button_2_link": "shopify:\/\/collections\/casual-mujer",
-            "button_2_style": "btn btn--primary"
-          }
-        }
-      },
-      "block_order": [
-        "heading_cPNMnD",
-        "text_gPG3bC",
-        "button_9dDk9L"
-      ],
-      "disabled": true,
-      "settings": {
-        "section_visible": false,
-        "image_desktop": "shopify:\/\/shop_images\/banner-home-2-abril.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/banner-hombre-izas-abril-mobil.jpg",
-        "url": "shopify:\/\/collections\/casual",
-        "height_mode": "fixed",
-        "fixed_height_desktop": 902,
-        "fixed_height_mobile": 500,
-        "overlay_position": "justify-center items-center",
-        "overlay_text_align": "text-center",
-        "mob_center_text": true,
-        "mobile_stacked": false,
-        "color_scheme": "white",
-        "full_width": true,
-        "transparent_content_color": "#ffffff",
-        "tint_color": "#000000",
-        "tint_opacity": 10,
-        "distance_on_both_sides": 0,
-        "distance_on_both_sides_mobile": 0,
-        "distance_above_and_below": 0,
-        "distance_above_and_below_mobile": 0,
         "prevent_animation": true
       }
     },
@@ -415,6 +449,7 @@
       "block_order": [
         "slide_UkQrzC"
       ],
+      "disabled": true,
       "settings": {
         "section_visible": true,
         "height_mode": "screen",
@@ -477,6 +512,7 @@
       "block_order": [
         "slide_VHMDBQ"
       ],
+      "disabled": true,
       "settings": {
         "section_visible": true,
         "height_mode": "screen",
@@ -603,7 +639,6 @@
         "text_GwhyQW",
         "button_JdJfbR"
       ],
-      "disabled": true,
       "settings": {
         "section_visible": false,
         "image_desktop": "shopify:\/\/shop_images\/Dueros-uniSEX.jpg",
@@ -829,60 +864,6 @@
         "distance_above_and_below_mobile": 0,
         "lazyload": true,
         "prevent_animation": false
-      }
-    },
-    "10981829-0481-4bfb-ba30-f1ade0888db9": {
-      "type": "collection-list",
-      "blocks": {
-        "template--21399708401985__10981829-0481-4bfb-ba30-f1ade0888db9-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "senderismo"
-          }
-        },
-        "template--21399708401985__10981829-0481-4bfb-ba30-f1ade0888db9-collection-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "trekking"
-          }
-        },
-        "template--21399708401985__10981829-0481-4bfb-ba30-f1ade0888db9-collection-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "running"
-          }
-        },
-        "template--21399708401985__10981829-0481-4bfb-ba30-f1ade0888db9-collection-4": {
-          "type": "collection",
-          "settings": {
-            "collection": "urban"
-          }
-        },
-        "b9e650dc-7901-4bba-898b-6bae23daaddf": {
-          "type": "collection",
-          "settings": {
-            "collection": "alpinismo"
-          }
-        }
-      },
-      "block_order": [
-        "template--21399708401985__10981829-0481-4bfb-ba30-f1ade0888db9-collection-1",
-        "template--21399708401985__10981829-0481-4bfb-ba30-f1ade0888db9-collection-2",
-        "template--21399708401985__10981829-0481-4bfb-ba30-f1ade0888db9-collection-3",
-        "template--21399708401985__10981829-0481-4bfb-ba30-f1ade0888db9-collection-4",
-        "b9e650dc-7901-4bba-898b-6bae23daaddf"
-      ],
-      "disabled": true,
-      "settings": {
-        "section_visible": false,
-        "title": "",
-        "heading_align": "text-start",
-        "button_label": "",
-        "button_link": "",
-        "layout": "carousel",
-        "card_size": "large",
-        "use_product_image": false,
-        "circle_image": false
       }
     },
     "50d1d904-2a35-4f19-b9c1-7e9b2de22227": {
@@ -1340,9 +1321,10 @@
   "order": [
     "1ab24084-d56f-4f88-a89e-4dc2777481f2",
     "image_banner_tJWH8R",
+    "video_LCqEKB",
+    "background_video_jQqPVM",
     "slideshow_hEaLiE",
     "slideshow",
-    "image_banner_BAJpAH",
     "slideshow_rjDDd9",
     "slideshow_QaweaW",
     "slideshow_VgKTJC",
@@ -1353,7 +1335,6 @@
     "ae0e6550-d3d0-413c-b105-ddbdf124611b",
     "scrolling-banner",
     "5e635ad6-1648-4ed2-a6f5-9c215c77e25a",
-    "10981829-0481-4bfb-ba30-f1ade0888db9",
     "50d1d904-2a35-4f19-b9c1-7e9b2de22227",
     "product-features",
     "e4edacda-ce89-4b8a-8eed-1601477857cc",
