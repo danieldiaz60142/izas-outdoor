@@ -28,7 +28,7 @@
 -%}
 
 {%- if settings.search_show_suggestions -%}
-  <link rel="stylesheet" href="{{ 'search-suggestions.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ 'search-suggestions.min.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 
 {%- if show_search_types -%}
@@ -42,7 +42,7 @@
     <label class="label{% if hide_label %} visually-hidden{% endif %}" for="{{ id }}">
       {{- 'general.search.input_label' | t -}}
     </label>
-    <script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'search-form.min.js' | asset_url }}" defer="defer"></script>
     <search-form class="search__form block">
       <input type="hidden" name="type" value="{% if settings.search_show_products %}product,{% endif %}{% if settings.search_show_pages %}page,{% endif %}{% if settings.search_show_articles %}article{% endif %}">
       <input type="hidden" name="options[prefix]" value="last">
@@ -132,7 +132,7 @@
           {% render 'icon-mic' %}
         </speech-search-button>
 
-        {{ 'speech-search.min.css' | asset_url | stylesheet_tag }}
+        {{ 'speech-search.css' | asset_url | stylesheet_tag }}
         <script src="{{ 'speech-search.min.js' | asset_url }}" defer="defer"></script>
       {%- endif -%}
     </search-form>
