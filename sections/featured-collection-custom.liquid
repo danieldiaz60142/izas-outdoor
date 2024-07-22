@@ -1,18 +1,18 @@
 {%- if section.index > 2 -%}
-  <link rel="stylesheet" href="{{ 'featured-collection.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ 'featured-collection.min.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- else -%}
-  {{ 'featured-collection.css' | asset_url | stylesheet_tag }}
-  {{ 'izas-product-card.css' | asset_url | stylesheet_tag }}
+  {{ 'featured-collection.min.css' | asset_url | stylesheet_tag }}
+  {{ 'izas-product-card.min.css' | asset_url | stylesheet_tag }}
   {% render 'izas-product-feature' %}
 {%- endif -%}
 
 {%- if settings.enable_quick_add -%}
-  <link rel="stylesheet" href="{{ 'quick-add.css' | asset_url }}" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="{{ 'product.css' | asset_url }}" media="print" onload="this.media='all'">
-  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
-  <script src="{{ 'variant-picker.js' | asset_url }}" defer="defer"></script>
-  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
-  <script src="{{ 'custom-select.js' | asset_url }}" defer="defer"></script>
+  <link rel="stylesheet" href="{{ 'quick-add.min.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ 'product.min.css' | asset_url }}" media="print" onload="this.media='all'">
+  <script src="{{ 'quick-add.min.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'variant-picker.min.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'product-form.min.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'custom-select.min.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
 {%- liquid
@@ -180,12 +180,12 @@
   {% endif %}
 </style>
 <div class="section feature-collection-custom" izas-product-feature>
- {%- if section.settings.title != blank or section.settings.show_view_all -%}
+  {%- if section.settings.title != blank or section.settings.show_view_all -%}
     <div class="container">
       <div class="section__header items-center flex{% if section.settings.heading_align == 'text-center' %} flex-col text-center{% elsif section.settings.heading_align == 'text-end' %} flex-row-reverse flex-wrap{% else %} flex-row flex-wrap{% endif %} gap-x-theme"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>
         {%- if section.settings.title != blank -%}
           <h2 class="h4 mb-0 flex-auto section__heading {{ section.settings.heading_align }}">
-            {{- section.settings.title | escape -}} 
+            {{- section.settings.title | escape -}}
           </h2>
         {%- endif -%}
 
@@ -196,16 +196,16 @@
     </div>
   {%- endif -%}
 
- {%- if section.settings.show_promo_info -%}
+  {%- if section.settings.show_promo_info -%}
     <div class="featured-collection-container relative w-full mx-auto"{% if section.settings.image_ratio == 'fill' and section.settings.layout != 'carousel' and section.settings.image %} data-css-var-height=".card--product"{% endif %}>
-      <div class="flex flex-col md:flex-row"> 
+      <div class="flex flex-col md:flex-row">
 
         <div class="featured-collection-info mb-6 md:mb-0 flex shrink-0 flex-col{% if section.settings.layout == 'carousel' %} featured-collection-info--carousel items-stretch{% endif %}"{% if settings.animations_enabled != "disabled" %}data-cc-animate{% endif %}>
           {%- if section.settings.layout == 'grid' or section.settings.layout == 'carousel_on_mobile' -%}
             <div class="featured-collection--sticky{% if section.settings.image_ratio == 'fill' and section.settings.layout != 'carousel' and section.settings.image %} featured-collection--sticky-fill flex flex-col{% endif %}">
           {% endif %}
 
-           {% if section.settings.image %}
+            {% if section.settings.image %}
               {%- liquid
               assign image_ratio_int = section.settings.image_ratio
               if image_ratio_int == "natural" or image_ratio_int == "fill"
@@ -218,7 +218,7 @@
               endif
             -%}
 
-             <div class="featured-collection-image{% if image_fill %} h-full{% endif %}">
+            <div class="featured-collection-image{% if image_fill %} h-full{% endif %}">
               {% if section.settings.link_url %}
                 <a href="{{ section.settings.link_url }}" aria-label="{{ section.settings.promo_title | escape }}" class="media block relative w-full{% if image_fill %} h-full md:pt-0{% endif %}" style="padding-top: {{ 1 | divided_by: image_ratio_int | times: 100 }}%;">
               {%- else -%}
@@ -231,14 +231,14 @@
                     src_width: 460,
                     src_placeholder: true,
                     sizes: false,
-                    class: 'img-fit img-fit--cover' %} 
+                    class: 'img-fit img-fit--cover' %}
 
               {%- if section.settings.link_url -%}
                 </a>
               {%- else -%}
                 </div>
               {%- endif -%}
-            </div> 
+            </div>
           {% endif %}
 
             {%- if section.settings.promo_title != blank or section.settings.content != blank or section.settings.button_label != blank -%}
@@ -264,7 +264,7 @@
           {%- if section.settings.layout == 'grid' or section.settings.layout == 'carousel_on_mobile' -%}
             </div>
           {%- endif -%}
-        </div> 
+        </div>
       {%- endif -%}
 
       {%- if carousel -%}
@@ -287,16 +287,15 @@
 
             <div class="container products-grid-container shrink-0">
               <ul class="{% if carousel %}slider__grid {% endif %}grid {% if section.settings.preview_slider == true %} {{ grid_classes_pre }} {% else %} {{ grid_classes }} {% endif %} {% if section.settings.layout == 'carousel_on_mobile' and section.settings.card_size_mobile == 'small' and settings.card_contain %} sm:gap-x-theme sm:gap-y-8{% else %} gap-x-theme gap-y-8{% endif %}{% if section.settings.card_size_mobile == 'small' and settings.card_contain %} small__grid{% endif %}" role="list">
-                {%- for product in collection.products limit: section.settings.products_to_show -%}     <!--for de las cartas del slider-->           
-                 {% render 'izas-product-card',carousel:carousel,forloopIndex: forloop.index, product: product, collection: collection, image_ratio: image_ratio, section: section %} 
-              
+                {%- for product in collection.products limit: section.settings.products_to_show -%}
+                  {% render 'izas-product-card',carousel:carousel,forloopIndex: forloop.index, product: product, collection: collection, image_ratio: image_ratio, section: section %}
                 {%- else -%}
-                 {%- for i in (1..section.settings.products_to_show) -%}
+                  {%- for i in (1..section.settings.products_to_show) -%}
                     {% render 'izas-product-card',carousel:carousel,forloopIndex: forloop.index, product: product, collection: collection, image_ratio: image_ratio, section: section %}
                   {%- endfor -%}
-                {%- endfor -%} 
+                {%- endfor -%}
               </ul>
-            </div> 
+            </div>
 
             {%- if carousel -%}
             </div>
@@ -305,9 +304,9 @@
       {%- endif -%}
       {%- if section.settings.show_promo_info -%}
       </div>
-    </div> 
-  {%- endif -%} 
-</div> 
+    </div>
+  {%- endif -%}
+</div>
 {% schema %}
 {
   "name": "Featured collection cs",
