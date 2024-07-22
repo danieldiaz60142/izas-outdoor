@@ -8,7 +8,7 @@
         "announcement-1": {
           "type": "announcement",
           "settings": {
-            "text": "<p>Rebajas hasta el <strong>-50% de descuento<\/strong><\/p>"
+            "text": "<p>Rebajas hasta el <strong>-70% de descuento - <\/strong><a href=\"https:\/\/www.izas-outdoor.com\/collections\/rebajas\" title=\"https:\/\/www.izas-outdoor.com\/collections\/rebajas\"><strong>VER TODAS<\/strong><\/a><\/p>"
           }
         },
         "announcement_AQabF6": {
@@ -45,9 +45,70 @@
     "header": {
       "type": "header",
       "blocks": {
+        "columns_KhnrWX": {
+          "type": "columns",
+          "settings": {
+            "rebajasactive": true,
+            "title": "Rebajas",
+            "collection_images": "none",
+            "collection_use_product_image": false,
+            "show_underline": true,
+            "promo_position": "bottom",
+            "promo_text_color": "#ffffff",
+            "promo1_content": "",
+            "promo1_description": "",
+            "promo1_link_url": "",
+            "promo1_text_size": 16,
+            "promo1_text_width": 100,
+            "promo1_text_alignment": "justify-center items-center text-center",
+            "promo2_content": "",
+            "promo2_description": "",
+            "promo2_link_url": "",
+            "promo2_text_size": 16,
+            "promo2_text_width": 100,
+            "promo2_text_alignment": "justify-center items-center text-center",
+            "badge1_color": "#000000",
+            "badge1_link": "",
+            "badge1_text": "",
+            "badge2_color": "#000000",
+            "badge2_link": "",
+            "badge2_text": ""
+          }
+        },
+        "columns_EDp6wy": {
+          "type": "columns",
+          "settings": {
+            "rebajasactive": false,
+            "title": "nueva colección",
+            "collection_images": "none",
+            "collection_use_product_image": false,
+            "show_underline": false,
+            "promo_position": "right",
+            "promo_text_color": "#1f140f",
+            "promo1_content": "",
+            "promo1_description": "",
+            "promo1_link_url": "",
+            "promo1_text_size": 16,
+            "promo1_text_width": 94,
+            "promo1_text_alignment": "justify-center items-center text-center",
+            "promo2_content": "",
+            "promo2_description": "",
+            "promo2_link_url": "",
+            "promo2_text_size": 16,
+            "promo2_text_width": 100,
+            "promo2_text_alignment": "justify-center items-center text-center",
+            "badge1_color": "#000000",
+            "badge1_link": "",
+            "badge1_text": "",
+            "badge2_color": "#000000",
+            "badge2_link": "",
+            "badge2_text": ""
+          }
+        },
         "columns_8bJLd7": {
           "type": "columns",
           "settings": {
+            "rebajasactive": false,
             "title": "hombre",
             "collection_images": "none",
             "collection_use_product_image": false,
@@ -78,38 +139,10 @@
             "badge2_text": ""
           }
         },
-        "columns_EDp6wy": {
-          "type": "columns",
-          "settings": {
-            "title": "nueva colección",
-            "collection_images": "none",
-            "collection_use_product_image": false,
-            "show_underline": false,
-            "promo_position": "right",
-            "promo_text_color": "#1f140f",
-            "promo1_content": "",
-            "promo1_description": "",
-            "promo1_link_url": "",
-            "promo1_text_size": 16,
-            "promo1_text_width": 94,
-            "promo1_text_alignment": "justify-center items-center text-center",
-            "promo2_content": "",
-            "promo2_description": "",
-            "promo2_link_url": "",
-            "promo2_text_size": 16,
-            "promo2_text_width": 100,
-            "promo2_text_alignment": "justify-center items-center text-center",
-            "badge1_color": "#000000",
-            "badge1_link": "",
-            "badge1_text": "",
-            "badge2_color": "#000000",
-            "badge2_link": "",
-            "badge2_text": ""
-          }
-        },
         "columns_whxBYw": {
           "type": "columns",
           "settings": {
+            "rebajasactive": false,
             "title": "mujer",
             "collection_images": "none",
             "collection_use_product_image": false,
@@ -141,6 +174,7 @@
         "columns_PGAfmm": {
           "type": "columns",
           "settings": {
+            "rebajasactive": false,
             "title": "niños",
             "collection_images": "none",
             "collection_use_product_image": false,
@@ -170,6 +204,7 @@
         "columns_dVneL6": {
           "type": "columns",
           "settings": {
+            "rebajasactive": false,
             "title": "Calzado",
             "collection_images": "none",
             "collection_use_product_image": false,
@@ -200,6 +235,7 @@
         "columns_wDRAyb": {
           "type": "columns",
           "settings": {
+            "rebajasactive": false,
             "title": "actividad",
             "collection_images": "none",
             "collection_use_product_image": false,
@@ -229,6 +265,7 @@
         "columns_iVnwHg": {
           "type": "columns",
           "settings": {
+            "rebajasactive": false,
             "title": "accesorios",
             "collection_images": "none",
             "collection_use_product_image": false,
@@ -258,6 +295,7 @@
         "columns_LA8VMk": {
           "type": "columns",
           "settings": {
+            "rebajasactive": false,
             "title": "Mochilas",
             "collection_images": "none",
             "collection_use_product_image": false,
@@ -287,6 +325,7 @@
         "columns_NpCGtk": {
           "type": "columns",
           "settings": {
+            "rebajasactive": false,
             "title": "outlet",
             "collection_images": "none",
             "collection_use_product_image": false,
@@ -339,6 +378,7 @@
         "columns_VJpgMT": {
           "type": "columns",
           "settings": {
+            "rebajasactive": false,
             "title": "Padel",
             "collection_images": "none",
             "collection_use_product_image": false,
@@ -365,38 +405,10 @@
             "badge2_text": ""
           }
         },
-        "columns_KhnrWX": {
-          "type": "columns",
-          "settings": {
-            "title": "Rebajas",
-            "collection_images": "none",
-            "collection_use_product_image": false,
-            "show_underline": true,
-            "promo_position": "bottom",
-            "promo_text_color": "#ffffff",
-            "promo1_content": "",
-            "promo1_description": "",
-            "promo1_link_url": "",
-            "promo1_text_size": 16,
-            "promo1_text_width": 100,
-            "promo1_text_alignment": "justify-center items-center text-center",
-            "promo2_content": "",
-            "promo2_description": "",
-            "promo2_link_url": "",
-            "promo2_text_size": 16,
-            "promo2_text_width": 100,
-            "promo2_text_alignment": "justify-center items-center text-center",
-            "badge1_color": "#000000",
-            "badge1_link": "",
-            "badge1_text": "",
-            "badge2_color": "#000000",
-            "badge2_link": "",
-            "badge2_text": ""
-          }
-        },
         "columns_nTa7bU": {
           "type": "columns",
           "settings": {
+            "rebajasactive": false,
             "title": "",
             "collection_images": "none",
             "collection_use_product_image": false,
@@ -425,8 +437,9 @@
         }
       },
       "block_order": [
-        "columns_8bJLd7",
+        "columns_KhnrWX",
         "columns_EDp6wy",
+        "columns_8bJLd7",
         "columns_whxBYw",
         "columns_PGAfmm",
         "columns_dVneL6",
@@ -436,9 +449,9 @@
         "columns_NpCGtk",
         "dfa4ffc9-91e3-4f2a-94f9-0724350c0ea7",
         "columns_VJpgMT",
-        "columns_KhnrWX",
         "columns_nTa7bU"
       ],
+      "custom_css": [],
       "settings": {
         "enable_sticky": true,
         "enable_tranparent_header": true,
@@ -497,7 +510,6 @@
       ],
       "disabled": true,
       "settings": {
-        "section_visible": false,
         "section_height": "xsmall",
         "color_scheme": "1",
         "full_width": true,
