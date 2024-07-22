@@ -146,7 +146,7 @@
   data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20{{ image_width }}%20{{ image_height }}'%3E%3C/svg%3E
 {%- endcapture -%}
 
-{%- if image and src_width or image_url-%}
+{%- if image and src_width -%}
   {%- if mobile_srcset -%}
     <picture>
       <source {% if lazy_load %}data-{% endif %}srcset="{{ mobile_srcset }}"
@@ -155,9 +155,14 @@
               height="{{ mobile_image_width | divided_by: image.aspect_ratio | round }}">
   {%- endif -%}
 
-      <img class="{{class}} d-data-src"
-          d-data-src="{% if image %}{{ image | image_url: width: src_width }}{% else %}{{image_src}}{% endif %}"
-           loading="{% if lazy_load %}lazy{% else %}lazy{% endif %}"
+      <img {% if srcset %}{% if lazy_load %}data-{% endif %}srcset="{{ srcset }}" {% endif -%}
+           {% if sizes and srcset %}sizes="{{ sizes }}" {% endif -%}
+           {% if lazy_load %}data-{% endif %}src="{{ image | image_url: width: src_width }}"
+           {% if lazy_load and src_placeholder %}src="{{ placeholder_image }}" {% endif -%}
+           {% if js_class %}class="{{ js_class }}" {% endif -%}
+           {% if attributes %}{{ attributes }} {% endif -%}
+           {% if disable_focal_point == false and image.presentation %}style="object-position: {{ image.presentation.focal_point }}" {% endif -%}
+           loading="{% if lazy_load %}lazy{% else %}eager{% endif %}"
            width="{{ image_width }}"
            height="{{ image_height }}"
            alt="{{ alt_text | default: image.alt | escape }}">
@@ -168,9 +173,8 @@
 
   {%- if lazy_load -%}
     <noscript>
-      <img class="{{class}} d-data-src"
-        d-data-src="{% if image %}{{ image | image_url: width: src_width }}{% else %}{{image_src}}{% endif %}"
-           loading="{% if lazy_load %}lazy{% else %}lazy{% endif %}"
+      <img src="{{ image | image_url: width: src_width }}"
+           loading="{% if lazy_load %}lazy{% else %}eager{% endif %}"
            {% if class %}class="{{ class }}" {% endif -%}
            {% if disable_focal_point == false and image.presentation %}style="object-position: {{ image.presentation.focal_point }}" {% endif -%}
            width="{{ image_width }}"
