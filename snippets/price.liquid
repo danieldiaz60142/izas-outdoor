@@ -73,7 +73,7 @@
       mutations.forEach((mutation) => {
         if (mutation.attributeName === 'class') {
           // Verificamos si el elemento tiene la clase 'hidden'
-          if (priceWas?.classList.contains('hidden')) {
+          if (priceWas.classList.contains('hidden')) {
             priceDiscount.style.display = 'none';
           } else {
             priceDiscount.style.display = 'inline';
@@ -86,7 +86,7 @@
     observer.observe(priceWas, { attributes: true });
 
     // Verificamos el estado inicial del elemento
-    if (priceWas?.classList.contains('hidden')) {
+    if (priceWas.classList.contains('hidden')) {
       priceDiscount.style.display = 'none';
     } else {
       priceDiscount.style.display = 'inline';
