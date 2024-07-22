@@ -118,6 +118,14 @@
             "page": "",
             "open": false
           }
+        },
+        "planet_bundle_bulk_discount_planet_bundle_discount_carousel_bPwLbM": {
+          "type": "shopify:\/\/apps\/planet-bundle-bulk-discount\/blocks\/planet-bundle-discount-carousel\/7760a1dc-aa67-41be-af44-a96da1e75b18",
+          "settings": {
+            "bundle_widget_css": "",
+            "form_selector": "form:has([name='id']):has(button[type='submit'])",
+            "button_selector": "button[type='submit']"
+          }
         }
       },
       "block_order": [
@@ -135,7 +143,8 @@
         "sequra_on_site_messaging_sequra_promotional_widget_hh8WJD",
         "collapsible-content-1",
         "collapsible_technology_qbbUDc",
-        "421afcb3-2a77-426f-b3fe-f743f5c6afb3"
+        "421afcb3-2a77-426f-b3fe-f743f5c6afb3",
+        "planet_bundle_bulk_discount_planet_bundle_discount_carousel_bPwLbM"
       ],
       "settings": {
         "stick_on_scroll": true,

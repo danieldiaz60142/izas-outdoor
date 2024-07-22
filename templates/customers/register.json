@@ -2,7 +2,9 @@
   "sections": {
     "main": {
       "type": "main-register",
-      "settings": {}
+      "settings": {
+        "custom_text_register3": "Suscríbete a nuestra Newsletter"
+      }
     }
   },
   "order": [

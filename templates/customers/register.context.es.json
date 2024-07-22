@@ -1,0 +1,14 @@
+{
+  "parent": "customers\/register.json",
+  "context": {
+    "market": "es"
+  },
+  "sections": {
+    "main": {
+      "settings": {
+        "custom_text_register": "Suscribete a nuestro Newsletter"
+      },
+      "blocks": {}
+    }
+  }
+}
