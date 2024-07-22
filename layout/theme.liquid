@@ -431,7 +431,6 @@
     <!-- End Google Tag Manager -->
     <script
       id="Cookiebot"
-      
       src="https://consent.cookiebot.com/uc.js"
       data-cbid="cb54c231-a23e-4ed4-b63d-8a3f726ffc30"
       type="text/javascript"
@@ -439,7 +438,7 @@
     ></script>
     <script src="{{ 'main.min.js' | asset_url }}" defer="defer"></script>
     {%- if request.design_mode -%}
-      <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'theme-editor.min.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
     {%- if settings.show_blur_messages -%}
