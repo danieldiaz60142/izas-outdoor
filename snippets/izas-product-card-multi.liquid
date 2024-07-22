@@ -129,7 +129,6 @@
                         {%- assign unique_option1_variants = product.variants | uniq: 'option1' -%}
                         {%- assign variant_media = unique_option1_variants | map: 'featured_media' -%}
                         {%- for media in variant_media -%}
-                            {{ media.title }}
                             {%- unless media == product.featured_media -%}
                                 {%- capture attributes %}data-media-id="{{ media.id }}" hidden{% endcapture -%}
                                 {% render 'image',
